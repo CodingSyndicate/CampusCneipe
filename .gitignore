@@ -1,0 +1,17 @@
+# Local development stuff
+node_modules
+build
+build.zip
+.svelte-kit
+package
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Apple Shit
+.DS_Store
+
+# Internal Files
+.internal

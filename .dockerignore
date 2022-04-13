@@ -1,0 +1,18 @@
+# Node
+.svelte-kit
+build
+build.zip
+node_modules
+npm-debug.log
+
+# Docker
+docker-compose.yml
+
+# Backend data
+data
+
+# Environmentals
+.env
+
+cockpit
+.deploy.ps1

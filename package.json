@@ -1,0 +1,36 @@
+{
+  "name": "campuscneipe-frontend",
+  "version": "0.0.19",
+  "description": "Future website of the Campus Cneipe @ Technical University of Munich",
+  "author": "Marvin Raiser <marvin@raiser.dev> (https://github.com/GeneralMine)",
+  "license": "MIT",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "svelte-kit dev",
+    "build": "svelte-kit build",
+    "package": "svelte-kit package",
+    "preview": "svelte-kit preview",
+    "prepare": "svelte-kit sync",
+    "test": "playwright test",
+    "lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
+    "format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. ."
+  },
+  "devDependencies": {
+    "svelte": "^3.44.0",
+    "@sveltejs/adapter-static": "^1.0.0-next.29",
+    "@sveltejs/kit": "^1.0.0-next.324",
+    "@playwright/test": "^1.20.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-svelte3": "^3.2.1",
+    "prettier": "^2.5.1",
+    "prettier-plugin-svelte": "^2.5.0"
+  },
+  "type": "module",
+  "dependencies": {
+    "@fontsource/work-sans": "^4.5.7",
+    "@mdi/js": "^6.6.96",
+    "chota": "^0.8.0",
+    "svelte-chota": "^1.8.6"
+  }
+}
