@@ -4,14 +4,14 @@ services:
     frontend:
         container_name: campuscneipe-frontend
         restart: always
-        image: 127.0.0.3:5000/campuscneipe-frontend
+        image: 127.0.0.4:5000/campuscneipe-frontend
         build: .
         ports:
             - "23100:80"
     backend:
         container_name: campuscneipe-backend
         restart: always
-        image: 127.0.0.3:5000/campuscneipe-backend
+        image: 127.0.0.4:5000/campuscneipe-backend
         build: ./cockpit
         #volumes:
         #    - "./data:/var/www/html/storage"
