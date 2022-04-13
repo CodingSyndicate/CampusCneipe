@@ -1,0 +1,18 @@
+{
+    "svelte.enable-ts-plugin": true,
+    "svelte.plugin.svelte.format.config.printWidth": 200,
+    "prettier.tabWidth": 4,
+    "prettier.printWidth": 200,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "gitlens.codeLens.authors.enabled": false,
+    "gitlens.codeLens.recentChange.enabled": false,
+    "[markdown]": {
+        "editor.defaultFormatter": "fcrespo82.markdown-table-formatter"
+    },
+    "workbench.iconTheme": "vscode-icons",
+    "editor.formatOnSave": true,
+    "prettier.useTabs": true,
+    "svg.preview.background": "editor",
+}

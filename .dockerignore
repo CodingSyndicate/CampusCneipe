@@ -1,0 +1,12 @@
+# Node
+node_modules
+npm-debug.log
+
+# Docker
+docker-compose.yml
+
+# Backend data
+data
+
+# Environmentals
+.env

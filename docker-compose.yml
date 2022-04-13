@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+    frontend:
+        container_name: campuscneipe-frontend
+        restart: always
+        image: 127.0.0.1:5000/campuscneipe-frontend
+        build: .
+        ports:
+            - "23100:80"
+    backend:
+        container_name: campuscneipe-backend
+        restart: always
+        image: agentejo/cockpit
+        #volumes:
+        #    - "./data:/var/www/html/storage"
+        ports:
+            - "23101:80"

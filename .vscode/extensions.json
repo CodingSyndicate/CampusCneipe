@@ -1,0 +1,18 @@
+{
+	"recommendations": [
+		"svelte.svelte-vscode",
+		"fivethree.vscode-svelte-snippets",
+		"visualstudioexptteam.vscodeintellicode",
+		"christian-kohler.npm-intellisense",
+		"eg2.vscode-npm-script",
+		"dbaeumer.vscode-eslint",
+		"esbenp.prettier-vscode",
+		"yzhang.markdown-all-in-one",
+		"eamodio.gitlens",
+		"fcrespo82.markdown-table-formatter",
+		"hellorusk.markdown-table-maker",
+		"foxundermoon.shell-format",
+		"formulahendry.auto-rename-tag",
+		"vscode-icons-team.vscode-icons"
+	]
+}
