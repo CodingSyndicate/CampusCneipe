@@ -1,0 +1,19 @@
+@import '@fontsource/work-sans';
+:root {
+    --color-primary: #273489;
+    --color-lightGrey: #d2d6dd;
+    --color-grey: #747681;
+    --color-darkGrey: #151618;
+    --color-error: #d43939;
+    --color-success: #28bd14;
+    --grid-maxWidth: 120rem;
+    --grid-gutter: 2rem;
+    --font-size: 1.6rem;
+    --font-family: 'work sans';
+    --font-family-sans: 'work sans';
+    --font-family-mono: 'work sans';
+}
+
+input::placeholder {
+    color: var(--color-darkGrey);
+}

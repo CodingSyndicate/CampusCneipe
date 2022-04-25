@@ -24,4 +24,7 @@
 		display: flex;
 		flex-direction: row;
 	}
+	a {
+		font-size: larger;
+	}
 </style>

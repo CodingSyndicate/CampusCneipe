@@ -1,36 +1,38 @@
-<h2>Betreiber</h2>
-
-Studentische Initiative Campusleben Garching e.V.
+<h2>Angaben gemäß § 5 TMG</h2>
+Studentische Initiative Campusleben Garching e.V.<br />
+Boltzmannstraße 19 <br />
+85748 Garching b. München <br />
 <br />
-<br />
-Vorstand im Sinne des §26 BGB: Tobias Kerbl, Vorstandsvorsitzender
-<br />
-<br />
-Vereinsregister VR 200335 (Registergericht beim Amtsgericht München)
-<br />
-<br />
-Steuernummer 143/222/40679
-<br />
-<br />
-<h2>Anschrift</h2>
-
-Boltzmannstr. 19
+Vereinsregister: VR 200335 <br />
+Registergericht: Amtsgericht München <br />
+Steuernummer: 143/222/40679 <br />
 <br />
 
-85748 Garching b. München
-<br />
-<h3>Kontakt</h3>
-
-Telefon:&nbsp;<a href="tel:+498930785757"> +49 89 - 30785757 </a>
+<h2>Vertreten durch</h2>
+den Vorstand im Sinne des §26 BGB: Tobias Kerbl<br />
 <br />
 
-Mail:&nbsp;<a href="mailto:info@campus-cneipe.de">info@campus-cneipe.de</a>
+<h2>Kontakt</h2>
+Telefon:&nbsp;<a href="tel:+498930785757"> +49 89 - 30785757 </a> <br />
+Mail:&nbsp;<a href="mailto:info@campus-cneipe.de">info@campus-cneipe.de</a> <br />
 <br />
+
+<h2>Redaktionell verantwortlich</h2>
+Leopold Rothmayer<br />
+Mühlenstraße 2c<br />
+85737 Ismaning
+<br /><br />
 <h2>Webadresse</h2>
+<a href="www.c2.tum.de"> www.c2.tum.de </a><br />
+<a href="www.campus-cneipe.de"> www.campus-cneipe.de </a>
+<br /><br />
 
-www.campus-cneipe.de
+<h2>Verbraucherstreitbeilegung/Universalschlichtungsstelle</h2>
+Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.<br />
 <br />
-www.c2.tum.de
-<br />
-c2.tum.de
-<br />
+
+<style>
+	h2 {
+		margin-bottom: 0;
+	}
+</style>

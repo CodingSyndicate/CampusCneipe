@@ -9,7 +9,7 @@
 		<div class="impressum">
 			<a href="/impressum">Impressum</a>
 			&nbsp;
-			<a href="https://github.com/CodingSyndicate/CampusCneipe">0.0.4</a>
+			<a href="https://github.com/CodingSyndicate/CampusCneipe"> 0.0.5 </a>
 			&nbsp;
 			<a href="/datenschutz">Datenschutz</a>
 		</div>
@@ -24,6 +24,7 @@
 		display: flex;
 		flex-direction: row;
 		width: 100%;
+		margin: 0;
 		padding-top: 5px;
 		padding-bottom: 5px;
 		background-color: #222222;
@@ -46,5 +47,8 @@
 		display: flex;
 		justify-content: flex-end;
 		align-items: center;
+	}
+	a {
+		color: white;
 	}
 </style>

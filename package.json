@@ -1,6 +1,6 @@
 {
   "name": "campuscneipe-frontend",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Future website of the Campus Cneipe @ Technical University of Munich",
   "author": "Marvin Raiser <marvin@raiser.dev> (https://github.com/GeneralMine)",
   "license": "MIT",
@@ -28,6 +28,7 @@
   },
   "type": "module",
   "dependencies": {
+    "@fontsource/work-sans": "^4.5.7",
     "@mdi/js": "^6.6.96",
     "chota": "^0.8.0",
     "svelte-chota": "^1.8.6"
