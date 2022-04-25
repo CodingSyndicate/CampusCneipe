@@ -23,8 +23,8 @@ Mühlenstraße 2c<br />
 85737 Ismaning
 <br /><br />
 <h2>Webadresse</h2>
-<a href="www.c2.tum.de"> www.c2.tum.de </a><br />
-<a href="www.campus-cneipe.de"> www.campus-cneipe.de </a>
+<a href="https://www.c2.tum.de"> www.c2.tum.de </a><br />
+<a href="https://www.campus-cneipe.de"> www.campus-cneipe.de </a>
 <br /><br />
 
 <h2>Verbraucherstreitbeilegung/Universalschlichtungsstelle</h2>

@@ -1,5 +1,6 @@
 <script>
 	import PrivacyNotice from '$lib/Legal/PrivacyNotice.svelte';
+	import { Container, Tag } from 'svelte-chota';
 </script>
 
 <svelte:head>
@@ -7,6 +8,9 @@
 	<meta name="description" content="Datenschutzerklärung der TUM Campus Cneipe" />
 </svelte:head>
 
-<h1>Datenschutzerklärung</h1>
-
-<PrivacyNotice />
+<div class="is-full-screen">
+	<Container>
+		<h1>Datenschutzerklärung</h1>
+		<PrivacyNotice />
+	</Container>
+</div>

@@ -1,5 +1,6 @@
 <script>
 	import ImpressumNotice from '$lib/Legal/ImpressumNotice.svelte';
+	import { Container, Tag } from 'svelte-chota';
 </script>
 
 <svelte:head>
@@ -7,6 +8,9 @@
 	<meta name="description" content="Impressum der TUM Campus Cneipe" />
 </svelte:head>
 
-<h1>Impressum</h1>
-
-<ImpressumNotice />
+<div class="is-full-screen">
+	<Container>
+		<h1>Impressum</h1>
+		<ImpressumNotice />
+	</Container>
+</div>

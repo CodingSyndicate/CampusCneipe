@@ -80,7 +80,7 @@
 		background-color: var(--color-primary);
 	}
 	.background {
-		background-image: url('Hintergrundbild.jpg');
+		background-image: url('/Hintergrundbild.jpg');
 		background-size: cover;
 		background-color: rgba(77, 82, 86, 0.5);
 		background-blend-mode: multiply;
@@ -185,6 +185,14 @@
 		}
 		to {
 			transform: translate(0);
+		}
+	}
+	@media (max-width: 768px) {
+		.reservierungstool {
+			flex-direction: column;
+		}
+		.background {
+			background-position: 50%;
 		}
 	}
 </style>

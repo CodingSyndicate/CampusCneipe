@@ -7,10 +7,16 @@
 	<meta name="description" content="Karte aller Getränke und Speisen der Campus Cneipe" />
 </svelte:head>
 
-<Container>
-	<div class="is-full-screen">
+<div class="is-full-screen">
+	<Container>
 		<h1>Karte</h1>
-		<img alt="Getränkekarte Seite 1" src="/karte1.jpg" />
-		<img alt="Getränkekarte Seite 2" src="/karte2.jpg" />
-	</div>
-</Container>
+	</Container>
+	<iframe title="Karte" src="/karte.pdf" class="is-full-screen pdf" />
+</div>
+
+<style>
+	.pdf {
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+</style>

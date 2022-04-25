@@ -1,6 +1,7 @@
 # Local development stuff
 node_modules
 build
+build.zip
 .svelte-kit
 package
 

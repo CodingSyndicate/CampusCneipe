@@ -1,6 +1,6 @@
 <script>
 	import JobList from '$lib/Jobs/JobList.svelte';
-	import { Field, Input, Row, Col, Button } from 'svelte-chota';
+	import { Container, Field, Input, Row, Col, Button } from 'svelte-chota';
 
 	let username;
 	let password;
@@ -17,40 +17,44 @@
 	<meta name="description" content="Interner Bereich für Mitarbeiter" />
 </svelte:head>
 
-<Col>
-	<Row class="is-center">
-		<h1>Interner Bereich</h1>
-	</Row>
-	<Row class="is-horizontal-align">
-		<Col class="pull-right">
-			<div class="extern">
-				<h2>Externe Tools:</h2>
-				<a href="https://schichtplaner-online.de/auth/login">Schichtplanner</a>
-				<a href="https://trello.com">Trello</a>
-				<a href="https://sheets.google.com">Google Sheets</a>
-			</div>
-		</Col>
+<div class="is-full-screen">
+	<Container>
 		<Col>
-			<div class="spacerBox">
-				<div class="spacer" />
-			</div>
-		</Col>
-		<Col class="pull-left">
-			<h2>Login</h2>
-			<Field label="Username">
-				<Input bind:value={username} placeholder="User" />
-			</Field>
+			<Row class="is-center">
+				<h1>Interner Bereich</h1>
+			</Row>
+			<Row class="is-horizontal-align">
+				<Col class="pull-right">
+					<div class="extern">
+						<h2>Externe Tools:</h2>
+						<a href="https://schichtplaner-online.de/auth/login">Schichtplanner</a>
+						<a href="https://trello.com">Trello</a>
+						<a href="https://sheets.google.com">Google Sheets</a>
+					</div>
+				</Col>
+				<Col>
+					<div class="spacerBox">
+						<div class="spacer" />
+					</div>
+				</Col>
+				<Col class="pull-left">
+					<h2>Login</h2>
+					<Field label="Username">
+						<Input bind:value={username} placeholder="User" />
+					</Field>
 
-			<Field label="Password">
-				<Input password bind:value={password} placeholder="Password" />
-			</Field>
-			<Button {loading} {error} submit on:click={submit}>Send form</Button>
+					<Field label="Password">
+						<Input password bind:value={password} placeholder="Password" />
+					</Field>
+					<Button {loading} {error} submit on:click={submit}>Send form</Button>
+				</Col>
+			</Row>
+			<Row class="is-horizontal-align">
+				<JobList />
+			</Row>
 		</Col>
-	</Row>
-	<Row class="is-horizontal-align">
-		<JobList />
-	</Row>
-</Col>
+	</Container>
+</div>
 
 <style>
 	.spacerBox {
