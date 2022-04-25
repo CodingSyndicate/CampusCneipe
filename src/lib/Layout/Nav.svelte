@@ -69,7 +69,7 @@
 		flex-direction: column;
 		background-color: #000000;
 		align-items: center;
-		padding-top: 4rem;
+		padding-top: 8rem;
 	}
 	.menucol > a {
 		line-height: 3;

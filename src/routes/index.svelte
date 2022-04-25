@@ -119,16 +119,18 @@
 		height: 100%;
 	}
 	.meldungen {
-		min-width: 100vw;
 		width: 100%;
 		min-height: 40rem;
+		display: flex;
+		align-items: center;
+		text-align: center;
 	}
 	.glitch {
 		font-size: 5.2em;
 		font-weight: 700;
 		text-decoration: none;
 		text-transform: uppercase;
-		position: absolute;
+		position: relative;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
@@ -193,6 +195,9 @@
 		}
 		.background {
 			background-position: 50%;
+		}
+		.meldungen {
+			padding-top: 10rem;
 		}
 	}
 </style>
