@@ -9,7 +9,7 @@
 		<div class="impressum">
 			<a href="/impressum">Impressum</a>
 			&nbsp;
-			<a href="https://github.com/CodingSyndicate/CampusCneipe"> 0.0.10 </a>
+			<a href="https://github.com/CodingSyndicate/CampusCneipe"> 0.0.11 </a>
 			&nbsp;
 			<a href="/datenschutz">Datenschutz</a>
 		</div>
