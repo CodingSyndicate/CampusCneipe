@@ -11,10 +11,16 @@
 	<Container>
 		<h1>Karte</h1>
 	</Container>
-	<iframe title="Karte" src="/karte.pdf#view=fitH" class="is-full-screen pdf" />
+	<div class="outerpdf">
+		<iframe title="Karte" src="/karte.pdf#zoom=FitH" class="is-full-screen pdf" scrolling="auto" type="application/pdf" width="100%" height="100%" />
+	</div>
 </div>
 
 <style>
+	.outerpdf {
+		-webkit-overflow-scrolling: touch;
+		overflow: auto;
+	}
 	.pdf {
 		padding-left: 2rem;
 		padding-right: 2rem;
