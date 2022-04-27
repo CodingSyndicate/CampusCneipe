@@ -28,10 +28,10 @@
   },
   "type": "module",
   "dependencies": {
+    "@fabiohvp/svelte-pdfjs": "^0.0.14",
     "@fontsource/work-sans": "^4.5.7",
     "@mdi/js": "^6.6.96",
     "chota": "^0.8.0",
-    "svelte-chota": "^1.8.6",
-    "svelte-pdf": "^1.0.10"
+    "svelte-chota": "^1.8.6"
   }
 }
