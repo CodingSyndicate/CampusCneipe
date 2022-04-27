@@ -1,14 +1,5 @@
 <script>
-	import { browser } from '$app/env';
-
 	import { Container } from 'svelte-chota';
-	import { onMount } from 'svelte';
-
-	let PDFViewer;
-
-	onMount(async () => {
-		PDFViewer = (await import("@fabiohvp/svelte-pdfjs")).default;
-	})
 </script>
 
 <svelte:head>
@@ -20,11 +11,18 @@
 	<Container>
 		<h1>Karte</h1>
 	</Container>
-
-	<PDFViewer src="/karte.pdf"></PDFViewer>
-	<!-- <div class="outerpdf">
-		<iframe title="Karte" src="/karte.pdf#zoom=FitH" class="is-full-screen pdf" scrolling="auto" type="application/pdf" width="100%" height="100%" />
-	</div> -->
+	<div class="outerpdf">
+		<iframe
+			title="Karte"
+			src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://www.c2.tum.de/karte.pdf#view=FitH"
+			class="is-full-screen pdf"
+			allowfullscreen
+			frameborder="0"
+			scrolling="auto"
+			width="100%"
+			height="100%"
+		/>
+	</div>
 </div>
 
 <style>
