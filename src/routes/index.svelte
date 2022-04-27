@@ -104,7 +104,7 @@
 		background-color: var(--color-primary);
 	}
 	.background {
-		background-image: url('%svelte.assets%/Hintergrundbild.jpg');
+		background-image: url('Hintergrundbild.jpg');
 		background-size: cover;
 		background-color: rgba(77, 82, 86, 0.5);
 		background-blend-mode: multiply;
