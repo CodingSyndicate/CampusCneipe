@@ -9,6 +9,5 @@
 	</Row>
 	<Row>
 		<JobsCard />
-		<JobsCard />
 	</Row>
 </Col>

@@ -1,10 +1,10 @@
 <script>
-	import { Row, Col, Button, Card } from 'svelte-chota';
+	import { Button, Card } from 'svelte-chota';
 	import { goto } from '$app/navigation';
 
 	let ID = 0;
 	let title = 'Quizmaster';
-	let image = '/job.png';
+	let image = '/images/job.png';
 	let description = 'Du hast Lust dir Fragen auszudenken, endlich mit deinem unnötigen Wissen zu strahlen und willst das PubQuiz der Campus Cneipe unterstützen?';
 	let contact = 'events@campus-cneipe.de';
 </script>

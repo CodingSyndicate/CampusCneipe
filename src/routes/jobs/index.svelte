@@ -12,6 +12,6 @@
 	<Container>
 		<h1>Jobs</h1>
 		<Tag>Website noch im Bau!</Tag>
+		<JobList />
 	</Container>
 </div>
-<JobList />
