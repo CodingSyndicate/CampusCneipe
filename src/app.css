@@ -22,3 +22,7 @@
 input::placeholder {
     color: var(--color-darkGrey);
 }
+
+.is-full-screen {
+    overflow-wrap: anywhere;
+}
