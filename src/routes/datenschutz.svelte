@@ -1,6 +1,6 @@
 <script>
 	import PrivacyNotice from '$lib/Legal/PrivacyNotice.svelte';
-	import { Container, Tag } from 'svelte-chota';
+	import { Container } from 'svelte-chota';
 </script>
 
 <svelte:head>
