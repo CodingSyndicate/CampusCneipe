@@ -11,7 +11,7 @@
 	<Container>
 		<h1>Karte</h1>
 	</Container>
-	<iframe title="Karte" src="/karte.pdf#view=fitH" class="is-full-screen pdf" />
+	<iframe title="Karte" src="./karte.pdf#view=fitH" class="is-full-screen pdf" />
 </div>
 
 <style>
