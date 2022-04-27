@@ -22,7 +22,8 @@
 		reservationName === null ||
 		reservationName.trim() === '' ||
 		reservationPersons === undefined ||
-		reservationPersons === null;
+		reservationPersons === null ||
+		reservationPersons === 'Personenzahl';
 
 	async function submitReservation() {
 		console.log('submitReservation');
@@ -36,16 +37,16 @@
 <svelte:head>
 	<title>Die Campus Cneipe</title>
 	<meta property="og:title" content="Die Campus Cneipe" />
-	<meta property="og:url" content="https://c2.raiser.dev/" />
-	<meta name="description" content="Future website of the Campus Cneipe @ Technical University of Munich" />
-	<meta property="og:description" content="Future website of the Campus Cneipe @ Technical University of Munich" />
-	<meta property="og:image" content="https://c2.raiser.dev/favicon.png" />
+	<meta property="og:url" content="https://www.c2.tum.de/" />
+	<meta name="description" content="Die Campus Cneipe der Technischen Universität München in Garching." />
+	<meta property="og:description" content="Die Campus Cneipe der Technischen Universität München in Garching." />
+	<meta property="og:image" content="https://www.c2.tum.de/favicon.png" />
 </svelte:head>
 
 <div class="background">
 	<div class="banner">
 		<span>Boltzmannstraße 19, 85748 Garching b. München</span> <br />
-		<span>Öffnungszeiten: Di-Fr 15 - 24 Uhr</span> <br />
+		<span>Öffnungszeiten: Di-Fr 15 - 24 Uhr</span>
 	</div>
 	<div class="is-full-screen mycol">
 		<div class="content">
@@ -56,13 +57,23 @@
 				<p class="is-center"><Tag large>Tisch Reservieren</Tag></p>
 			</div>
 			<div class="reservierungstool">
-				<p><Input placeholder="Your Name" bind:value={reservationName} /></p>
+				<p class="nameInput"><Input placeholder="Your Name" bind:value={reservationName} /></p>
 				<div class="spacer" />
-				<p><Input type="time" bind:value={reservationTime} min="15:00" max="23:50" /></p>
+				<p class="timeInput">
+					<span class="tooltiptext">Öffnungszeiten: Di-Fr 15 - 24 Uhr</span>
+					<Input type="time" bind:value={reservationTime} min="15:00" max="23:50" />
+				</p>
 				<div class="spacer" />
 				<p><Input date bind:value={reservationDate} min={currentdate} /></p>
 				<div class="spacer" />
-				<p><Input number placeholder="2 Personen" bind:value={reservationPersons} min="1" max="10" /></p>
+				<p>
+					<select bind:value={reservationPersons}>
+						<option disabled selected>Personenzahl</option>
+						{#each Array.from({ length: 10 }, (_, i) => i + 1) as i}
+							<option value={i}>{i} Personen</option>
+						{/each}
+					</select>
+				</p>
 				<div class="spacer" />
 				<p><Button primary bind:disabled={submitDisabled} on:click={submitReservation}>Reservieren</Button></p>
 			</div>
@@ -71,6 +82,19 @@
 </div>
 
 <style>
+	select {
+		width: 150px;
+	}
+	.tooltiptext {
+		opacity: 0;
+		position: absolute;
+		margin-top: -3rem;
+		margin-left: -7.5rem;
+		transition: 0.3s;
+	}
+	.timeInput:hover > .tooltiptext {
+		opacity: 1;
+	}
 	.tabletag {
 		max-width: fit-content;
 		margin: auto;
@@ -80,7 +104,7 @@
 		background-color: var(--color-primary);
 	}
 	.background {
-		background-image: url('/Hintergrundbild.jpg');
+		background-image: url('%svelte.assets%/Hintergrundbild.jpg');
 		background-size: cover;
 		background-color: rgba(77, 82, 86, 0.5);
 		background-blend-mode: multiply;
