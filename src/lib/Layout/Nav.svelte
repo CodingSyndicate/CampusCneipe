@@ -10,19 +10,19 @@
 
 <Nav>
 	<div slot="left">
-		<a href="/" class={$page.url.pathname == '/' ? 'active' : ''}><img class="brand" title="Campus Cneipe" src="/favicon.png" alt="Logo" /> CampusCneipe </a>
+		<a sveltekit:prefetch href="/" class={$page.url.pathname == '/' ? 'active' : ''}><img class="brand" title="Campus Cneipe" src="/favicon.png" alt="Logo" /> CampusCneipe </a>
 		{#if width >= 768}
-			<a href="/karte" class={$page.url.pathname.startsWith('/karte') ? 'active' : ''}>Karte</a>
-			<a href="/veranstaltungen" class={$page.url.pathname.startsWith('/veranstaltungen') ? 'active' : ''}>Veranstaltungen</a>
-			<a href="/neuigkeiten" class={$page.url.pathname.startsWith('/neuigkeiten') ? 'active' : ''}>Neuigkeiten</a>
-			<a href="/anfahrt" class={$page.url.pathname.startsWith('/anfahrt') ? 'active' : ''}>Anfahrt</a>
+			<a sveltekit:prefetch href="/karte" class={$page.url.pathname.startsWith('/karte') ? 'active' : ''}>Karte</a>
+			<a sveltekit:prefetch href="/veranstaltungen" class={$page.url.pathname.startsWith('/veranstaltungen') ? 'active' : ''}>Veranstaltungen</a>
+			<a sveltekit:prefetch href="/neuigkeiten" class={$page.url.pathname.startsWith('/neuigkeiten') ? 'active' : ''}>Neuigkeiten</a>
+			<a sveltekit:prefetch href="/anfahrt" class={$page.url.pathname.startsWith('/anfahrt') ? 'active' : ''}>Anfahrt</a>
 		{/if}
 	</div>
 	<div slot="right" class="rightside">
 		{#if width >= 768}
-			<a href="/jobs" class={$page.url.pathname.startsWith('/jobs') ? 'active' : ''}>Jobs</a>
-			<a href="/verein" class={$page.url.pathname.startsWith('/verein') ? 'active' : ''}>Verein</a>
-			<a href="/intern" class={$page.url.pathname.startsWith('/intern') ? 'active' : ''}>Interner Bereich</a>
+			<a sveltekit:prefetch href="/jobs" class={$page.url.pathname.startsWith('/jobs') ? 'active' : ''}>Jobs</a>
+			<a sveltekit:prefetch href="/verein" class={$page.url.pathname.startsWith('/verein') ? 'active' : ''}>Verein</a>
+			<a sveltekit:prefetch href="/intern" class={$page.url.pathname.startsWith('/intern') ? 'active' : ''}>Interner Bereich</a>
 		{:else}
 			<div class="menu">
 				<Button primary icon={mdiMenu} on:click={(event) => (menu_open = true)} />
@@ -34,18 +34,18 @@
 <Modal bind:open={menu_open}>
 	<Container>
 		<div class="menucol is-full-screen" on:click={() => (menu_open = false)}>
-			<a href="/" class={$page.url.pathname == '/' ? 'active' : ''}><img class="menubrand" title="Campus Cneipe" src="/favicon.png" alt="Logo" /> CampusCneipe </a>
+			<a sveltekit:prefetch href="/" class={$page.url.pathname == '/' ? 'active' : ''}><img class="menubrand" title="Campus Cneipe" src="/favicon.png" alt="Logo" /> CampusCneipe </a>
 			<div class="spacer" />
-			<a href="/karte" class={$page.url.pathname.startsWith('/karte') ? 'active' : ''}>Karte</a>
-			<a href="/veranstaltungen" class={$page.url.pathname.startsWith('/veranstaltungen') ? 'active' : ''}>Veranstaltungen</a>
-			<a href="/neuigkeiten" class={$page.url.pathname.startsWith('/neuigkeiten') ? 'active' : ''}>Neuigkeiten</a>
-			<a href="/anfahrt" class={$page.url.pathname.startsWith('/anfahrt') ? 'active' : ''}>Anfahrt</a>
-			<a href="/jobs" class={$page.url.pathname.startsWith('/jobs') ? 'active' : ''}>Jobs</a>
-			<a href="/verein" class={$page.url.pathname.startsWith('/verein') ? 'active' : ''}>Verein</a>
-			<a href="/intern" class={$page.url.pathname.startsWith('/intern') ? 'active' : ''}>Interner Bereich</a>
+			<a sveltekit:prefetch href="/karte" class={$page.url.pathname.startsWith('/karte') ? 'active' : ''}>Karte</a>
+			<a sveltekit:prefetch href="/veranstaltungen" class={$page.url.pathname.startsWith('/veranstaltungen') ? 'active' : ''}>Veranstaltungen</a>
+			<a sveltekit:prefetch href="/neuigkeiten" class={$page.url.pathname.startsWith('/neuigkeiten') ? 'active' : ''}>Neuigkeiten</a>
+			<a sveltekit:prefetch href="/anfahrt" class={$page.url.pathname.startsWith('/anfahrt') ? 'active' : ''}>Anfahrt</a>
+			<a sveltekit:prefetch href="/jobs" class={$page.url.pathname.startsWith('/jobs') ? 'active' : ''}>Jobs</a>
+			<a sveltekit:prefetch href="/verein" class={$page.url.pathname.startsWith('/verein') ? 'active' : ''}>Verein</a>
+			<a sveltekit:prefetch href="/intern" class={$page.url.pathname.startsWith('/intern') ? 'active' : ''}>Interner Bereich</a>
 			<div class="spacer" />
-			<a href="/impressum" class={$page.url.pathname.startsWith('/impressum') ? 'active' : ''}>Impressum</a>
-			<a href="/datenschutz" class={$page.url.pathname.startsWith('/datenschutz') ? 'active' : ''}>Datenschutz</a>
+			<a sveltekit:prefetch href="/impressum" class={$page.url.pathname.startsWith('/impressum') ? 'active' : ''}>Impressum</a>
+			<a sveltekit:prefetch href="/datenschutz" class={$page.url.pathname.startsWith('/datenschutz') ? 'active' : ''}>Datenschutz</a>
 		</div>
 	</Container>
 </Modal>

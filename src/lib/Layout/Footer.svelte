@@ -7,11 +7,11 @@
 	<div class="left"><Icon src={mdiCopyright} size="24px" /> 2022 - Campus Cneipe</div>
 	<div class="middle">
 		<div class="impressum">
-			<a href="/impressum">Impressum</a>
+			<a sveltekit:prefetch href="/impressum">Impressum</a>
 			&nbsp;
 			<a href="https://github.com/CodingSyndicate/CampusCneipe"> 0.0.15 </a>
 			&nbsp;
-			<a href="/datenschutz">Datenschutz</a>
+			<a sveltekit:prefetch href="/datenschutz">Datenschutz</a>
 		</div>
 	</div>
 	<div class="right">
