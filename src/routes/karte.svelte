@@ -1,5 +1,8 @@
 <script>
-	import { Container } from 'svelte-chota';
+	import { Container, Icon } from 'svelte-chota';
+	import { mdiLoading } from '@mdi/js';
+
+	let loading = true;
 </script>
 
 <svelte:head>
@@ -12,20 +15,30 @@
 		<h1>Karte</h1>
 	</Container>
 	<div class="outerpdf">
+		{#if loading}
+			<div class="spinner">
+				<Icon src={mdiLoading} spin="1" size="2" />
+			</div>
+		{/if}
 		<iframe
 			title="Karte"
 			src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://www.c2.tum.de/karte.pdf#view=FitH"
-			class="is-full-screen pdf"
+			class="pdf is-full-screen"
 			allowfullscreen
 			frameborder="0"
 			scrolling="auto"
 			width="100%"
 			height="100%"
+			on:load={() => (loading = false)}
 		/>
 	</div>
 </div>
 
 <style>
+	.spinner {
+		display: flex;
+		justify-content: center;
+	}
 	.outerpdf {
 		-webkit-overflow-scrolling: touch;
 		overflow: auto;
