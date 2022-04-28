@@ -38,7 +38,7 @@
 	<title>Die Campus Cneipe</title>
 	<meta property="og:title" content="Die Campus Cneipe" />
 	<meta property="og:url" content="https://www.c2.tum.de/" />
-	<meta name="description" content="Die Campus Cneipe der Technischen Universität München in Garching." />
+	<meta name="description" content="Die Campus Cneipe ist eine studentische Kneipe der Technischen Universität München in Garching." />
 	<meta property="og:image" content="https://www.c2.tum.de/favicon.png" />
 </svelte:head>
 

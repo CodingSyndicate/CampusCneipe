@@ -5,7 +5,7 @@
 
 <svelte:head>
 	<title>Datenschutz | CampusCneipe</title>
-	<meta name="description" content="Datenschutzerklärung der TUM Campus Cneipe" />
+	<meta name="description" content="Datenschutzerklärung der Campus Cneipe" />
 </svelte:head>
 
 <div class="is-full-screen">

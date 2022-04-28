@@ -5,7 +5,7 @@
 
 <svelte:head>
 	<title>Impressum | CampusCneipe</title>
-	<meta name="description" content="Impressum der TUM Campus Cneipe" />
+	<meta name="description" content="Impressum der Campus Cneipe" />
 </svelte:head>
 
 <div class="is-full-screen">
