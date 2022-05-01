@@ -8,6 +8,11 @@
 <svelte:head>
 	<title>Karte | CampusCneipe</title>
 	<meta name="description" content="Karte aller Getränke und Speisen der Campus Cneipe" />
+	<meta property="og:title" content="Getränkekarte der Campus Cneipe" />
+	<meta property="og:image" content="https://www.c2.tum.de/images/Hintergrundbild.jpg" />
+	<meta property="og:url" content="https://www.c2.tum.de/" />
+	<meta property="og:site_name" content="Getränkekarte der Campus Cneipe" />
+	<meta property="og:description" content="Karte aller Getränke und Speisen der Campus Cneipe" />
 </svelte:head>
 
 <div class="is-full-screen">

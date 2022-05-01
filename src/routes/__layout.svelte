@@ -19,6 +19,10 @@
 	import Nav from '$lib/Layout/Nav.svelte';
 </script>
 
+<svelte:head>
+	<meta property="og:type" content="website" />
+	<meta property="og:locale" content="de_DE" />
+</svelte:head>
 <div>
 	<Nav />
 	<main>
