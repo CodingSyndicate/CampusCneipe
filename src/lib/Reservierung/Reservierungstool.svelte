@@ -1,0 +1,100 @@
+<script>
+	import { Input, Button, Tag } from 'svelte-chota';
+
+	// add zeros infront of number until it has at least 2 digits
+	function pad(number) {
+		return (number < 10 ? '0' : '') + number;
+	}
+
+	let date = new Date();
+	let currentdate = date.getFullYear() + '-' + pad(date.getMonth() + 1) + '-' + pad(date.getDate());
+	let currenttime = pad(date.getHours()) + ':' + pad(date.getMinutes());
+
+	let reservationDate = currentdate;
+	let reservationTime = currenttime;
+	let reservationName = undefined;
+	let reservationPersons = undefined;
+
+	$: submitDisabled =
+		reservationDate === null ||
+		reservationTime === null ||
+		reservationName === undefined ||
+		reservationName === null ||
+		reservationName.trim() === '' ||
+		reservationPersons === undefined ||
+		reservationPersons === null ||
+		reservationPersons === 'Personenzahl';
+
+	async function submitReservation() {
+		console.log('submitReservation');
+		console.log('reservationDate: ' + reservationDate);
+		console.log('reservationTime: ' + reservationTime);
+		console.log('reservationName: ' + reservationName);
+		console.log('reservationPersons: ' + reservationPersons);
+	}
+</script>
+
+<div class="tabletag">
+	<p class="is-center"><Tag large>Tisch Reservieren</Tag></p>
+</div>
+<div class="reservierungstool">
+	<p class="nameInput"><Input placeholder="Your Name" bind:value={reservationName} /></p>
+	<div class="spacer" />
+	<p><Input date bind:value={reservationDate} min={currentdate} /></p>
+	<div class="spacer" />
+	<p class="timeInput">
+		<span class="tooltiptext">Öffnungszeiten: Di-Fr 15 - 24 Uhr</span>
+		<Input type="time" bind:value={reservationTime} min="15:00" max="23:50" />
+	</p>
+	<div class="spacer" />
+	<p>
+		<select bind:value={reservationPersons}>
+			<option disabled selected>Personenzahl</option>
+			{#each Array.from({ length: 10 }, (_, i) => i + 1) as i}
+				<option value={i}>{i} Personen</option>
+			{/each}
+		</select>
+	</p>
+	<div class="spacer" />
+	<p><Button primary bind:disabled={submitDisabled} on:click={submitReservation}>Reservieren</Button></p>
+</div>
+
+<style>
+	select {
+		width: 150px;
+	}
+	.tooltiptext {
+		opacity: 0;
+		position: absolute;
+		margin-top: -3rem;
+		margin-left: -7.5rem;
+		transition: 0.3s;
+	}
+	.timeInput:hover > .tooltiptext {
+		opacity: 1;
+	}
+	.tabletag {
+		max-width: fit-content;
+		margin: auto;
+		transition: 0.3s;
+	}
+	.tabletag:hover {
+		background-color: var(--color-primary);
+	}
+	.reservierungstool {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		padding: 1em;
+	}
+	.spacer {
+		height: 1em;
+		width: 1em;
+	}
+	@media (max-width: 768px) {
+		.reservierungstool {
+			flex-direction: column;
+		}
+	}
+</style>
