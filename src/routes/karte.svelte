@@ -1,6 +1,6 @@
 <script>
-	import { Container, Icon } from 'svelte-chota';
-	import { mdiLoading } from '@mdi/js';
+	import KartenKategorie from '$lib/Karte/KartenKategorie.svelte';
+	import { Container } from 'svelte-chota';
 
 	let loading = true;
 
@@ -8,7 +8,8 @@
 		{
 			name: 'Bier & Wein',
 			image: 'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
-			drinks: [
+			type: 'drinks',
+			content: [
 				{
 					name: 'Helles',
 					subtitle: 'vom Fass',
@@ -91,7 +92,8 @@
 		{
 			name: 'Classics',
 			image: 'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
-			drinks: [
+			type: 'drinks',
+			content: [
 				{
 					name: 'Fresh Hermann',
 					subtitle: null,
@@ -153,7 +155,8 @@
 		{
 			name: 'Longdrinks Light',
 			image: 'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
-			drinks: [
+			type: 'drinks',
+			content: [
 				{
 					name: 'Vodka Bull',
 					subtitle: null,
@@ -187,7 +190,8 @@
 		{
 			name: 'Longdrinks Strong',
 			image: 'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
-			drinks: [
+			type: 'drinks',
+			content: [
 				{
 					name: 'Long Island Iced Tea',
 					subtitle: null,
@@ -214,7 +218,8 @@
 		{
 			name: 'Softdrinks & co.',
 			image: 'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
-			drinks: [
+			type: 'drinks',
+			content: [
 				{
 					name: 'Säfte / Nektar',
 					subtitle: null,
@@ -255,7 +260,8 @@
 		{
 			name: 'Sprizz',
 			image: 'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
-			drinks: [
+			type: 'drinks',
+			content: [
 				{
 					name: 'Aperol Sprizz',
 					subtitle: null,
@@ -282,7 +288,8 @@
 		{
 			name: 'Fizzes & Sours',
 			image: 'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
-			drinks: [
+			type: 'drinks',
+			content: [
 				{
 					name: 'Gin Basil Smash',
 					subtitle: null,
@@ -309,7 +316,8 @@
 		{
 			name: 'Mocktails',
 			image: 'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
-			drinks: [
+			type: 'drinks',
+			content: [
 				{
 					name: 'Ginger Basil Smash',
 					subtitle: null,
@@ -360,14 +368,14 @@
 	<meta property="og:description" content="Karte aller Getränke und Speisen der Campus Cneipe" />
 </svelte:head>
 
-<div class="is-full-screen">
-	<Container>
-		<h1>Karte</h1>
-	</Container>
-</div>
+<Container>
+	<h1>Karte</h1>
+</Container>
 
 {#each data as category, i}
-	{#if i % 2 === 0}{:else}
-		<!-- else content here -->
+	{#if i % 2 === 0}
+		<KartenKategorie {category} />
+	{:else}
+		<KartenKategorie {category} otherside={true} />
 	{/if}
 {/each}
