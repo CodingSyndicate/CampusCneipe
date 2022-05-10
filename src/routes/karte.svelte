@@ -2,6 +2,7 @@
 	import { goto } from '$app/navigation';
 
 	import KartenKategorie from '$lib/Karte/KartenKategorie.svelte';
+	import Hintergrundbilder from '$lib/Karte/Hintergrundbilder.png';
 	import { Button } from 'svelte-chota';
 
 	let loading = true;
@@ -413,7 +414,7 @@
 	<meta property="og:description" content="Karte aller Getränke und Speisen der Campus Cneipe" />
 </svelte:head>
 
-<img class="background" src="./images/Hintergrundbilder.png" alt="Bild der Cneipe" />
+<img class="background" src={Hintergrundbilder} alt="Bild der Cneipe" />
 
 <div class="myrow" />
 
