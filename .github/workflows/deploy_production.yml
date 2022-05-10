@@ -29,7 +29,7 @@ jobs:
           push: true
           tags: |
             ${{ secrets.REGISTRY_URL }}/campuscneipe-frontend:latest
-            ${{ secrets.REGISTRY_URL }}/campuscneipe-frontend:0.1.4
+            ${{ secrets.REGISTRY_URL }}/campuscneipe-frontend:0.1.5
   backend:
     runs-on: ubuntu-latest
     steps:
@@ -53,4 +53,4 @@ jobs:
           push: true
           tags: |
             ${{ secrets.REGISTRY_URL }}/campuscneipe-backend:latest
-            ${{ secrets.REGISTRY_URL }}/campuscneipe-backend:0.1.4
+            ${{ secrets.REGISTRY_URL }}/campuscneipe-backend:0.1.5
