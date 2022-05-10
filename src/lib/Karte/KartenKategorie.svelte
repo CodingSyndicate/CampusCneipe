@@ -3,7 +3,14 @@
 
 	export let otherside = false;
 	export let category;
+
+	let innerWidth;
+	function removeSeperator(text) {
+		return text.split('/');
+	}
 </script>
+
+<svelte:window bind:innerWidth />
 
 <section style="background-color: {category.color}; {otherside ? 'flex-direction: row-reverse;' : ''}">
 	<img src={category.image} alt={category.name} />
@@ -16,17 +23,46 @@
 				<div class="item">
 					<div class="name">
 						<p>
-							{item.name}
-							{#if item.subtitle}
+							{#if innerWidth < 768}
+								{removeSeperator(item.name)[0]}
+								<br />
+								{removeSeperator(item.name)[1] ? removeSeperator(item.name)[1] : ''}
+							{:else}
+								{item.name}
+							{/if}
+							{#if innerWidth >= 768 && item.subtitle}
 								<span>- {item.subtitle}</span>
 							{/if}
 						</p>
+						{#if innerWidth < 768 && item.subtitle}
+							<span>{item.subtitle}</span>
+						{/if}
 						{#if item.description}
 							<span>{item.description}</span>
 						{/if}
 					</div>
-					<div class="amount is-center"><p>{item.amount}</p></div>
-					<div class="price is-center"><p>{item.price}</p></div>
+					<div class="amount is-center">
+						<p>
+							{#if innerWidth < 768}
+								{removeSeperator(item.amount)[0]}
+								<br />
+								{removeSeperator(item.amount)[1] ? removeSeperator(item.amount)[1] : ''}
+							{:else}
+								{item.amount}
+							{/if}
+						</p>
+					</div>
+					<div class="price is-center">
+						<p>
+							{#if innerWidth < 768}
+								{removeSeperator(item.price)[0]}
+								<br />
+								{removeSeperator(item.price)[1] ? removeSeperator(item.price)[1] : ''}
+							{:else}
+								{item.price}
+							{/if}
+						</p>
+					</div>
 				</div>
 			{/each}
 		</div>
@@ -99,17 +135,20 @@
 		line-height: 1.2rem;
 	}
 	@media (max-width: 768px) {
-		.name {
-			width: auto;
-			word-wrap: normal;
-			overflow-wrap: normal;
-		}
 		.item {
 			min-width: 0;
+		}
+		p {
+			word-wrap: break-word;
 		}
 		.list {
 			padding-left: 3%;
 			padding-right: 3%;
+		}
+		.amount > p,
+		.price > p {
+			text-align: center;
+			text-overflow: clip;
 		}
 	}
 </style>

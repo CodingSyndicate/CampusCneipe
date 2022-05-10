@@ -184,7 +184,7 @@
 					price: '6,30'
 				},
 				{
-					name: 'Moscow oder Munich Mule',
+					name: 'Moscow / Munich Mule',
 					subtitle: null,
 					description: 'Vodka oder Gin, Limettensaft, Gingerbeer',
 					amount: '-',
@@ -378,7 +378,7 @@
 					price: '5,30'
 				},
 				{
-					name: 'Crodino Ale | Ginger Fizz',
+					name: 'Crodino Ale / Ginger Fizz',
 					subtitle: null,
 					description: 'Crodino, Ginger Ale | Ginger Beer, Soda',
 					amount: '-',
