@@ -1,6 +1,5 @@
 <script>
 	import KartenKategorie from '$lib/Karte/KartenKategorie.svelte';
-	import { Container } from 'svelte-chota';
 
 	let loading = true;
 
@@ -9,6 +8,7 @@
 			name: 'Bier & Wein',
 			image: 'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
 			type: 'drinks',
+			color: '#3B1304',
 			content: [
 				{
 					name: 'Helles',
@@ -93,6 +93,7 @@
 			name: 'Classics',
 			image: 'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
 			type: 'drinks',
+			color: '#17567A',
 			content: [
 				{
 					name: 'Fresh Hermann',
@@ -156,6 +157,7 @@
 			name: 'Longdrinks Light',
 			image: 'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
 			type: 'drinks',
+			color: '#4F2456',
 			content: [
 				{
 					name: 'Vodka Bull',
@@ -191,6 +193,7 @@
 			name: 'Longdrinks Strong',
 			image: 'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
 			type: 'drinks',
+			color: '#155E4C',
 			content: [
 				{
 					name: 'Long Island Iced Tea',
@@ -219,6 +222,7 @@
 			name: 'Softdrinks & co.',
 			image: 'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
 			type: 'drinks',
+			color: '#700505',
 			content: [
 				{
 					name: 'Säfte / Nektar',
@@ -261,6 +265,7 @@
 			name: 'Sprizz',
 			image: 'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
 			type: 'drinks',
+			color: '#0D4710',
 			content: [
 				{
 					name: 'Aperol Sprizz',
@@ -289,6 +294,7 @@
 			name: 'Fizzes & Sours',
 			image: 'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
 			type: 'drinks',
+			color: '#33234D',
 			content: [
 				{
 					name: 'Gin Basil Smash',
@@ -317,6 +323,7 @@
 			name: 'Mocktails',
 			image: 'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
 			type: 'drinks',
+			color: '#40099A',
 			content: [
 				{
 					name: 'Ginger Basil Smash',
@@ -368,14 +375,22 @@
 	<meta property="og:description" content="Karte aller Getränke und Speisen der Campus Cneipe" />
 </svelte:head>
 
-<Container>
+<div class="background">
 	<h1>Karte</h1>
-</Container>
 
-{#each data as category, i}
-	{#if i % 2 === 0}
-		<KartenKategorie {category} />
-	{:else}
-		<KartenKategorie {category} otherside={true} />
-	{/if}
-{/each}
+	{#each data as category, i}
+		{#if i % 2 === 0}
+			<KartenKategorie {category} />
+		{:else}
+			<KartenKategorie {category} otherside={true} />
+		{/if}
+	{/each}
+</div>
+
+<style>
+	.background {
+		width: 100%;
+		height: 100%;
+		background-image: url('./images/Hintergrundbilder.png');
+	}
+</style>

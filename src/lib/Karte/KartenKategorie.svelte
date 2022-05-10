@@ -1,12 +1,14 @@
 <script>
+	import { Row, Col } from 'svelte-chota';
+
 	export let otherside = false;
 	export let category;
 </script>
 
-<section style={otherside ? 'flex-direction: row-reverse;' : ''}>
+<section style="background-color: {category.color}; {otherside ? 'flex-direction: row-reverse;' : ''}">
 	<img src={category.image} alt={category.name} />
 	<div class="cardContainer">
-		<div class="header">
+		<div class="header" style={otherside ? 'justify-content: flex-end;' : ''}>
 			<h2 style={otherside ? 'text-align: right;' : ''}>{category.name}</h2>
 		</div>
 		<div class="list">
@@ -23,8 +25,8 @@
 							<span>{item.description}</span>
 						{/if}
 					</div>
-					<div class="amount">{item.amount}</div>
-					<div class="price">{item.price}</div>
+					<div class="amount"><p>{item.amount}</p></div>
+					<div class="price"><p>{item.price}</p></div>
 				</div>
 			{/each}
 		</div>
@@ -37,8 +39,8 @@
 		flex-direction: row;
 	}
 	img {
-		height: 100%;
 		width: 33%;
+		object-fit: cover;
 	}
 	.cardContainer {
 		width: 67%;
@@ -47,14 +49,15 @@
 		flex-direction: column;
 	}
 	.header {
+		display: flex;
 		width: 100%;
 		text-align: left;
 	}
 	h2 {
 		text-align: left;
 		margin: 0;
-		padding-left: 1rem;
-		padding-right: 1rem;
+		padding-left: 5rem;
+		padding-right: 5rem;
 		padding-top: 0.5rem;
 		padding-bottom: 1rem;
 	}
@@ -64,6 +67,7 @@
 		flex-direction: column;
 		padding-left: 1rem;
 		padding-right: 1rem;
+		padding-bottom: 2rem;
 	}
 	.item {
 		display: flex;
@@ -75,13 +79,8 @@
 		display: flex;
 		flex-direction: column;
 	}
-	.amount {
-		min-width: 5rem;
-	}
-	.price {
-		min-width: 5rem;
-	}
 	.item > div {
+		min-width: 30rem;
 		padding-left: 10rem;
 		padding-right: 10rem;
 	}
