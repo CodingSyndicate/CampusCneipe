@@ -25,8 +25,8 @@
 							<span>{item.description}</span>
 						{/if}
 					</div>
-					<div class="amount"><p>{item.amount}</p></div>
-					<div class="price"><p>{item.price}</p></div>
+					<div class="amount is-center"><p>{item.amount}</p></div>
+					<div class="price is-center"><p>{item.price}</p></div>
 				</div>
 			{/each}
 		</div>
@@ -65,24 +65,22 @@
 		width: 100%;
 		display: flex;
 		flex-direction: column;
-		padding-left: 1rem;
-		padding-right: 1rem;
+		padding-left: 10%;
+		padding-right: 10%;
 		padding-bottom: 2rem;
 	}
 	.item {
 		display: flex;
 		flex-direction: row;
-		margin-bottom: 1rem;
+		margin-bottom: 1.5rem;
 	}
 	.name {
-		width: 33%;
+		width: 35%;
 		display: flex;
 		flex-direction: column;
 	}
 	.item > div {
-		min-width: 30rem;
-		padding-left: 10rem;
-		padding-right: 10rem;
+		min-width: 30%;
 	}
 	p,
 	span {
@@ -92,10 +90,10 @@
 		margin: 0;
 		padding: 0;
 		font-weight: 700;
+		line-height: var(--font-size);
 	}
 	span {
 		font-size: 1.2rem;
-		margin-top: -0.5rem;
 		color: var(--color-lightGrey);
 		font-weight: 400;
 		line-height: 1.2rem;
