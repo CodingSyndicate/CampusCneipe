@@ -98,4 +98,18 @@
 		font-weight: 400;
 		line-height: 1.2rem;
 	}
+	@media (max-width: 768px) {
+		.name {
+			width: auto;
+			word-wrap: normal;
+			overflow-wrap: normal;
+		}
+		.item {
+			min-width: 0;
+		}
+		.list {
+			padding-left: 3%;
+			padding-right: 3%;
+		}
+	}
 </style>

@@ -63,7 +63,7 @@
 					price: '3,30 / 6,10'
 				},
 				{
-					name: 'Russn/Colaweizen',
+					name: 'Russn / Colaweizen',
 					subtitle: null,
 					description: null,
 					amount: '0,5l',
