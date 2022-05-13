@@ -1,5 +1,6 @@
 <script>
 	import { Nav, Button, Modal, Container } from 'svelte-chota';
+	import Logo from '$lib/Layout/logo_comp.png';
 	import { page } from '$app/stores';
 	import { mdiMenu } from '@mdi/js';
 	let width;
@@ -10,7 +11,7 @@
 
 <Nav>
 	<div slot="left">
-		<a sveltekit:prefetch href="/" class={$page.url.pathname == '/' ? 'active' : ''}><img class="brand" title="Campus Cneipe" src="/favicon.png" alt="Logo" /> CampusCneipe </a>
+		<a sveltekit:prefetch href="/" class={$page.url.pathname == '/' ? 'active' : ''}><img class="brand" title="Campus Cneipe" src={Logo} alt="C2" /> CampusCneipe </a>
 		{#if width >= 768}
 			<a sveltekit:prefetch href="/karte" class={$page.url.pathname.startsWith('/karte') ? 'active' : ''}>Karte</a>
 			<a sveltekit:prefetch href="/veranstaltungen" class={$page.url.pathname.startsWith('/veranstaltungen') ? 'active' : ''}>Veranstaltungen</a>
@@ -34,7 +35,7 @@
 <Modal bind:open={menu_open}>
 	<Container>
 		<div class="menucol is-full-screen" on:click={() => (menu_open = false)}>
-			<a sveltekit:prefetch href="/" class={$page.url.pathname == '/' ? 'active' : ''}><img class="menubrand" title="Campus Cneipe" src="/favicon.png" alt="Logo" /> CampusCneipe </a>
+			<a sveltekit:prefetch href="/" class={$page.url.pathname == '/' ? 'active' : ''}><img class="menubrand" title="Campus Cneipe" src={Logo} alt="C2" /> CampusCneipe </a>
 			<div class="spacer" />
 			<a sveltekit:prefetch href="/karte" class={$page.url.pathname.startsWith('/karte') ? 'active' : ''}>Karte</a>
 			<a sveltekit:prefetch href="/veranstaltungen" class={$page.url.pathname.startsWith('/veranstaltungen') ? 'active' : ''}>Veranstaltungen</a>
