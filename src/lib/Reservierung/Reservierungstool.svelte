@@ -31,6 +31,14 @@
 		console.log('reservationTime: ' + reservationTime);
 		console.log('reservationName: ' + reservationName);
 		console.log('reservationPersons: ' + reservationPersons);
+
+		let day = new Date(reservationDate).toLocaleString('de-de', { weekday: 'long' });
+
+		let string = `${day} ${reservationDate} ${reservationTime} ${reservationName} ${reservationPersons}`;
+		let response = await fetch(`https://www.c2.tum.de/reservierung.php?name=${string}&desc=-`, {
+			method: 'GET'
+		});
+		console.log('reservation submitted', response);
 	}
 </script>
 

@@ -25,7 +25,7 @@
 			<div class="meldungen">
 				<h1 class="glitch" data-glitch="Die Campus Cneipe">Die Campus Cneipe</h1>
 			</div>
-			<!-- <Reservierungstool /> -->
+			<Reservierungstool />
 		</div>
 	</div>
 </div>
