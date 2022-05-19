@@ -36,7 +36,12 @@
 
 		let string = `${day} ${reservationDate} ${reservationTime} ${reservationName} ${reservationPersons}`;
 		let response = await fetch(`https://www.c2.tum.de/reservierung.php?name=${string}`, {
-			method: 'GET'
+			method: 'GET',
+			mode: 'no-cors', // no-cors, *cors, same-origin
+			cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+			credentials: 'same-origin', // include, *same-origin, omit
+			redirect: 'follow', // manual, *follow, error
+			referrerPolicy: 'no-referrer' // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
 		});
 		console.log('reservation submitted', response);
 	}
