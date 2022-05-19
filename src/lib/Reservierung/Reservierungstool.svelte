@@ -1,5 +1,6 @@
 <script>
-	import { Input, Button, Tag } from 'svelte-chota';
+	import { Input, Button, Tag, Icon } from 'svelte-chota';
+	import { mdiLoading } from '@mdi/js';
 
 	// add zeros infront of number until it has at least 2 digits
 	function pad(number) {
@@ -14,6 +15,9 @@
 	let reservationTime = currenttime;
 	let reservationName = undefined;
 	let reservationPersons = undefined;
+
+	let loading = false;
+	let successfull = null;
 
 	$: submitDisabled =
 		reservationDate === null ||
@@ -35,6 +39,7 @@
 		let day = new Date(reservationDate).toLocaleString('de-de', { weekday: 'long' });
 
 		let string = `${day} ${reservationDate} ${reservationTime} ${reservationName} ${reservationPersons}`;
+		loading = true;
 		let response = await fetch(
 			`https://www.c2.tum.de/reservierung.php?name=${reservationName}&day=${day}&date=${reservationDate}&time=${reservationTime.replace(':', '%3A')}&person=${reservationPersons}`,
 			{
@@ -46,6 +51,12 @@
 				referrerPolicy: 'same-origin' // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
 			}
 		);
+		loading = false;
+		if (response.status === 200) {
+			successfull = true;
+		} else {
+			successfull = false;
+		}
 		console.log('reservation submitted', response);
 	}
 </script>
@@ -72,7 +83,25 @@
 		</select>
 	</p>
 	<div class="spacer" />
-	<p><Button primary bind:disabled={submitDisabled} on:click={submitReservation}>Reservieren</Button></p>
+	<p>
+		{#if successfull != null}
+			<Tag>
+				{#if successfull}
+					<span class="text-success">Reservierung erfolgt! ✅</span>
+				{:else}
+					<span class="text-error">Reservierung nicht möglich! ❌</span>
+				{/if}
+			</Tag>
+		{:else}
+			<Button primary bind:disabled={submitDisabled} on:click={submitReservation}>
+				{#if loading}
+					<Icon src={mdiLoading} spin="1" size="2" />
+				{:else}
+					Reservieren
+				{/if}
+			</Button>
+		{/if}
+	</p>
 </div>
 
 <style>
