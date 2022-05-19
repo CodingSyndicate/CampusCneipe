@@ -15,7 +15,7 @@
 		{#if width >= 768}
 			<a sveltekit:prefetch href="/karte" class={$page.url.pathname.startsWith('/karte') ? 'active' : ''}>Karte</a>
 			<a sveltekit:prefetch href="/veranstaltungen" class={$page.url.pathname.startsWith('/veranstaltungen') ? 'active' : ''}>Veranstaltungen</a>
-			<a sveltekit:prefetch href="/neuigkeiten" class={$page.url.pathname.startsWith('/neuigkeiten') ? 'active' : ''}>Neuigkeiten</a>
+			<a sveltekit:prefetch href="/mieten" class={$page.url.pathname.startsWith('/mieten') ? 'active' : ''}>Mieten</a>
 			<a sveltekit:prefetch href="/anfahrt" class={$page.url.pathname.startsWith('/anfahrt') ? 'active' : ''}>Anfahrt</a>
 		{/if}
 	</div>
@@ -39,7 +39,7 @@
 			<div class="spacer" />
 			<a sveltekit:prefetch href="/karte" class={$page.url.pathname.startsWith('/karte') ? 'active' : ''}>Karte</a>
 			<a sveltekit:prefetch href="/veranstaltungen" class={$page.url.pathname.startsWith('/veranstaltungen') ? 'active' : ''}>Veranstaltungen</a>
-			<a sveltekit:prefetch href="/neuigkeiten" class={$page.url.pathname.startsWith('/neuigkeiten') ? 'active' : ''}>Neuigkeiten</a>
+			<a sveltekit:prefetch href="/mieten" class={$page.url.pathname.startsWith('/mieten') ? 'active' : ''}>Mieten</a>
 			<a sveltekit:prefetch href="/anfahrt" class={$page.url.pathname.startsWith('/anfahrt') ? 'active' : ''}>Anfahrt</a>
 			<a sveltekit:prefetch href="/jobs" class={$page.url.pathname.startsWith('/jobs') ? 'active' : ''}>Jobs</a>
 			<a sveltekit:prefetch href="/verein" class={$page.url.pathname.startsWith('/verein') ? 'active' : ''}>Verein</a>

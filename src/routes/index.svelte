@@ -1,5 +1,7 @@
 <script>
 	import Reservierungstool from '$lib/Reservierung/Reservierungstool.svelte';
+	import { wochenprogramm, events } from '$lib/data/events';
+	import EventCardList from '$lib/EventCardList.svelte';
 </script>
 
 <svelte:head>
@@ -21,6 +23,7 @@
 		<span>Öffnungszeiten: Di-Fr 15 - 24 Uhr</span>
 	</div>
 	<div class="is-full-screen mycol">
+		<!-- <Tag class="bg-error">An Fronleichnam (16.6.), am 17.6. sowie in der GESAMTEN Garnix Woche (21.6.-24.6.) hat die Campus Cneipe geschlossen.</Tag> -->
 		<div class="content">
 			<div class="meldungen">
 				<h1 class="glitch" data-glitch="Die Campus Cneipe">Die Campus Cneipe</h1>
@@ -29,6 +32,9 @@
 		</div>
 	</div>
 </div>
+
+<EventCardList title="Wochenprogramm" events={wochenprogramm} />
+<EventCardList title="Kommende Events" events={events.filter((event) => event.date >= new Date())} />
 
 <style>
 	.background {
@@ -136,6 +142,9 @@
 		}
 		.meldungen {
 			padding-top: 10rem;
+		}
+		.wochenprogrammListe {
+			flex-direction: column;
 		}
 	}
 </style>

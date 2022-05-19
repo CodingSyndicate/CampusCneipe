@@ -1,6 +1,4 @@
 <script>
-	import { Row, Col } from 'svelte-chota';
-
 	export let otherside = false;
 	export let category;
 
@@ -55,11 +53,11 @@
 					<div class="price is-center">
 						<p>
 							{#if innerWidth < 768}
-								{removeSeperator(item.price)[0]}
+								{removeSeperator(item.price)[0]}€
 								<br />
-								{removeSeperator(item.price)[1] ? removeSeperator(item.price)[1] : ''}
+								{removeSeperator(item.price)[1] ? removeSeperator(item.price)[1] + '€' : ''}
 							{:else}
-								{item.price}
+								{item.price}€
 							{/if}
 						</p>
 					</div>
