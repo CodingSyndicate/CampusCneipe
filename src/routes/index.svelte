@@ -1,5 +1,6 @@
 <script>
 	import Reservierungstool from '$lib/Reservierung/Reservierungstool.svelte';
+	import { Tag } from 'svelte-chota';
 </script>
 
 <svelte:head>
@@ -21,6 +22,7 @@
 		<span>Öffnungszeiten: Di-Fr 15 - 24 Uhr</span>
 	</div>
 	<div class="is-full-screen mycol">
+		<Tag class="bg-error">Die Cneipe hat heute (20. Mai) aufgrund von Personalmangel geschlossen!</Tag>
 		<div class="content">
 			<div class="meldungen">
 				<h1 class="glitch" data-glitch="Die Campus Cneipe">Die Campus Cneipe</h1>
