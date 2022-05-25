@@ -1,1 +1,1 @@
-npm run build; Compress-Archive -Path build -DestinationPath build.zip -Force; scp build.zip c2:; Remove-Item -LiteralPath "build" -Force -Recurse; Remove-Item -LiteralPath "build.zip" -Force
+npm run build; Compress-Archive -Path build -DestinationPath build.zip -Force; scp build.zip c2:; Remove-Item -LiteralPath "build" -Force -Recurse; Remove-Item -LiteralPath "build.zip"; Remove-Item -LiteralPath ".svelte-kit" -Force -Recurse
