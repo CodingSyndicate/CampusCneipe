@@ -185,7 +185,7 @@
 					price: '6,30'
 				},
 				{
-					name: 'Moscow / Munich Mule',
+					name: 'Moscow Mule / Munich Mule',
 					subtitle: null,
 					description: 'Vodka oder Gin, Limettensaft, Gingerbeer',
 					amount: '-',
@@ -254,7 +254,7 @@
 					subtitle: null,
 					description: null,
 					amount: '0,5l',
-					price: '2,60'
+					price: '2,40'
 				},
 				{
 					name: 'Clubmate',
@@ -268,7 +268,7 @@
 					subtitle: null,
 					description: null,
 					amount: '0,4l',
-					price: '2,60'
+					price: '2,40'
 				},
 				{
 					name: 'Tafelwasser',
