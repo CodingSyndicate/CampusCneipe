@@ -103,6 +103,10 @@
 		{/if}
 	</p>
 </div>
+<span class="is-center">
+	Andere Reservierungen an: &nbsp;
+	<a class="mailhint" href="mailto:reservierungen@campus-cneipe.de"> reservierungen@campus-cneipe.de</a>
+</span>
 
 <style>
 	select {
@@ -131,11 +135,14 @@
 		flex-direction: row;
 		justify-content: center;
 		align-items: center;
-		padding: 1em;
+		padding: 1em 1em 0 1em;
 	}
 	.spacer {
 		height: 1em;
 		width: 1em;
+	}
+	a {
+		color: var(--font-color);
 	}
 	@media (max-width: 768px) {
 		.reservierungstool {
