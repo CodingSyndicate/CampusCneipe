@@ -103,7 +103,7 @@
 		{/if}
 	</p>
 </div>
-<span class="is-center">
+<span class="is-center mailhintbox">
 	Andere Reservierungen an: &nbsp;
 	<a class="mailhint" href="mailto:reservierungen@campus-cneipe.de"> reservierungen@campus-cneipe.de</a>
 </span>
@@ -146,6 +146,10 @@
 	}
 	@media (max-width: 768px) {
 		.reservierungstool {
+			flex-direction: column;
+		}
+		.mailhintbox {
+			display: flex;
 			flex-direction: column;
 		}
 	}
