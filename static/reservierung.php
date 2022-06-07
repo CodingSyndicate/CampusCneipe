@@ -7,7 +7,7 @@ $time = $_GET['time'];
 $person = $_GET['person'];
 
 $cardName = $day . "%20" . $date . "%20" . $time . "%20" . $name . "%20" . $person;
-$cardDesc = "-";
+#$cardDesc = "-";
 
 $apikey = getenv("TRELLO_APIKEY");
 $apitoken = getenv("TRELLO_APITOKEN");
@@ -42,7 +42,8 @@ function getUrlContent($url) {
     return $result;
 }
 
-$url = "https://api.trello.com/1/cards?idList=" . $listId . "&name=" . $cardName . "&desc=" . $cardDesc . "&key=" . $apikey . "&token=" . $apitoken;
+# "&desc=" . $cardDesc .
+$url = "https://api.trello.com/1/cards?idList=" . $listId . "&name=" . $cardName . "&key=" . $apikey . "&token=" . $apitoken;
 
 $response = getUrlContent($url);
 
