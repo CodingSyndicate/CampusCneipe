@@ -5,9 +5,11 @@ $name = $_GET['name'];
 $date = $_GET['date'];
 $time = $_GET['time'];
 $person = $_GET['person'];
+$mail = $_GET['mail'];
+
 
 $cardName = $day . "%20" . $date . "%20" . $time . "%20" . $name . "%20" . $person;
-$cardDesc = "-";
+$cardDesc = $mail;
 
 $apikey = getenv("TRELLO_APIKEY");
 $apitoken = getenv("TRELLO_APITOKEN");
