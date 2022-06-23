@@ -1,6 +1,7 @@
 <script>
 	import Reservierungstool from '$lib/Reservierung/Reservierungstool.svelte';
-	import { Tag } from 'svelte-chota';
+	import { Tag, Card, Button } from 'svelte-chota';
+	import { goto } from '$app/navigation';
 </script>
 
 <svelte:head>
@@ -29,6 +30,18 @@
 			</div>
 			<Reservierungstool />
 		</div>
+	</div>
+</div>
+<div class="is-full-screen is-center" style="display: flex; flex-direction: column; padding: 1em;">
+	<h1>Aktuelles</h1>
+	<div style="max-width:400px; margin: 1rem;">
+		<Card>
+			<h4 slot="header">Bierpong Tunier</h4>
+			<img src="./images/Bierpongturnier_Mensascreen_Bina.png" alt="Bierpong Tunier Werbung" />
+			<div slot="footer" class="is-right">
+				<Button primary on:click={() => goto(`https://registration.fs.tum.de/c2bierpong/`)}>Anmeldung</Button>
+			</div>
+		</Card>
 	</div>
 </div>
 
