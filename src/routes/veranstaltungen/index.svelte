@@ -11,5 +11,6 @@
 	<Container>
 		<h1>Veranstaltungen</h1>
 		<Tag>Website noch im Bau!</Tag>
+		Schaut auf die <a href="https://www.c2.tum.de">Startseite</a>
 	</Container>
 </div>

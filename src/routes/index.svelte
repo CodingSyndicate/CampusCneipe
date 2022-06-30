@@ -59,7 +59,7 @@
 	</div>
 </div>
 <div class="cardList is-center">
-	<h1>Events</h1>
+	<h1>Kommende Events</h1>
 	<div class="wochenprogrammListe">
 		{#each events as event}
 			<div style="max-width:400px; margin: 1rem;">
