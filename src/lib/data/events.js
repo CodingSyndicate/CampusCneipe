@@ -12,8 +12,7 @@ export let wochenprogramm = [
 	},
 	{
 		name: 'Donnerstags: PubQuiz',
-		description: 'Pubquiz',
-		image: 'PubQuiz.png'
+		description: 'Pubquiz'
 	}
 ];
 

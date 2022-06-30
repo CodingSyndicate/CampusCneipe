@@ -40,7 +40,9 @@
 			<div style="max-width:400px; margin: 1rem;">
 				<Card>
 					<h4 slot="header">{event.name}</h4>
-					<img src="./images/events/wochenprogramm/{event.image}" alt={event.description} />
+					{#if event.image}
+						<img src="./images/events/wochenprogramm/{event.image}" alt={event.description} />
+					{/if}
 					<div slot="footer">
 						<div class="is-left">
 							{#if event.angebot}
