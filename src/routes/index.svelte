@@ -2,6 +2,7 @@
 	import Reservierungstool from '$lib/Reservierung/Reservierungstool.svelte';
 	import { Tag, Card, Button } from 'svelte-chota';
 	import { goto } from '$app/navigation';
+	import { wochenprogramm, events } from '$lib/data/events';
 </script>
 
 <svelte:head>
@@ -32,16 +33,47 @@
 		</div>
 	</div>
 </div>
-<div class="is-full-screen is-center" style="display: flex; flex-direction: column; padding: 1em;">
-	<h1>Aktuelles</h1>
-	<div style="max-width:400px; margin: 1rem;">
-		<Card>
-			<h4 slot="header">Bierpong Tunier</h4>
-			<img src="./images/Bierpongturnier_Mensascreen_Bina.png" alt="Bierpong Tunier Werbung" />
-			<div slot="footer" class="is-right">
-				<Button primary on:click={() => goto(`https://registration.fs.tum.de/c2bierpong/`)}>Anmeldung</Button>
+<div class="cardList is-center">
+	<h1>Wochenprogramm</h1>
+	<div class="wochenprogrammListe">
+		{#each wochenprogramm as event}
+			<div style="max-width:400px; margin: 1rem;">
+				<Card>
+					<h4 slot="header">{event.name}</h4>
+					<img src="./images/events/wochenprogramm/{event.image}" alt={event.description} />
+					<div slot="footer">
+						<div class="is-left">
+							{#if event.angebot}
+								<span>{event.angebot}</span>
+							{/if}
+						</div>
+						<div class="is-right">
+							{#if event.anmeldeURL}
+								<Button primary on:click={() => goto(event.anmeldungURL)}>Anmeldung</Button>
+							{/if}
+						</div>
+					</div>
+				</Card>
 			</div>
-		</Card>
+		{/each}
+	</div>
+</div>
+<div class="cardList is-center">
+	<h1>Events</h1>
+	<div class="wochenprogrammListe">
+		{#each events as event}
+			<div style="max-width:400px; margin: 1rem;">
+				<Card>
+					<h4 slot="header">{event.name}</h4>
+					<img src="./images/events/andere/{event.image}" alt={event.description} />
+					<div slot="footer" class="is-right">
+						{#if event.anmeldeURL}
+							<Button primary on:click={() => goto(event.anmeldungURL)}>Anmeldung</Button>
+						{/if}
+					</div>
+				</Card>
+			</div>
+		{/each}
 	</div>
 </div>
 
@@ -60,6 +92,15 @@
 		align-items: center;
 		padding: 1em;
 		background-color: rgba(47, 4, 4, 0.8);
+	}
+	.cardList {
+		display: flex;
+		flex-direction: column;
+		padding: 1em;
+	}
+	.wochenprogrammListe {
+		display: flex;
+		flex-direction: row;
 	}
 	.mycol {
 		display: flex;
@@ -151,6 +192,9 @@
 		}
 		.meldungen {
 			padding-top: 10rem;
+		}
+		.wochenprogrammListe {
+			flex-direction: column;
 		}
 	}
 </style>
