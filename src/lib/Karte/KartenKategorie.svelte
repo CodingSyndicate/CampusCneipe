@@ -55,7 +55,7 @@
 							{#if innerWidth < 768}
 								{removeSeperator(item.price)[0]}€
 								<br />
-								{removeSeperator(item.price)[1] ? removeSeperator(item.price)[1] : ''}€
+								{removeSeperator(item.price)[1] ? removeSeperator(item.price)[1] + '€' : ''}
 							{:else}
 								{item.price}€
 							{/if}
