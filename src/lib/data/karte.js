@@ -213,84 +213,6 @@ export let karte = [
 			}
 		]
 	},
-	{	// Softdrinks & co.
-		name: 'Softdrinks & co.',
-		image: 'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
-		type: 'drinks',
-		color: '#700505',
-		content: [
-			{
-				name: 'Säfte / Nektar',
-				subtitle: null,
-				description: 'Apfel, Ananas, Orange, Johannesbeere, Maracuja',
-				amount: '0,4l',
-				price: '2,90'
-			},
-			{
-				name: 'Saftschorlen',
-				subtitle: null,
-				description: 'Apfel, Ananas, Orange, Johannisbeer, Maracuja',
-				amount: '0,5l',
-				price: '2,90'
-			},
-			{
-				name: 'Zitronenlimonade',
-				subtitle: null,
-				description: null,
-				amount: '0,5l',
-				price: '2,40'
-			},
-			{
-				name: 'Colamix',
-				subtitle: null,
-				description: null,
-				amount: '0,5l',
-				price: '2,40'
-			},
-			{
-				name: 'Clubmate',
-				subtitle: null,
-				description: null,
-				amount: '0,5l',
-				price: '2,90'
-			},
-			{
-				name: 'Cola',
-				subtitle: null,
-				description: null,
-				amount: '0,4l',
-				price: '2,40'
-			},
-			{
-				name: 'Tafelwasser',
-				subtitle: null,
-				description: null,
-				amount: '0,5l',
-				price: '2,40'
-			},
-			{
-				name: 'Red Bull',
-				subtitle: null,
-				description: null,
-				amount: '0,33l',
-				price: '3,40'
-			},
-			{
-				name: 'Schweppes',
-				subtitle: null,
-				description: 'Ginger Ale, Ginger Beer, Tonic Water',
-				amount: '0,5l',
-				price: '2,30'
-			},
-			{
-				name: 'Heiße Getränke',
-				subtitle: null,
-				description: 'Kaffee, Heiße Zitrone, Tee',
-				amount: '-',
-				price: '2,90'
-			}
-		]
-	},
 	{	// Sprizz
 		name: 'Sprizz',
 		image: 'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
@@ -455,5 +377,97 @@ export let karte = [
 				price: '22,00'
 			}
 		]
-	}
+	},
+	{	// Alkoholfreie Getränke
+		name: 'Alkoholfreie Getränke',
+		image: 'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
+		type: 'drinks',
+		color: '#700505',
+		content: [
+			{
+				name: 'Säfte / Nektar',
+				subtitle: null,
+				description: 'Apfel, Ananas, Orange, Johannesbeere, Maracuja',
+				amount: '0,4l',
+				price: '1,50'
+			},
+			{
+				name: 'Saftschorlen',
+				subtitle: null,
+				description: 'Apfel, Ananas, Orange, Johannisbeer, Maracuja',
+				amount: '0,5l',
+				price: '1,50'
+			},
+			{
+				name: 'Zitronenlimonade',
+				subtitle: null,
+				description: null,
+				amount: '0,5l',
+				price: '1,50'
+			},
+			{
+				name: 'Fanta',
+				subtitle: null,
+				description: null,
+				amount: '0,5l',
+				price: '1,50'
+			},
+			{
+				name: 'Spezi',
+				subtitle: null,
+				description: null,
+				amount: '0,5l',
+				price: '1,50'
+			},
+			{
+				name: 'Cola',
+				subtitle: null,
+				description: null,
+				amount: '0,4l',
+				price: '1,50'
+			},
+			{
+				name: 'Clubmate',
+				subtitle: null,
+				description: null,
+				amount: '0,5l',
+				price: '1,50'
+			},
+			{
+				name: 'Tafelwasser',
+				subtitle: null,
+				description: null,
+				amount: '0,5l',
+				price: '1,20'
+			},
+			{
+				name: 'Red Bull',
+				subtitle: null,
+				description: null,
+				amount: '0,33l',
+				price: '3,40'
+			},
+			{
+				name: 'Schweppes',
+				subtitle: null,
+				description: 'Ginger Ale, Ginger Beer, Tonic Water',
+				amount: '0,2l',
+				price: '1,00'
+			},
+			{
+				name: 'Heiße Getränke',
+				subtitle: null,
+				description: 'Kaffee, Heiße Zitrone, Tee',
+				amount: '-',
+				price: '2,00'
+			},
+			{
+				name: 'Espresso',
+				subtitle: null,
+				description: null,
+				amount: '-',
+				price: '1,80'
+			}
+		]
+	},
 ];
