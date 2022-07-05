@@ -4,12 +4,12 @@
 </script>
 
 <footer class="footerContainer">
-	<div class="left"><Icon src={mdiCopyright} size="24px" /> 2022 - Campus Cneipe</div>
+	<div class="left"><Icon src={mdiCopyright} size="24px" />&nbsp; 2022 - Campus Cneipe</div>
 	<div class="middle">
 		<div class="impressum">
 			<a sveltekit:prefetch href="/impressum">Impressum</a>
 			&nbsp;
-			<a href="https://github.com/CodingSyndicate/CampusCneipe"> 0.2.5 </a>
+			<a href="https://github.com/CodingSyndicate/CampusCneipe"> 0.2.6 </a>
 			&nbsp;
 			<a sveltekit:prefetch href="/datenschutz">Datenschutz</a>
 		</div>
