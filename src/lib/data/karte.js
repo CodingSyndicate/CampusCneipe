@@ -1,5 +1,5 @@
 export let karte = [
-	{
+	{	// Bier & Wein
 		name: 'Bier & Wein',
 		image: 'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
 		type: 'drinks',
@@ -84,7 +84,7 @@ export let karte = [
 			}
 		]
 	},
-	{
+	{	// Classics
 		name: 'Classics',
 		image: 'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
 		type: 'drinks',
@@ -148,7 +148,7 @@ export let karte = [
 			}
 		]
 	},
-	{
+	{	// Longdrinks Light
 		name: 'Longdrinks Light',
 		image: 'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
 		type: 'drinks',
@@ -184,7 +184,7 @@ export let karte = [
 			}
 		]
 	},
-	{
+	{	// Longdrinks Strong
 		name: 'Longdrinks Strong',
 		image: 'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
 		type: 'drinks',
@@ -213,7 +213,7 @@ export let karte = [
 			}
 		]
 	},
-	{
+	{	// Softdrinks & co.
 		name: 'Softdrinks & co.',
 		image: 'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
 		type: 'drinks',
@@ -291,7 +291,7 @@ export let karte = [
 			}
 		]
 	},
-	{
+	{	// Sprizz
 		name: 'Sprizz',
 		image: 'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
 		type: 'drinks',
@@ -320,7 +320,7 @@ export let karte = [
 			}
 		]
 	},
-	{
+	{	// Fizzes & Sours
 		name: 'Fizzes & Sours',
 		image: 'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
 		type: 'drinks',
@@ -349,7 +349,7 @@ export let karte = [
 			}
 		]
 	},
-	{
+	{	// Mocktails
 		name: 'Mocktails',
 		image: 'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
 		type: 'drinks',
@@ -392,7 +392,7 @@ export let karte = [
 			}
 		]
 	},
-	{
+	{	// Shots
 		name: 'Shots',
 		image: 'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
 		type: 'drinks',
