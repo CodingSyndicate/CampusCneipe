@@ -2,13 +2,13 @@ export let wochenprogramm = [
 	{
 		name: 'Dienstags ab 17 Uhr: Pasta Tuesday',
 		description: 'Pasta Tuesday',
-		image: 'Pasta tuesday.png',
+		image: './images/events/wochenprogramm/Pasta tuesday.png',
 		angebot: 'Pasta + Bier/Softdrink für 4,50€'
 	},
 	{
 		name: 'Mittwochs: Karaoke alle 2 Wochen',
 		description: 'Karaokeabend',
-		image: 'Karaoke.png'
+		image: './images/events/wochenprogramm/Karaoke.png'
 	},
 	{
 		name: 'Donnerstags: PubQuiz',
@@ -20,7 +20,7 @@ export let events = [
 	{
 		name: 'Bierpongturnier',
 		description: 'Bierpongturnier',
-		image: 'Bierpongturnier_Mensascreen_Bina.png',
+		image: './images/events/andere/Bierpongturnier_Mensascreen_Bina.png',
 		anmeldeURL: 'https://registration.fs.tum.de/c2bierpong/',
 		date: new Date('2022-07-01T18:00:00')
 	}

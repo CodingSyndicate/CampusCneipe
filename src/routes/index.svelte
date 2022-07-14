@@ -1,8 +1,7 @@
 <script>
 	import Reservierungstool from '$lib/Reservierung/Reservierungstool.svelte';
-	import { Tag, Card, Button } from 'svelte-chota';
-	import { goto } from '$app/navigation';
 	import { wochenprogramm, events } from '$lib/data/events';
+	import EventCardList from '$lib/EventCardList.svelte';
 </script>
 
 <svelte:head>
@@ -33,53 +32,9 @@
 		</div>
 	</div>
 </div>
-<div class="cardList is-center">
-	<h1>Wochenprogramm</h1>
-	<div class="wochenprogrammListe">
-		{#each wochenprogramm as event}
-			<div style="max-width:400px; margin: 1rem;">
-				<Card>
-					<h4 slot="header">{event.name}</h4>
-					{#if event.image}
-						<img src="./images/events/wochenprogramm/{event.image}" alt={event.description} />
-					{/if}
-					<div slot="footer">
-						<div class="is-left">
-							{#if event.angebot}
-								<span>{event.angebot}</span>
-							{/if}
-						</div>
-						<div class="is-right">
-							{#if event.anmeldeURL}
-								<Button primary on:click={() => goto(event.anmeldungURL)}>Anmeldung</Button>
-							{/if}
-						</div>
-					</div>
-				</Card>
-			</div>
-		{/each}
-	</div>
-</div>
-<div class="cardList is-center">
-	<h1>Kommende Events</h1>
-	<div class="wochenprogrammListe">
-		{#each events.filter((event) => event.date >= new Date()) as event}
-			<div style="max-width:400px; margin: 1rem;">
-				<Card>
-					<h4 slot="header">{event.name}</h4>
-					<img src="./images/events/andere/{event.image}" alt={event.description} />
-					<div slot="footer" class="is-right">
-						{#if event.anmeldeURL}
-							<Button primary on:click={() => goto(event.anmeldungURL)}>Anmeldung</Button>
-						{/if}
-					</div>
-				</Card>
-			</div>
-		{:else}
-			<span>Es gibt bisher noch keine zukünftigen Events</span>
-		{/each}
-	</div>
-</div>
+
+<EventCardList title="Wochenprogramm" events={wochenprogramm} />
+<EventCardList title="Kommende Events" events={events.filter((event) => event.date >= new Date())} />
 
 <style>
 	.background {
@@ -96,15 +51,6 @@
 		align-items: center;
 		padding: 1em;
 		background-color: rgba(47, 4, 4, 0.8);
-	}
-	.cardList {
-		display: flex;
-		flex-direction: column;
-		padding: 1em;
-	}
-	.wochenprogrammListe {
-		display: flex;
-		flex-direction: row;
 	}
 	.mycol {
 		display: flex;
