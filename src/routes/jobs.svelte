@@ -34,7 +34,10 @@ in die Planung der Gerichte und Rezepte einbringen?</pre>
 			<pre class="bottomPre"><h4>Dann bewirb dich jetzt
 und werde Teil unseres Teams!</h4>
 Mit dem Schichtplaner Tool kannst du dir deine Arbeitszeiten individuell einteilen und dir so mit 
-<b>12-14€ Stundenlohn</b> etwas dazuverdienen.</pre>
+<b>12-14€ Stundenlohn</b> etwas dazuverdienen.
+
+Mail an info@campus-cneipe.de
+oder smash den Button!</pre>
 			<a href="mailto:info@campus-cneipe.de"><Button primary>Teil der C2 werden!</Button></a>
 			{#if jobs.length > 0}
 				<hr />
