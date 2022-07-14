@@ -122,6 +122,7 @@
 		{/if}
 	</p>
 </div>
+<span class="is-center mailhintbox">Funktioniert aktuell nicht mit Safari!</span>
 <span class="is-center mailhintbox">
 	Andere Reservierungen an: &nbsp;
 	<a class="mailhint" href="mailto:reservierungen@campus-cneipe.de"> reservierungen@campus-cneipe.de</a>

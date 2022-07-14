@@ -2,6 +2,7 @@
 	import Reservierungstool from '$lib/Reservierung/Reservierungstool.svelte';
 	import { wochenprogramm, events } from '$lib/data/events';
 	import EventCardList from '$lib/EventCardList.svelte';
+	import BeerAnimation from '$lib/BeerAnimation.svelte';
 </script>
 
 <svelte:head>
@@ -25,8 +26,10 @@
 	<div class="is-full-screen mycol">
 		<!-- <Tag class="bg-error">An Fronleichnam (16.6.), am 17.6. sowie in der GESAMTEN Garnix Woche (21.6.-24.6.) hat die Campus Cneipe geschlossen.</Tag> -->
 		<div class="content">
-			<div class="meldungen">
-				<h1 class="glitch" data-glitch="Die Campus Cneipe">Die Campus Cneipe</h1>
+			<div class="titel">
+				<BeerAnimation />
+				<h1 class="c2">Die Campus Cneipe</h1>
+				<BeerAnimation mirror={true} />
 			</div>
 			<Reservierungstool />
 		</div>
@@ -65,86 +68,33 @@
 		width: 100%;
 		height: 100%;
 	}
-	.meldungen {
+	.titel {
 		width: 100%;
-		min-height: 40rem;
+		max-height: 40rem;
 		display: flex;
 		align-items: center;
 		text-align: center;
+		justify-content: center;
+		flex-direction: row;
 	}
-	.glitch {
-		font-size: 5.2em;
+	h1 {
+		word-wrap: break-word;
+		display: block;
+		text-size-adjust: auto;
+	}
+	.c2 {
+		font-size: 4em;
 		font-weight: 700;
 		text-decoration: none;
 		text-transform: uppercase;
-		position: relative;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		margin: 0;
 		color: var(--color-primary);
-		letter-spacing: 5px;
-	}
-	.glitch:before,
-	.glitch:after {
-		display: block;
-		content: attr(data-glitch);
-		text-transform: uppercase;
-		position: absolute;
-		top: 0;
-		left: 0;
-		height: 100%;
-		width: 100%;
-		opacity: 0.8;
-	}
-	.glitch:after {
-		color: #f0f;
-		z-index: -2;
-	}
-	.glitch:before {
-		color: #0ff;
-		z-index: -1;
-	}
-	.glitch:hover:before {
-		animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 5;
-	}
-	.glitch:hover:after {
-		animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both 5;
-	}
-	@media only screen and (max-width: 400px) {
-		.glitch {
-			font-size: 3em;
-		}
-	}
-	@keyframes glitch {
-		0% {
-			transform: translate(0);
-		}
-		20% {
-			transform: translate(-5px, 5px);
-		}
-		40% {
-			transform: translate(-5px, -5px);
-		}
-		60% {
-			transform: translate(5px, 5px);
-		}
-		80% {
-			transform: translate(5px, -5px);
-		}
-		to {
-			transform: translate(0);
-		}
 	}
 	@media (max-width: 768px) {
 		.background {
 			background-position: 50%;
 		}
-		.meldungen {
+		.titel {
 			padding-top: 10rem;
-		}
-		.wochenprogrammListe {
-			flex-direction: column;
 		}
 	}
 </style>

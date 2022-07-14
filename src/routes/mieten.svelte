@@ -24,10 +24,10 @@
 					Bewirtung am Tisch). Die Cneipe verfügt über eine moderne Bar mit Fasskühlung, Gästetoiletten, einen Tischkicker und einer (Brett-)Spielecke.
 				</li>
 				<li>
-					Wir stellen euch unsere Räumlichkeiten zur Verfügung. Ihr bezahlt dabei keine hohe Raummiete, sondern nur eine kleine Pauschale von 70€ sowie die Personalausgaben am Tag eurer Feier. Gerne
+					Wir stellen Euch unsere Räumlichkeiten zur Verfügung. Ihr bezahlt dabei keine hohe Raummiete, sondern nur eine kleine Pauschale von 70€ sowie die Personalausgaben am Tag eurer Feier. Gerne
 					erstellen wir einen unverbindlichen Kostenvoranschlag für euer Event.
 				</li>
-				<li>Unser Servicepersonal versorgt euch mit Bieren, Softdrinks, erlesenen Weinen und fruchtigen Cocktails. Gerne führen wir auch einen Sektempfang bei uns durch.</li>
+				<li>Unser Servicepersonal versorgt Euch mit Bieren, Softdrinks, erlesenen Weinen und fruchtigen Cocktails. Gerne führen wir auch einen Sektempfang bei uns durch.</li>
 				<li>Gerne kümmern wir uns auch um die Verpflegung eurer Gäste (siehe CampusCneipe kocht). Ihr könnt aber auch eigene Snacks mitbringen oder externes Catering organisieren.</li>
 			</ul>
 		</section>
@@ -44,6 +44,26 @@
 				<li>Nudel- und Reisgerichte</li>
 				<li>Uvm.</li>
 			</ul>
+			<p>Gerne kommen wir mit unseren Speisen auch zu Euch an den Lehrstuhl/nach Hause und verpflegen eure Gäste vor Ort.</p>
+		</section>
+		<section>
+			<h5>Auswahl unserer bisherigen Events:</h5>
+			<ul>
+				<li>Doktorfeiern</li>
+				<li>Firmen- und Lehrstuhl-Weihnachtsfeiern</li>
+				<li>Geburtstage - Jubilare von 2 bis 80 Jahren</li>
+				<li>18. Geburtstage</li>
+				<li>Kommunionen</li>
+				<li>Abschlussfeiern</li>
+				<li>Teamevents</li>
+				<li>Karaoke-Partys</li>
+				<li>Pubcrawls</li>
+			</ul>
+		</section>
+		<section>
+			<h5>Interesse geweckt?</h5>
+			<p>Schreibe uns gerne eine Email und wir planen gemeinsam Dein Event!</p>
+			<p>Kontakt: <a href="mailto:events@campus-cneipe.de">events@campus-cneipe.de</a></p>
 		</section>
 	</Container>
 </div>
