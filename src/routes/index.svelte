@@ -63,7 +63,7 @@
 <div class="cardList is-center">
 	<h1>Kommende Events</h1>
 	<div class="wochenprogrammListe">
-		{#each events as event}
+		{#each events.filter((event) => event.date >= new Date()) as event}
 			<div style="max-width:400px; margin: 1rem;">
 				<Card>
 					<h4 slot="header">{event.name}</h4>
@@ -75,6 +75,8 @@
 					</div>
 				</Card>
 			</div>
+		{:else}
+			<span>Es gibt bisher noch keine zukünftigen Events</span>
 		{/each}
 	</div>
 </div>

@@ -22,7 +22,6 @@ export let events = [
 		description: 'Bierpongturnier',
 		image: 'Bierpongturnier_Mensascreen_Bina.png',
 		anmeldeURL: 'https://registration.fs.tum.de/c2bierpong/',
-		date: '2020-07-01',
-		time: '18:00'
+		date: new Date('2022-07-01T18:00:00')
 	}
 ];
