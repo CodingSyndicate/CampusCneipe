@@ -12,11 +12,11 @@
 				xlink="http://www.w3.org/1999/xlink"
 				x="0px"
 				y="0px"
-				viewBox="0 0 150 150"
-				enable-background="new 0 0 150 150"
+				viewBox="0 0 125 150"
+				enable-background="new 0 0 125 150"
 				xml:space="preserve"
 			>
-				<rect x="-1" y="-1" fill="#FFD18D" fill-opacity="0.0" width="153" height="153" />
+				<rect x="-1" y="-1" fill="#FFD18D" fill-opacity="0.0" width="125" height="153" />
 				<g id="beer-foam">
 					<path
 						fill="#FFE4C0"

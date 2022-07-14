@@ -26,7 +26,7 @@
 	<div class="is-full-screen mycol">
 		<!-- <Tag class="bg-error">An Fronleichnam (16.6.), am 17.6. sowie in der GESAMTEN Garnix Woche (21.6.-24.6.) hat die Campus Cneipe geschlossen.</Tag> -->
 		<div class="content">
-			<div class="meldungen">
+			<div class="titel">
 				<BeerAnimation />
 				<h1 class="c2">Die Campus Cneipe</h1>
 				<BeerAnimation mirror={true} />
@@ -68,14 +68,19 @@
 		width: 100%;
 		height: 100%;
 	}
-	.meldungen {
+	.titel {
 		width: 100%;
-		min-height: 40rem;
+		max-height: 40rem;
 		display: flex;
 		align-items: center;
 		text-align: center;
 		justify-content: center;
 		flex-direction: row;
+	}
+	h1 {
+		word-wrap: break-word;
+		display: block;
+		text-size-adjust: auto;
 	}
 	.c2 {
 		font-size: 4em;
