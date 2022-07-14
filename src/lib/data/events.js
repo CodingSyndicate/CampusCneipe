@@ -1,6 +1,6 @@
 export let wochenprogramm = [
 	{
-		name: 'Dienstags ab 17 Uhr: Pasta Tuesday',
+		name: 'Dienstags ab 17:30 Uhr: Pasta Tuesday',
 		description: 'Pasta Tuesday',
 		image: './images/events/wochenprogramm/Pasta tuesday.png',
 		angebot: 'Pasta + Bier/Softdrink für 4,50€'

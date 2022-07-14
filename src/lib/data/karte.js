@@ -246,7 +246,7 @@ export let karte = [
 		name: 'Fizzes & Sours',
 		image: 'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
 		type: 'drinks',
-		color: '#681401',
+		color: '#3B2872',
 		content: [
 			{
 				name: 'Gin Basil Smash',
@@ -318,7 +318,7 @@ export let karte = [
 		name: 'Shots',
 		image: 'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
 		type: 'drinks',
-		color: '#40099A',
+		color: '#420D4A',
 		content: [
 			{
 				name: 'TUM Kamikaze',
@@ -382,7 +382,7 @@ export let karte = [
 		name: 'Alkoholfreie Getränke',
 		image: 'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
 		type: 'drinks',
-		color: '#700505',
+		color: '#0275A7',
 		content: [
 			{
 				name: 'Säfte / Nektar',
