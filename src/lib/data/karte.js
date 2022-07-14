@@ -3,7 +3,7 @@ export let karte = [
 		name: 'Bier & Wein',
 		image: 'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
 		type: 'drinks',
-		color: '#3B1304',
+		color: '#152355',
 		content: [
 			{
 				name: 'Helles',
@@ -88,7 +88,7 @@ export let karte = [
 		name: 'Classics',
 		image: 'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
 		type: 'drinks',
-		color: '#17567A',
+		color: '#0A537C',
 		content: [
 			{
 				name: 'Fresh Hermann',
@@ -152,7 +152,7 @@ export let karte = [
 		name: 'Longdrinks Light',
 		image: 'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
 		type: 'drinks',
-		color: '#4F2456',
+		color: '#3B2872',
 		content: [
 			{
 				name: 'Vodka Bull',
@@ -188,7 +188,7 @@ export let karte = [
 		name: 'Longdrinks Strong',
 		image: 'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
 		type: 'drinks',
-		color: '#155E4C',
+		color: '#420D4A',
 		content: [
 			{
 				name: 'Long Island Iced Tea',
@@ -217,7 +217,7 @@ export let karte = [
 		name: 'Sprizz',
 		image: 'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
 		type: 'drinks',
-		color: '#0D4710',
+		color: '#650F29',
 		content: [
 			{
 				name: 'Aperol Sprizz',
@@ -246,7 +246,7 @@ export let karte = [
 		name: 'Fizzes & Sours',
 		image: 'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
 		type: 'drinks',
-		color: '#33234D',
+		color: '#681401',
 		content: [
 			{
 				name: 'Gin Basil Smash',
