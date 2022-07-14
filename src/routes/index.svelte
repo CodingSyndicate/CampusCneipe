@@ -64,7 +64,7 @@
 		align-items: center;
 	}
 	.content {
-		margin-top: 10rem;
+		margin-top: 5rem;
 		width: 100%;
 		height: 100%;
 	}
@@ -95,6 +95,9 @@
 		}
 		.titel {
 			padding-top: 10rem;
+		}
+		.content {
+			margin-top: 0;
 		}
 	}
 </style>

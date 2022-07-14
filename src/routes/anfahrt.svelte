@@ -32,7 +32,7 @@
 				/>
 			{:else}
 				<div>
-					<Button primary on:click={() => (googleMapsAccepted = !googleMapsAccepted)}>Accept Google Maps Terms of Use</Button>
+					<Button primary on:click={() => (googleMapsAccepted = true)}>Accept Google Maps Terms of Use</Button>
 				</div>
 			{/if}
 			<div>

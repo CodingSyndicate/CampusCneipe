@@ -49,9 +49,6 @@
 					<Button {loading} {error} submit on:click={submit}>Send form</Button>
 				</Col>
 			</Row>
-			<Row class="is-horizontal-align">
-				<JobList />
-			</Row>
 		</Col>
 	</Container>
 </div>
