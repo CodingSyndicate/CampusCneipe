@@ -8,6 +8,11 @@
 <svelte:head>
 	<title>Jobs | CampusCneipe</title>
 	<meta name="description" content="Jobs an der Campus Cneipe" />
+	<meta property="og:title" content="Jobs an der Campus Cneipe" />
+	<meta property="og:image" content="https://www.c2.tum.de/images/job.png" />
+	<meta property="og:url" content="https://www.c2.tum.de/jobs" />
+	<meta property="og:site_name" content="Jobs an der Campus Cneipe" />
+	<meta property="og:description" content="Alle Jobs an der Campus Cneipe" />
 </svelte:head>
 
 <div class="is-full-screen">

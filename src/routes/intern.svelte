@@ -1,5 +1,4 @@
 <script>
-	import JobList from '$lib/Jobs/JobList.svelte';
 	import { Container, Field, Input, Row, Col, Button } from 'svelte-chota';
 
 	let username;
@@ -15,6 +14,11 @@
 <svelte:head>
 	<title>Intern | CampusCneipe</title>
 	<meta name="description" content="Interner Bereich für Mitarbeiter" />
+	<meta property="og:title" content="Interner Bereich für Mitarbeiter" />
+	<meta property="og:image" content="https://www.c2.tum.de/images/Hintergrundbild.jpg" />
+	<meta property="og:url" content="https://www.c2.tum.de/intern" />
+	<meta property="og:site_name" content="Interner Bereich für Mitarbeiter" />
+	<meta property="og:description" content="Interner Bereich für Mitarbeiter" />
 </svelte:head>
 
 <div class="is-full-screen">
@@ -48,9 +52,6 @@
 					</Field>
 					<Button {loading} {error} submit on:click={submit}>Send form</Button>
 				</Col>
-			</Row>
-			<Row class="is-horizontal-align">
-				<JobList />
 			</Row>
 		</Col>
 	</Container>

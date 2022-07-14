@@ -77,7 +77,7 @@
 <div class="tabletag">
 	<p class="is-center"><Tag large>Tisch Reservieren</Tag></p>
 </div>
-<div class="reservierungstool">
+<!-- <div class="reservierungstool">
 	<div class="reservierungstoolRow">
 		<p class="nameInput"><Input placeholder="Your Name" bind:value={reservationName} /></p>
 		<div class="spacer" />
@@ -122,10 +122,10 @@
 		{/if}
 	</p>
 </div>
-<span class="is-center mailhintbox">Funktioniert aktuell nicht mit Safari!</span>
+<span class="is-center mailhintbox">Funktioniert aktuell nicht mit Safari!</span> -->
 <span class="is-center mailhintbox">
-	Andere Reservierungen an: &nbsp;
-	<a class="mailhint" href="mailto:reservierungen@campus-cneipe.de"> reservierungen@campus-cneipe.de</a>
+	Reservierungen an: &nbsp;
+	<a class="mailhint" href="mailto:reservierung@campus-cneipe.de"> reservierung@campus-cneipe.de</a>
 </span>
 
 <style>

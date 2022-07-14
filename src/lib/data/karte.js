@@ -55,7 +55,7 @@ export let karte = [
 				price: '3,30 / 6,10'
 			},
 			{
-				name: 'Russn / Colaweizen',
+				name: 'Russn / Colaweizen ¹⋅⁴',
 				subtitle: null,
 				description: null,
 				amount: '0,5l',
@@ -164,21 +164,28 @@ export let karte = [
 			{
 				name: 'Cuba Libre',
 				subtitle: null,
-				description: 'Havanna Club Rum, Limette, Coca Cola',
+				description: 'Havanna Club Rum, Limette, Coca Cola ¹⋅⁴',
 				amount: '-',
 				price: '5,90'
 			},
 			{
 				name: 'Gin Tonic',
 				subtitle: null,
-				description: 'Bombay Saphire Gin, Tonic Water',
+				description: 'Bombay Saphire Gin, Tonic Water ²',
 				amount: '-',
 				price: '6,30'
 			},
 			{
 				name: 'Moscow Mule / Munich Mule',
 				subtitle: null,
-				description: 'Vodka oder Gin, Limettensaft, Gingerbeer',
+				description: 'Vodka oder Gin, Limettensaft ⁷, Gingerbeer',
+				amount: '-',
+				price: '6,30'
+			},
+			{
+				name: 'Perfect Storm',
+				subtitle: null,
+				description: 'Kraken, Limettensaft ⁷, Gingerbeer',
 				amount: '-',
 				price: '6,30'
 			}
@@ -193,21 +200,21 @@ export let karte = [
 			{
 				name: 'Long Island Iced Tea',
 				subtitle: null,
-				description: 'heller Rum, Vodka, Bombay Gin, Cointreau, Zitronensaft, Rohrzuckersirup, Coca Cola',
+				description: 'heller Rum, Vodka, Bombay Gin, Cointreau, Zitronensaft, Rohrzuckersirup, Coca Cola ¹⋅⁴',
 				amount: '-',
 				price: '7,60'
 			},
 			{
 				name: 'Zombie',
 				subtitle: null,
-				description: 'dunkler Rum, heller Rum, Limettensaft, Apricot Brandy, Grenadine, Orangensaft, Ananassaft',
+				description: 'dunkler Rum, heller Rum, Limettensaft ⁷, Apricot Brandy, Grenadine, Orangensaft, Ananassaft',
 				amount: '-',
 				price: '7,60'
 			},
 			{
 				name: 'Mai Tai',
 				subtitle: null,
-				description: 'dunkler Rum, heller Rum, Limettensaft, Cointreau, Mandelsirup, Rohrzuckersirup',
+				description: 'dunkler Rum, heller Rum, Limettensaft ⁷, Cointreau, Mandelsirup ⁵⋅⁶, Rohrzuckersirup',
 				amount: '-',
 				price: '7,60'
 			}
@@ -287,7 +294,7 @@ export let karte = [
 			{
 				name: 'Mint Tonic',
 				subtitle: null,
-				description: 'Rohrzuckersirup, Zitrone, Minzzweig, Tonic Water',
+				description: 'Rohrzuckersirup, Zitrone, Minzzweig, Tonic Water ²',
 				amount: '-',
 				price: '5,30'
 			},
@@ -308,7 +315,7 @@ export let karte = [
 			{
 				name: 'PiNADA Colada',
 				subtitle: null,
-				description: 'Cream of Coconut, Ananassaft, Maracujanektar, Limettensaft',
+				description: 'Cream of Coconut, Ananassaft, Maracujanektar, Limettensaft ⁷',
 				amount: '-',
 				price: '5,30'
 			}
@@ -323,7 +330,7 @@ export let karte = [
 			{
 				name: 'TUM Kamikaze',
 				subtitle: null,
-				description: 'Vodka, Limettensaft, Blue Curacao',
+				description: 'Vodka, Limettensaft ⁷, Blue Curacao',
 				amount: '-',
 				price: '3,60'
 			},
@@ -337,7 +344,7 @@ export let karte = [
 			{
 				name: 'B52',
 				subtitle: null,
-				description: 'Khalua, Balleys, Overproof Rum',
+				description: 'Khalua, Baileys ⁶, Overproof Rum',
 				amount: '-',
 				price: '3,90'
 			},
@@ -413,21 +420,21 @@ export let karte = [
 				price: '1,50'
 			},
 			{
-				name: 'Spezi',
+				name: 'Spezi ¹',
 				subtitle: null,
 				description: null,
 				amount: '0,5l',
 				price: '1,50'
 			},
 			{
-				name: 'Cola',
-				subtitle: null,
+				name: 'Cola ¹⋅⁴',
+				subtitle: "auch Zero ¹⋅⁴",
 				description: null,
 				amount: '0,4l',
 				price: '1,50'
 			},
 			{
-				name: 'Clubmate',
+				name: 'Clubmate ¹',
 				subtitle: null,
 				description: null,
 				amount: '0,5l',
@@ -441,7 +448,7 @@ export let karte = [
 				price: '1,20'
 			},
 			{
-				name: 'Red Bull',
+				name: 'Red Bull ¹⋅³⋅⁴',
 				subtitle: null,
 				description: null,
 				amount: '0,33l',
@@ -450,19 +457,19 @@ export let karte = [
 			{
 				name: 'Schweppes',
 				subtitle: null,
-				description: 'Ginger Ale, Ginger Beer, Tonic Water',
+				description: 'Ginger Ale, Ginger Beer, Tonic Water ²',
 				amount: '0,2l',
 				price: '1,00'
 			},
 			{
 				name: 'Heiße Getränke',
 				subtitle: null,
-				description: 'Kaffee, Heiße Zitrone, Tee',
+				description: 'Kaffee ¹, Heiße Zitrone, Tee',
 				amount: '-',
 				price: '2,00'
 			},
 			{
-				name: 'Espresso',
+				name: 'Espresso ¹',
 				subtitle: null,
 				description: null,
 				amount: '-',

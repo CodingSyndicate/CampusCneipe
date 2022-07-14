@@ -12,6 +12,11 @@
 <svelte:head>
 	<title>Anfahrt | CampusCneipe</title>
 	<meta name="description" content="Anfahrt zur Campus Cneipe" />
+	<meta property="og:title" content="Anfahrt zur Campus Cneipe" />
+	<meta property="og:image" content="https://www.c2.tum.de/images/Hintergrundbild.jpg" />
+	<meta property="og:url" content="https://www.c2.tum.de/anfahrt" />
+	<meta property="og:site_name" content="Anfahrt zur Campus Cneipe" />
+	<meta property="og:description" content="Anfahrt zur Campus Cneipe" />
 </svelte:head>
 
 <div class="is-full-screen">
@@ -32,7 +37,7 @@
 				/>
 			{:else}
 				<div>
-					<Button primary on:click={() => (googleMapsAccepted = !googleMapsAccepted)}>Accept Google Maps Terms of Use</Button>
+					<Button primary on:click={() => (googleMapsAccepted = true)}>Accept Google Maps Terms of Use</Button>
 				</div>
 			{/if}
 			<div>
