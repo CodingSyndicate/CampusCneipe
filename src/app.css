@@ -19,6 +19,12 @@
     --color-darkGrey: #777;
 }
 
+hr {
+    border: 0;
+    height: 1px;
+    width: 100%;
+}
+
 input::placeholder {
     color: var(--color-darkGrey);
 }

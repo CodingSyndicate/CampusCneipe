@@ -1,5 +1,5 @@
 <script>
-	import { Container, Tag } from 'svelte-chota';
+	import { Container } from 'svelte-chota';
 </script>
 
 <svelte:head>
@@ -10,6 +10,5 @@
 <div class="is-full-screen">
 	<Container>
 		<h1>Verein</h1>
-		<Tag>Website noch im Bau!</Tag>
 	</Container>
 </div>
