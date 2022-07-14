@@ -343,4 +343,11 @@
 			transform: translateY(-30px);
 		}
 	}
+	@media (max-width: 768px) {
+		.mainWrapper {
+			visibility: hidden;
+			opacity: 0;
+			display: none;
+		}
+	}
 </style>

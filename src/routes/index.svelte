@@ -93,7 +93,7 @@
 		.background {
 			background-position: 50%;
 		}
-		.meldungen {
+		.titel {
 			padding-top: 10rem;
 		}
 	}
