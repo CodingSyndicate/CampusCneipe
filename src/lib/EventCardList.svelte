@@ -47,4 +47,9 @@
 		display: flex;
 		flex-direction: row;
 	}
+	@media (max-width: 768px) {
+		.liste {
+			flex-direction: column;
+		}
+	}
 </style>
