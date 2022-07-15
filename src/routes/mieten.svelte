@@ -42,8 +42,13 @@
 </script>
 
 <svelte:head>
-	<title>Veranstaltungen | CampusCneipe</title>
-	<meta name="description" content="Alle Veranstaltungen der Campus Cneipe" />
+	<title>Mieten | CampusCneipe</title>
+	<meta name="description" content="Die C2 als Veranstaltungsort mieten" />
+	<meta property="og:title" content="Campus Cneipe mieten" />
+	<meta property="og:image" content="https://www.c2.tum.de/images/Hintergrundbild.jpg" />
+	<meta property="og:url" content="https://www.c2.tum.de/mieten" />
+	<meta property="og:site_name" content="Campus Cneipe mieten" />
+	<meta property="og:description" content="Die C2 als Veranstaltungsort mieten" />
 </svelte:head>
 
 <div class="is-full-screen">
