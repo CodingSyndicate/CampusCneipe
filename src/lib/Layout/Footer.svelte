@@ -9,7 +9,7 @@
 		<div class="impressum">
 			<a sveltekit:prefetch href="/impressum">Impressum</a>
 			&nbsp;
-			<a href="https://github.com/CodingSyndicate/CampusCneipe"> 0.4.1 </a>
+			<a class="versionnumber" href="https://github.com/CodingSyndicate/CampusCneipe"> 0.4.2 </a>
 			&nbsp;
 			<a sveltekit:prefetch href="/datenschutz">Datenschutz</a>
 		</div>
@@ -53,6 +53,9 @@
 	}
 	a {
 		color: white;
+	}
+	.versionnumber {
+		font-family: monospace;
 	}
 	@media (max-width: 768px) {
 		.footerContainer {
