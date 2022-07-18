@@ -1,6 +1,6 @@
 <div class="block">
 	<div class="co">
-		<h2>⚠ Semesterabschlussfeier am 27. Juli ⚠</h2>
+		<h2>Semesterabschlussfeier am 27. Juli</h2>
 		<h4>Ab 18 Uhr Freibier!</h4>
 		<span>(so lange der Vorrat reicht)</span>
 	</div>
