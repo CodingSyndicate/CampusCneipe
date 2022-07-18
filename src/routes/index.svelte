@@ -3,6 +3,8 @@
 	import { wochenprogramm, events } from '$lib/data/events';
 	import EventCardList from '$lib/EventCardList.svelte';
 	import BeerAnimation from '$lib/BeerAnimation.svelte';
+	import { Tag } from 'svelte-chota';
+	import Meldung from '$lib/Meldung.svelte';
 </script>
 
 <svelte:head>
@@ -25,6 +27,7 @@
 	</div>
 	<div class="is-full-screen mycol">
 		<!-- <Tag class="bg-error">An Fronleichnam (16.6.), am 17.6. sowie in der GESAMTEN Garnix Woche (21.6.-24.6.) hat die Campus Cneipe geschlossen.</Tag> -->
+		<Meldung />
 		<div class="content">
 			<div class="titel">
 				<BeerAnimation />
@@ -45,6 +48,7 @@
 		background-size: cover;
 		background-color: rgba(77, 82, 86, 0.5);
 		background-blend-mode: multiply;
+		z-index: 0;
 	}
 	.banner {
 		text-align: center;
