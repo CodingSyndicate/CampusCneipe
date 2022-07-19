@@ -23,11 +23,33 @@
 		<KartenKategorie {category} otherside={true} />
 	{/if}
 {/each}
+<section>
+	<h4>Allergene + Zusatzstoffe</h4>
+	<div class="notice">
+		1 Coffeinhaltig <br />
+		2 Chininhaltig <br />
+		3 Taurin <br />
+		4 Farbstoff <br />
+	</div>
+	<p>Alle Preise in Euro inkl. MWSt.</p>
+</section>
 
 <style>
 	.background {
 		width: 100%;
 		height: 100%;
 		object-fit: contain;
+	}
+	h4 {
+		margin-bottom: 0;
+	}
+	section {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.notice {
+		font-size: 0.8em;
+		text-align: center;
 	}
 </style>

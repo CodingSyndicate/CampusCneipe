@@ -164,14 +164,14 @@ export let karte = [
 			{
 				name: 'Cuba Libre',
 				subtitle: null,
-				description: 'Havanna Club Rum, Limette, Coca Cola',
+				description: 'Havanna Club Rum, Limette, Coca Cola ¹⋅⁴',
 				amount: '-',
 				price: '5,90'
 			},
 			{
 				name: 'Gin Tonic',
 				subtitle: null,
-				description: 'Bombay Saphire Gin, Tonic Water',
+				description: 'Bombay Saphire Gin, Tonic Water ²',
 				amount: '-',
 				price: '6,30'
 			},
@@ -294,7 +294,7 @@ export let karte = [
 			{
 				name: 'Mint Tonic',
 				subtitle: null,
-				description: 'Rohrzuckersirup, Zitrone, Minzzweig, Tonic Water',
+				description: 'Rohrzuckersirup, Zitrone, Minzzweig, Tonic Water ²',
 				amount: '-',
 				price: '5,30'
 			},
@@ -420,21 +420,21 @@ export let karte = [
 				price: '1,50'
 			},
 			{
-				name: 'Spezi',
+				name: 'Spezi ¹',
 				subtitle: null,
 				description: null,
 				amount: '0,5l',
 				price: '1,50'
 			},
 			{
-				name: 'Cola',
-				subtitle: null,
+				name: 'Cola ¹⋅⁴',
+				subtitle: "auch Zero ¹⋅⁴",
 				description: null,
 				amount: '0,4l',
 				price: '1,50'
 			},
 			{
-				name: 'Clubmate',
+				name: 'Clubmate ¹',
 				subtitle: null,
 				description: null,
 				amount: '0,5l',
@@ -448,7 +448,7 @@ export let karte = [
 				price: '1,20'
 			},
 			{
-				name: 'Red Bull',
+				name: 'Red Bull ¹⋅³⋅⁴',
 				subtitle: null,
 				description: null,
 				amount: '0,33l',
@@ -457,19 +457,19 @@ export let karte = [
 			{
 				name: 'Schweppes',
 				subtitle: null,
-				description: 'Ginger Ale, Ginger Beer, Tonic Water',
+				description: 'Ginger Ale, Ginger Beer, Tonic Water ²',
 				amount: '0,2l',
 				price: '1,00'
 			},
 			{
 				name: 'Heiße Getränke',
 				subtitle: null,
-				description: 'Kaffee, Heiße Zitrone, Tee',
+				description: 'Kaffee ¹, Heiße Zitrone, Tee',
 				amount: '-',
 				price: '2,00'
 			},
 			{
-				name: 'Espresso',
+				name: 'Espresso ¹',
 				subtitle: null,
 				description: null,
 				amount: '-',
