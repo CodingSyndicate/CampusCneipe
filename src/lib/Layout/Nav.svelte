@@ -12,7 +12,7 @@
 <Nav>
 	<div slot="left">
 		<a sveltekit:prefetch href="/" class={$page.url.pathname == '/' ? 'active' : ''}><img class="brand" title="Campus Cneipe" src={Logo} alt="C2" /> CampusCneipe </a>
-		{#if width >= 768}
+		{#if width >= 980}
 			<a sveltekit:prefetch href="/karte" class={$page.url.pathname.startsWith('/karte') ? 'active' : ''}>Karte</a>
 			<a sveltekit:prefetch href="/veranstaltungen" class={$page.url.pathname.startsWith('/veranstaltungen') ? 'active' : ''}>Veranstaltungen</a>
 			<a sveltekit:prefetch href="/mieten" class={$page.url.pathname.startsWith('/mieten') ? 'active' : ''}>Mieten</a>
@@ -20,10 +20,10 @@
 		{/if}
 	</div>
 	<div slot="right" class="rightside">
-		{#if width >= 768}
+		{#if width >= 980}
 			<a sveltekit:prefetch href="/jobs" class={$page.url.pathname.startsWith('/jobs') ? 'active' : ''}>Jobs</a>
 			<a sveltekit:prefetch href="/verein" class={$page.url.pathname.startsWith('/verein') ? 'active' : ''}>Verein</a>
-			<a sveltekit:prefetch href="/intern" class={$page.url.pathname.startsWith('/intern') ? 'active' : ''}>Interner Bereich</a>
+			<a sveltekit:prefetch href="/intern" class={$page.url.pathname.startsWith('/intern') ? 'active' : ''}>Intern</a>
 		{:else}
 			<div class="menu">
 				<Button primary icon={mdiMenu} on:click={(event) => (menu_open = true)} />
@@ -43,7 +43,7 @@
 			<a sveltekit:prefetch href="/anfahrt" class={$page.url.pathname.startsWith('/anfahrt') ? 'active' : ''}>Anfahrt</a>
 			<a sveltekit:prefetch href="/jobs" class={$page.url.pathname.startsWith('/jobs') ? 'active' : ''}>Jobs</a>
 			<a sveltekit:prefetch href="/verein" class={$page.url.pathname.startsWith('/verein') ? 'active' : ''}>Verein</a>
-			<a sveltekit:prefetch href="/intern" class={$page.url.pathname.startsWith('/intern') ? 'active' : ''}>Interner Bereich</a>
+			<a sveltekit:prefetch href="/intern" class={$page.url.pathname.startsWith('/intern') ? 'active' : ''}>Intern</a>
 			<div class="spacer" />
 			<a sveltekit:prefetch href="/impressum" class={$page.url.pathname.startsWith('/impressum') ? 'active' : ''}>Impressum</a>
 			<a sveltekit:prefetch href="/datenschutz" class={$page.url.pathname.startsWith('/datenschutz') ? 'active' : ''}>Datenschutz</a>
@@ -82,9 +82,9 @@
 	.spacer {
 		height: 2rem;
 	}
-	@media (max-width: 768px) {
+	@media (max-width: 980px) {
 		.rightside {
-			justify-self: center;
+			justify-self: right;
 		}
 	}
 </style>
