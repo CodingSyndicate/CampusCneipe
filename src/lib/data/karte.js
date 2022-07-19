@@ -181,6 +181,13 @@ export let karte = [
 				description: 'Vodka oder Gin, Limettensaft, Gingerbeer',
 				amount: '-',
 				price: '6,30'
+			},
+			{
+				name: 'Perfect Storm',
+				subtitle: null,
+				description: 'Kraken, Limettensaft, Gingerbeer',
+				amount: '-',
+				price: '6,30'
 			}
 		]
 	},
