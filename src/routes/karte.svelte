@@ -25,13 +25,20 @@
 {/each}
 <section>
 	<h4>Allergene + Zusatzstoffe</h4>
-	<div class="notice">
-		1 Coffeinhaltig <br />
-		2 Chininhaltig <br />
-		3 Taurin <br />
-		4 Farbstoff <br />
+	<div class="row">
+		<div class="notice">
+			1 Coffeinhaltig <br />
+			2 Chininhaltig <br />
+			3 Taurin <br />
+			4 Farbstoff <br />
+		</div>
+		<div class="notice">
+			5 Schalenfrüchte <br />
+			6 Milch <br />
+			7 Schwefeldioxid/Sulfite <br />
+		</div>
 	</div>
-	<p>Alle Preise in Euro inkl. MWSt.</p>
+	<p class="priceNotice">Alle Preise in Euro inkl. MWSt.</p>
 </section>
 
 <style>
@@ -50,6 +57,12 @@
 	}
 	.notice {
 		font-size: 0.8em;
+		text-align: left;
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+	.priceNotice {
+		padding-top: 1em;
 		text-align: center;
 	}
 </style>
