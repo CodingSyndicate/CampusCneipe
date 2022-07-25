@@ -9,7 +9,7 @@
 		<div class="impressum">
 			<a sveltekit:prefetch href="/impressum">Impressum</a>
 			&nbsp;
-			<a class="versionnumber" href="https://github.com/CodingSyndicate/CampusCneipe"> 0.4.4 </a>
+			<a class="versionnumber" href="https://github.com/CodingSyndicate/CampusCneipe"> 0.4.5 </a>
 			&nbsp;
 			<a sveltekit:prefetch href="/datenschutz">Datenschutz</a>
 		</div>
