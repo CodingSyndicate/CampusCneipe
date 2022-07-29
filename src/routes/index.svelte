@@ -34,7 +34,7 @@
 				<h1 class="c2">Die Campus Cneipe</h1>
 				<BeerAnimation mirror={true} />
 			</div>
-			<Reservierungstool />
+			<!-- <Reservierungstool /> -->
 		</div>
 	</div>
 </div>
