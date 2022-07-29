@@ -1,8 +1,8 @@
 <div class="block">
 	<div class="co">
-		<h2>Semesterabschlussfeier am 27. Juli</h2>
-		<h4>Ab 18 Uhr Freibier!</h4>
-		<span>(so lange der Vorrat reicht)</span>
+		<h2>Wir machen Semesterferien!</h2>
+		<h4>Wiedereröffnung: 18.10.2022</h4>
+		<span>Für private Veranstaltungen können wir weiterhin <a href="/mieten">gebucht</a> werden!</span>
 	</div>
 </div>
 
