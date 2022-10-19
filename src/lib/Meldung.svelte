@@ -1,8 +1,8 @@
 <div class="block">
 	<div class="co">
-		<h2>Wir machen Semesterferien!</h2>
-		<h4>Wiedereröffnung: 18.10.2022</h4>
-		<span>Für private Veranstaltungen können wir weiterhin <a href="/mieten">gebucht</a> werden!</span>
+		<h2>Wir sind zurück aus den Semesterferien!</h2>
+		<h4>Wiedereröffnungsfeier: 24.10.2022 15 Uhr</h4>
+		<span>Freibier ab 16 Uhr und TUM-Präsident Hofmann als Ehrengast!</span>
 	</div>
 </div>
 
