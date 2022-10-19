@@ -23,7 +23,7 @@
 <div class="background">
 	<div class="banner">
 		<span>Boltzmannstraße 19, 85748 Garching b. München</span> <br />
-		<!-- <span>Öffnungszeiten: Di-Fr 15 - 24 Uhr</span> -->
+		<span>Öffnungszeiten: Di-Fr 15 - 24 Uhr</span>
 	</div>
 	<div class="is-full-screen mycol">
 		<!-- <Tag class="bg-error">An Fronleichnam (16.6.), am 17.6. sowie in der GESAMTEN Garnix Woche (21.6.-24.6.) hat die Campus Cneipe geschlossen.</Tag> -->
