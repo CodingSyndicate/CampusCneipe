@@ -1,0 +1,553 @@
+[
+    {
+        "childs": [],
+        "name": "Cocktailzutaten",
+        "products": [
+            {
+                "name": "Gin",
+                "price": "0.00\u20ac"
+            },
+            {
+                "name": "Limette",
+                "price": "0.00\u20ac"
+            },
+            {
+                "name": "Rohrzucker",
+                "price": "0.00\u20ac"
+            },
+            {
+                "name": "Zitronensaft",
+                "price": "0.00\u20ac"
+            },
+            {
+                "name": "Campari",
+                "price": "0.00\u20ac"
+            },
+            {
+                "name": "Vermuth",
+                "price": "0.00\u20ac"
+            }
+        ]
+    },
+    {
+        "childs": [
+            {
+                "childs": [],
+                "name": "Biere",
+                "products": [
+                    {
+                        "name": "Helles",
+                        "price": "3.30\u20ac"
+                    },
+                    {
+                        "name": "Wei\u00dfbier",
+                        "price": "3.30\u20ac"
+                    },
+                    {
+                        "name": "Mystery",
+                        "price": "3.50\u20ac"
+                    },
+                    {
+                        "name": "Vitus",
+                        "price": "3.60\u20ac"
+                    },
+                    {
+                        "name": "Helles, Ma\u00df",
+                        "price": "6.10\u20ac"
+                    },
+                    {
+                        "name": "Goa\u00dfma\u00df",
+                        "price": "6.60\u20ac"
+                    },
+                    {
+                        "name": "Radler",
+                        "price": "3.30\u20ac"
+                    },
+                    {
+                        "name": "Ru\u00df\u00b4n",
+                        "price": "3.30\u20ac"
+                    },
+                    {
+                        "name": "Cola-Weissbier",
+                        "price": "3.30\u20ac"
+                    },
+                    {
+                        "name": "alkf. Weissbier",
+                        "price": "3.30\u20ac"
+                    },
+                    {
+                        "name": "alkf. Helles",
+                        "price": "3.30\u20ac"
+                    },
+                    {
+                        "name": "dunkles Weissbier",
+                        "price": "3.30\u20ac"
+                    },
+                    {
+                        "name": "Pils",
+                        "price": "2.90\u20ac"
+                    },
+                    {
+                        "name": "Radler, Ma\u00df",
+                        "price": "6.10\u20ac"
+                    },
+                    {
+                        "name": "Dunkles",
+                        "price": "3.30\u20ac"
+                    },
+                    {
+                        "name": "Isarwasser",
+                        "price": "3.50\u20ac"
+                    },
+                    {
+                        "name": "Mystery, Ma\u00df",
+                        "price": "6.40\u20ac"
+                    },
+                    {
+                        "name": "Wei\u00dfbier, Ma\u00df",
+                        "price": "6.10\u20ac"
+                    }
+                ]
+            },
+            {
+                "childs": [],
+                "name": "Wein",
+                "products": [
+                    {
+                        "name": "Wein wei\u00df/rot",
+                        "price": "4.20\u20ac"
+                    },
+                    {
+                        "name": "Weinschorle s\u00fc\u00df/sauer",
+                        "price": "4.70\u20ac"
+                    }
+                ]
+            },
+            {
+                "childs": [],
+                "name": "Shots",
+                "products": [
+                    {
+                        "name": "Mexicana",
+                        "price": "3.90\u20ac"
+                    },
+                    {
+                        "name": "Shot",
+                        "price": "2.00\u20ac"
+                    },
+                    {
+                        "name": "Wochenschnaps",
+                        "price": "1.00\u20ac"
+                    },
+                    {
+                        "name": "Apfelstrudel",
+                        "price": "3.90\u20ac"
+                    },
+                    {
+                        "name": "Liquid Cocaine",
+                        "price": "3.90\u20ac"
+                    },
+                    {
+                        "name": "TUM Kamikaze",
+                        "price": "3.90\u20ac"
+                    },
+                    {
+                        "name": "B52",
+                        "price": "3.90\u20ac"
+                    },
+                    {
+                        "name": "Alien Brain",
+                        "price": "3.90\u20ac"
+                    }
+                ]
+            },
+            {
+                "childs": [],
+                "name": "Alkoholfreie Getr\u00e4nke",
+                "products": [
+                    {
+                        "name": "Tafelwasser, 0.5 L",
+                        "price": "1.20\u20ac"
+                    },
+                    {
+                        "name": "Zitronenlimo, 0.5 L",
+                        "price": "1.70\u20ac"
+                    },
+                    {
+                        "name": "Spezi, 0.5 L",
+                        "price": "1.70\u20ac"
+                    },
+                    {
+                        "name": "Cola, 0.5 L",
+                        "price": "1.70\u20ac"
+                    },
+                    {
+                        "name": "Fanta 0,5l",
+                        "price": "1.70\u20ac"
+                    },
+                    {
+                        "name": "Club Mate",
+                        "price": "1.70\u20ac"
+                    },
+                    {
+                        "name": "Schweppes, 0.2 L",
+                        "price": "1.70\u20ac"
+                    },
+                    {
+                        "name": "Red Bull 0,33l",
+                        "price": "2.80\u20ac"
+                    },
+                    {
+                        "name": "Cola Zero 0,5L",
+                        "price": "1.70\u20ac"
+                    },
+                    {
+                        "name": "Cola 0,5L",
+                        "price": "1.70\u20ac"
+                    }
+                ]
+            },
+            {
+                "childs": [],
+                "name": "Schorlen",
+                "products": [
+                    {
+                        "name": "Apfelschorle, 0.5 L",
+                        "price": "1.70\u20ac"
+                    },
+                    {
+                        "name": "Ananassaftschorle, 0.5 L",
+                        "price": "1.70\u20ac"
+                    },
+                    {
+                        "name": "Orangensaftschorle, 0.5 L",
+                        "price": "1.70\u20ac"
+                    },
+                    {
+                        "name": "Johannisbeersaftschorle, 0.5 L",
+                        "price": "1.70\u20ac"
+                    },
+                    {
+                        "name": "Maracujasaftschorle, 0.5 L",
+                        "price": "1.70\u20ac"
+                    }
+                ]
+            },
+            {
+                "childs": [],
+                "name": "S\u00e4fte",
+                "products": [
+                    {
+                        "name": "Apfelsaft, 0.4 L",
+                        "price": "1.50\u20ac"
+                    },
+                    {
+                        "name": "Ananassaft, 0.4 L",
+                        "price": "1.50\u20ac"
+                    },
+                    {
+                        "name": "Orangensaft, 0.4 L",
+                        "price": "1.50\u20ac"
+                    },
+                    {
+                        "name": "Johannisbeernektar, 0.4 L",
+                        "price": "1.50\u20ac"
+                    },
+                    {
+                        "name": "Maracujanektar, 0.4 L",
+                        "price": "1.50\u20ac"
+                    }
+                ]
+            },
+            {
+                "childs": [],
+                "name": "Hei\u00dfe Getr\u00e4nke",
+                "products": [
+                    {
+                        "name": "Espresso",
+                        "price": "1.50\u20ac"
+                    },
+                    {
+                        "name": "Tasse Kaffee",
+                        "price": "1.90\u20ac"
+                    },
+                    {
+                        "name": "Tasse Tee",
+                        "price": "1.90\u20ac"
+                    },
+                    {
+                        "name": "Hei\u00dfe Zitrone",
+                        "price": "1.90\u20ac"
+                    },
+                    {
+                        "name": "Cappuccino",
+                        "price": "2.70\u20ac"
+                    }
+                ]
+            },
+            {
+                "childs": [],
+                "name": "TO GO",
+                "products": [
+                    {
+                        "name": "Flasche Limo",
+                        "price": "1.50\u20ac"
+                    },
+                    {
+                        "name": "Flasche Spezi",
+                        "price": "1.50\u20ac"
+                    },
+                    {
+                        "name": "Flasche Mate",
+                        "price": "1.50\u20ac"
+                    },
+                    {
+                        "name": "Flasche Cola",
+                        "price": "3.00\u20ac"
+                    },
+                    {
+                        "name": "Helles",
+                        "price": "2.00\u20ac"
+                    }
+                ]
+            },
+            {
+                "childs": [],
+                "name": "Cocktails",
+                "products": []
+            }
+        ],
+        "name": "Getr\u00e4nke",
+        "products": []
+    },
+    {
+        "childs": [
+            {
+                "childs": [],
+                "name": "The Unforgettables",
+                "products": [
+                    {
+                        "name": "Old Fashioned",
+                        "price": "6.30\u20ac"
+                    },
+                    {
+                        "name": "Daiquiri",
+                        "price": "6.30\u20ac"
+                    },
+                    {
+                        "name": "Negroni",
+                        "price": "6.30\u20ac"
+                    },
+                    {
+                        "name": "Boulevardier",
+                        "price": "6.30\u20ac"
+                    }
+                ]
+            },
+            {
+                "childs": [],
+                "name": "Classics",
+                "products": [
+                    {
+                        "name": "Fresh Herrmann",
+                        "price": "6.30\u20ac"
+                    },
+                    {
+                        "name": "Caipirinha",
+                        "price": "6.30\u20ac"
+                    },
+                    {
+                        "name": "Pina Colada",
+                        "price": "6.30\u20ac"
+                    },
+                    {
+                        "name": "Tequila Sunrise",
+                        "price": "6.30\u20ac"
+                    },
+                    {
+                        "name": "Sex on the Beach:",
+                        "price": "6.30\u20ac"
+                    },
+                    {
+                        "name": "Longdrinks",
+                        "price": "6.30\u20ac"
+                    },
+                    {
+                        "name": "Vodka Lemon",
+                        "price": "6.30\u20ac"
+                    },
+                    {
+                        "name": "Mojito",
+                        "price": "6.30\u20ac"
+                    }
+                ]
+            },
+            {
+                "childs": [],
+                "name": "Light",
+                "products": [
+                    {
+                        "name": "Cuba Libre",
+                        "price": "6.30\u20ac"
+                    },
+                    {
+                        "name": "Gin & Tonic",
+                        "price": "6.30\u20ac"
+                    },
+                    {
+                        "name": "Moscow Mule",
+                        "price": "6.30\u20ac"
+                    },
+                    {
+                        "name": "Munich Mule",
+                        "price": "6.30\u20ac"
+                    },
+                    {
+                        "name": "Vodka Bull",
+                        "price": "6.30\u20ac"
+                    },
+                    {
+                        "name": "Horses Neck",
+                        "price": "6.30\u20ac"
+                    },
+                    {
+                        "name": "Lynchburg Lemonade",
+                        "price": "6.30\u20ac"
+                    },
+                    {
+                        "name": "Espresso Martini",
+                        "price": "6.30\u20ac"
+                    }
+                ]
+            },
+            {
+                "childs": [],
+                "name": "Strong",
+                "products": [
+                    {
+                        "name": "Long Island Ice Tea",
+                        "price": "7.30\u20ac"
+                    },
+                    {
+                        "name": "Zombie",
+                        "price": "7.30\u20ac"
+                    },
+                    {
+                        "name": "Mai Tai",
+                        "price": "7.30\u20ac"
+                    },
+                    {
+                        "name": "Gin and Apricot Martini",
+                        "price": "7.30\u20ac"
+                    }
+                ]
+            },
+            {
+                "childs": [],
+                "name": "Fizzes & Sours",
+                "products": [
+                    {
+                        "name": "Gin Basil Smash",
+                        "price": "6.30\u20ac"
+                    },
+                    {
+                        "name": "Fizz",
+                        "price": "6.30\u20ac"
+                    },
+                    {
+                        "name": "Sour",
+                        "price": "6.30\u20ac"
+                    },
+                    {
+                        "name": "New York Sour",
+                        "price": "6.30\u20ac"
+                    }
+                ]
+            },
+            {
+                "childs": [],
+                "name": "Sprizzes",
+                "products": [
+                    {
+                        "name": "Hugo",
+                        "price": "4.60\u20ac"
+                    },
+                    {
+                        "name": "Aperol Spritz",
+                        "price": "4.60\u20ac"
+                    },
+                    {
+                        "name": "Limoncello Sprizz",
+                        "price": "4.60\u20ac"
+                    }
+                ]
+            },
+            {
+                "childs": [],
+                "name": "Mocktails (alkfrei.)",
+                "products": [
+                    {
+                        "name": "Pineapple Mule",
+                        "price": "5.30\u20ac"
+                    },
+                    {
+                        "name": "Mint Tonic",
+                        "price": "5.30\u20ac"
+                    },
+                    {
+                        "name": "Caipinino",
+                        "price": "4.90\u20ac"
+                    },
+                    {
+                        "name": "PiNADA Colada",
+                        "price": "5.30\u20ac"
+                    }
+                ]
+            }
+        ],
+        "name": "Cocktails",
+        "products": []
+    },
+    {
+        "childs": [
+            {
+                "childs": [],
+                "name": "Sandwiches/Paninis",
+                "products": [
+                    {
+                        "name": "SW Rucola Pesto",
+                        "price": "4.90\u20ac"
+                    },
+                    {
+                        "name": "SW Putenbrust",
+                        "price": "4.90\u20ac"
+                    },
+                    {
+                        "name": "SW Salami Calabra",
+                        "price": "4.90\u20ac"
+                    },
+                    {
+                        "name": "SW vegan gegrillte Paprika",
+                        "price": "4.90\u20ac"
+                    }
+                ]
+            },
+            {
+                "childs": [],
+                "name": "Snacks",
+                "products": [
+                    {
+                        "name": "Nachos klein",
+                        "price": "3.20\u20ac"
+                    },
+                    {
+                        "name": "Nachos gro\u00df",
+                        "price": "4.90\u20ac"
+                    }
+                ]
+            }
+        ],
+        "name": "Speisen",
+        "products": []
+    }
+]

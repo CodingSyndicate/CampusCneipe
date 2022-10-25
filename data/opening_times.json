@@ -1,0 +1,22 @@
+[
+    {
+        "day": "Dienstag",
+        "open": "15:00",
+        "close": "24:00"
+    },
+    {
+        "day": "Mittwoch",
+        "open": "15:00",
+        "close": "24:00"
+    },
+    {
+        "day": "Donnerstag",
+        "open": "15:00",
+        "close": "24:00"
+    },
+    {
+        "day": "Freitag",
+        "open": "15:00",
+        "close": "24:00"
+    }
+]

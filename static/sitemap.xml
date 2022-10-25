@@ -2,47 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.c2.tum.de</loc>
-    <lastmod>2022-07-15</lastmod>
+    <lastmod>2022-10-22</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.c2.tum.de/karte</loc>
-    <lastmod>2022-07-15</lastmod>
+    <lastmod>2022-10-22</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.c2.tum.de/veranstaltungen</loc>
-    <lastmod>2022-07-15</lastmod>
+    <loc>https://www.c2.tum.de/events</loc>
+    <lastmod>2022-10-22</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.c2.tum.de/mieten</loc>
-    <lastmod>2022-07-15</lastmod>
+    <lastmod>2022-10-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.c2.tum.de/anfahrt</loc>
-    <lastmod>2022-07-15</lastmod>
+    <loc>https://www.c2.tum.de/mitmachen</loc>
+    <lastmod>2022-10-22</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.c2.tum.de/jobs</loc>
-    <lastmod>2022-07-15</lastmod>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.c2.tum.de/verein</loc>
-    <lastmod>2022-07-15</lastmod>
+    <loc>https://www.c2.tum.de/kontakt</loc>
+    <lastmod>2022-10-22</lastmod>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://www.c2.tum.de/impressum</loc>
-    <lastmod>2022-07-15</lastmod>
+    <lastmod>2022-10-22</lastmod>
     <priority>0.1</priority>
   </url>
   <url>
     <loc>https://www.c2.tum.de/datenschutz</loc>
-    <lastmod>2022-07-15</lastmod>
+    <lastmod>2022-10-22</lastmod>
     <priority>0.1</priority>
   </url>
 </urlset>

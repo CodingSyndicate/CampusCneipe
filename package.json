@@ -1,37 +1,37 @@
 {
-  "name": "campuscneipe-frontend",
-  "version": "0.4.9",
-  "description": "Future website of the Campus Cneipe @ Technical University of Munich",
-  "author": "Marvin Raiser <marvin@raiser.dev> (https://github.com/GeneralMine)",
-  "license": "MIT",
-  "scripts": {
-    "start": "npm run dev",
-    "dev": "svelte-kit dev",
-    "build": "svelte-kit build",
-    "package": "svelte-kit package",
-    "preview": "svelte-kit preview",
-    "prepare": "svelte-kit sync",
-    "test": "playwright test",
-    "lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
-    "format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. ."
-  },
-  "devDependencies": {
-    "@playwright/test": "^1.20.0",
-    "@sveltejs/adapter-static": "^1.0.0-next.29",
-    "@sveltejs/kit": "^1.0.0-next.324",
-    "eslint": "^7.32.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-svelte3": "^3.2.1",
-    "prettier": "^2.5.1",
-    "prettier-plugin-svelte": "^2.5.0",
-    "svelte": "^3.49.0"
-  },
-  "type": "module",
-  "dependencies": {
-    "@fontsource/work-sans": "^4.5.7",
-    "@mdi/js": "^6.6.96",
-    "chota": "^0.8.0",
-    "svelte-chota": "^1.8.6",
-    "svelte-image-gallery": "^1.5.0"
-  }
+	"name": "campuscneipe",
+	"version": "1.0.0",
+	"description": "Website of the Campus Cneipe @ Technical University of Munich",
+	"author": "Marvin Raiser <marvin@raiser.dev> (https://github.com/GeneralMine)",
+	"license": "MIT",
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"test": "playwright test",
+		"deploy": "powershell .\\scripts\\deploy.ps1",
+		"lint": "prettier --plugin-search-dir . --check . && eslint .",
+		"format": "prettier --plugin-search-dir . --write ."
+	},
+	"devDependencies": {
+		"@playwright/test": "^1.25.0",
+		"@popperjs/core": "^2.11.5",
+		"@sveltejs/adapter-static": "1.0.0-next.45",
+		"@sveltejs/kit": "1.0.0-next.505",
+		"bootstrap": "^5.2.0",
+		"eslint": "^8.16.0",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-plugin-svelte3": "^4.0.0",
+		"prettier": "^2.6.2",
+		"prettier-plugin-svelte": "^2.7.0",
+		"sass": "^1.53.0",
+		"svelte": "^3.44.0",
+		"svelte-preprocess": "^4.10.7",
+		"vite": "^3.1.0"
+	},
+	"type": "module",
+	"dependencies": {
+		"@fontsource/unica-one": "^4.5.9",
+		"@fontsource/vollkorn": "^4.5.12"
+	}
 }
