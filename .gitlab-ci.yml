@@ -69,7 +69,7 @@ deploy staging:
   before_script:
     - npm ci --cache .npm --prefer-offline
   script:
-    - export BASE=https://www.c2.tum.de/staging/$CI_COMMIT_REF_SLUG/
+    - export BASE=/staging/$CI_COMMIT_REF_SLUG/
     - npm run build
     - tar -czf c2-website.tar.gz build/
     - rsync -zrl --delete --mkpath -e "sshpass -p $DEPLOY_PW ssh -o StrictHostKeyChecking=no -l $DEPLOY_USER" build/ $DEPLOY_HOST:~/webserver/htdocs/staging/$CI_COMMIT_REF_SLUG/
