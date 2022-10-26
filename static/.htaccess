@@ -1,0 +1,12 @@
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://www.c2.tum.de/$1 [R,L]
+
+SetEnv INFO_MAIL "info@campus-cneipe.de"
+SetEnv EVENT_MAIL "event@campus-cneipe.de"
+SetEnv PERSONAL_MAIL "personal@campus-cneipe.de"
+
+<IfModule mod_mime.c>
+    AddType image/svg+xml svg svgz
+    AddEncoding gzip svgz
+</IfModule>
