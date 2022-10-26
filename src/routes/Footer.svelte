@@ -1,16 +1,17 @@
 <script>
 	import { page } from '$app/stores';
+	import { base } from '$app/paths';
 </script>
 
 <footer class="col">
-	<a href="/" class="logoCon navbar-brand" />
+	<a href="{base}/" class="logoCon navbar-brand" />
 	<hr />
 	<div class="actions row">
 		<div class="col">
-			<img src="/svg/glass-mug-variant.png" alt="" />
+			<img src="{base}/svg/glass-mug-variant.png" alt="" />
 			<a
 				sveltekit:prefetch
-				href="/karte"
+				href="{base}/karte"
 				class="nav-link"
 				class:active={$page.url.pathname.startsWith('/karte')}
 				aria-current={$page.url.pathname.startsWith('/karte') ? 'page' : ''}
@@ -19,10 +20,10 @@
 			</a>
 		</div>
 		<div class="col">
-			<img src="/svg/nightlife.png" alt="" />
+			<img src="{base}/svg/nightlife.png" alt="" />
 			<a
 				sveltekit:prefetch
-				href="/events"
+				href="{base}/events"
 				class="nav-link"
 				class:active={$page.url.pathname.startsWith('/events')}
 				aria-current={$page.url.pathname.startsWith('/events') ? 'page' : ''}
@@ -32,10 +33,10 @@
 		</div>
 		<div class="col">
 			<div class="col">
-				<img src="/svg/celebration.png" alt="" />
+				<img src="{base}/svg/celebration.png" alt="" />
 				<a
 					sveltekit:prefetch
-					href="/mieten"
+					href="{base}/mieten"
 					class="nav-link"
 					class:active={$page.url.pathname.startsWith('/mieten')}
 					aria-current={$page.url.pathname.startsWith('/mieten') ? 'page' : ''}

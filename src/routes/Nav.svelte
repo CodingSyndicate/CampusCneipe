@@ -1,18 +1,19 @@
 <script>
 	import { page } from '$app/stores';
 	import { goto } from '$app/navigation';
+	import { base } from '$app/paths';
 	let collapsed = true;
 	$: show = !collapsed;
 
 	function navigate(dest) {
 		collapsed = !collapsed;
-		goto(dest);
+		goto(base + dest);
 	}
 </script>
 
 <nav class="navbar navbar-expand-lg navbar-dark">
 	<div class="container-fluid">
-		<a href="/" class="logoCon navbar-brand m-0" />
+		<a href="{base}/" class="logoCon navbar-brand m-0" />
 
 		<button
 			class:collapsed
@@ -33,10 +34,10 @@
 				<li class="nav-item text-center first">
 					<a
 						sveltekit:prefetch
-						href="/"
+						href="{base}/"
 						class="nav-link"
-						class:active={$page.url.pathname === '/'}
-						aria-current={$page.url.pathname === '/' ? 'page' : ''}
+						class:active={$page.url.pathname === base + '/'}
+						aria-current={$page.url.pathname === base + '/' ? 'page' : ''}
 						on:click={() => navigate('/')}
 					>
 						HOME
@@ -45,10 +46,10 @@
 				<li class="nav-item  text-center">
 					<a
 						sveltekit:prefetch
-						href="/karte"
+						href="{base}/karte"
 						class="nav-link"
-						class:active={$page.url.pathname.startsWith('/karte')}
-						aria-current={$page.url.pathname.startsWith('/karte') ? 'page' : ''}
+						class:active={$page.url.pathname.startsWith(base + '/karte')}
+						aria-current={$page.url.pathname.startsWith(base + '/karte') ? 'page' : ''}
 						on:click={() => navigate('/karte')}
 					>
 						KARTE
@@ -57,10 +58,10 @@
 				<li class="nav-item  text-center">
 					<a
 						sveltekit:prefetch
-						href="/events"
+						href="{base}/events"
 						class="nav-link"
-						class:active={$page.url.pathname.startsWith('/events')}
-						aria-current={$page.url.pathname.startsWith('/events') ? 'page' : ''}
+						class:active={$page.url.pathname.startsWith(base + '/events')}
+						aria-current={$page.url.pathname.startsWith(base + '/events') ? 'page' : ''}
 						on:click={() => navigate('/events')}
 					>
 						EVENTS
@@ -69,10 +70,10 @@
 				<li class="nav-item  text-center">
 					<a
 						sveltekit:prefetch
-						href="/mieten"
+						href="{base}/mieten"
 						class="nav-link"
-						class:active={$page.url.pathname.startsWith('/mieten')}
-						aria-current={$page.url.pathname.startsWith('/mieten') ? 'page' : ''}
+						class:active={$page.url.pathname.startsWith(base + '/mieten')}
+						aria-current={$page.url.pathname.startsWith(base + '/mieten') ? 'page' : ''}
 						on:click={() => navigate('/mieten')}
 					>
 						MIETEN
@@ -81,10 +82,10 @@
 				<li class="nav-item  text-center">
 					<a
 						sveltekit:prefetch
-						href="/mitmachen"
+						href="{base}/mitmachen"
 						class="nav-link"
-						class:active={$page.url.pathname.startsWith('/mitmachen')}
-						aria-current={$page.url.pathname.startsWith('/mitmachen') ? 'page' : ''}
+						class:active={$page.url.pathname.startsWith(base + '/mitmachen')}
+						aria-current={$page.url.pathname.startsWith(base + '/mitmachen') ? 'page' : ''}
 						on:click={() => navigate('/mitmachen')}
 					>
 						MITMACHEN
@@ -93,10 +94,10 @@
 				<li class="nav-item  text-center">
 					<a
 						sveltekit:prefetch
-						href="/kontakt"
+						href="{base}/kontakt"
 						class="nav-link"
-						class:active={$page.url.pathname.startsWith('/kontakt')}
-						aria-current={$page.url.pathname.startsWith('/kontakt') ? 'page' : ''}
+						class:active={$page.url.pathname.startsWith(base + '/kontakt')}
+						aria-current={$page.url.pathname.startsWith(base + '/kontakt') ? 'page' : ''}
 						on:click={() => navigate('/kontakt')}
 					>
 						KONTAKT
@@ -110,10 +111,18 @@
 						role="button"
 						href="https://www.instagram.com/campus_cneipe/"
 					>
-						<img src="/svg/instagram.png" alt="" style="height: 24px; width: 24px; margin:0;" />
+						<img
+							src="{base}/svg/instagram.png"
+							alt=""
+							style="height: 24px; width: 24px; margin:0;"
+						/>
 					</a>
-					<a class="btn btn-primary btn-lg btn-floating socialmediabutton" role="button" href="/">
-						<img src="/svg/rss.png" alt="" style="height: 24px; width: 24px; margin:0;" />
+					<a
+						class="btn btn-primary btn-lg btn-floating socialmediabutton"
+						role="button"
+						href="{base}/"
+					>
+						<img src="{base}/svg/rss.png" alt="" style="height: 24px; width: 24px; margin:0;" />
 					</a>
 				</div>
 			</div>
@@ -121,10 +130,10 @@
 				<li class="nav-item text-center">
 					<a
 						sveltekit:prefetch
-						href="/impressum"
+						href="{base}/impressum"
 						class="nav-link"
-						class:active={$page.url.pathname.startsWith('/impressum')}
-						aria-current={$page.url.pathname.startsWith('/impressum') ? 'page' : ''}
+						class:active={$page.url.pathname.startsWith(base + '/impressum')}
+						aria-current={$page.url.pathname.startsWith(base + '/impressum') ? 'page' : ''}
 						on:click={() => (collapsed = true)}
 					>
 						IMPRESSUM
@@ -133,10 +142,10 @@
 				<li class="nav-item text-center">
 					<a
 						sveltekit:prefetch
-						href="/datenschutz"
+						href="{base}/datenschutz"
 						class="nav-link"
-						class:active={$page.url.pathname.startsWith('/datenschutz')}
-						aria-current={$page.url.pathname.startsWith('/datenschutz') ? 'page' : ''}
+						class:active={$page.url.pathname.startsWith(base + '/datenschutz')}
+						aria-current={$page.url.pathname.startsWith(base + '/datenschutz') ? 'page' : ''}
 						on:click={() => (collapsed = true)}
 					>
 						DATENSCHUTZ

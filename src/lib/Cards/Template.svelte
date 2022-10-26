@@ -1,4 +1,5 @@
 <script>
+	import { base } from '$app/paths';
 	export let bigImage;
 	export let contentRight;
 	export let sideImageFull;
@@ -27,7 +28,7 @@
 				min-height: {small ? '625px' : '902px'};"
 	>
 		<img
-			src={bigImage}
+			src={base + bigImage}
 			alt="bigImage"
 			style="min-height: {small ? '625px' : '902px'}; max-height: {small ? '625px' : '902px'}"
 		/>

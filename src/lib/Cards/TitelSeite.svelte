@@ -1,5 +1,6 @@
 <script>
 	import { goto } from '$app/navigation';
+	import { base } from '$app/paths';
 	export let image;
 	export let title;
 	export let subtitle;
@@ -12,7 +13,7 @@
 
 <div
 	class="componentContainer"
-	style="background-image: url({image}); background-position: {imagePosition}; height: {full
+	style="background-image: url({base + image}); background-position: {imagePosition}; height: {full
 		? '100vh'
 		: middle
 		? '700px'

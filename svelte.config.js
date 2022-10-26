@@ -5,7 +5,10 @@ import adapter from '@sveltejs/adapter-static';
 const config = {
 	kit: {
 		adapter: adapter(),
-		trailingSlash: 'always'
+		trailingSlash: 'always',
+		paths: {
+			base: process.env.BASE
+		}
 	},
 
 	preprocess: [

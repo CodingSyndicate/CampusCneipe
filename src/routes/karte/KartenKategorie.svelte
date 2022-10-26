@@ -1,14 +1,15 @@
 <script>
-	export let kategorie;
+	import { base } from '$app/paths';
 	import { Tabs, TabList, TabPanel, Tab } from '$lib/Tabs/tabs.js';
 	import { replaceUmlauts } from '$lib/utils.js';
 	import KartenProduct from './KartenProduct.svelte';
+	export let kategorie;
 </script>
 
 <div class="kategorieContainer">
 	<img
 		class="kategorieImage"
-		src={'/images/karte/' + replaceUmlauts(kategorie.name) + '.JPG'}
+		src={base + '/images/karte/' + replaceUmlauts(kategorie.name) + '.JPG'}
 		alt={kategorie.name}
 	/>
 	<div class="kategorieContent">

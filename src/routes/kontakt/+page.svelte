@@ -1,5 +1,6 @@
 <script>
 	import TitelSeite from '$lib/Cards/TitelSeite.svelte';
+	import { base } from '$app/paths';
 
 	let name;
 	let email;
@@ -69,15 +70,15 @@
 <div class="kontakt">
 	<div class="contactInfos">
 		<div class="contactInfoRow">
-			<img src="/svg/place_white_24dp.png" alt="Adresse" />
+			<img src="{base}/svg/place_white_24dp.png" alt="Adresse" />
 			<p>CampusCneipe C2<br />Boltzmannstraße 19,<br />85748 Garching bei München</p>
 		</div>
 		<div class="contactInfoRow">
-			<img src="/svg/phone_white_24dp.png" alt="Telefon" />
+			<img src="{base}/svg/phone_white_24dp.png" alt="Telefon" />
 			<p><a href="tel:+498930785757"> +49 89 - 30785757 </a></p>
 		</div>
 		<div class="contactInfoRow">
-			<img src="/svg/email_white_24dp.png" alt="Email" />
+			<img src="{base}/svg/email_white_24dp.png" alt="Email" />
 			<p>
 				Event Anfragen: <a href="mailto:event@campus-cneipe.de">event@campus-cneipe.de</a>
 				<br />
@@ -128,7 +129,7 @@
 		<div class="mb-3 form-check">
 			<input bind:value={checked} type="checkbox" class="form-check-input" id="exampleCheck1" />
 			<label class="form-check-label" for="exampleCheck1">
-				Ich stimme dem <a href="/datenschutz">Datenschutzhinweis</a> zur Verarbeitung meiner Anfrage
+				Ich stimme dem <a href="{base}/datenschutz">Datenschutzhinweis</a> zur Verarbeitung meiner Anfrage
 				zu.
 			</label>
 		</div>

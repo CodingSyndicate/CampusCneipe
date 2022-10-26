@@ -1,5 +1,6 @@
 <script>
 	import { goto } from '$app/navigation';
+	import { base } from '$app/paths';
 	import Card from './Card.svelte';
 
 	// DetailedCard
@@ -24,12 +25,12 @@
 		<div class="smallImageRow row">
 			{#if smallImageLeft}
 				<div class="smallImage">
-					<img src={smallImageLeft} alt="smallImageLeft" />
+					<img src={base + smallImageLeft} alt="smallImageLeft" />
 				</div>
 			{/if}
 			{#if smallImageRight}
 				<div class="smallImage">
-					<img src={smallImageRight} alt="smallImageRight" />
+					<img src={base + smallImageRight} alt="smallImageRight" />
 				</div>
 			{/if}
 		</div>
