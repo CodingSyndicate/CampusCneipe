@@ -32,8 +32,9 @@ if ($input['challenge'] != '9' and
 
 // https://doku.lrz.de/display/PUBLIC/Mailversand+aus+dem+Webhosting
 $headers = "From: " . $to ."\r\n" .
-         "Reply-To: " . $from ."\r\n" .
-         "Envelope-From: " . $to ."\r\n";
+                         "Reply-To: " . $from ."\r\n" .
+                         "Envelope-From: " . $to ."\r\n" .
+                         "Content-Type: text/plain;charset=UTF-8\r\n";
 
 if(mail($to, $subject, $message, $headers)) {
     http_response_code(200);
