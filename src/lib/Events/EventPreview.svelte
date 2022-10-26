@@ -1,13 +1,21 @@
 <script>
 	import { base } from '$app/paths';
 	export let event;
+	let link;
+	if (!event.link) {
+		link = './';
+	} else if (event.link.startsWith('http')) {
+		link = event.link;
+	} else {
+		link = base + event.link;
+	}
 </script>
 
 <div class="eventContainer">
-	<a id="imagelink" href={base + event.link}>
+	<a id="imagelink" href={link}>
 		<img src={base + event.image} alt={event.name} />
 	</a>
-	<a id="textlink" href={base + event.link}>
+	<a id="textlink" href={link}>
 		<h3>
 			{event.name}
 		</h3>
