@@ -10,3 +10,7 @@ SetEnv PERSONAL_MAIL "personal@campus-cneipe.de"
     AddType image/svg+xml svg svgz
     AddEncoding gzip svgz
 </IfModule>
+
+<Files typo3temp_lrz_old/*>
+    deny from all
+</Files>

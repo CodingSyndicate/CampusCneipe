@@ -74,5 +74,5 @@ deploy staging:
     - npm run build
     - tar -czf c2-website.tar.gz build/
     - echo -e "\n${HTACCESS_SECRETS}\n" >> build/.htaccess
-    - rsync -zrl --delete --exclude=staging/ --mkpath -e "sshpass -p $DEPLOY_PW ssh -o StrictHostKeyChecking=no -l $DEPLOY_USER" build/ "${DEPLOY_HOST}:~/webserver/htdocs${DEPLOY_PREFIX}/"
+    - rsync -zrl --delete --exclude={staging/,typo3temp_lrz_old/} --mkpath -e "sshpass -p $DEPLOY_PW ssh -o StrictHostKeyChecking=no -l $DEPLOY_USER" build/ "${DEPLOY_HOST}:~/webserver/htdocs${DEPLOY_PREFIX}/"
 
