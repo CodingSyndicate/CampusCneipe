@@ -1,12 +1,13 @@
 <script>
+	import { base } from '$app/paths';
 	export let event;
 </script>
 
 <div class="eventContainer">
-	<a id="imagelink" href={event.link}>
-		<img src={event.image} alt={event.image} />
+	<a id="imagelink" href="{base}/{event.link}">
+		<img src="{base}/{event.image}" alt="event image" />
 	</a>
-	<a id="textlink" href={event.link}>
+	<a id="textlink" href="{base}/{event.link}">
 		<h3>
 			{event.name}
 		</h3>
