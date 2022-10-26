@@ -7,7 +7,7 @@
 	import TitelSeite from '$lib/Cards/TitelSeite.svelte';
 
 	import Oeffnungszeiten from './Oeffnungszeiten.svelte';
-	import Anfahrt from './Anfahrt.svelte';
+	import Anfahrt from './anfahrt.svelte';
 
 	events.length = 4;
 	const trinkspruch = trinksprueche[Math.floor(Math.random() * trinksprueche.length)];
