@@ -69,10 +69,10 @@ deploy staging:
   before_script:
     - npm ci --cache .npm --prefer-offline
   script:
-    - if [ "$CI_COMMIT_REF_NAME" = "master" ]; then export DEPLOY_PREFIX=""; else export DEPLOY_PREFIX="staging/${CI_COMMIT_REF_SLUG}"; fi
-    - export BASE="/${DEPLOY_PREFIX}"
+    - if [ "$CI_COMMIT_REF_NAME" = "master" ]; then export DEPLOY_PREFIX=""; else export DEPLOY_PREFIX="/staging/${CI_COMMIT_REF_SLUG}"; fi
+    - export BASE="${DEPLOY_PREFIX}"
     - npm run build
     - tar -czf c2-website.tar.gz build/
     - echo -e "\n${HTACCESS_SECRETS}\n" >> build/.htaccess
-    - rsync -zrl --delete --exclude=staging/ --mkpath -e "sshpass -p $DEPLOY_PW ssh -o StrictHostKeyChecking=no -l $DEPLOY_USER" build/ "${DEPLOY_HOST}:~/webserver/htdocs/${DEPLOY_PREFIX}"
+    - rsync -zrl --delete --exclude=staging/ --mkpath -e "sshpass -p $DEPLOY_PW ssh -o StrictHostKeyChecking=no -l $DEPLOY_USER" build/ "${DEPLOY_HOST}:~/webserver/htdocs${DEPLOY_PREFIX}/"
 
