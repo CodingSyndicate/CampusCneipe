@@ -1,111 +1,117 @@
 [
     {
-        "childs": [],
-        "name": "Cocktailzutaten",
-        "products": [
-            {
-                "name": "Gin",
-                "price": "0.00\u20ac"
-            },
-            {
-                "name": "Limette",
-                "price": "0.00\u20ac"
-            },
-            {
-                "name": "Rohrzucker",
-                "price": "0.00\u20ac"
-            },
-            {
-                "name": "Zitronensaft",
-                "price": "0.00\u20ac"
-            },
-            {
-                "name": "Campari",
-                "price": "0.00\u20ac"
-            },
-            {
-                "name": "Vermuth",
-                "price": "0.00\u20ac"
-            }
-        ]
-    },
-    {
         "childs": [
             {
                 "childs": [],
                 "name": "Biere",
                 "products": [
                     {
+                        "amount": "0.5",
+                        "ingredients": [],
                         "name": "Helles",
-                        "price": "3.30\u20ac"
+                        "price": "3.30"
                     },
                     {
+                        "amount": "0.5",
+                        "ingredients": [],
                         "name": "Wei\u00dfbier",
-                        "price": "3.30\u20ac"
+                        "price": "3.30"
                     },
                     {
+                        "amount": "0.5",
+                        "ingredients": [],
                         "name": "Mystery",
-                        "price": "3.50\u20ac"
+                        "price": "3.50"
                     },
                     {
+                        "amount": "0.5",
+                        "ingredients": [],
                         "name": "Vitus",
-                        "price": "3.60\u20ac"
+                        "price": "3.60"
                     },
                     {
+                        "amount": "1",
+                        "ingredients": [],
                         "name": "Helles, Ma\u00df",
-                        "price": "6.10\u20ac"
+                        "price": "6.10"
                     },
                     {
+                        "amount": "1",
+                        "ingredients": [],
                         "name": "Goa\u00dfma\u00df",
-                        "price": "6.60\u20ac"
+                        "price": "6.60"
                     },
                     {
+                        "amount": "0.5",
+                        "ingredients": [],
                         "name": "Radler",
-                        "price": "3.30\u20ac"
+                        "price": "3.30"
                     },
                     {
+                        "amount": "0.5",
+                        "ingredients": [],
                         "name": "Ru\u00df\u00b4n",
-                        "price": "3.30\u20ac"
+                        "price": "3.30"
                     },
                     {
+                        "amount": "0.5",
+                        "ingredients": [],
                         "name": "Cola-Weissbier",
-                        "price": "3.30\u20ac"
+                        "price": "3.30"
                     },
                     {
+                        "amount": "0.5",
+                        "ingredients": [],
                         "name": "alkf. Weissbier",
-                        "price": "3.30\u20ac"
+                        "price": "3.30"
                     },
                     {
+                        "amount": "0.5",
+                        "ingredients": [],
                         "name": "alkf. Helles",
-                        "price": "3.30\u20ac"
+                        "price": "3.30"
                     },
                     {
+                        "amount": "0.5",
+                        "ingredients": [],
                         "name": "dunkles Weissbier",
-                        "price": "3.30\u20ac"
+                        "price": "3.30"
                     },
                     {
+                        "amount": "0.33",
+                        "ingredients": [],
                         "name": "Pils",
-                        "price": "2.90\u20ac"
+                        "price": "2.90"
                     },
                     {
+                        "amount": "1",
+                        "ingredients": [],
                         "name": "Radler, Ma\u00df",
-                        "price": "6.10\u20ac"
+                        "price": "6.10"
                     },
                     {
+                        "amount": "0.5",
+                        "ingredients": [],
                         "name": "Dunkles",
-                        "price": "3.30\u20ac"
+                        "price": "3.30"
                     },
                     {
+                        "amount": "0.5",
+                        "ingredients": [],
                         "name": "Isarwasser",
-                        "price": "3.50\u20ac"
+                        "price": "3.50"
                     },
                     {
+                        "amount": "1",
+                        "ingredients": [],
                         "name": "Mystery, Ma\u00df",
-                        "price": "6.40\u20ac"
+                        "price": "6.40"
                     },
                     {
+                        "amount": "1",
+                        "ingredients": [],
                         "name": "Wei\u00dfbier, Ma\u00df",
-                        "price": "6.10\u20ac"
+                        "price": "6.10"
                     }
                 ]
             },
@@ -114,12 +120,16 @@
                 "name": "Wein",
                 "products": [
                     {
+                        "amount": "0.2",
+                        "ingredients": [],
                         "name": "Wein wei\u00df/rot",
-                        "price": "4.20\u20ac"
+                        "price": "4.20"
                     },
                     {
+                        "amount": "0.2",
+                        "ingredients": [],
                         "name": "Weinschorle s\u00fc\u00df/sauer",
-                        "price": "4.70\u20ac"
+                        "price": "4.70"
                     }
                 ]
             },
@@ -128,36 +138,52 @@
                 "name": "Shots",
                 "products": [
                     {
+                        "amount": "0.04",
+                        "ingredients": [],
                         "name": "Mexicana",
-                        "price": "3.90\u20ac"
+                        "price": "3.90"
                     },
                     {
+                        "amount": "0.02",
+                        "ingredients": [],
                         "name": "Shot",
-                        "price": "2.00\u20ac"
+                        "price": "2.00"
                     },
                     {
+                        "amount": "0.02",
+                        "ingredients": [],
                         "name": "Wochenschnaps",
-                        "price": "1.00\u20ac"
+                        "price": "1.00"
                     },
                     {
+                        "amount": "0.04",
+                        "ingredients": [],
                         "name": "Apfelstrudel",
-                        "price": "3.90\u20ac"
+                        "price": "3.90"
                     },
                     {
+                        "amount": "0.04",
+                        "ingredients": [],
                         "name": "Liquid Cocaine",
-                        "price": "3.90\u20ac"
+                        "price": "3.90"
                     },
                     {
+                        "amount": "0.04",
+                        "ingredients": [],
                         "name": "TUM Kamikaze",
-                        "price": "3.90\u20ac"
+                        "price": "3.90"
                     },
                     {
+                        "amount": "0.04",
+                        "ingredients": [],
                         "name": "B52",
-                        "price": "3.90\u20ac"
+                        "price": "3.90"
                     },
                     {
+                        "amount": "0.04",
+                        "ingredients": [],
                         "name": "Alien Brain",
-                        "price": "3.90\u20ac"
+                        "price": "3.90"
                     }
                 ]
             },
@@ -166,44 +192,58 @@
                 "name": "Alkoholfreie Getr\u00e4nke",
                 "products": [
                     {
-                        "name": "Tafelwasser, 0.5 L",
-                        "price": "1.20\u20ac"
+                        "amount": "0.5",
+                        "ingredients": [],
+                        "name": "Tafelwasser",
+                        "price": "2.20"
                     },
                     {
-                        "name": "Zitronenlimo, 0.5 L",
-                        "price": "1.70\u20ac"
+                        "amount": "0.5",
+                        "ingredients": [],
+                        "name": "Zitronenlimo",
+                        "price": "2.70"
                     },
                     {
-                        "name": "Spezi, 0.5 L",
-                        "price": "1.70\u20ac"
+                        "amount": "0.5",
+                        "ingredients": [],
+                        "name": "Spezi",
+                        "price": "2.70"
                     },
                     {
-                        "name": "Cola, 0.5 L",
-                        "price": "1.70\u20ac"
+                        "amount": "0.5",
+                        "ingredients": [],
+                        "name": "Cola",
+                        "price": "2.70"
                     },
                     {
-                        "name": "Fanta 0,5l",
-                        "price": "1.70\u20ac"
+                        "amount": "0.5",
+                        "ingredients": [],
+                        "name": "Fanta",
+                        "price": "2.70"
                     },
                     {
+                        "amount": "0.5",
+                        "ingredients": [],
                         "name": "Club Mate",
-                        "price": "1.70\u20ac"
+                        "price": "2.70"
                     },
                     {
-                        "name": "Schweppes, 0.2 L",
-                        "price": "1.70\u20ac"
+                        "amount": "0.5",
+                        "ingredients": [],
+                        "name": "Schweppes",
+                        "price": "2.70"
                     },
                     {
-                        "name": "Red Bull 0,33l",
-                        "price": "2.80\u20ac"
+                        "amount": "0.33",
+                        "ingredients": [],
+                        "name": "Red Bull",
+                        "price": "2.80"
                     },
                     {
-                        "name": "Cola Zero 0,5L",
-                        "price": "1.70\u20ac"
-                    },
-                    {
-                        "name": "Cola 0,5L",
-                        "price": "1.70\u20ac"
+                        "amount": "0.5",
+                        "ingredients": [],
+                        "name": "Cola Zero",
+                        "price": "2.70"
                     }
                 ]
             },
@@ -212,24 +252,34 @@
                 "name": "Schorlen",
                 "products": [
                     {
-                        "name": "Apfelschorle, 0.5 L",
-                        "price": "1.70\u20ac"
+                        "amount": "0.5",
+                        "ingredients": [],
+                        "name": "Apfelschorle",
+                        "price": "1.70"
                     },
                     {
-                        "name": "Ananassaftschorle, 0.5 L",
-                        "price": "1.70\u20ac"
+                        "amount": "0.5",
+                        "ingredients": [],
+                        "name": "Ananassaftschorle",
+                        "price": "1.70"
                     },
                     {
-                        "name": "Orangensaftschorle, 0.5 L",
-                        "price": "1.70\u20ac"
+                        "amount": "0.5",
+                        "ingredients": [],
+                        "name": "Orangensaftschorle",
+                        "price": "1.70"
                     },
                     {
-                        "name": "Johannisbeersaftschorle, 0.5 L",
-                        "price": "1.70\u20ac"
+                        "amount": "0.5",
+                        "ingredients": [],
+                        "name": "Johannisbeersaftschorle",
+                        "price": "1.70"
                     },
                     {
-                        "name": "Maracujasaftschorle, 0.5 L",
-                        "price": "1.70\u20ac"
+                        "amount": "0.5",
+                        "ingredients": [],
+                        "name": "Maracujasaftschorle",
+                        "price": "1.70"
                     }
                 ]
             },
@@ -238,24 +288,34 @@
                 "name": "S\u00e4fte",
                 "products": [
                     {
+                        "amount": "",
+                        "ingredients": [],
                         "name": "Apfelsaft, 0.4 L",
-                        "price": "1.50\u20ac"
+                        "price": "1.50"
                     },
                     {
+                        "amount": "",
+                        "ingredients": [],
                         "name": "Ananassaft, 0.4 L",
-                        "price": "1.50\u20ac"
+                        "price": "1.50"
                     },
                     {
+                        "amount": "",
+                        "ingredients": [],
                         "name": "Orangensaft, 0.4 L",
-                        "price": "1.50\u20ac"
+                        "price": "1.50"
                     },
                     {
+                        "amount": "",
+                        "ingredients": [],
                         "name": "Johannisbeernektar, 0.4 L",
-                        "price": "1.50\u20ac"
+                        "price": "1.50"
                     },
                     {
+                        "amount": "",
+                        "ingredients": [],
                         "name": "Maracujanektar, 0.4 L",
-                        "price": "1.50\u20ac"
+                        "price": "1.50"
                     }
                 ]
             },
@@ -264,24 +324,34 @@
                 "name": "Hei\u00dfe Getr\u00e4nke",
                 "products": [
                     {
+                        "amount": "",
+                        "ingredients": [],
                         "name": "Espresso",
-                        "price": "1.50\u20ac"
+                        "price": "1.50"
                     },
                     {
+                        "amount": "",
+                        "ingredients": [],
                         "name": "Tasse Kaffee",
-                        "price": "1.90\u20ac"
+                        "price": "2.00"
                     },
                     {
+                        "amount": "",
+                        "ingredients": [],
                         "name": "Tasse Tee",
-                        "price": "1.90\u20ac"
+                        "price": "1.50"
                     },
                     {
+                        "amount": "",
+                        "ingredients": [],
                         "name": "Hei\u00dfe Zitrone",
-                        "price": "1.90\u20ac"
+                        "price": "1.50"
                     },
                     {
+                        "amount": "",
+                        "ingredients": [],
                         "name": "Cappuccino",
-                        "price": "2.70\u20ac"
+                        "price": "2.70"
                     }
                 ]
             },
@@ -290,31 +360,36 @@
                 "name": "TO GO",
                 "products": [
                     {
+                        "amount": "",
+                        "ingredients": [],
                         "name": "Flasche Limo",
-                        "price": "1.50\u20ac"
+                        "price": "1.50"
                     },
                     {
+                        "amount": "",
+                        "ingredients": [],
                         "name": "Flasche Spezi",
-                        "price": "1.50\u20ac"
+                        "price": "1.50"
                     },
                     {
+                        "amount": "",
+                        "ingredients": [],
                         "name": "Flasche Mate",
-                        "price": "1.50\u20ac"
+                        "price": "1.50"
                     },
                     {
+                        "amount": "",
+                        "ingredients": [],
                         "name": "Flasche Cola",
-                        "price": "3.00\u20ac"
+                        "price": "3.00"
                     },
                     {
+                        "amount": "",
+                        "ingredients": [],
                         "name": "Helles",
-                        "price": "2.00\u20ac"
+                        "price": "2.00"
                     }
                 ]
-            },
-            {
-                "childs": [],
-                "name": "Cocktails",
-                "products": []
             }
         ],
         "name": "Getr\u00e4nke",
@@ -327,20 +402,41 @@
                 "name": "The Unforgettables",
                 "products": [
                     {
+                        "amount": "",
+                        "ingredients": [],
                         "name": "Old Fashioned",
-                        "price": "6.30\u20ac"
+                        "price": "6.30"
                     },
                     {
+                        "amount": "",
+                        "ingredients": [],
                         "name": "Daiquiri",
-                        "price": "6.30\u20ac"
+                        "price": "6.30"
                     },
                     {
+                        "amount": "",
+                        "ingredients": [
+                            {
+                                "amount": 3,
+                                "name": "Campari"
+                            },
+                            {
+                                "amount": 2,
+                                "name": "Rohrzucker"
+                            },
+                            {
+                                "amount": 1,
+                                "name": "Gin"
+                            }
+                        ],
                         "name": "Negroni",
-                        "price": "6.30\u20ac"
+                        "price": "6.30"
                     },
                     {
+                        "amount": "",
+                        "ingredients": [],
                         "name": "Boulevardier",
-                        "price": "6.30\u20ac"
+                        "price": "6.30"
                     }
                 ]
             },
@@ -349,36 +445,52 @@
                 "name": "Classics",
                 "products": [
                     {
+                        "amount": "",
+                        "ingredients": [],
                         "name": "Fresh Herrmann",
-                        "price": "6.30\u20ac"
+                        "price": "6.30"
                     },
                     {
+                        "amount": "",
+                        "ingredients": [],
                         "name": "Caipirinha",
-                        "price": "6.30\u20ac"
+                        "price": "6.30"
                     },
                     {
+                        "amount": "",
+                        "ingredients": [],
                         "name": "Pina Colada",
-                        "price": "6.30\u20ac"
+                        "price": "6.30"
                     },
                     {
+                        "amount": "",
+                        "ingredients": [],
                         "name": "Tequila Sunrise",
-                        "price": "6.30\u20ac"
+                        "price": "6.30"
                     },
                     {
+                        "amount": "",
+                        "ingredients": [],
                         "name": "Sex on the Beach:",
-                        "price": "6.30\u20ac"
+                        "price": "6.30"
                     },
                     {
+                        "amount": "",
+                        "ingredients": [],
                         "name": "Longdrinks",
-                        "price": "6.30\u20ac"
+                        "price": "6.30"
                     },
                     {
+                        "amount": "",
+                        "ingredients": [],
                         "name": "Vodka Lemon",
-                        "price": "6.30\u20ac"
+                        "price": "6.30"
                     },
                     {
+                        "amount": "",
+                        "ingredients": [],
                         "name": "Mojito",
-                        "price": "6.30\u20ac"
+                        "price": "6.30"
                     }
                 ]
             },
@@ -387,36 +499,52 @@
                 "name": "Light",
                 "products": [
                     {
+                        "amount": "",
+                        "ingredients": [],
                         "name": "Cuba Libre",
-                        "price": "6.30\u20ac"
+                        "price": "6.30"
                     },
                     {
+                        "amount": "",
+                        "ingredients": [],
                         "name": "Gin & Tonic",
-                        "price": "6.30\u20ac"
+                        "price": "6.30"
                     },
                     {
+                        "amount": "",
+                        "ingredients": [],
                         "name": "Moscow Mule",
-                        "price": "6.30\u20ac"
+                        "price": "6.30"
                     },
                     {
+                        "amount": "",
+                        "ingredients": [],
                         "name": "Munich Mule",
-                        "price": "6.30\u20ac"
+                        "price": "6.30"
                     },
                     {
+                        "amount": "",
+                        "ingredients": [],
                         "name": "Vodka Bull",
-                        "price": "6.30\u20ac"
+                        "price": "6.30"
                     },
                     {
+                        "amount": "",
+                        "ingredients": [],
                         "name": "Horses Neck",
-                        "price": "6.30\u20ac"
+                        "price": "6.30"
                     },
                     {
+                        "amount": "",
+                        "ingredients": [],
                         "name": "Lynchburg Lemonade",
-                        "price": "6.30\u20ac"
+                        "price": "6.30"
                     },
                     {
+                        "amount": "",
+                        "ingredients": [],
                         "name": "Espresso Martini",
-                        "price": "6.30\u20ac"
+                        "price": "6.30"
                     }
                 ]
             },
@@ -425,20 +553,28 @@
                 "name": "Strong",
                 "products": [
                     {
+                        "amount": "",
+                        "ingredients": [],
                         "name": "Long Island Ice Tea",
-                        "price": "7.30\u20ac"
+                        "price": "7.30"
                     },
                     {
+                        "amount": "",
+                        "ingredients": [],
                         "name": "Zombie",
-                        "price": "7.30\u20ac"
+                        "price": "7.30"
                     },
                     {
+                        "amount": "",
+                        "ingredients": [],
                         "name": "Mai Tai",
-                        "price": "7.30\u20ac"
+                        "price": "7.30"
                     },
                     {
+                        "amount": "",
+                        "ingredients": [],
                         "name": "Gin and Apricot Martini",
-                        "price": "7.30\u20ac"
+                        "price": "7.30"
                     }
                 ]
             },
@@ -447,20 +583,28 @@
                 "name": "Fizzes & Sours",
                 "products": [
                     {
+                        "amount": "",
+                        "ingredients": [],
                         "name": "Gin Basil Smash",
-                        "price": "6.30\u20ac"
+                        "price": "6.30"
                     },
                     {
+                        "amount": "",
+                        "ingredients": [],
                         "name": "Fizz",
-                        "price": "6.30\u20ac"
+                        "price": "6.30"
                     },
                     {
+                        "amount": "",
+                        "ingredients": [],
                         "name": "Sour",
-                        "price": "6.30\u20ac"
+                        "price": "6.30"
                     },
                     {
+                        "amount": "",
+                        "ingredients": [],
                         "name": "New York Sour",
-                        "price": "6.30\u20ac"
+                        "price": "6.30"
                     }
                 ]
             },
@@ -469,16 +613,22 @@
                 "name": "Sprizzes",
                 "products": [
                     {
+                        "amount": "",
+                        "ingredients": [],
                         "name": "Hugo",
-                        "price": "4.60\u20ac"
+                        "price": "4.60"
                     },
                     {
+                        "amount": "",
+                        "ingredients": [],
                         "name": "Aperol Spritz",
-                        "price": "4.60\u20ac"
+                        "price": "4.60"
                     },
                     {
+                        "amount": "",
+                        "ingredients": [],
                         "name": "Limoncello Sprizz",
-                        "price": "4.60\u20ac"
+                        "price": "4.60"
                     }
                 ]
             },
@@ -487,20 +637,28 @@
                 "name": "Mocktails (alkfrei.)",
                 "products": [
                     {
+                        "amount": "",
+                        "ingredients": [],
                         "name": "Pineapple Mule",
-                        "price": "5.30\u20ac"
+                        "price": "5.30"
                     },
                     {
+                        "amount": "",
+                        "ingredients": [],
                         "name": "Mint Tonic",
-                        "price": "5.30\u20ac"
+                        "price": "5.30"
                     },
                     {
+                        "amount": "",
+                        "ingredients": [],
                         "name": "Caipinino",
-                        "price": "4.90\u20ac"
+                        "price": "4.90"
                     },
                     {
+                        "amount": "",
+                        "ingredients": [],
                         "name": "PiNADA Colada",
-                        "price": "5.30\u20ac"
+                        "price": "5.30"
                     }
                 ]
             }
@@ -515,20 +673,28 @@
                 "name": "Sandwiches/Paninis",
                 "products": [
                     {
+                        "amount": "",
+                        "ingredients": [],
                         "name": "SW Rucola Pesto",
-                        "price": "4.90\u20ac"
+                        "price": "4.90"
                     },
                     {
+                        "amount": "",
+                        "ingredients": [],
                         "name": "SW Putenbrust",
-                        "price": "4.90\u20ac"
+                        "price": "4.90"
                     },
                     {
+                        "amount": "",
+                        "ingredients": [],
                         "name": "SW Salami Calabra",
-                        "price": "4.90\u20ac"
+                        "price": "4.90"
                     },
                     {
+                        "amount": "",
+                        "ingredients": [],
                         "name": "SW vegan gegrillte Paprika",
-                        "price": "4.90\u20ac"
+                        "price": "4.90"
                     }
                 ]
             },
@@ -537,12 +703,16 @@
                 "name": "Snacks",
                 "products": [
                     {
+                        "amount": "",
+                        "ingredients": [],
                         "name": "Nachos klein",
-                        "price": "3.20\u20ac"
+                        "price": "3.20"
                     },
                     {
+                        "amount": "",
+                        "ingredients": [],
                         "name": "Nachos gro\u00df",
-                        "price": "4.90\u20ac"
+                        "price": "4.90"
                     }
                 ]
             }
