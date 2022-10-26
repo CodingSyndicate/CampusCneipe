@@ -1,0 +1,75 @@
+stages:
+  - ci_image
+  - ready2order
+  - deploy_staging
+
+docker build:
+  stage: ci_image
+  image: nixos/nix:latest
+  resource_group: registry
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "schedule"'
+      when: never
+    - if: '$CI_PIPELINE_SOURCE == "web"'
+      when: never
+    - changes:
+        - nix/*
+  script:
+    # For pinning:
+    # - export NIX_PATH="nixpkgs=https://github.com/NixOS/nixpkgs/archive/ab593d46dc38b9f0f23964120912138c77fa9af4.tar.gz"
+    - nix-channel --update
+    - nix-build -o image.tar.gz ./nix/docker_container.nix
+    - |
+      nix-shell -p skopeo --command 'skopeo \
+        --insecure-policy \
+        copy \
+        --dest-creds $CI_REGISTRY_USER:$CI_REGISTRY_PASSWORD \
+        docker-archive:image.tar.gz \
+        docker://$CI_REGISTRY_IMAGE/c2-website-builder:latest'
+
+update menu:
+  stage: ready2order
+  image: "$CI_REGISTRY_IMAGE/c2-website-builder:latest"
+  resource_group: repo
+  only:
+    - web
+    - schedules
+    # c.f. https://stackoverflow.com/a/69036965
+  before_script:
+    - git config user.email "ci@campus-cneipe.de"
+    - git config user.name "C2 CI"
+    - git remote remove ssh_origin || true  # Local repo state may be cached
+    - git remote add ssh_origin "https://c2:$CI_ACCESS_TOKEN@$CI_SERVER_HOST/$CI_PROJECT_PATH.git"
+  script:
+    - ./scripts/update_menu.py > data/menu_data.json
+    - |
+      set -eux
+      if [ -n "$(git status --porcelain content/menu_data.json)" ]; then
+      git add content/menu_data.json
+      git commit -m "Update products from ready2order API"
+      git push ssh_origin HEAD:master
+      echo "Cancelling this pipeline, new one will be triggered by push"
+      curl --request POST --header "PRIVATE-TOKEN: ${CI_API_TOKEN}" "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/pipelines/${CI_PIPELINE_ID}/cancel"
+      fi
+
+deploy staging:
+  stage: deploy_staging
+  image: "$CI_REGISTRY_IMAGE/c2-website-builder:latest"
+  resource_group: staging
+  artifacts:
+    paths:
+      - c2-website.tar.gz
+    expire_in: 3 days
+  cache:
+    key:
+      files:
+        - package-lock.json
+    paths:
+      - .npm/
+  before_script:
+    - npm ci --cache .npm --prefer-offline
+  script:
+    - npm run build
+    - tar -czf c2-website.tar.gz build/
+    - rsync -zrl --delete --mkpath -e "sshpass -p $DEPLOY_PW ssh -o StrictHostKeyChecking=no -l $DEPLOY_USER" build/ $DEPLOY_HOST:~/webserver/htdocs/staging/$CI_COMMIT_REF_SLUG/
+
