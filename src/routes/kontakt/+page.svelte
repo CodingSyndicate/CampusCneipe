@@ -4,11 +4,11 @@
 
 	let name;
 	let email;
-	let wish;
+	let request;
 	let message;
 	let checked = false;
 
-	$: disabled = !(name && email && wish && message && checked);
+	$: disabled = !(name && email && request && message && checked);
 
 	let submitted = false;
 
@@ -17,7 +17,7 @@
 		if (disabled) return;
 		if (!checked) return;
 		checked = false;
-		let res = await fetch('/api/handle_form.php', {
+		let res = await fetch(base + '/api/handle_form.php', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'multipart/form-data'
@@ -26,8 +26,8 @@
 			body: JSON.stringify({
 				name,
 				email,
-				request: wish.split('_')[1],
-				requesttype: wish.split('_')[0],
+				request: request.split('_')[1],
+				requesttype: request.split('_')[0],
 				message,
 				challenge: '9'
 			})
@@ -107,7 +107,7 @@
 		<div class="mb-3">
 			<label for="anfragentyp" class="form-label">Du möchtest...</label>
 			<select
-				bind:value={wish}
+				bind:value={request}
 				id="anfragentyp"
 				class="form-select"
 				aria-label="Anfragentyp wählen"
