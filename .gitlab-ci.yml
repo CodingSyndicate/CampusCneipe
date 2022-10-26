@@ -73,6 +73,6 @@ deploy staging:
     - export BASE="/${DEPLOY_PREFIX}"
     - npm run build
     - tar -czf c2-website.tar.gz build/
-    - echo "\n${HTACCESS_SECRETS}\n" >> build/.htaccess
+    - echo -e "\n${HTACCESS_SECRETS}\n" >> build/.htaccess
     - rsync -zrl --delete --mkpath -e "sshpass -p $DEPLOY_PW ssh -o StrictHostKeyChecking=no -l $DEPLOY_USER" build/ "${DEPLOY_HOST}:~/webserver/htdocs/${DEPLOY_PREFIX}"
 
