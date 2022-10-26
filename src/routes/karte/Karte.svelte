@@ -4,7 +4,7 @@
 </script>
 
 <div class="kartenContainer">
-	{#each menu.slice(1, 4) as kategorie}
+	{#each menu as kategorie}
 		<KartenKategorie {kategorie} />
 	{/each}
 </div>

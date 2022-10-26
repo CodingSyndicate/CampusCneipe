@@ -1,11 +1,14 @@
 <script>
+        let currentDate = new Date();
 	import EventPreview from './EventPreview.svelte';
 	export let events;
 </script>
 
 <div class="rowContainer">
 	{#each events as event}
+	{#if event.date > currentDate}
 		<EventPreview {event} />
+	{/if}
 	{/each}
 </div>
 

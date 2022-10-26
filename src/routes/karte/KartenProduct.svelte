@@ -4,7 +4,7 @@
 
 <div class="elementContainer">
 	<span class="productName">{product.name}</span>
-	<span class="productPrice">{product.price}</span>
+	<span class="productPrice">{product.price}€</span>
 </div>
 
 <style>
