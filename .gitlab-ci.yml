@@ -44,8 +44,8 @@ update menu:
     - ./scripts/update_menu.py > data/menu_data.json
     - |
       set -eux
-      if [ -n "$(git status --porcelain content/menu_data.json)" ]; then
-      git add content/menu_data.json
+      if [ -n "$(git status --porcelain data/menu_data.json)" ]; then
+      git add data/menu_data.json
       git commit -m "Update products from ready2order API"
       git push ssh_origin HEAD:master
       echo "Cancelling this pipeline, new one will be triggered by push"
