@@ -255,31 +255,31 @@
                         "amount": "0.5",
                         "ingredients": [],
                         "name": "Apfelschorle",
-                        "price": "1.70"
+                        "price": "2.70"
                     },
                     {
                         "amount": "0.5",
                         "ingredients": [],
                         "name": "Ananassaftschorle",
-                        "price": "1.70"
+                        "price": "2.70"
                     },
                     {
                         "amount": "0.5",
                         "ingredients": [],
                         "name": "Orangensaftschorle",
-                        "price": "1.70"
+                        "price": "2.70"
                     },
                     {
                         "amount": "0.5",
                         "ingredients": [],
                         "name": "Johannisbeersaftschorle",
-                        "price": "1.70"
+                        "price": "2.70"
                     },
                     {
                         "amount": "0.5",
                         "ingredients": [],
                         "name": "Maracujasaftschorle",
-                        "price": "1.70"
+                        "price": "2.70"
                     }
                 ]
             },
@@ -291,31 +291,31 @@
                         "amount": "",
                         "ingredients": [],
                         "name": "Apfelsaft, 0.4 L",
-                        "price": "1.50"
+                        "price": "2.50"
                     },
                     {
                         "amount": "",
                         "ingredients": [],
                         "name": "Ananassaft, 0.4 L",
-                        "price": "1.50"
+                        "price": "2.50"
                     },
                     {
                         "amount": "",
                         "ingredients": [],
                         "name": "Orangensaft, 0.4 L",
-                        "price": "1.50"
+                        "price": "2.50"
                     },
                     {
                         "amount": "",
                         "ingredients": [],
                         "name": "Johannisbeernektar, 0.4 L",
-                        "price": "1.50"
+                        "price": "2.50"
                     },
                     {
                         "amount": "",
                         "ingredients": [],
                         "name": "Maracujanektar, 0.4 L",
-                        "price": "1.50"
+                        "price": "2.50"
                     }
                 ]
             },
