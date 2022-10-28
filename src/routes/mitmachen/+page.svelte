@@ -27,14 +27,14 @@
 		<h3>12-14€ STUDENLOHN ALS...</h3>
 		<div class="dauerJobs">
 			<section>
-				<h4>MITARBEITER SERVICE</h4>
+				<h4>MITARBEITER/-IN SERVICE (m,w,d)</h4>
 				<pre>Du hast gerne Kontakt mit Menschen,
 stellst es dir cool vor,
 hinter einer Bar zu arbeiten
 und mischt gerne Cocktails??</pre>
 			</section>
 			<section>
-				<h4>MITARBEITER KÜCHE</h4>
+				<h4>MITARBEITER/-IN KÜCHE (m,w,d)</h4>
 				<pre>Du wolltest schon immer mal deinen Kochkünsten
 in einer Gastroküche freien Lauf lassen
 oder dich wie bei fast keinem anderen Betrieb
@@ -47,7 +47,7 @@ Mit dem Schichtplaner Tool kannst du dir deine Arbeitszeiten individuell einteil
 <b>12-14€ Stundenlohn</b> etwas dazuverdienen.
 
 Mail an info@campus-cneipe.de
-oder smash den Button!</pre>
+oder über das Kontaktformular!</pre>
 		<a href="{base}/kontakt"
 			><button type="button" class="btn btn-outline-primary">Teil der C2 werden!</button></a
 		>
