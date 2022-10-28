@@ -22,7 +22,7 @@
 	<div class="col">
 		<h1>{title}</h1>
 		<hr />
-		<h2>{subtitle}</h2>
+		<h2>{@html subtitle}</h2>
 		{#if buttonText || buttonLink}
 			<button type="button" class="btn btn-primary" on:click={() => goto(buttonLink)}>
 				{buttonText}

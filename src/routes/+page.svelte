@@ -1,5 +1,4 @@
 <script>
-	import trinksprueche from '$data/trinksprüche.json';
 	import events from '$data/events.json';
 
 	import EventPreviewList from '$lib/Events/EventPreviewList.svelte';
@@ -10,7 +9,6 @@
 	import Anfahrt from './anfahrt.svelte';
 
 	events.length = 4;
-	const trinkspruch = trinksprueche[Math.floor(Math.random() * trinksprueche.length)];
 </script>
 
 <svelte:head>
@@ -29,7 +27,7 @@
 	/>
 </svelte:head>
 
-<TitelSeite title="DIE CAMPUS CNEIPE" subtitle={trinkspruch} full={true} image="/images/2-2.png" />
+<TitelSeite title="DIE CAMPUS CNEIPE" subtitle="<p>am Forschungszentrum Garching<br>von Studenten/Studentinnen für Alle</p>" full={true} image="/images/2-2.png" />
 <DetailedCard
 	title="DIE CNEIPE AM CAMPUS GARCHING"
 	subtitle="STUDENTISCHE PRESIE FÜR ALLE"
