@@ -138,12 +138,6 @@
                 "name": "Shots",
                 "products": [
                     {
-                        "amount": "0.04",
-                        "ingredients": [],
-                        "name": "Mexicana",
-                        "price": "3.90"
-                    },
-                    {
                         "amount": "0.02",
                         "ingredients": [],
                         "name": "Shot",
@@ -154,6 +148,12 @@
                         "ingredients": [],
                         "name": "Wochenschnaps",
                         "price": "1.00"
+                    },
+                    {
+                        "amount": "0.04",
+                        "ingredients": [],
+                        "name": "Mexicana",
+                        "price": "3.90"
                     },
                     {
                         "amount": "0.04",
@@ -291,31 +291,31 @@
                         "amount": "",
                         "ingredients": [],
                         "name": "Apfelsaft, 0.4 L",
-                        "price": "2.50"
+                        "price": "2.70"
                     },
                     {
                         "amount": "",
                         "ingredients": [],
                         "name": "Ananassaft, 0.4 L",
-                        "price": "2.50"
+                        "price": "2.70"
                     },
                     {
                         "amount": "",
                         "ingredients": [],
                         "name": "Orangensaft, 0.4 L",
-                        "price": "2.50"
+                        "price": "2.70"
                     },
                     {
                         "amount": "",
                         "ingredients": [],
                         "name": "Johannisbeernektar, 0.4 L",
-                        "price": "2.50"
+                        "price": "2.70"
                     },
                     {
                         "amount": "",
                         "ingredients": [],
                         "name": "Maracujanektar, 0.4 L",
-                        "price": "2.50"
+                        "price": "2.70"
                     }
                 ]
             },
@@ -447,7 +447,7 @@
                     {
                         "amount": "",
                         "ingredients": [],
-                        "name": "Fresh Herrmann",
+                        "name": "Mojito",
                         "price": "6.30"
                     },
                     {
@@ -465,6 +465,12 @@
                     {
                         "amount": "",
                         "ingredients": [],
+                        "name": "Fresh Herrmann",
+                        "price": "6.30"
+                    },
+                    {
+                        "amount": "",
+                        "ingredients": [],
                         "name": "Tequila Sunrise",
                         "price": "6.30"
                     },
@@ -477,19 +483,13 @@
                     {
                         "amount": "",
                         "ingredients": [],
-                        "name": "Longdrinks",
-                        "price": "6.30"
-                    },
-                    {
-                        "amount": "",
-                        "ingredients": [],
                         "name": "Vodka Lemon",
                         "price": "6.30"
                     },
                     {
                         "amount": "",
                         "ingredients": [],
-                        "name": "Mojito",
+                        "name": "Longdrinks",
                         "price": "6.30"
                     }
                 ]
@@ -652,7 +652,7 @@
                         "amount": "",
                         "ingredients": [],
                         "name": "Caipinino",
-                        "price": "4.90"
+                        "price": "5.30"
                     },
                     {
                         "amount": "",
