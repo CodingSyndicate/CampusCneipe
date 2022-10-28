@@ -7,14 +7,13 @@
 
 <Card
 	title="ÖFFNUNGSZEITEN"
-	subtitle="KOMMT NACH DER VORLESUNG VORBEI!"
+	subtitle="WÄHREND DER VORLESUNGZEIT"
 	{bigImage}
 	contentRight={true}
 	sideImageHalf={true}
 	small={true}
 	darkBackground={true}
 >
-	<span>In der Vorlesungszeit:</span>
 	<ul>
 		{#each opening_times as time}
 			<li>{time.day}: {time.open} - {time.close} Uhr</li>
