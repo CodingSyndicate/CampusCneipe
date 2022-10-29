@@ -1,4 +1,15 @@
 [
+  { "id": "karaoke-ws22",
+    "name": "Karaoke",
+    "description": "Karaoke für Alle",
+    "image": "/images/events/wochenprogramm/Karaoke.png",
+    "actionURL": "",
+    "date": [
+      "2022-11-03T14:00:00",
+      "2022-11-04T14:00:00",
+      "2022-11-05T14:00:00"
+    ]
+  },
     {
         "id": "reopening-ws22",
         "name": "Semester Reopening Party",
