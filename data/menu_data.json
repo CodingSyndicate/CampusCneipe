@@ -1,41 +1,5 @@
 [
     {
-        "childs": [],
-        "name": "Ehrenamtspreise",
-        "products": [
-            {
-                "amount": "",
-                "ingredients": [],
-                "name": "Cocktails",
-                "price": "5.00"
-            },
-            {
-                "amount": "",
-                "ingredients": [],
-                "name": "Strong Cocktails",
-                "price": "6.00"
-            },
-            {
-                "amount": "",
-                "ingredients": [],
-                "name": "Mocktails, Aperol, Weinschorle",
-                "price": "4.00"
-            },
-            {
-                "amount": "",
-                "ingredients": [],
-                "name": "Bier etc.",
-                "price": "2.00"
-            },
-            {
-                "amount": "",
-                "ingredients": [],
-                "name": "Ma\u00df Bier etc.",
-                "price": "4.00"
-            }
-        ]
-    },
-    {
         "childs": [
             {
                 "childs": [],
