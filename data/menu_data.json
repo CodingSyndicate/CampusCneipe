@@ -6,24 +6,6 @@
                 "name": "Biere",
                 "products": [
                     {
-                        "amount": "",
-                        "ingredients": [],
-                        "name": "",
-                        "price": "0.00"
-                    },
-                    {
-                        "amount": "",
-                        "ingredients": [],
-                        "name": "",
-                        "price": "0.00"
-                    },
-                    {
-                        "amount": "",
-                        "ingredients": [],
-                        "name": "",
-                        "price": "0.00"
-                    },
-                    {
                         "amount": "0.5",
                         "ingredients": [],
                         "name": "Helles",
@@ -66,12 +48,6 @@
                         "price": "3.30"
                     },
                     {
-                        "amount": "",
-                        "ingredients": [],
-                        "name": "",
-                        "price": "0.00"
-                    },
-                    {
                         "amount": "1",
                         "ingredients": [],
                         "name": "Helles, Ma\u00df",
@@ -102,24 +78,6 @@
                         "price": "6.10"
                     },
                     {
-                        "amount": "",
-                        "ingredients": [],
-                        "name": "",
-                        "price": "0.00"
-                    },
-                    {
-                        "amount": "",
-                        "ingredients": [],
-                        "name": "",
-                        "price": "0.00"
-                    },
-                    {
-                        "amount": "",
-                        "ingredients": [],
-                        "name": "",
-                        "price": "0.00"
-                    },
-                    {
                         "amount": "0.5",
                         "ingredients": [],
                         "name": "alkf. Weissbier",
@@ -130,18 +88,6 @@
                         "ingredients": [],
                         "name": "alkf. Helles",
                         "price": "3.30"
-                    },
-                    {
-                        "amount": "",
-                        "ingredients": [],
-                        "name": "",
-                        "price": "0.00"
-                    },
-                    {
-                        "amount": "",
-                        "ingredients": [],
-                        "name": "",
-                        "price": "0.00"
                     },
                     {
                         "amount": "0.5",
@@ -485,24 +431,6 @@
                 "childs": [],
                 "name": "Classics",
                 "products": [
-                    {
-                        "amount": "",
-                        "ingredients": [],
-                        "name": "",
-                        "price": "0.00"
-                    },
-                    {
-                        "amount": "",
-                        "ingredients": [],
-                        "name": "",
-                        "price": "0.00"
-                    },
-                    {
-                        "amount": "",
-                        "ingredients": [],
-                        "name": "",
-                        "price": "0.00"
-                    },
                     {
                         "amount": "0.2",
                         "ingredients": [],
