@@ -19,6 +19,9 @@ BLACKLISTED_PRODUCTGROUPS = [
     "Specials",
 ]
 
+BLACKLISTED_PRODUCTS = [
+    "" #Platzhalter
+    ]
 
 def build_tree(tree, pgs):
     tree = [e for e in tree if e["productgroup_name"] not in BLACKLISTED_PRODUCTGROUPS]
@@ -34,22 +37,9 @@ def build_tree(tree, pgs):
         )
         products = product_request.json()
         products = sorted(products, key=lambda p: int(p["product_sortIndex"]))
-        e["child_products"] = [p for p in products]
+        e["child_products"] = [p for p in products if p["product_name"] not in BLACKLISTED_PRODUCTS]
         build_tree(e["child_group"], pgs)
     return tree
-
-
-def relevant_only(node):
-    return {
-        "productgroup_name": node["productgroup_name"],
-        "productgroup_parent": node["productgroup_parent"],
-        "productgroup_id": node["productgroup_id"],
-    }
-
-
-def relevant_product(p):
-    return {"name": p["product_name"]}
-
 
 product_group_request = requests.get("https://api.ready2order.com/v1/productgroups", headers={"Authorization": API_KEY})
 product_groups = product_group_request.json()
