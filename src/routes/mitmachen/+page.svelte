@@ -14,7 +14,7 @@
 </svelte:head>
 
 <TitelSeite
-	title="MITMACHEN"
+	title="Mitmachen"
 	subtitle="Im Service, hinterm Tresen oder gar im Lager!"
 	full={false}
 	middle={false}

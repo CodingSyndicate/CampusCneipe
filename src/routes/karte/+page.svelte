@@ -14,8 +14,8 @@
 </svelte:head>
 
 <TitelSeite
-	title="GETRÄNKE- UND SPEISEKARTE"
-	subtitle="BIER, COCKTAILS, SHOTS, LONGDRINKS, SOFTDRINKS, SNACKS, KAFFEE UND NOCH MEHR BIER..."
+	title="Getränke- und Speisekarte"
+	subtitle="Bier, Cocktails, Shots, Longdrinks, Softdrinks, Snacks, Kaffee und noch mehr Bier..."
 	full={false}
 	middle={false}
 	image="/images/6-2.png"

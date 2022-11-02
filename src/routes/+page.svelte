@@ -27,10 +27,15 @@
 	/>
 </svelte:head>
 
-<TitelSeite title="DIE CAMPUS CNEIPE" subtitle="<p>am Forschungszentrum Garching<br>von Studenten/Studentinnen für Alle</p>" full={true} image="/images/2-2.png" />
+<TitelSeite
+	title="Die Campus Cneipe"
+	subtitle="<p>am Forschungszentrum Garching<br>von Studenten/Studentinnen für Alle</p>"
+	full={true}
+	image="/images/2-2.png"
+/>
 <DetailedCard
-	title="DIE CNEIPE AM CAMPUS GARCHING"
-	subtitle="MIT STUDENTISCHEN PREISEN"
+	title="Die Cneipe am Campus Garching"
+	subtitle="Mit studentischen Preisen"
 	smallImageLeft="/images/4.JPG"
 	smallImageRight="/images/5.JPG"
 	bigImage="/images/3-1.png"

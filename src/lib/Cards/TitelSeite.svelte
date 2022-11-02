@@ -52,6 +52,9 @@
 		height: 3px;
 		border: none;
 	}
+	h1 {
+		text-transform: uppercase;
+	}
 	h2 {
 		width: 850px;
 		word-wrap: break-word;

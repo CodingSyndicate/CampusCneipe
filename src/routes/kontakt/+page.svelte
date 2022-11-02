@@ -59,8 +59,8 @@
 </svelte:head>
 
 <TitelSeite
-	title="KONTAKT"
-	subtitle="KONTAKTIERE UNS FÜR RESERVIERUNGEN ODER VERANSTALTUNGEN!"
+	title="Kontakt"
+	subtitle="Kontaktiere uns für Reservierungen oder Veranstaltungen!"
 	full={false}
 	middle={false}
 	image="/images/kontakt.JPG"
