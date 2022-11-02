@@ -99,7 +99,7 @@
                         "amount": "0.5",
                         "ingredients": [],
                         "name": "Isarwasser",
-                        "price": "3.50"
+                        "price": "4.20"
                     },
                     {
                         "amount": "0.5",
@@ -663,25 +663,25 @@
                         "amount": "",
                         "ingredients": [],
                         "name": "SW Rucola Pesto",
-                        "price": "4.90"
+                        "price": "5.40"
                     },
                     {
                         "amount": "",
                         "ingredients": [],
                         "name": "SW Putenbrust",
-                        "price": "4.90"
+                        "price": "5.40"
                     },
                     {
                         "amount": "",
                         "ingredients": [],
                         "name": "SW Salami Calabra",
-                        "price": "4.90"
+                        "price": "5.40"
                     },
                     {
                         "amount": "",
                         "ingredients": [],
                         "name": "SW vegan gegrillte Paprika",
-                        "price": "4.90"
+                        "price": "5.40"
                     }
                 ]
             },
