@@ -657,6 +657,84 @@
         "childs": [
             {
                 "childs": [],
+                "name": "Alcoholic",
+                "products": [
+                    {
+                        "amount": "",
+                        "ingredients": [],
+                        "name": "Irish Coffee",
+                        "price": "4.50"
+                    },
+                    {
+                        "amount": "",
+                        "ingredients": [],
+                        "name": "Baileys Coffee",
+                        "price": "4.50"
+                    },
+                    {
+                        "amount": "",
+                        "ingredients": [],
+                        "name": "Hot Buttered Rum",
+                        "price": "4.50"
+                    },
+                    {
+                        "amount": "",
+                        "ingredients": [],
+                        "name": "Merry Moskow Mule",
+                        "price": "4.50"
+                    },
+                    {
+                        "amount": "",
+                        "ingredients": [],
+                        "name": "Pumpkin Scot Latte",
+                        "price": "4.50"
+                    },
+                    {
+                        "amount": "",
+                        "ingredients": [],
+                        "name": "Baileys Hot Chocolate",
+                        "price": "4.50"
+                    },
+                    {
+                        "amount": "",
+                        "ingredients": [],
+                        "name": "Hot Aperol",
+                        "price": "4.50"
+                    },
+                    {
+                        "amount": "",
+                        "ingredients": [],
+                        "name": "Baileys Chai Latte",
+                        "price": "4.50"
+                    }
+                ]
+            },
+            {
+                "childs": [],
+                "name": "Non alcoholic",
+                "products": [
+                    {
+                        "amount": "",
+                        "ingredients": [],
+                        "name": "Chai Latte",
+                        "price": "3.50"
+                    },
+                    {
+                        "amount": "",
+                        "ingredients": [],
+                        "name": "Hot Chocolate",
+                        "price": "3.50"
+                    }
+                ]
+            }
+        ],
+        "name": "Upcoming",
+        "products": []
+    },
+    {
+        "childs": [
+            {
+                "childs": [],
                 "name": "Sandwiches/Paninis",
                 "products": [
                     {
