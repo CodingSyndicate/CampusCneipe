@@ -5,6 +5,17 @@
 	import { Collapse } from 'bootstrap'; // Neccessary for bootstrap to work
 	import KartenProduct from './KartenProduct.svelte';
 	export let kategorie;
+
+	function idParser(id) {
+		return replaceUmlauts(id)
+			.split(' ')
+			.join('-')
+			.split('/')
+			.join('-')
+			.split('&')
+			.join('-')
+			.replace(/[^a-zA-Z ]/g, '');
+	}
 </script>
 
 <div class="kategorieContainer">
@@ -17,25 +28,24 @@
 		<div class="accordion accordion-flush" id="accordionExample">
 			{#each kategorie.childs.filter((el) => el.products.length > 0) as childCategory}
 				<div class="accordion-item">
-					<h2
-						class="accordion-header"
-						id="heading-{replaceUmlauts(childCategory.name).split(' ')[0]}"
-					>
+					<h2 class="accordion-header" id="heading-{idParser(childCategory.name)}">
 						<button
 							class="accordion-button collapsed"
 							type="button"
 							data-bs-toggle="collapse"
-							data-bs-target="#collapse-{replaceUmlauts(childCategory.name).split(' ')[0]}"
+							data-bs-target="#collapse-{idParser(childCategory.name)}"
 							aria-expanded="false"
-							aria-controls="collapse-{replaceUmlauts(childCategory.name).split(' ')[0]}"
+							aria-controls="collapse-{idParser(childCategory.name)}"
 						>
-							{childCategory.name}
+							<h4>
+								{childCategory.name}
+							</h4>
 						</button>
 					</h2>
 					<div
-						id="collapse-{replaceUmlauts(childCategory.name).split(' ')[0]}"
+						id="collapse-{idParser(childCategory.name)}"
 						class="accordion-collapse collapse"
-						aria-labelledby="heading-{replaceUmlauts(childCategory.name).split(' ')[0]}"
+						aria-labelledby="heading-{idParser(childCategory.name)}"
 						data-bs-parent="#accordionExample"
 					>
 						<div class="accordion-body">
@@ -59,6 +69,7 @@
 	.kategorieImage {
 		width: 50%;
 		height: auto;
+		object-fit: cover;
 	}
 	.kategorieContent {
 		width: 50%;
@@ -70,6 +81,23 @@
 	.accordion {
 		width: 100%;
 		height: 100%;
+		background-color: transparent;
+	}
+	.accordion-item {
+		background-color: transparent;
+		border-color: #313539;
+	}
+	.accordion-header,
+	.accordion-button {
+		background-color: #24292d;
+		text-transform: uppercase;
+	}
+	.accordion-button > h4 {
+		margin: 0;
+		color: #bfbfbf;
+	}
+	.accordion-button:not(.collapsed) {
+		box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-primary);
 	}
 	@media (max-width: 992px) {
 		.kategorieContainer {
@@ -83,8 +111,5 @@
 		.kategorieContent {
 			width: 100%;
 		}
-	}
-	h1 {
-		text-transform: uppercase;
 	}
 </style>
