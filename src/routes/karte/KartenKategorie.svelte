@@ -2,6 +2,7 @@
 	import { base } from '$app/paths';
 	import { Tabs, TabList, TabPanel, Tab } from '$lib/Tabs/tabs.js';
 	import { replaceUmlauts } from '$lib/utils.js';
+	import { Collapse } from 'bootstrap'; // Neccessary for bootstrap to work
 	import KartenProduct from './KartenProduct.svelte';
 	export let kategorie;
 </script>
@@ -13,22 +14,39 @@
 		alt={kategorie.name}
 	/>
 	<div class="kategorieContent">
-		<h1>{kategorie.name}</h1>
-		<Tabs>
-			<TabList>
-				{#each kategorie.childs.filter((el) => el.products.length > 0) as childCategory}
-					<Tab>{childCategory.name}</Tab>
-				{/each}
-			</TabList>
-
+		<div class="accordion accordion-flush" id="accordionFlushExample">
 			{#each kategorie.childs.filter((el) => el.products.length > 0) as childCategory}
-				<TabPanel>
-					{#each childCategory.products as product}
-						<KartenProduct {product} />
-					{/each}
-				</TabPanel>
+				<div class="accordion-item">
+					<h2
+						class="accordion-header"
+						id="flush-{replaceUmlauts(childCategory.name).split(' ')[0]}"
+					>
+						<button
+							class="accordion-button collapsed"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#flush-{replaceUmlauts(childCategory.name).split(' ')[0]}"
+							aria-expanded="false"
+							aria-controls="flush-{replaceUmlauts(childCategory.name).split(' ')[0]}"
+						>
+							{childCategory.name}
+						</button>
+					</h2>
+					<div
+						id="flush-{replaceUmlauts(childCategory.name).split(' ')[0]}"
+						class="accordion-collapse collapse"
+						aria-labelledby="flush-{replaceUmlauts(childCategory.name).split(' ')[0]}"
+						data-bs-parent="#accordionFlushExample"
+					>
+						<div class="accordion-body">
+							{#each childCategory.products as product}
+								<KartenProduct {product} />
+							{/each}
+						</div>
+					</div>
+				</div>
 			{/each}
-		</Tabs>
+		</div>
 	</div>
 </div>
 
@@ -48,6 +66,10 @@
 		flex-direction: column;
 		align-items: center;
 		padding-top: 2rem;
+	}
+	.accordion {
+		width: 100%;
+		height: 100%;
 	}
 	@media (max-width: 992px) {
 		.kategorieContainer {

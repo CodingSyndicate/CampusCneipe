@@ -21,4 +21,5 @@
 	image="/images/6-2.png"
 	imagePosition="bottom"
 />
+
 <Karte />
