@@ -14,29 +14,29 @@
 		alt={kategorie.name}
 	/>
 	<div class="kategorieContent">
-		<div class="accordion accordion-flush" id="accordionFlushExample">
+		<div class="accordion accordion-flush" id="accordionExample">
 			{#each kategorie.childs.filter((el) => el.products.length > 0) as childCategory}
 				<div class="accordion-item">
 					<h2
 						class="accordion-header"
-						id="flush-{replaceUmlauts(childCategory.name).split(' ')[0]}"
+						id="heading-{replaceUmlauts(childCategory.name).split(' ')[0]}"
 					>
 						<button
 							class="accordion-button collapsed"
 							type="button"
 							data-bs-toggle="collapse"
-							data-bs-target="#flush-{replaceUmlauts(childCategory.name).split(' ')[0]}"
+							data-bs-target="#collapse-{replaceUmlauts(childCategory.name).split(' ')[0]}"
 							aria-expanded="false"
-							aria-controls="flush-{replaceUmlauts(childCategory.name).split(' ')[0]}"
+							aria-controls="collapse-{replaceUmlauts(childCategory.name).split(' ')[0]}"
 						>
 							{childCategory.name}
 						</button>
 					</h2>
 					<div
-						id="flush-{replaceUmlauts(childCategory.name).split(' ')[0]}"
+						id="collapse-{replaceUmlauts(childCategory.name).split(' ')[0]}"
 						class="accordion-collapse collapse"
-						aria-labelledby="flush-{replaceUmlauts(childCategory.name).split(' ')[0]}"
-						data-bs-parent="#accordionFlushExample"
+						aria-labelledby="heading-{replaceUmlauts(childCategory.name).split(' ')[0]}"
+						data-bs-parent="#accordionExample"
 					>
 						<div class="accordion-body">
 							{#each childCategory.products as product}
