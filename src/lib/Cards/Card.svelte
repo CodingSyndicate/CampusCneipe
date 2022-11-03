@@ -40,14 +40,14 @@
 	}
 	h2 {
 		font-size: 3.75em;
-		text-transform: capitalize;
+		text-transform: uppercase;
 	}
 	h3 {
 		padding-top: 25px;
 		font-size: 18px;
 		padding-bottom: 0;
 		margin-bottom: 0;
-		text-transform: capitalize;
+		text-transform: uppercase;
 	}
 	hr {
 		width: 170px;
