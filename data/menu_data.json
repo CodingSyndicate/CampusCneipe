@@ -524,12 +524,6 @@
                     {
                         "amount": "0.2",
                         "ingredients": [],
-                        "name": "Espresso Martini",
-                        "price": "6.30"
-                    },
-                    {
-                        "amount": "0.2",
-                        "ingredients": [],
                         "name": "Vodka Bull",
                         "price": "6.30"
                     }
@@ -556,6 +550,12 @@
                         "ingredients": [],
                         "name": "Mai Tai",
                         "price": "7.30"
+                    },
+                    {
+                        "amount": "0.2",
+                        "ingredients": [],
+                        "name": "Espresso Martini",
+                        "price": "6.30"
                     },
                     {
                         "amount": "0.2",
