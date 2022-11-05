@@ -1,72 +1,41 @@
 <script>
-	import { base } from '$app/paths';
-	export let event;
-	let link;
-	if (!event.link) {
-		link = './';
-	} else if (event.link.startsWith('http')) {
-		link = event.link;
-	} else {
-		link = base + event.link;
-	}
+  import Card from '$lib/Cards/Card.svelte';
+  import { base } from '$app/paths';
+  export let event;
+  let link;
+  if (!event.link) {
+    link = './';
+  } else if (event.link.startsWith('http')) {
+    link = event.link;
+  } else {
+    link = base + event.link;
+  }
+  if (!event.image) {
+    event.image = "/images/events/default.png";
+  }
+  let options = {
+    weekday: 'long',
+    year: 'numeric', month: 'numeric', day: 'numeric',
+    hour: 'numeric', minute: 'numeric',
+    timeZone: 'Europe/Berlin'
+  };
+  event.begin_string = new Intl.DateTimeFormat('de-DE', options).format(event.begin);
 </script>
 
-<div class="eventContainer">
-	<a id="imagelink" href={link}>
-		<img src={base + event.image} alt={event.name} />
-	</a>
-	<a id="textlink" href={link}>
-		<h3>
-			{event.name}
-		</h3>
-	</a>
-</div>
+<Card
+  contentRight={false}
+  sideImageHalf={true}
+  title={event.title}
+  subtitle={event.begin_string}
+  bigImage={event.image}
+  small={true}
+  >
+  {@html event.description}
+</Card>
 
 <style>
-	.eventContainer {
-		height: 660px;
-		width: 25%;
-		background-color: #24292d;
-		display: flex;
-		flex-direction: column;
-	}
-	img {
-		height: 532px;
-		width: 100%;
-		opacity: 0.7;
-		transition: opacity 1s, transform 1s;
-		object-fit: cover;
-		border: 1px solid #24292d;
-	}
-	img:hover {
-		opacity: 1;
-	}
-	#imagelink {
-		cursor: pointer;
-	}
-	#textlink {
-		height: 128px;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-	h3 {
-		color: #fff;
-		font-weight: 600;
-		margin: 0;
-		padding: 0;
-		transition: color 0.2s;
-		cursor: pointer;
-		text-transform: uppercase;
-	}
-	h3:hover {
-		color: var(--bg-primary-color);
-	}
-	@media (max-width: 992px) {
-		.eventContainer {
-			height: auto;
-			width: auto;
-		}
-	}
+  p {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
 </style>

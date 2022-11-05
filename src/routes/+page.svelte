@@ -1,5 +1,4 @@
 <script>
-	import events from '$data/events.json';
 
 	import EventPreviewList from '$lib/Events/EventPreviewList.svelte';
 	import DetailedCard from '$lib/Cards/DetailedCard.svelte';
@@ -7,8 +6,6 @@
 
 	import Oeffnungszeiten from './Oeffnungszeiten.svelte';
 	import Anfahrt from './anfahrt.svelte';
-
-	events.length = 4;
 </script>
 
 <svelte:head>
@@ -50,4 +47,4 @@
 
 <Anfahrt />
 
-<EventPreviewList {events} />
+<EventPreviewList count="3" />

@@ -1,53 +1,25 @@
-<script>  
+<script>
+  import events from '$data/event_data.json';
   import EventPreview from './EventPreview.svelte';
-  export let events;
 
-  events.forEach(event => {
-    if(Array.isArray(event.date)) {
-      event.date.forEach(date => {
-	var new_event = event;
-	new_event.date = date;
-	events.push(new_event);
-      })
-    }
-  });
+  export let count = 7;
   for (let event in events) {
-    if (typeof events[event].date == "string") {
-      events[event].date = Date.parse(events[event].date);
+    if (typeof events[event].begin == "string") {
+      events[event].begin = Date.parse(events[event].begin);
     }
   }
+
   events.sort((a, b) => {
-    if (a.date < b.date) return -1;
+    if (a.begin < b.begin) return -1;
     else return 1;
   });
   let day_milliseconds = 1000 * 60 * 60 * 24;
   let cutoff = new Date().getTime() - day_milliseconds;
 </script>
 
-<div class="rowContainer">
-  {#each events as event}
-    {#if event.date - cutoff >= 0}
-      {@debug event}
+{#each events as event}
+  {#if event.begin - cutoff >= 0}
     <EventPreview {event} />
   {/if}
-  {/each}
-</div>
+{/each}
 
-<style>
-	.rowContainer {
-		min-height: 660px;
-		width: 100%;
-		background-color: #24292d;
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: space-evenly;
-		flex-wrap: wrap;
-	}
-	@media (max-width: 992px) {
-		.rowContainer {
-			flex-direction: column;
-			height: auto;
-		}
-	}
-</style>

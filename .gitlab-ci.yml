@@ -1,6 +1,6 @@
 stages:
   - ci_image
-  - ready2order
+  - updatedata
   - deploy_staging
 
 docker build:
@@ -14,6 +14,7 @@ docker build:
       when: never
     - changes:
         - nix/*
+        - .gitlab-ci.yml
   script:
     # For pinning:
     # - export NIX_PATH="nixpkgs=https://github.com/NixOS/nixpkgs/archive/ab593d46dc38b9f0f23964120912138c77fa9af4.tar.gz"
@@ -27,8 +28,8 @@ docker build:
         docker-archive:image.tar.gz \
         docker://$CI_REGISTRY_IMAGE/c2-website-builder:latest'
 
-update menu:
-  stage: ready2order
+update data:
+  stage: updatedata
   image: "$CI_REGISTRY_IMAGE/c2-website-builder:latest"
   resource_group: repo
   only:
@@ -42,15 +43,21 @@ update menu:
     - git remote add ssh_origin "https://c2:$CI_ACCESS_TOKEN@$CI_SERVER_HOST/$CI_PROJECT_PATH.git"
   script:
     - ./scripts/update_menu.py > data/menu_data.json
+    - echo $TOKEN_JSON > token.json
+    - ./scripts/update_calendar.py
     - |
       set -eux
       if [ -n "$(git status --porcelain data/menu_data.json)" ]; then
       git add data/menu_data.json
       git commit -m "Update products from ready2order API"
+      fi
+      if [ -n "$(git status --porcelain data/event_data.json)" ]; then
+      git add data/event_data.json
+      git commit -m "Update event data from google calendar"
+      fi
       git push ssh_origin HEAD:master
       echo "Cancelling this pipeline, new one will be triggered by push"
       curl --request POST --header "PRIVATE-TOKEN: ${CI_API_TOKEN}" "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/pipelines/${CI_PIPELINE_ID}/cancel"
-      fi
 
 deploy staging:
   stage: deploy_staging
