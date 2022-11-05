@@ -14,9 +14,9 @@
 </svelte:head>
 
 <TitelSeite
-	title="DIE C2 ALS VERANSTALTUNGSORT MIETEN"
-	subtitle="IHR SUCHT EINE BESONDERE LOCATION, IN DER EURE PRIVATFEIER EIN VOLLER ERFOLG WIRD? DANN SEID
-	IHR BEI UNS GENAU RICHTIG!"
+	title="Die C2 als Veranstaltungsort mieten"
+	subtitle="Ihr sucht eine besondere Location, in der Eure Privatfeier ein voller Erfolg wird? Dann seid
+	Ihr bei uns genau richtig!"
 	full={false}
 	middle={false}
 	image="/images/mieten/IMG_5866.jpg"
@@ -26,8 +26,8 @@
 	contentRight={false}
 	sideImageHalf={true}
 	small={true}
-	title="IHRE VERANSTALTUNG"
-	subtitle="ALLES IST MÖGLICH"
+	title="Ihre Veranstaltung"
+	subtitle="Alles ist möglich"
 	bigImage="/images/mieten/Cneipe.jpg"
 >
 	<p>
@@ -44,8 +44,8 @@
 	contentRight={true}
 	sideImageHalf={true}
 	small={true}
-	title="UNSERE LEISTUNGEN"
-	subtitle="VOLLER EINSATZ FÜR SIE"
+	title="Unsere Leistungen"
+	subtitle="Voller Einsatz für Sie"
 	bigImage="/images/mieten/mieten3.jpg"
 >
 	<ul>
@@ -74,8 +74,8 @@
 	contentRight={false}
 	sideImageHalf={true}
 	small={true}
-	title="CAMPUSCNEIPE KOCHT"
-	subtitle="UNSER ESSENSANGEBOT BEI PRIVATFEIERN UMFASST:"
+	title="Campuscneipe kocht"
+	subtitle="Unser Essensangebot bei Privatfeiern umfasst:"
 	bigImage="/images/mieten/mieten1.jpg"
 >
 	<ul>
@@ -97,8 +97,8 @@
 	contentRight={true}
 	sideImageHalf={true}
 	small={true}
-	title="UNSERE ERFAHRUNG"
-	subtitle="AUSWAHL BISHERIGER EVENTS:"
+	title="Unsere Erfahrung"
+	subtitle="Auswahl bisheriger Events:"
 	bigImage="/images/mieten/mieten2.jpg"
 >
 	<ul>
@@ -114,8 +114,8 @@
 	</ul>
 </Card>
 <TitelSeite
-	title="INTERESSE GEWECKT?"
-	subtitle="KONTAKTIERE UNS UND WIR PLANEN GEMEINSAM DEIN EVENT!"
+	title="Interesse geweckt?"
+	subtitle="Kontaktiere uns und wir planen gemeinsam dein Event!"
 	full={false}
 	middle={false}
 	image="/images/mieten/mieten4-dark.png"

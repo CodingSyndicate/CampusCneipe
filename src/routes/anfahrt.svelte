@@ -5,8 +5,8 @@
 </script>
 
 <Card
-	title="ANFAHRT"
-	subtitle="KOMMT NACH DER VORLESUNG VORBEI!"
+	title="Anfahrt"
+	subtitle="Kommt nach der Vorlesung vorbei!"
 	{bigImage}
 	contentRight={false}
 	sideImageHalf={true}

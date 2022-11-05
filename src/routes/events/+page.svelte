@@ -16,8 +16,8 @@
 </svelte:head>
 
 <TitelSeite
-	title="EVENTS"
-	subtitle="VERANSTALTUNGEN IN DER C2"
+	title="Events"
+	subtitle="Veranstaltungen in der C2"
 	full={false}
 	middle={false}
 	image="/images/events/event.JPG"
@@ -27,7 +27,7 @@
 <Card
 	contentRight={false}
 	sideImageHalf={true}
-	title="REOPENING PARTY WS 2022"
+	title="Reopening Party WS 2022"
 	subtitle="AM 24.10.2022 UM 15:00 UHR"
 	bigImage="/images/events/events/reopening-ws22/reopeningws22.png"
 >
