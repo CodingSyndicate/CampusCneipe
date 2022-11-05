@@ -6,8 +6,8 @@
 </script>
 
 <Card
-	title="ÖFFNUNGSZEITEN"
-	subtitle="WÄHREND DER VORLESUNGZEIT"
+	title="Öffnungszeiten"
+	subtitle="Während der Vorlesungzeit"
 	{bigImage}
 	contentRight={true}
 	sideImageHalf={true}

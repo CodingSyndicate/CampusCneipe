@@ -15,4 +15,8 @@
     "editor.formatOnSave": true,
     "prettier.useTabs": true,
     "svg.preview.background": "editor",
+    "python.formatting.blackArgs": [
+        "--line-length",
+        "150"
+    ]
 }
