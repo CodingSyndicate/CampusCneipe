@@ -98,12 +98,6 @@
                     {
                         "amount": "0.5",
                         "ingredients": [],
-                        "name": "Isarwasser",
-                        "price": "4.20"
-                    },
-                    {
-                        "amount": "0.5",
-                        "ingredients": [],
                         "name": "dunkles Weissbier",
                         "price": "3.30"
                     },
@@ -112,6 +106,12 @@
                         "ingredients": [],
                         "name": "Pils",
                         "price": "2.90"
+                    },
+                    {
+                        "amount": "0.5",
+                        "ingredients": [],
+                        "name": "Isarwasser",
+                        "price": "4.20"
                     }
                 ]
             },
@@ -462,6 +462,12 @@
                         "price": "6.30"
                     },
                     {
+                        "amount": "0.15",
+                        "ingredients": [],
+                        "name": "Horses Neck",
+                        "price": "6.30"
+                    },
+                    {
                         "amount": "0.2",
                         "ingredients": [],
                         "name": "Sex on the Beach:",
@@ -470,7 +476,7 @@
                     {
                         "amount": "0.2",
                         "ingredients": [],
-                        "name": "Vodka Lemon",
+                        "name": "Lynchburg Lemonade",
                         "price": "6.30"
                     },
                     {
@@ -507,18 +513,6 @@
                         "amount": "0.2",
                         "ingredients": [],
                         "name": "Munich Mule",
-                        "price": "6.30"
-                    },
-                    {
-                        "amount": "0.15",
-                        "ingredients": [],
-                        "name": "Horses Neck",
-                        "price": "6.30"
-                    },
-                    {
-                        "amount": "0.2",
-                        "ingredients": [],
-                        "name": "Lynchburg Lemonade",
                         "price": "6.30"
                     },
                     {
