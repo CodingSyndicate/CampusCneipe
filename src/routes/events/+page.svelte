@@ -1,5 +1,4 @@
 <script>
-	import Card from '$lib/Cards/Card.svelte';
 	import TitelSeite from '$lib/Cards/TitelSeite.svelte';
 	import EventPreviewList from '$lib/Events/EventPreviewList.svelte';
 </script>
@@ -24,4 +23,3 @@
 />
 
 <EventPreviewList />
-
