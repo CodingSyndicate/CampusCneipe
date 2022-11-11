@@ -1,5 +1,4 @@
 <script>
-
 	import EventPreviewList from '$lib/Events/EventPreviewList.svelte';
 	import DetailedCard from '$lib/Cards/DetailedCard.svelte';
 	import TitelSeite from '$lib/Cards/TitelSeite.svelte';
@@ -47,4 +46,4 @@
 
 <Anfahrt />
 
-<EventPreviewList count="3" />
+<EventPreviewList />

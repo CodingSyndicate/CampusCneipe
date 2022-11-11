@@ -2,7 +2,6 @@
 	import events from '$data/event_data.json';
 	import EventPreview from './EventPreview.svelte';
 
-	const count = 7;
 	for (let event in events) {
 		if (typeof events[event].begin == 'string') {
 			events[event].begin = Date.parse(events[event].begin);
