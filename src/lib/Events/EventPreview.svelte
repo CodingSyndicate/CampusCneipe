@@ -32,10 +32,3 @@
   >
   {@html event.description}
 </Card>
-
-<style>
-  p {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-  }
-</style>
