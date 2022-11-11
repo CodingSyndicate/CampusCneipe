@@ -1,8 +1,10 @@
 <script>
 	export let product;
-	if (product.amount >= 0.1) {
+	if (!product.amount) {
+		product.amount = '';
+	} else if (product.amount >= 0.1) {
 		product.amount += 'l';
-	} else {
+	} else if (product.amount < 0.1) {
 		product.amount *= 100;
 		product.amount = Math.round(product.amount);
 		product.amount += 'cl';
