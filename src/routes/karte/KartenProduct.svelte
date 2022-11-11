@@ -1,5 +1,6 @@
 <script>
 	export let product;
+
 	if (!product.amount) {
 		product.amount = '';
 	} else if (product.amount >= 0.1) {

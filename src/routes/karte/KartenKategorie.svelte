@@ -1,21 +1,10 @@
 <script>
 	import { base } from '$app/paths';
-	import { Tabs, TabList, TabPanel, Tab } from '$lib/Tabs/tabs.js';
-	import { replaceUmlauts } from '$lib/utils.js';
+	import { replaceUmlauts, cleanId } from '$lib/utils.js';
 	import { Collapse } from 'bootstrap'; // Neccessary for bootstrap to work
 	import KartenProduct from './KartenProduct.svelte';
-	export let kategorie;
 
-	function idParser(id) {
-		return replaceUmlauts(id)
-			.split(' ')
-			.join('-')
-			.split('/')
-			.join('-')
-			.split('&')
-			.join('-')
-			.replace(/[^a-zA-Z ]/g, '');
-	}
+	export let kategorie;
 </script>
 
 <div class="kategorieContainer">
@@ -28,14 +17,14 @@
 		<div class="accordion accordion-flush" id="accordionExample">
 			{#each kategorie.childs.filter((el) => el.products.length > 0) as childCategory}
 				<div class="accordion-item">
-					<h2 class="accordion-header" id="heading-{idParser(childCategory.name)}">
+					<h2 class="accordion-header" id="heading-{cleanId(childCategory.name)}">
 						<button
 							class="accordion-button collapsed"
 							type="button"
 							data-bs-toggle="collapse"
-							data-bs-target="#collapse-{idParser(childCategory.name)}"
+							data-bs-target="#collapse-{cleanId(childCategory.name)}"
 							aria-expanded="false"
-							aria-controls="collapse-{idParser(childCategory.name)}"
+							aria-controls="collapse-{cleanId(childCategory.name)}"
 						>
 							<h4>
 								{childCategory.name}
@@ -43,9 +32,9 @@
 						</button>
 					</h2>
 					<div
-						id="collapse-{idParser(childCategory.name)}"
+						id="collapse-{cleanId(childCategory.name)}"
 						class="accordion-collapse collapse"
-						aria-labelledby="heading-{idParser(childCategory.name)}"
+						aria-labelledby="heading-{cleanId(childCategory.name)}"
 						data-bs-parent="#accordionExample"
 					>
 						<div class="accordion-body">
