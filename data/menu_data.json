@@ -680,25 +680,19 @@
                     {
                         "amount": "",
                         "ingredients": [],
-                        "name": "Pumpkin Scot Latte",
-                        "price": "4.50"
-                    },
-                    {
-                        "amount": "",
-                        "ingredients": [],
                         "name": "Baileys Hot Chocolate",
                         "price": "4.50"
                     },
                     {
                         "amount": "",
                         "ingredients": [],
-                        "name": "Hot Aperol",
+                        "name": "Baileys Chai Latte",
                         "price": "4.50"
                     },
                     {
                         "amount": "",
                         "ingredients": [],
-                        "name": "Baileys Chai Latte",
+                        "name": "Hot Aperol",
                         "price": "4.50"
                     }
                 ]
