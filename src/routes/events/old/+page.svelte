@@ -1,11 +1,12 @@
 <script>
+	import Card from '$lib/Cards/Card.svelte';
 	import TitelSeite from '$lib/Cards/TitelSeite.svelte';
 	import EventPreviewList from '$lib/Events/EventPreviewList.svelte';
 </script>
 
 <svelte:head>
-	<title>Events | CampusCneipe</title>
-	<meta name="description" content="Alle Events der Campus Cneipe" />
+	<title>Vergangene Events | CampusCneipe</title>
+	<meta name="description" content="Vergangene Events der Campus Cneipe" />
 	<meta property="og:title" content="Events der Campus Cneipe" />
 	<meta property="og:image" content="https://www.c2.tum.de/images/Hintergrundbild.jpg" />
 	<meta property="og:url" content="https://www.c2.tum.de/events" />
@@ -14,17 +15,19 @@
 </svelte:head>
 
 <TitelSeite
-	title="Events"
-	subtitle='Veranstaltungen in der C2<br>	<div class="buttons">
-		  <a href="old/">
-		    <button type="button" class="btn btn-primary">
-		      Vergangene Veranstaltungen
-		    </button>
-		  </a></div>'
+  title="Vergangene Events"
+  subtitle='Vergangene Veranstaltungen in der C2
+	    <div class="buttons">
+	      <a href="../">
+		<button type="button" class="btn btn-primary">
+		  Kommende Veranstaltungen
+		</button>
+	    </a></div>'
 	full={false}
 	middle={false}
 	image="/images/events/event.JPG"
 	imagePosition="center"
 />
 
-<EventPreviewList />
+<EventPreviewList upcoming={false} />
+
