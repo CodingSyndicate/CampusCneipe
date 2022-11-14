@@ -46,4 +46,4 @@
 
 <Anfahrt />
 
-<EventPreviewList />
+<EventPreviewList count=3 />
