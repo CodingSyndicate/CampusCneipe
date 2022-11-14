@@ -71,20 +71,19 @@ def main():
         # Call the Calendar API
         now = datetime.datetime.utcnow().isoformat() + 'Z'  # 'Z' indicates UTC time
         events_result = calendar_service.events().list(calendarId='primary', timeMin=now,
-                                              maxResults=10, singleEvents=True,
+                                              maxResults=20, singleEvents=True,
                                               orderBy='startTime').execute()
         events = events_result.get('items', [])
 
         if not events:
             return
-          
         # Prints the start and name of the next 10 events
         # only public events
-        events = [ e for e in events if 'visibility' in e and e['visibility'] == 'public' ]
+        # for some reason the "default" color means that colorId is not set -> those are the public events
+        events = [ e for e in events if 'visibility' in e and e['visibility'] == 'public' or not 'colorId' in e ]
         events_data = []
         for event in events:
           event_data = {}
-          #pprint.pprint(event)
           # download attachments
           if 'attachments' in event:
             file_id = event['attachments'][0]['fileId']
