@@ -1,7 +1,8 @@
 <script>
 	import Card from '$lib/Cards/Card.svelte';
 	import { base } from '$app/paths';
-	export let event;
+  export let event;
+    export let textRight = false;
 	let link;
 	if (!event.link) {
 		link = './';
@@ -26,7 +27,7 @@
 </script>
 
 <Card
-	contentRight={false}
+  contentRight={textRight}
 	sideImageHalf={true}
 	title={event.title}
 	subtitle={event.begin_string}
