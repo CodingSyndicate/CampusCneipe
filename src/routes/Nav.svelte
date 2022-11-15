@@ -112,7 +112,7 @@
 						href="https://www.instagram.com/campus_cneipe/"
 					>
 						<img
-							src="{base}/svg/instagram.png"
+							src="{base}/svg/instagram.svg"
 							alt="Instagram"
 							style="height: 24px; width: 24px; margin:0;"
 						/>
@@ -123,7 +123,7 @@
 						href="https://twitter.com/campuscneipe"
 					>
 						<img
-							src="{base}/svg/twitter.png"
+							src="{base}/svg/twitter.svg"
 							alt="Twitter"
 							style="height: 24px; width: 24px; margin:0;"
 						/>
@@ -134,7 +134,7 @@
 						href="https://www.facebook.com/campuscneipe/"
 					>
 						<img
-							src="{base}/svg/facebook.png"
+							src="{base}/svg/facebook.svg"
 							alt="Facebook"
 							style="height: 24px; width: 24px; margin:0;"
 						/>
@@ -144,7 +144,7 @@
 						role="button"
 						href="{base}/"
 					>
-						<img src="{base}/svg/rss.png" alt="" style="height: 24px; width: 24px; margin:0;" />
+						<img src="{base}/svg/rss.svg" alt="" style="height: 24px; width: 24px; margin:0;" />
 					</a>
 				</div>
 			</div>
@@ -224,7 +224,7 @@
 		padding: 8px;
 		margin: 5px;
 		line-height: 18px;
-		opacity: 0.8;
+		opacity: 0.6;
 		transition: opacity 0.2s;
 	}
 	.socialmediabutton:hover {
