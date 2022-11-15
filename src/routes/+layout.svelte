@@ -1,8 +1,9 @@
 <script>
 	import '../app.scss';
+	export const prerender = true;
+	export const ssr = false;
 	import Footer from './Footer.svelte';
 	import Nav from './Nav.svelte';
-	export const prerender = true;
 </script>
 
 <svelte:head>
