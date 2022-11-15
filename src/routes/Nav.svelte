@@ -113,7 +113,29 @@
 					>
 						<img
 							src="{base}/svg/instagram.png"
-							alt=""
+							alt="Instagram"
+							style="height: 24px; width: 24px; margin:0;"
+						/>
+					</a>
+					<a
+						class="btn btn-primary btn-lg btn-floating socialmediabutton"
+						role="button"
+						href="https://twitter.com/campuscneipe"
+					>
+						<img
+							src="{base}/svg/twitter.png"
+							alt="Twitter"
+							style="height: 24px; width: 24px; margin:0;"
+						/>
+					</a>
+					<a
+						class="btn btn-primary btn-lg btn-floating socialmediabutton"
+						role="button"
+						href="https://www.facebook.com/campuscneipe/"
+					>
+						<img
+							src="{base}/svg/facebook.png"
+							alt="Facebook"
 							style="height: 24px; width: 24px; margin:0;"
 						/>
 					</a>
