@@ -333,4 +333,14 @@
 			background-image: url('/images/LogoWebsiteHorizontal.png');
 		}
 	}
+	@media (max-height: 520px) {
+		.logoCon {
+			max-width: 100%;
+			max-height: 100%;
+			padding: 0;
+		}
+		#navbarNav {
+			min-height: 334px;
+		}
+	}
 </style>
