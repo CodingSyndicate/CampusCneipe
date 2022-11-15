@@ -7,3 +7,5 @@ node_modules
 .env.*
 !.env.example
 .direnv
+__pycache__
+token.json
