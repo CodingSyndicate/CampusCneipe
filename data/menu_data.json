@@ -321,42 +321,6 @@
             },
             {
                 "childs": [],
-                "name": "Hei\u00dfe Getr\u00e4nke",
-                "products": [
-                    {
-                        "amount": "0.07",
-                        "ingredients": [],
-                        "name": "Espresso",
-                        "price": "1.50"
-                    },
-                    {
-                        "amount": "0.2",
-                        "ingredients": [],
-                        "name": "Tasse Kaffee",
-                        "price": "2.00"
-                    },
-                    {
-                        "amount": "0.2",
-                        "ingredients": [],
-                        "name": "Tasse Tee",
-                        "price": "1.50"
-                    },
-                    {
-                        "amount": "0.2",
-                        "ingredients": [],
-                        "name": "Hei\u00dfe Zitrone",
-                        "price": "1.50"
-                    },
-                    {
-                        "amount": "0.2",
-                        "ingredients": [],
-                        "name": "Cappuccino",
-                        "price": "2.70"
-                    }
-                ]
-            },
-            {
-                "childs": [],
                 "name": "TO GO",
                 "products": [
                     {
@@ -651,18 +615,18 @@
         "childs": [
             {
                 "childs": [],
-                "name": "Alcoholic",
+                "name": "Alkoholisch",
                 "products": [
                     {
                         "amount": "",
                         "ingredients": [],
-                        "name": "Irish Coffee",
-                        "price": "4.50"
+                        "name": "Gl\u00fchwein",
+                        "price": "3.00"
                     },
                     {
                         "amount": "",
                         "ingredients": [],
-                        "name": "Baileys Coffee",
+                        "name": "Irish Coffee",
                         "price": "4.50"
                     },
                     {
@@ -680,6 +644,12 @@
                     {
                         "amount": "",
                         "ingredients": [],
+                        "name": "Baileys Coffee",
+                        "price": "4.50"
+                    },
+                    {
+                        "amount": "",
+                        "ingredients": [],
                         "name": "Baileys Hot Chocolate",
                         "price": "4.50"
                     },
@@ -688,35 +658,59 @@
                         "ingredients": [],
                         "name": "Baileys Chai Latte",
                         "price": "4.50"
-                    },
-                    {
-                        "amount": "",
-                        "ingredients": [],
-                        "name": "Hot Aperol",
-                        "price": "4.50"
                     }
                 ]
             },
             {
                 "childs": [],
-                "name": "Non alcoholic",
+                "name": "Alkoholfrei",
                 "products": [
                     {
-                        "amount": "",
+                        "amount": "0.07",
+                        "ingredients": [],
+                        "name": "Espresso",
+                        "price": "1.50"
+                    },
+                    {
+                        "amount": "0.2",
                         "ingredients": [],
                         "name": "Chai Latte",
                         "price": "3.50"
                     },
                     {
-                        "amount": "",
+                        "amount": "0.2",
+                        "ingredients": [],
+                        "name": "Tasse Kaffee",
+                        "price": "2.00"
+                    },
+                    {
+                        "amount": "0.2",
                         "ingredients": [],
                         "name": "Hot Chocolate",
                         "price": "3.50"
+                    },
+                    {
+                        "amount": "0.2",
+                        "ingredients": [],
+                        "name": "Tasse Tee",
+                        "price": "1.50"
+                    },
+                    {
+                        "amount": "0.2",
+                        "ingredients": [],
+                        "name": "Hei\u00dfe Zitrone",
+                        "price": "1.50"
+                    },
+                    {
+                        "amount": "0.2",
+                        "ingredients": [],
+                        "name": "Cappuccino",
+                        "price": "2.70"
                     }
                 ]
             }
         ],
-        "name": "Upcoming",
+        "name": "Hei\u00dfe Getr\u00e4nke",
         "products": []
     },
     {
