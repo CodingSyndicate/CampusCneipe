@@ -8,7 +8,7 @@
 	<Tabs>
 		<TabList>
 			{#each menu as kategorie}
-				<Tab>{kategorie.name}</Tab>
+				<Tab widthDividor={menu.length}>{kategorie.name}</Tab>
 			{/each}
 		</TabList>
 

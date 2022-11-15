@@ -1,14 +1,18 @@
 <script>
 	import { getContext } from 'svelte';
 	import { TABS } from './Tabs.svelte';
-
+	export let widthDividor;
 	const tab = {};
 	const { registerTab, selectTab, selectedTab } = getContext(TABS);
 
 	registerTab(tab);
 </script>
 
-<button class:selected={$selectedTab === tab} on:click={() => selectTab(tab)}>
+<button
+	class:selected={$selectedTab === tab}
+	on:click={() => selectTab(tab)}
+	style="width: {100 / widthDividor}%;"
+>
 	<slot />
 </button>
 
@@ -18,7 +22,6 @@
 		border: none;
 		margin: 0;
 		color: #ccc;
-		width: 33.3333%;
 	}
 
 	button:hover {
