@@ -9,7 +9,7 @@ Steuernummer: 143/222/40679 <br />
 <br />
 
 <h2>Vertreten durch</h2>
-den Vorstand im Sinne des §26 BGB: Tobias Kerbl<br />
+den Vorstand im Sinne des §26 BGB: Leopold Rothmayer<br />
 <br />
 
 <h2>Kontakt</h2>
@@ -18,10 +18,10 @@ Mail:&nbsp;<a href="mailto:info@campus-cneipe.de">info@campus-cneipe.de</a> <br 
 <br />
 
 <h2>Redaktionell verantwortlich</h2>
-Leopold Rothmayer<br />
-Mühlenstraße 2c<br />
-85737 Ismaning
-<br /><br />
+Sina Vosseler<br />
+Boltzmannstraße 19<br />
+85748 Garching b. München<br />
+<br />
 <h2>Webadresse</h2>
 <a href="https://www.c2.tum.de"> www.c2.tum.de </a><br />
 <a href="https://www.campus-cneipe.de"> www.campus-cneipe.de </a>
