@@ -1,8 +1,12 @@
 <script>
 	import { base } from '$app/paths';
 	import { replaceUmlauts, cleanId } from '$lib/utils.js';
-	import { Collapse } from 'bootstrap'; // Neccessary for bootstrap to work
+	import { onMount } from 'svelte';
 	import KartenProduct from './KartenProduct.svelte';
+
+	onMount(async () => {
+		await import('bootstrap'); // Neccessary for bootstrap to work
+	});
 
 	export let kategorie;
 </script>
