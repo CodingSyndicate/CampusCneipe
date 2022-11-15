@@ -33,4 +33,11 @@
 		border-bottom: 2px inset var(--bs-primary);
 		color: var(--bs-primary);
 	}
+
+	@media (max-width: 666px) {
+		button {
+			padding-left: 0 !important;
+			padding-right: 0 !important;
+		}
+	}
 </style>
