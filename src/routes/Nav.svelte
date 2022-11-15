@@ -316,4 +316,21 @@
 			margin: 0 auto;
 		}
 	}
+	@media (max-height: 692px) {
+		.logoCon {
+			min-width: auto;
+			min-height: auto;
+		}
+		.nav-link {
+			padding: 0;
+		}
+		.nav-item {
+			height: 40px;
+		}
+	}
+	@media (max-height: 520px) {
+		.logoCon {
+			background-image: url('/images/LogoWebsiteHorizontal.png');
+		}
+	}
 </style>
