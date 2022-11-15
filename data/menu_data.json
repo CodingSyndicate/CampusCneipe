@@ -457,14 +457,14 @@
                 "products": [
                     {
                         "amount": "0.2",
-                        "ingredients": "Gin, Tonic Water, Gurke",
-                        "name": "Gin & Tonic",
+                        "ingredients": [],
+                        "name": "Cuba Libre",
                         "price": "6.30"
                     },
                     {
                         "amount": "0.2",
                         "ingredients": [],
-                        "name": "Cuba Libre",
+                        "name": "Gin & Tonic",
                         "price": "6.30"
                     },
                     {
@@ -621,7 +621,7 @@
                         "amount": "",
                         "ingredients": [],
                         "name": "Gl\u00fchwein",
-                        "price": "3.00"
+                        "price": "2.50"
                     },
                     {
                         "amount": "",
@@ -666,12 +666,6 @@
                 "name": "Alkoholfrei",
                 "products": [
                     {
-                        "amount": "0.07",
-                        "ingredients": [],
-                        "name": "Espresso",
-                        "price": "1.50"
-                    },
-                    {
                         "amount": "0.2",
                         "ingredients": [],
                         "name": "Chai Latte",
@@ -680,14 +674,20 @@
                     {
                         "amount": "0.2",
                         "ingredients": [],
-                        "name": "Tasse Kaffee",
-                        "price": "2.00"
+                        "name": "Hot Chocolate",
+                        "price": "3.50"
+                    },
+                    {
+                        "amount": "0.07",
+                        "ingredients": [],
+                        "name": "Espresso",
+                        "price": "1.50"
                     },
                     {
                         "amount": "0.2",
                         "ingredients": [],
-                        "name": "Hot Chocolate",
-                        "price": "3.50"
+                        "name": "Tasse Kaffee",
+                        "price": "2.00"
                     },
                     {
                         "amount": "0.2",
