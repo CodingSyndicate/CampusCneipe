@@ -1,8 +1,13 @@
 <script>
 	import { base } from '$app/paths';
-	import { Tabs, TabList, TabPanel, Tab } from '$lib/Tabs/tabs.js';
-	import { replaceUmlauts } from '$lib/utils.js';
+	import { replaceUmlauts, cleanId } from '$lib/utils.js';
+	import { onMount } from 'svelte';
 	import KartenProduct from './KartenProduct.svelte';
+
+	onMount(async () => {
+		await import('bootstrap'); // Neccessary for bootstrap to work
+	});
+
 	export let kategorie;
 </script>
 
@@ -13,22 +18,38 @@
 		alt={kategorie.name}
 	/>
 	<div class="kategorieContent">
-		<h1>{kategorie.name}</h1>
-		<Tabs>
-			<TabList>
-				{#each kategorie.childs.filter((el) => el.products.length > 0) as childCategory}
-					<Tab>{childCategory.name}</Tab>
-				{/each}
-			</TabList>
-
+		<div class="accordion accordion-flush" id="accordionExample">
 			{#each kategorie.childs.filter((el) => el.products.length > 0) as childCategory}
-				<TabPanel>
-					{#each childCategory.products as product}
-						<KartenProduct {product} />
-					{/each}
-				</TabPanel>
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="heading-{cleanId(childCategory.name)}">
+						<button
+							class="accordion-button collapsed"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#collapse-{cleanId(childCategory.name)}"
+							aria-expanded="false"
+							aria-controls="collapse-{cleanId(childCategory.name)}"
+						>
+							<h4>
+								{childCategory.name}
+							</h4>
+						</button>
+					</h2>
+					<div
+						id="collapse-{cleanId(childCategory.name)}"
+						class="accordion-collapse collapse"
+						aria-labelledby="heading-{cleanId(childCategory.name)}"
+						data-bs-parent="#accordionExample"
+					>
+						<div class="accordion-body">
+							{#each childCategory.products as product}
+								<KartenProduct {product} />
+							{/each}
+						</div>
+					</div>
+				</div>
 			{/each}
-		</Tabs>
+		</div>
 	</div>
 </div>
 
@@ -41,13 +62,34 @@
 	.kategorieImage {
 		width: 50%;
 		height: auto;
+		object-fit: cover;
 	}
 	.kategorieContent {
 		width: 50%;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		padding-top: 2rem;
+	}
+	.accordion {
+		width: 100%;
+		height: 100%;
+		background-color: transparent;
+	}
+	.accordion-item {
+		background-color: transparent;
+		border-color: #313539;
+	}
+	.accordion-header,
+	.accordion-button {
+		background-color: #24292d;
+		text-transform: uppercase;
+	}
+	.accordion-button > h4 {
+		margin: 0;
+		color: #bfbfbf;
+	}
+	.accordion-button:not(.collapsed) {
+		box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-primary);
 	}
 	@media (max-width: 992px) {
 		.kategorieContainer {
@@ -61,8 +103,5 @@
 		.kategorieContent {
 			width: 100%;
 		}
-	}
-	h1 {
-		text-transform: uppercase;
 	}
 </style>

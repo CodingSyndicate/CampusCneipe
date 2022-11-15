@@ -18,6 +18,7 @@
 		border: none;
 		margin: 0;
 		color: #ccc;
+		width: 33.3333%;
 	}
 
 	button:hover {

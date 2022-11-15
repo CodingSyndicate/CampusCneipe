@@ -8,3 +8,14 @@ export function replaceUmlauts(str) {
 		.replace(/\u00d6/g, 'Oe')
 		.replace(/\u00dc/g, 'Ue');
 }
+
+export function cleanId(id) {
+	return replaceUmlauts(id)
+		.split(' ')
+		.join('-')
+		.split('/')
+		.join('-')
+		.split('&')
+		.join('-')
+		.replace(/[^a-zA-Z ]/g, '');
+}

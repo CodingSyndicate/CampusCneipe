@@ -457,7 +457,7 @@
                 "products": [
                     {
                         "amount": "0.2",
-                        "ingredients": [],
+                        "ingredients": "Gin, Tonic Water, Gurke",
                         "name": "Gin & Tonic",
                         "price": "6.30"
                     },
