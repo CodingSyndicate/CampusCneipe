@@ -62,12 +62,13 @@ def build_json_menu(tree, level=1):
                 if "productingredient" in p:
                     # list ingredient sorted by quantity, in descending order
                     if len(p["productingredient"]) > 0:
-                        p["productingredient"].sort(key=lambda e: e["ingredient_quantity"], reverse=True)
+                        p["productingredient"].sort(key=lambda e: e["ingredient_quantity"])
                     for ingredient in p["productingredient"]:
                         if ingredient["ingredient_name"] == "Liter":
                             amount = "{:0,.2f}".format(float(ingredient["ingredient_quantity"])).rstrip("0").rstrip(".")
                         else:
-                            ingredients.append({"name": ingredient["ingredient_name"], "amount": ingredient["ingredient_quantity"]})
+                            ingredients.append(ingredient["ingredient_name"])
+                    ingredients = ", ".join(ingredients)
                 pg_data["products"].append(
                     {"name": p["product_name"], "price": "{:0,.2f}".format(float(p["product_price"])), "ingredients": ingredients, "amount": amount}
                 )
