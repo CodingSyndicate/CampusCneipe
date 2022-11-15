@@ -3,8 +3,13 @@
 }:
 
 let
-  python-with-my-packages = pkgs.python3.withPackages (p: with p; [
+  python-with-my-packages = pkgs.python39.withPackages (p: with p; [
     requests
+    google-auth
+    google-api-python-client
+    google-auth-httplib2
+    google-auth-oauthlib
+    GitPython
   ]);
 in {
   c2_pkgs = [
