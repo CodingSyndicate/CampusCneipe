@@ -13,9 +13,12 @@
 </script>
 
 <div class="elementContainer">
-	<span class="productName text-left">{product.name}</span>
-	<span class="productPrice text-center">{product.amount}</span>
-	<span class="productPrice text-right">{product.price}€</span>
+	<div class="productLeft">
+		<span class="productName text-left">{product.name}</span>
+		<span class="productIngredients text-left">{product.ingredients}</span>
+	</div>
+	<span class="text-center">{product.amount}</span>
+	<span class="text-right">{product.price}€</span>
 </div>
 
 <style>
@@ -37,5 +40,21 @@
 	}
 	.text-right {
 		text-align: right;
+	}
+	.productLeft {
+		text-align: left;
+		display: flex;
+		flex-direction: column;
+	}
+	.productIngredients {
+		font-size: 0.9rem;
+		color: #8a8a8a;
+	}
+	@media (max-width: 666px) {
+		.elementContainer {
+			margin-left: 0;
+			margin-right: 0;
+			width: 100%;
+		}
 	}
 </style>
