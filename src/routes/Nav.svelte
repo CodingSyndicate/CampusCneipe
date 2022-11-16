@@ -117,35 +117,6 @@
 							style="height: 24px; width: 24px; margin:0;"
 						/>
 					</a>
-					<a
-						class="btn btn-primary btn-lg btn-floating socialmediabutton"
-						role="button"
-						href="https://twitter.com/campuscneipe"
-					>
-						<img
-							src="{base}/svg/twitter.svg"
-							alt="Twitter"
-							style="height: 24px; width: 24px; margin:0;"
-						/>
-					</a>
-					<a
-						class="btn btn-primary btn-lg btn-floating socialmediabutton"
-						role="button"
-						href="https://www.facebook.com/campuscneipe/"
-					>
-						<img
-							src="{base}/svg/facebook.svg"
-							alt="Facebook"
-							style="height: 24px; width: 24px; margin:0;"
-						/>
-					</a>
-					<a
-						class="btn btn-primary btn-lg btn-floating socialmediabutton"
-						role="button"
-						href="{base}/"
-					>
-						<img src="{base}/svg/rss.svg" alt="" style="height: 24px; width: 24px; margin:0;" />
-					</a>
 				</div>
 			</div>
 			<ul class="impressum-datenschutz navbar-nav">
