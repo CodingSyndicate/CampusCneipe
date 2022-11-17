@@ -27,7 +27,7 @@
     },
     {
         "begin": "2022-11-23T19:00:00+01:00",
-        "description": "Jeden zweiten Mittwoch findet w\u00e4hrend der Vorlesungen Karaoke in der C2 statt. Singt zu den Titeln eurer Wahl Solo oder im Duett mit Textunterst\u00fctzung vom Beamer. Viel Spa\u00df!",
+        "description": "Jeden Mittwoch w\u00e4hrend der Vorlesungszeit findet unser Karaoke statt. Singt zu den Titeln eurer Wahl Solo oder im Duett mit Textunterst\u00fctzung vom Beamer. Viel Spa\u00df!",
         "end": "2022-11-24T00:00:00+01:00",
         "image": "/images/events/1spD5XYY5QQCktZcDSjdq81KZv4v5IXTA_karaoke.png",
         "title": "Karaoke"
@@ -46,10 +46,10 @@
     },
     {
         "begin": "2022-11-30T19:00:00+01:00",
-        "description": "Jeden zweiten Mittwoch findet w\u00e4hrend der Vorlesungen Karaoke in der C2 statt. Singt zu den Titeln eurer Wahl Solo oder im Duett mit Textunterst\u00fctzung vom Beamer. Viel Spa\u00df!",
+        "description": "Jeden Mittwoch w\u00e4hrend der Vorlesungszeit findet unser Karaoke statt. Singt zu den Titeln eurer Wahl Solo oder im Duett mit Textunterst\u00fctzung vom Beamer. Am 30.11 bekommen wir wieder Unterst\u00fctzung unserer Freunde der ESN TUMi, die sich an diesem Abend um die Playlist k\u00fcmmern. Viel Spa\u00df beim interkulturellen Karaokeabend!\nAnmeldung m\u00f6glich \u00fcber die TUMi App, ihr d\u00fcrft und sollt aber auch gerne spontan vorbeischauen.\n\nEvery Wednesday during the lecture period, you can sing and dance at C2's weekly karaoke party. On Wednesday, 30th we have international support by the volunteers of ESN TUMi who take care about our play list. Pre-register in the TUMi-app or join spontaneously.",
         "end": "2022-12-01T00:00:00+01:00",
         "image": "/images/events/1spD5XYY5QQCktZcDSjdq81KZv4v5IXTA_karaoke.png",
-        "title": "Karaoke von & mit ESN"
+        "title": "Karaoke by ESN TUMi e.V."
     },
     {
         "begin": "2022-12-01T19:00:00+01:00",
@@ -62,5 +62,12 @@
         "description": "",
         "end": "2022-12-02T22:00:00+01:00",
         "title": "Bierpongturnier"
+    },
+    {
+        "begin": "2022-12-07T19:00:00+01:00",
+        "description": "Jeden Mittwoch w\u00e4hrend der Vorlesungszeit findet unser Karaoke statt. Singt zu den Titeln eurer Wahl Solo oder im Duett mit Textunterst\u00fctzung vom Beamer. Viel Spa\u00df!",
+        "end": "2022-12-08T00:00:00+01:00",
+        "image": "/images/events/1spD5XYY5QQCktZcDSjdq81KZv4v5IXTA_karaoke.png",
+        "title": "Karaoke"
     }
 ]
