@@ -10,14 +10,23 @@ let
     google-auth-httplib2
     google-auth-oauthlib
     GitPython
+    #mustache for tex menu
     chevron
   ]);
+  tex = (pkgs.texlive.combine {
+    inherit (pkgs.texlive) scheme-medium
+      qrcode
+      makecell
+      ieeetran;
+  });
 in {
   c2_pkgs = [
     # c2 website
     python-with-my-packages
     pkgs.nodejs
     pkgs.nodePackages.npm
+    # latex
+    tex
     # nix dependency management
     pkgs.niv
     # for docker image / gitlab CI
