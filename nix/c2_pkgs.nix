@@ -13,12 +13,6 @@ let
     #mustache for tex menu
     chevron
   ]);
-  tex = (pkgs.texlive.combine {
-    inherit (pkgs.texlive) scheme-medium
-      qrcode
-      makecell
-      ieeetran;
-  });
 in {
   c2_pkgs = [
     # c2 website
@@ -26,7 +20,7 @@ in {
     pkgs.nodejs
     pkgs.nodePackages.npm
     # latex
-    tex
+    pkgs.texlive.combined.scheme-full
     # nix dependency management
     pkgs.niv
     # for docker image / gitlab CI
