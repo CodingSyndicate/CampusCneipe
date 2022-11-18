@@ -112,17 +112,10 @@
 						href="https://www.instagram.com/campus_cneipe/"
 					>
 						<img
-							src="{base}/svg/instagram.png"
-							alt=""
+							src="{base}/svg/instagram.svg"
+							alt="Instagram"
 							style="height: 24px; width: 24px; margin:0;"
 						/>
-					</a>
-					<a
-						class="btn btn-primary btn-lg btn-floating socialmediabutton"
-						role="button"
-						href="{base}/"
-					>
-						<img src="{base}/svg/rss.png" alt="" style="height: 24px; width: 24px; margin:0;" />
 					</a>
 				</div>
 			</div>
@@ -202,7 +195,7 @@
 		padding: 8px;
 		margin: 5px;
 		line-height: 18px;
-		opacity: 0.8;
+		opacity: 0.6;
 		transition: opacity 0.2s;
 	}
 	.socialmediabutton:hover {
