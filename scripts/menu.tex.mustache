@@ -1,0 +1,63 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{siunitx}
+\usepackage{tabularx}
+\usepackage{tikz}
+\usepackage{url}
+\usepackage{qrcode}
+\usepackage{eso-pic}
+\usepackage{makecell}
+
+
+\begin{document}
+
+\title{Getränke und Speisen}
+\author{\IEEEauthorblockN{Campus Cneipe - C2}
+\IEEEauthorblockA{\textit{Studentische Initiative Campusleben Garching e.V.} \\
+TUM Campus Garching\\
+info@campus-cneipe.de}}
+
+\maketitle
+
+\begin{tikzpicture}[remember picture,overlay]
+   \node[anchor=north east,inner sep=2em] at (current page.north east)
+              {\includegraphics[width=.1\textwidth]{../static/images/logo}};
+\end{tikzpicture}
+\AddToShipoutPictureBG*{\AtTextUpperLeft{
+	\qrcode[height=.1\textwidth]{https://c2.tum.de/karte/}}}
+
+\begin{abstract}
+In this short paper we present the current menu of Campus Cneipe Garching.
+A continuously updated web version of this is available at \url{https://c2.tum.de/karte/}
+\end{abstract}
+
+{{#.}}
+
+\vspace{2em}
+\section{ {{name}} }
+\vspace{2em}
+
+{{#childs}}
+\subsection{ {{name}} }
+\vspace{2.5em}
+\begin{centering}
+\begin{tabular}{p{.5\linewidth}p{.12\linewidth}p{.12\linewidth}}
+{{#products}}
+  \makecell*[l]{ {{name}} {{#ingredients}}\\ \footnotesize{\textit{ {{ingredients}} } } {{/ingredients}}} &
+  \makecell*[r]{ {{#amount}} \SI{ {{amount}} }{\liter} {{/amount}} } &
+  \makecell*[r]{ {{price}}€}\\
+{{/products}}
+\end{tabular}
+\end{centering}
+{{/childs}}
+
+{{/.}}
+
+\end{document}

@@ -10,6 +10,7 @@ let
     google-auth-httplib2
     google-auth-oauthlib
     GitPython
+    chevron
   ]);
 in {
   c2_pkgs = [

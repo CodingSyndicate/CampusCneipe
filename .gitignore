@@ -9,3 +9,8 @@ node_modules
 .direnv
 __pycache__
 token.json
+scripts/menu_data.json.tmp
+scripts/menu.tex
+scripts/menu.pdf
+scripts/menu.aux
+scripts/menu.log

@@ -1,7 +1,7 @@
 stages:
   - ci_image
   - updatedata
-  - deploy_staging
+  - build
 
 docker build:
   stage: ci_image
@@ -59,13 +59,14 @@ update data:
       echo "Cancelling this pipeline, new one will be triggered by push"
       curl --request POST --header "PRIVATE-TOKEN: ${CI_API_TOKEN}" "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/pipelines/${CI_PIPELINE_ID}/cancel"
 
-deploy staging:
-  stage: deploy_staging
+deploy website:
+  stage: build
   image: "$CI_REGISTRY_IMAGE/c2-website-builder:latest"
-  resource_group: staging
+  resource_group: build
   artifacts:
     paths:
       - c2-website.tar.gz
+      - scripts/menu.pdf
     expire_in: 3 days
   cache:
     key:
@@ -76,6 +77,7 @@ deploy staging:
   before_script:
     - npm ci --cache .npm --prefer-offline
   script:
+    - scripts/pdfmenu.sh
     - if [ "$CI_COMMIT_REF_NAME" = "master" ]; then export DEPLOY_PREFIX=""; else export DEPLOY_PREFIX="/staging/${CI_COMMIT_REF_SLUG}"; fi
     - export BASE="${DEPLOY_PREFIX}"
     - npm run build
