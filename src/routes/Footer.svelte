@@ -8,7 +8,7 @@
 	<hr />
 	<div class="actions row">
 		<div class="col">
-			<img src="{base}/svg/glass-mug-variant.png" alt="" />
+			<img src="{base}/svg/glass-mug-variant.svg" alt="Karte" />
 			<a
 				sveltekit:prefetch
 				href="{base}/karte"
@@ -20,7 +20,7 @@
 			</a>
 		</div>
 		<div class="col">
-			<img src="{base}/svg/nightlife.png" alt="" />
+			<img src="{base}/svg/nightlife.svg" alt="Events" />
 			<a
 				sveltekit:prefetch
 				href="{base}/events"
@@ -33,7 +33,7 @@
 		</div>
 		<div class="col">
 			<div class="col">
-				<img src="{base}/svg/celebration.png" alt="" />
+				<img src="{base}/svg/celebration.svg" alt="Mieten" />
 				<a
 					sveltekit:prefetch
 					href="{base}/mieten"
