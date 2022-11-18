@@ -1,5 +1,9 @@
-# CampusCneipe
-Future website of the Campus Cneipe @ Technical University of Munich
+CampusCneipe
+=====
+
+Webseite der Campus Cneipe, `master:HEAD` wird automatisch nach https://www.c2.tum.de/ deployed.
+
+[Aktuelle PDF-Version der Karte](https://www.c2.tum.de/karte.pdf)
 
 ## Setup locally
 You need to have at least NodeJS 16 installed.
