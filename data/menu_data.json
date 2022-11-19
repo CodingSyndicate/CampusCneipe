@@ -6,6 +6,24 @@
                 "name": "Biere",
                 "products": [
                     {
+                        "amount": "",
+                        "ingredients": [],
+                        "name": "Flaschen Helles",
+                        "price": "3.30"
+                    },
+                    {
+                        "amount": "",
+                        "ingredients": [],
+                        "name": "Flaschen WB",
+                        "price": "3.30"
+                    },
+                    {
+                        "amount": "",
+                        "ingredients": [],
+                        "name": "Flaschen Vitus",
+                        "price": "3.30"
+                    },
+                    {
                         "amount": "0.5",
                         "ingredients": "",
                         "name": "Helles",
@@ -102,16 +120,16 @@
                         "price": "3.30"
                     },
                     {
-                        "amount": "0.33",
-                        "ingredients": "",
-                        "name": "Pils",
-                        "price": "2.90"
-                    },
-                    {
                         "amount": "0.5",
                         "ingredients": "",
                         "name": "Isarwasser",
                         "price": "4.20"
+                    },
+                    {
+                        "amount": "0.33",
+                        "ingredients": "",
+                        "name": "Pils",
+                        "price": "2.90"
                     }
                 ]
             },
@@ -627,12 +645,6 @@
                         "amount": "",
                         "ingredients": [],
                         "name": "Irish Coffee",
-                        "price": "4.50"
-                    },
-                    {
-                        "amount": "",
-                        "ingredients": [],
-                        "name": "Hot Buttered Rum",
                         "price": "4.50"
                     },
                     {
