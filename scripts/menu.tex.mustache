@@ -26,12 +26,11 @@ info@campus-cneipe.de}}
 
 \maketitle
 
-\begin{tikzpicture}[remember picture,overlay]
-   \node[anchor=north east,inner sep=2em] at (current page.north east)
-              {\includegraphics[width=.1\textwidth]{logo}};
-\end{tikzpicture}
 \AddToShipoutPictureBG*{\AtTextUpperLeft{
 	\qrcode[height=.1\textwidth]{https://c2.tum.de/karte/}}}
+\AddToShipoutPictureBG*{\AtPageLowerLeft{
+	\hspace{\textwidth}\includegraphics[width=.1\textwidth]{../static/images/logo}}};
+
 
 \begin{abstract}
 In this short paper we present the current menu of Campus Cneipe Garching.
