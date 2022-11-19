@@ -14,6 +14,7 @@
 \usepackage{qrcode}
 \usepackage{eso-pic}
 \usepackage{makecell}
+\usepackage{adjustbox}
 
 
 \begin{document}
@@ -26,26 +27,26 @@ info@campus-cneipe.de}}
 
 \maketitle
 
-\AddToShipoutPictureBG*{\AtTextUpperLeft{
-	\qrcode[height=.1\textwidth]{https://c2.tum.de/karte/}}}
-\AddToShipoutPictureBG*{\AtPageLowerLeft{
-	\hspace{\textwidth}\includegraphics[width=.1\textwidth]{../static/images/logo}}};
+\AddToShipoutPictureBG{\AtPageLowerLeft{
+	\hspace{.04\textwidth}\raisebox{3.5em}{\qrcode[height=.1\textwidth]{https://c2.tum.de/karte/}}}}
+\AddToShipoutPictureBG{\AtTextUpperLeft{
+	\hspace{.9\textwidth}\raisebox{-3em}{\includegraphics[width=.1\textwidth]{../static/images/logo}}}}
 
 
 \begin{abstract}
 In this short paper we present the current menu of Campus Cneipe Garching.
-A continuously updated web version of this is available at \url{https://c2.tum.de/karte/}
+A continuously updated web version of this is available at \url{https://www.c2.tum.de/karte/}
 \end{abstract}
 
 {{#.}}
 
 \vspace{2em}
 \section{ {{name}} }
-\vspace{2em}
+\vspace{3em}
 
 {{#childs}}
 \subsection{ {{name}} }
-\vspace{2.5em}
+\vspace{1em}
 \begin{centering}
 \begin{tabular}{p{.5\linewidth}p{.12\linewidth}p{.12\linewidth}}
 {{#products}}
