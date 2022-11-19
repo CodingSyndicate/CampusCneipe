@@ -31,19 +31,19 @@
                     },
                     {
                         "amount": "0.5",
-                        "ingredients": "",
+                        "ingredients": "Helles, Limonade",
                         "name": "Radler",
                         "price": "3.30"
                     },
                     {
                         "amount": "0.5",
-                        "ingredients": "",
+                        "ingredients": "Wei\u00dfbier, Limonade",
                         "name": "Ru\u00df\u00b4n",
                         "price": "3.30"
                     },
                     {
                         "amount": "0.5",
-                        "ingredients": "",
+                        "ingredients": "Wei\u00dfbier, Cola",
                         "name": "Cola-Weissbier",
                         "price": "3.30"
                     },
@@ -55,7 +55,7 @@
                     },
                     {
                         "amount": "1",
-                        "ingredients": "",
+                        "ingredients": "Dunkelbier, Cola, Kirschlik\u00f6r",
                         "name": "Goa\u00dfma\u00df",
                         "price": "6.60"
                     },
@@ -73,7 +73,7 @@
                     },
                     {
                         "amount": "1",
-                        "ingredients": "",
+                        "ingredients": "Helles, Limonade",
                         "name": "Radler, Ma\u00df",
                         "price": "6.10"
                     },
@@ -103,7 +103,7 @@
                     },
                     {
                         "amount": "0.5",
-                        "ingredients": "",
+                        "ingredients": "Wei\u00dfbier, Fanta, Blue Curacao",
                         "name": "Isarwasser",
                         "price": "4.20"
                     },
@@ -139,49 +139,49 @@
                 "products": [
                     {
                         "amount": "0.02",
-                        "ingredients": "",
+                        "ingredients": "Variieren",
                         "name": "Shot",
                         "price": "2.00"
                     },
                     {
                         "amount": "0.02",
-                        "ingredients": "",
+                        "ingredients": "Variieren",
                         "name": "Wochenschnaps",
                         "price": "1.00"
                     },
                     {
                         "amount": "0.04",
-                        "ingredients": "",
+                        "ingredients": "Tequila, Tomatensaft, Tabasco, Worcester Sauce, Orangensaft, Pfeffer, Salz",
                         "name": "Mexicana",
                         "price": "2.90"
                     },
                     {
                         "amount": "0.04",
-                        "ingredients": "shots",
+                        "ingredients": "Malibu, Apfelsaft, Zimt",
                         "name": "Apfelstrudel",
                         "price": "3.90"
                     },
                     {
                         "amount": "0.04",
-                        "ingredients": "",
+                        "ingredients": "Vodka, Kahlua/Espresso",
                         "name": "Liquid Cocaine",
                         "price": "3.90"
                     },
                     {
                         "amount": "0.04",
-                        "ingredients": "",
+                        "ingredients": "Vodka, Blue Curacao, Limettensaft",
                         "name": "TUM Kamikaze",
                         "price": "3.90"
                     },
                     {
                         "amount": "0.04",
-                        "ingredients": "shots",
+                        "ingredients": "Kahlua, Baileys, Rum",
                         "name": "B52",
                         "price": "3.90"
                     },
                     {
                         "amount": "0.04",
-                        "ingredients": "",
+                        "ingredients": "Peach Brandy, Baileys, Cranberry Sirup, Blue Curacao",
                         "name": "Alien Brain",
                         "price": "3.90"
                     }
@@ -559,7 +559,7 @@
                 "products": [
                     {
                         "amount": "0.3",
-                        "ingredients": "spritzig",
+                        "ingredients": "",
                         "name": "Hugo",
                         "price": "4.60"
                     },
