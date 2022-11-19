@@ -67,10 +67,14 @@ def build_json_menu(tree, level=1):
                         if ingredient["ingredient_name"] == "Liter":
                             amount = "{:0,.2f}".format(float(ingredient["ingredient_quantity"])).rstrip("0").rstrip(".")
                         else:
-                            ingredients.append(ingredient["ingredient_name"])
-                    ingredients = ", ".join(ingredients)
+                            continue
+                            #ingredients.append(ingredient["ingredient_name"])
+                    #ingredients = ", ".join(ingredients)
                 pg_data["products"].append(
-                    {"name": p["product_name"], "price": "{:0,.2f}".format(float(p["product_price"])), "ingredients": ingredients, "amount": amount}
+                    {"name": p["product_name"],
+                     "price": "{:0,.2f}".format(float(p["product_price"])),
+                     "ingredients": p["product_description"].lstrip("Zutaten").lstrip(":").lstrip(),
+                     "amount": amount}
                 )
         if "child_group" in pg:
             pg_data["childs"] = build_json_menu(pg["child_group"], level + 1)
