@@ -70,15 +70,15 @@
 <div class="kontakt">
 	<div class="contactInfos">
 		<div class="contactInfoRow">
-			<img src="{base}/svg/place_white_24dp.png" alt="Adresse" />
+			<img src="{base}/svg/place_white_24dp.svg" alt="Adresse" />
 			<p>CampusCneipe C2<br />Boltzmannstraße 19,<br />85748 Garching bei München</p>
 		</div>
 		<div class="contactInfoRow">
-			<img src="{base}/svg/phone_white_24dp.png" alt="Telefon" />
+			<img src="{base}/svg/phone_white_24dp.svg" alt="Telefon" />
 			<p><a href="tel:+498930785757"> +49 89 - 30785757 </a></p>
 		</div>
 		<div class="contactInfoRow">
-			<img src="{base}/svg/email_white_24dp.png" alt="Email" />
+			<img src="{base}/svg/email_white_24dp.svg" alt="Email" />
 			<p>
 				Event Anfragen: <a href="mailto:event@campus-cneipe.de">event@campus-cneipe.de</a>
 				<br />
