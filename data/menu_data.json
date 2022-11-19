@@ -6,24 +6,6 @@
                 "name": "Biere",
                 "products": [
                     {
-                        "amount": "",
-                        "ingredients": [],
-                        "name": "Flaschen Helles",
-                        "price": "3.30"
-                    },
-                    {
-                        "amount": "",
-                        "ingredients": [],
-                        "name": "Flaschen WB",
-                        "price": "3.30"
-                    },
-                    {
-                        "amount": "",
-                        "ingredients": [],
-                        "name": "Flaschen Vitus",
-                        "price": "3.30"
-                    },
-                    {
                         "amount": "0.5",
                         "ingredients": "",
                         "name": "Helles",
@@ -175,7 +157,7 @@
                     },
                     {
                         "amount": "0.04",
-                        "ingredients": "",
+                        "ingredients": "shots",
                         "name": "Apfelstrudel",
                         "price": "3.90"
                     },
@@ -193,7 +175,7 @@
                     },
                     {
                         "amount": "0.04",
-                        "ingredients": "",
+                        "ingredients": "shots",
                         "name": "B52",
                         "price": "3.90"
                     },
@@ -385,25 +367,25 @@
                 "products": [
                     {
                         "amount": "0.15",
-                        "ingredients": "",
+                        "ingredients": "Bourbon, Zucker, Angostura Bitters, Wasser",
                         "name": "Old Fashioned",
                         "price": "6.30"
                     },
                     {
                         "amount": "0.2",
-                        "ingredients": "",
+                        "ingredients": "Rum, Zuckersirup, Limettensaft",
                         "name": "Daiquiri",
                         "price": "6.30"
                     },
                     {
                         "amount": "0.15",
-                        "ingredients": "",
+                        "ingredients": "Gin, Vermouth, Campari",
                         "name": "Negroni",
                         "price": "6.30"
                     },
                     {
                         "amount": "0.15",
-                        "ingredients": "",
+                        "ingredients": "Bourbon, Campari, Vermouth",
                         "name": "Boulevardier",
                         "price": "6.30"
                     }
@@ -415,49 +397,49 @@
                 "products": [
                     {
                         "amount": "0.2",
-                        "ingredients": "",
+                        "ingredients": "Havana, Limettensaft, Zucker, Wasser, Minze",
                         "name": "Mojito",
                         "price": "6.30"
                     },
                     {
                         "amount": "0.2",
-                        "ingredients": "",
+                        "ingredients": "Cachaca, Limetten, Zucker",
                         "name": "Caipirinha",
                         "price": "6.30"
                     },
                     {
                         "amount": "0.2",
-                        "ingredients": "",
+                        "ingredients": "Rum, Cream de Coconut, Ananassaft",
                         "name": "Pina Colada",
                         "price": "6.30"
                     },
                     {
                         "amount": "0.2",
-                        "ingredients": "",
+                        "ingredients": "Blue Curacao",
                         "name": "Fresh Herrmann",
                         "price": "6.30"
                     },
                     {
                         "amount": "0.2",
-                        "ingredients": "",
+                        "ingredients": "Tequila, Orangensaft, Zitronensaft, Grenadinen Sirup",
                         "name": "Tequila Sunrise",
                         "price": "6.30"
                     },
                     {
                         "amount": "0.15",
-                        "ingredients": "",
+                        "ingredients": "Bourbon, Ginger Ale, Angostura Bitters",
                         "name": "Horses Neck",
                         "price": "6.30"
                     },
                     {
                         "amount": "0.2",
-                        "ingredients": "",
+                        "ingredients": "Vodka, Peach Brandy, Orangensaft, Cranberry Saft",
                         "name": "Sex on the Beach:",
                         "price": "6.30"
                     },
                     {
                         "amount": "0.2",
-                        "ingredients": "",
+                        "ingredients": "Whiskey, Cointreau, Limettensaft, Zitronensaft, Limonade",
                         "name": "Lynchburg Lemonade",
                         "price": "6.30"
                     },
@@ -475,31 +457,31 @@
                 "products": [
                     {
                         "amount": "0.2",
-                        "ingredients": "Rum, Cola, Limette",
+                        "ingredients": "Rum, Coca Cola, Limettensaft",
                         "name": "Cuba Libre",
                         "price": "6.30"
                     },
                     {
                         "amount": "0.2",
-                        "ingredients": "",
+                        "ingredients": "Gin, Tonic Water",
                         "name": "Gin & Tonic",
                         "price": "6.30"
                     },
                     {
                         "amount": "0.2",
-                        "ingredients": "",
+                        "ingredients": "Vodka, Limettensaft, Ginger Beer",
                         "name": "Moscow Mule",
                         "price": "6.30"
                     },
                     {
                         "amount": "0.2",
-                        "ingredients": "",
+                        "ingredients": "Gin, Limettensaft, Ginger Beer",
                         "name": "Munich Mule",
                         "price": "6.30"
                     },
                     {
                         "amount": "0.2",
-                        "ingredients": "",
+                        "ingredients": "Vodka, Red Bull",
                         "name": "Vodka Bull",
                         "price": "6.30"
                     }
@@ -511,31 +493,31 @@
                 "products": [
                     {
                         "amount": "0.2",
-                        "ingredients": "",
+                        "ingredients": "Rum, Vodka, Gin, Cointreau, Tequila, Zuckersirup, Coca Cola, Limettensaft",
                         "name": "Long Island Ice Tea",
                         "price": "7.30"
                     },
                     {
                         "amount": "0.2",
-                        "ingredients": "",
+                        "ingredients": "Rum, Limettensaft, Ananassaft, Zimtsirup, Grenadinen Sirup, Angostura Bitters, Ouzo",
                         "name": "Zombie",
                         "price": "7.30"
                     },
                     {
                         "amount": "0.2",
-                        "ingredients": "",
+                        "ingredients": "Rum, Cointreau, Mandelsirup, Limettensaft, Zuckersirup",
                         "name": "Mai Tai",
                         "price": "7.30"
                     },
                     {
                         "amount": "0.2",
-                        "ingredients": "",
+                        "ingredients": "Vodka, Kahlua, Zuckersirup, Espresso",
                         "name": "Espresso Martini",
                         "price": "6.30"
                     },
                     {
                         "amount": "0.2",
-                        "ingredients": "",
+                        "ingredients": "Rum, Gin, Apricot Brandy, Limettensaft, Zuckersirup",
                         "name": "Gin and Apricot Martini",
                         "price": "7.30"
                     }
@@ -547,25 +529,25 @@
                 "products": [
                     {
                         "amount": "0.15",
-                        "ingredients": "",
+                        "ingredients": "Gin, Zuckersirup, Limettensaft, Basilikum",
                         "name": "Gin Basil Smash",
                         "price": "6.30"
                     },
                     {
                         "amount": "0.15",
-                        "ingredients": "",
+                        "ingredients": "Zitronensaft, Zuckersirup",
                         "name": "Fizz",
                         "price": "6.30"
                     },
                     {
                         "amount": "0.15",
-                        "ingredients": "",
+                        "ingredients": "Zitronensaft, Zuckersirup",
                         "name": "Sour",
                         "price": "6.30"
                     },
                     {
                         "amount": "0.15",
-                        "ingredients": "",
+                        "ingredients": "Bourbon, Zuckersirup, Zitronensaft",
                         "name": "New York Sour",
                         "price": "6.30"
                     }
@@ -577,19 +559,19 @@
                 "products": [
                     {
                         "amount": "0.3",
-                        "ingredients": "",
+                        "ingredients": "spritzig",
                         "name": "Hugo",
                         "price": "4.60"
                     },
                     {
                         "amount": "0.3",
-                        "ingredients": "",
+                        "ingredients": "Aperol, Wasser, Prosecco",
                         "name": "Aperol Spritz",
                         "price": "4.60"
                     },
                     {
                         "amount": "0.3",
-                        "ingredients": "",
+                        "ingredients": "Limoncello, Wasser, Prosecco",
                         "name": "Limoncello Sprizz",
                         "price": "4.60"
                     }
@@ -601,25 +583,25 @@
                 "products": [
                     {
                         "amount": "0.15",
-                        "ingredients": "",
+                        "ingredients": "Ananassaft, Zitronensaft, Minze, Ginger Beer",
                         "name": "Pineapple Mule",
                         "price": "5.30"
                     },
                     {
                         "amount": "0.2",
-                        "ingredients": "",
+                        "ingredients": "Zuckersirup, Zitronensaft, Minze, Tonic Water",
                         "name": "Mint Tonic",
                         "price": "5.30"
                     },
                     {
                         "amount": "0.2",
-                        "ingredients": "",
+                        "ingredients": "Limetten, Zucker, Ginger Ale",
                         "name": "Caipinino",
                         "price": "5.30"
                     },
                     {
                         "amount": "0.2",
-                        "ingredients": "",
+                        "ingredients": "Cream de Coconut, Maracuja Saft, Ananas Saft",
                         "name": "PiNADA Colada",
                         "price": "5.30"
                     }
@@ -637,37 +619,37 @@
                 "products": [
                     {
                         "amount": "",
-                        "ingredients": [],
+                        "ingredients": "Gl\u00fchweinmix",
                         "name": "Gl\u00fchwein",
                         "price": "2.50"
                     },
                     {
                         "amount": "",
-                        "ingredients": [],
+                        "ingredients": "Whiskey, Kaffe, Zucker, Sahne",
                         "name": "Irish Coffee",
                         "price": "4.50"
                     },
                     {
                         "amount": "",
-                        "ingredients": [],
+                        "ingredients": "Vodka, Cranberry Saft, Zuckersirup, Ginger Ale",
                         "name": "Merry Moskow Mule",
                         "price": "4.50"
                     },
                     {
                         "amount": "",
-                        "ingredients": [],
+                        "ingredients": "Baileys, Kaffee, Sahne",
                         "name": "Baileys Coffee",
                         "price": "4.50"
                     },
                     {
                         "amount": "",
-                        "ingredients": [],
+                        "ingredients": "Baileys, Milch, Sahne, Kakao",
                         "name": "Baileys Hot Chocolate",
                         "price": "4.50"
                     },
                     {
                         "amount": "",
-                        "ingredients": [],
+                        "ingredients": "Baileys, Chai Tee, Milch",
                         "name": "Baileys Chai Latte",
                         "price": "4.50"
                     }
@@ -679,13 +661,13 @@
                 "products": [
                     {
                         "amount": "0.2",
-                        "ingredients": "",
+                        "ingredients": "Chai Tee, Milch",
                         "name": "Chai Latte",
                         "price": "3.50"
                     },
                     {
                         "amount": "0.2",
-                        "ingredients": "",
+                        "ingredients": "Milch, Kakao, Sahne",
                         "name": "Hot Chocolate",
                         "price": "3.50"
                     },
@@ -715,7 +697,7 @@
                     },
                     {
                         "amount": "0.2",
-                        "ingredients": "",
+                        "ingredients": "Kaffee, Milch",
                         "name": "Cappuccino",
                         "price": "2.70"
                     }
@@ -733,25 +715,25 @@
                 "products": [
                     {
                         "amount": "",
-                        "ingredients": [],
+                        "ingredients": "",
                         "name": "SW Rucola Pesto",
                         "price": "5.40"
                     },
                     {
                         "amount": "",
-                        "ingredients": [],
+                        "ingredients": "",
                         "name": "SW Putenbrust",
                         "price": "5.40"
                     },
                     {
                         "amount": "",
-                        "ingredients": [],
+                        "ingredients": "",
                         "name": "SW Salami Calabra",
                         "price": "5.40"
                     },
                     {
                         "amount": "",
-                        "ingredients": [],
+                        "ingredients": "",
                         "name": "SW vegan gegrillte Paprika",
                         "price": "5.40"
                     }
@@ -763,13 +745,13 @@
                 "products": [
                     {
                         "amount": "",
-                        "ingredients": [],
+                        "ingredients": "",
                         "name": "Nachos klein",
                         "price": "3.20"
                     },
                     {
                         "amount": "",
-                        "ingredients": [],
+                        "ingredients": "",
                         "name": "Nachos gro\u00df",
                         "price": "4.90"
                     }
