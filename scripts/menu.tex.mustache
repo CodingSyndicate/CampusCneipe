@@ -50,7 +50,8 @@ info@campus-cneipe.de}}
 \begin{centering}
 \begin{tabular}{p{.5\linewidth}p{.12\linewidth}p{.12\linewidth}}
 {{#products}}
-  \makecell*[l]{ {{name}} {{#ingredients}}\\ \footnotesize{\textit{ {{ingredients}} } } {{/ingredients}}} &
+\begin{minipage}{\linewidth} {{name}} {{#ingredients}}\\ \footnotesize{\textit{ {{ingredients}} } } \\ {{/ingredients}} \end{minipage} &
+%  \makecell*[l]{ {{name}} {{#ingredients}}\\ \footnotesize{\textit{ {{ingredients}} } } {{/ingredients}}} &
   \makecell*[r]{ {{#amount}} \SI{ {{amount}} }{\liter} {{/amount}} } &
   \makecell*[r]{ {{price}}€}\\
 {{/products}}
