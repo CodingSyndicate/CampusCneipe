@@ -17,6 +17,7 @@ BLACKLISTED_PRODUCTGROUPS = [
     "Teure Getränke",
     "Favoriten",
     "Specials",
+    "TO GO"
 ]
 
 BLACKLISTED_PRODUCTS = [
