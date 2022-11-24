@@ -39,12 +39,6 @@
         "title": "Pubquiz"
     },
     {
-        "begin": "2022-11-25T19:00:00+01:00",
-        "description": "",
-        "end": "2022-11-25T23:00:00+01:00",
-        "title": "FSMB Schafkopfturnier"
-    },
-    {
         "begin": "2022-11-30T19:00:00+01:00",
         "description": "Jeden Mittwoch w\u00e4hrend der Vorlesungszeit findet unser Karaoke statt. Singt zu den Titeln eurer Wahl Solo oder im Duett mit Textunterst\u00fctzung vom Beamer. Am 30.11 bekommen wir wieder Unterst\u00fctzung unserer Freunde der ESN TUMi, die sich an diesem Abend um die Playlist k\u00fcmmern. Viel Spa\u00df beim interkulturellen Karaokeabend!\nAnmeldung m\u00f6glich \u00fcber die TUMi App, ihr d\u00fcrft und sollt aber auch gerne spontan vorbeischauen.\n\nEvery Wednesday during the lecture period, you can sing and dance at C2's weekly karaoke party. On Wednesday, 30th we have international support by the volunteers of ESN TUMi who take care about our play list. Pre-register in the TUMi-app or join spontaneously.",
         "end": "2022-12-01T00:00:00+01:00",
@@ -74,6 +68,19 @@
         "begin": "2022-12-08T19:00:00+01:00",
         "description": "Wissens- und Knobelfragen aus allen Bereichen. Wer holt dieses Semester den Pubquiz-Meistertitel?\n\nErfahrungsgem\u00e4\u00df ist eine Reservierung erforderlich.",
         "end": "2022-12-08T23:30:00+01:00",
+        "title": "Pubquiz"
+    },
+    {
+        "begin": "2022-12-14T19:00:00+01:00",
+        "description": "Jeden Mittwoch w\u00e4hrend der Vorlesungszeit findet unser Karaoke statt. Singt zu den Titeln eurer Wahl Solo oder im Duett mit Textunterst\u00fctzung vom Beamer. Viel Spa\u00df!",
+        "end": "2022-12-15T00:00:00+01:00",
+        "image": "/images/events/1spD5XYY5QQCktZcDSjdq81KZv4v5IXTA_karaoke.png",
+        "title": "Karaoke"
+    },
+    {
+        "begin": "2022-12-15T19:00:00+01:00",
+        "description": "Wissens- und Knobelfragen aus allen Bereichen. Wer holt dieses Semester den Pubquiz-Meistertitel?\n\nErfahrungsgem\u00e4\u00df ist eine Reservierung erforderlich.",
+        "end": "2022-12-15T23:30:00+01:00",
         "title": "Pubquiz"
     }
 ]
