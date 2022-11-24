@@ -24,7 +24,7 @@
 
 <div class="is-full-screen">
 	<div class="content">
-		<h3>12-14€ STUDENLOHN ALS...</h3>
+		<h3>12-16€ STUNDENLOHN ALS...</h3>
 		<div class="dauerJobs">
 			<section>
 				<h4>MITARBEITER/-IN SERVICE (m,w,d)</h4>
