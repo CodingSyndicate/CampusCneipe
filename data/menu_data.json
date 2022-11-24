@@ -652,6 +652,12 @@
                         "ingredients": "Baileys, Chai Tee, Milch",
                         "name": "Baileys Chai Latte",
                         "price": "4.50"
+                    },
+                    {
+                        "amount": "",
+                        "ingredients": "",
+                        "name": "Extra Schuss",
+                        "price": "1.00"
                     }
                 ]
             },
