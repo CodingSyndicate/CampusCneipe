@@ -318,42 +318,6 @@
                         "price": "2.70"
                     }
                 ]
-            },
-            {
-                "childs": [],
-                "name": "TO GO",
-                "products": [
-                    {
-                        "amount": "0.5",
-                        "ingredients": "",
-                        "name": "Flasche Limo",
-                        "price": "1.50"
-                    },
-                    {
-                        "amount": "0.5",
-                        "ingredients": "",
-                        "name": "Flasche Spezi",
-                        "price": "1.50"
-                    },
-                    {
-                        "amount": "0.5",
-                        "ingredients": "",
-                        "name": "Flasche Mate",
-                        "price": "1.50"
-                    },
-                    {
-                        "amount": "1",
-                        "ingredients": "",
-                        "name": "Flasche Cola",
-                        "price": "3.00"
-                    },
-                    {
-                        "amount": "0.5",
-                        "ingredients": "",
-                        "name": "Helles",
-                        "price": "2.00"
-                    }
-                ]
             }
         ],
         "name": "Getr\u00e4nke",
@@ -361,6 +325,18 @@
     },
     {
         "childs": [
+            {
+                "childs": [],
+                "name": "Wochencocktails",
+                "products": [
+                    {
+                        "amount": "",
+                        "ingredients": "",
+                        "name": "Kentucky Sunrise",
+                        "price": "4.00"
+                    }
+                ]
+            },
             {
                 "childs": [],
                 "name": "The Unforgettables",
@@ -460,6 +436,12 @@
                         "ingredients": "Rum, Coca Cola, Limettensaft",
                         "name": "Cuba Libre",
                         "price": "6.30"
+                    },
+                    {
+                        "amount": "",
+                        "ingredients": "Vodka, Cranberry Saft, Zuckersirup, Ginger Ale",
+                        "name": "Merry Moskow Mule",
+                        "price": "4.50"
                     },
                     {
                         "amount": "0.2",
@@ -618,43 +600,43 @@
                 "name": "Alkoholisch",
                 "products": [
                     {
-                        "amount": "",
-                        "ingredients": "Gl\u00fchweinmix",
+                        "amount": "0.2",
+                        "ingredients": "Gl\u00fchweinmix, Orangen, Nelken, Anis, Zimtstangen",
                         "name": "Gl\u00fchwein",
                         "price": "2.50"
                     },
                     {
-                        "amount": "",
+                        "amount": "0.2",
+                        "ingredients": "Gl\u00fchweinmix, Orangen, Nelken, Anis, Zimtstangen und Amaretto",
+                        "name": "Turbogl\u00fchwein (mit Schuss)",
+                        "price": "3.50"
+                    },
+                    {
+                        "amount": "0.2",
                         "ingredients": "Whiskey, Kaffe, Zucker, Sahne",
                         "name": "Irish Coffee",
                         "price": "4.50"
                     },
                     {
-                        "amount": "",
-                        "ingredients": "Vodka, Cranberry Saft, Zuckersirup, Ginger Ale",
-                        "name": "Merry Moskow Mule",
-                        "price": "4.50"
-                    },
-                    {
-                        "amount": "",
+                        "amount": "0.2",
                         "ingredients": "Baileys, Kaffee, Sahne",
                         "name": "Baileys Coffee",
                         "price": "4.50"
                     },
                     {
-                        "amount": "",
+                        "amount": "0.2",
                         "ingredients": "Baileys, Milch, Sahne, Kakao",
                         "name": "Baileys Hot Chocolate",
                         "price": "4.50"
                     },
                     {
-                        "amount": "",
+                        "amount": "0.2",
                         "ingredients": "Baileys, Chai Tee, Milch",
                         "name": "Baileys Chai Latte",
                         "price": "4.50"
                     },
                     {
-                        "amount": "",
+                        "amount": "0.02",
                         "ingredients": "",
                         "name": "Extra Schuss",
                         "price": "1.00"
@@ -706,6 +688,12 @@
                         "ingredients": "Kaffee, Milch",
                         "name": "Cappuccino",
                         "price": "2.70"
+                    },
+                    {
+                        "amount": "0.2",
+                        "ingredients": "",
+                        "name": "Latte Macchiato",
+                        "price": "2.60"
                     }
                 ]
             }
