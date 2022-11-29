@@ -24,25 +24,24 @@
 
 <div class="is-full-screen">
 	<div class="content">
-		<h3>12-16€ STUNDENLOHN ALS...</h3>
+		<h3>12-16€ Stundenlohn als..</h3>
 		<div class="dauerJobs">
 			<section>
-				<h4>MITARBEITER/-IN SERVICE (m,w,d)</h4>
+				<h4>Mitarbeiter/-in Service (m,w,d,)</h4>
 				<pre>Du hast gerne Kontakt mit Menschen,
 stellst es dir cool vor,
 hinter einer Bar zu arbeiten
 und mischt gerne Cocktails??</pre>
 			</section>
 			<section>
-				<h4>MITARBEITER/-IN KÜCHE (m,w,d)</h4>
+				<h4>Mitarbeiter/-in Küche (m,w,d)</h4>
 				<pre>Du wolltest schon immer mal deinen Kochkünsten
 in einer Gastroküche freien Lauf lassen
 oder dich wie bei fast keinem anderen Betrieb
 in die Planung der Gerichte und Rezepte einbringen?</pre>
 			</section>
 		</div>
-		<pre class="bottomPre"><h4>DANN BEWIRB DICH JETZT
-UND WERDE TEIL UNSERES TEAMS!</h4>
+		<pre class="bottomPre"><h4>Dann bewirb dich jetzt und werde Teil des Teams!</h4>
 Mit dem Schichtplaner Tool kannst du dir deine Arbeitszeiten individuell einteilen und dir so mit 
 <b>12-14€ Stundenlohn</b> etwas dazuverdienen.
 
