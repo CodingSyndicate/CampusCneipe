@@ -65,7 +65,7 @@ def build_json_menu(tree, level=1):
                         else: # deklarationspflichtig
                             if ingredient['ingredient_name'] not in DEKLARATIONSPFLICHTIG:
                                 DEKLARATIONSPFLICHTIG.append(ingredient['ingredient_name'])
-                            footnote.append(DEKLARATIONSPFLICHTIG.index(ingredient['ingredient_name']))
+                            footnote.append(str(DEKLARATIONSPFLICHTIG.index(ingredient['ingredient_name'])))
                 footnote.sort()
                 pg_data["products"].append(
                     {"name": p["product_name"],

@@ -28,7 +28,16 @@ info@campus-cneipe.de}}
 \maketitle
 
 \AddToShipoutPictureBG{\AtPageLowerLeft{
-	\hspace{.04\textwidth}\raisebox{3.5em}{\qrcode[height=.1\textwidth]{https://c2.tum.de/karte/}}}}
+    \hspace{.04\textwidth}\raisebox{3.5em}{\qrcode[height=.1\textwidth]{https://c2.tum.de/karte/}}}}
+\newcounter{inhaltsstoffecounter}
+\AddToShipoutPictureBG{\AtPageLowerLeft{
+    \hspace{.2\textwidth}\raisebox{3em}{
+      \footnotesize
+      {{#footnote_data}}
+      \textsuperscript{\theinhaltsstoffecounter} {{.}}
+      \stepcounter{inhaltsstoffecounter}
+                  {{/footnote_data}}
+}}}
 \AddToShipoutPictureBG{\AtTextUpperLeft{
 	\hspace{.9\textwidth}\raisebox{-3em}{\includegraphics[width=.1\textwidth]{../static/images/logo}}}}
 
@@ -50,8 +59,10 @@ info@campus-cneipe.de}}
 \begin{centering}
 \begin{tabular}{p{.5\linewidth}p{.12\linewidth}p{.12\linewidth}}
 {{#products}}
-\begin{minipage}{\linewidth} {{name}} {{#ingredients}}\\ \footnotesize{\textit{ {{ingredients}} } } \\ {{/ingredients}} \end{minipage} &
-%  \makecell*[l]{ {{name}} {{#ingredients}}\\ \footnotesize{\textit{ {{ingredients}} } } {{/ingredients}}} &
+\begin{minipage}{\linewidth}
+  {{name}} {{#footnote}} \footnotemark[{{.}}] {{/footnote}}
+  {{#ingredients}}\\ \footnotesize{\textit{ {{ingredients}} } } \\ {{/ingredients}}
+\end{minipage} &
   \makecell*[r]{ {{#amount}} \SI{ {{amount}} }{\liter} {{/amount}} } &
   \makecell*[r]{ {{price}}€}\\
 {{/products}}
@@ -60,5 +71,4 @@ info@campus-cneipe.de}}
 {{/childs}}
 
 {{/products}}
-
 \end{document}
