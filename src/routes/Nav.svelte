@@ -40,7 +40,7 @@
 						aria-current={$page.url.pathname === base + '/' ? 'page' : ''}
 						on:click={() => navigate('/')}
 					>
-						HOME
+						Home
 					</a>
 				</li>
 				<li class="nav-item  text-center">
@@ -52,7 +52,7 @@
 						aria-current={$page.url.pathname.startsWith(base + '/karte') ? 'page' : ''}
 						on:click={() => navigate('/karte')}
 					>
-						KARTE
+						Karte
 					</a>
 				</li>
 				<li class="nav-item  text-center">
@@ -64,7 +64,7 @@
 						aria-current={$page.url.pathname.startsWith(base + '/events') ? 'page' : ''}
 						on:click={() => navigate('/events')}
 					>
-						EVENTS
+						Events
 					</a>
 				</li>
 				<li class="nav-item  text-center">
@@ -76,7 +76,7 @@
 						aria-current={$page.url.pathname.startsWith(base + '/mieten') ? 'page' : ''}
 						on:click={() => navigate('/mieten')}
 					>
-						MIETEN
+						Mieten
 					</a>
 				</li>
 				<li class="nav-item  text-center">
@@ -88,9 +88,22 @@
 						aria-current={$page.url.pathname.startsWith(base + '/mitmachen') ? 'page' : ''}
 						on:click={() => navigate('/mitmachen')}
 					>
-						MITMACHEN
+						Mitmachen
 					</a>
 				</li>
+				<li class="nav-item  text-center">
+					<a
+						sveltekit:prefetch
+						href="{base}/verein"
+						class="nav-link"
+						class:active={$page.url.pathname.startsWith(base + '/verein')}
+						aria-current={$page.url.pathname.startsWith(base + '/verein') ? 'page' : ''}
+						on:click={() => navigate('/verein')}
+					>
+						Verein
+					</a>
+				</li>
+
 				<li class="nav-item  text-center">
 					<a
 						sveltekit:prefetch
@@ -100,7 +113,7 @@
 						aria-current={$page.url.pathname.startsWith(base + '/kontakt') ? 'page' : ''}
 						on:click={() => navigate('/kontakt')}
 					>
-						KONTAKT
+						Kontakt
 					</a>
 				</li>
 			</ul>

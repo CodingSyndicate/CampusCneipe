@@ -28,7 +28,8 @@
 	subtitle="<p>am Forschungszentrum Garching<br>von Studenten/Studentinnen für Alle</p>"
 	full={true}
 	image="/images/2-2.png"
-/>
+  />
+<Oeffnungszeiten />
 <DetailedCard
 	title="Die Cneipe am Campus Garching"
 	subtitle="Mit studentischen Preisen"
@@ -41,8 +42,6 @@
 	buttonText="Karte öffnen"
 	sideImageThird={true}
 />
-
-<Oeffnungszeiten />
 
 <Anfahrt />
 
