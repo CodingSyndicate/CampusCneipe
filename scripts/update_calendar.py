@@ -119,9 +119,6 @@ def main():
         print('An error occurred: %s' % error)
     file_id = '1RrnChjsKwT-GWl5E0MlkOXoXgUDyoB9g'
     drive_service = build('drive', 'v3', credentials=creds)
-    download_file(drive_service, file_id, "lolgas")
-
-
 
 if __name__ == '__main__':
     main()
