@@ -20,6 +20,12 @@
 	</Tabs>
 </div>
 
+<ul start="0" class="list-group fs-6">
+  {#each menu.footnote_data as footnote, i}
+    <li><sup>{i}</sup> {footnote}</li>
+  {/each}
+</ul>
+
 <style>
 	.kartenContainer {
 		display: flex;
