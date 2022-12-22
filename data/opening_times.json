@@ -1,22 +1,36 @@
-[
+{
+  "vacations": [
     {
-        "day": "Dienstag",
-        "open": "15:00",
-        "close": "24:00"
-    },
+    "name": "Weihnachtsferien",
+    "from": "2022-12-19",
+    "to": "2023-01-08"
+  },
     {
-        "day": "Mittwoch",
-        "open": "15:00",
-        "close": "24:00"
-    },
+    "name": "Semesterferien",
+    "from": "2023-01-28",
+    "to": "2023-04-17"
+  }
+  ],
+  "days": [
     {
-        "day": "Donnerstag",
-        "open": "15:00",
-        "close": "24:00"
-    },
+    "day": "Dienstag",
+    "open": "15:00",
+    "close": "24:00"
+  },
     {
-        "day": "Freitag",
-        "open": "15:00",
-        "close": "24:00"
-    }
-]
+    "day": "Mittwoch",
+    "open": "15:00",
+    "close": "24:00"
+  },
+    {
+    "day": "Donnerstag",
+    "open": "15:00",
+    "close": "24:00"
+  },
+    {
+    "day": "Freitag",
+    "open": "15:00",
+    "close": "24:00"
+  }
+  ]
+}
