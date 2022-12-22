@@ -88,5 +88,54 @@
         "description": "",
         "end": "2022-12-17T00:00:00+01:00",
         "title": "Weihnachtfeier / Weihnachtsparty"
+    },
+    {
+        "begin": "2023-01-07T08:00:00+01:00",
+        "description": "",
+        "end": "2023-01-07T09:00:00+01:00",
+        "title": "Jannes Feier"
+    },
+    {
+        "begin": "2023-01-11T19:00:00+01:00",
+        "description": "Jeden zweiten Mittwoch findet w\u00e4hrend der Vorlesungen Karaoke in der C2 statt. Singt zu den Titeln eurer Wahl Solo oder im Duett mit Textunterst\u00fctzung vom Beamer. Viel Spa\u00df!",
+        "end": "2023-01-12T00:00:00+01:00",
+        "title": "Karaoke ESN"
+    },
+    {
+        "begin": "2023-01-12T19:00:00+01:00",
+        "description": "Wissens- und Knobelfragen aus allen Bereichen. Wer holt dieses Semester den Pubquiz-Meistertitel?\n\nErfahrungsgem\u00e4\u00df ist eine Reservierung erforderlich.",
+        "end": "2023-01-12T23:30:00+01:00",
+        "title": "Pubquiz"
+    },
+    {
+        "begin": "2023-01-18T19:00:00+01:00",
+        "description": "Jeden zweiten Mittwoch findet w\u00e4hrend der Vorlesungen Karaoke in der C2 statt. Singt zu den Titeln eurer Wahl Solo oder im Duett mit Textunterst\u00fctzung vom Beamer. Viel Spa\u00df!",
+        "end": "2023-01-19T00:00:00+01:00",
+        "image": "/images/events/1spD5XYY5QQCktZcDSjdq81KZv4v5IXTA_karaoke.png",
+        "title": "Karaoke"
+    },
+    {
+        "begin": "2023-01-19T19:00:00+01:00",
+        "description": "Wissens- und Knobelfragen aus allen Bereichen. Wer holt dieses Semester den Pubquiz-Meistertitel?\n\nErfahrungsgem\u00e4\u00df ist eine Reservierung erforderlich.",
+        "end": "2023-01-19T23:30:00+01:00",
+        "title": "Pubquiz"
+    },
+    {
+        "begin": "2023-01-25T19:00:00+01:00",
+        "description": "Jeden zweiten Mittwoch findet w\u00e4hrend der Vorlesungen Karaoke in der C2 statt. Singt zu den Titeln eurer Wahl Solo oder im Duett mit Textunterst\u00fctzung vom Beamer. Viel Spa\u00df!",
+        "end": "2023-01-26T00:00:00+01:00",
+        "title": "Karaoke ESN - Semester Closing Special"
+    },
+    {
+        "begin": "2023-01-26T19:00:00+01:00",
+        "description": "Wissens- und Knobelfragen aus allen Bereichen. Wer holt dieses Semester den Pubquiz-Meistertitel?\n\nErfahrungsgem\u00e4\u00df ist eine Reservierung erforderlich.",
+        "end": "2023-01-26T23:30:00+01:00",
+        "title": "Pubquiz"
+    },
+    {
+        "begin": "2023-01-27T18:00:00+01:00",
+        "description": "",
+        "end": "2023-01-27T23:00:00+01:00",
+        "title": "Semester Closing Party"
     }
 ]
