@@ -15,7 +15,11 @@
 
 <TitelSeite
 	title="Getränke- und Speisekarte"
-	subtitle="Bier, Cocktails, Shots, Longdrinks, Softdrinks, Snacks, Kaffee und noch mehr Bier..."
+	subtitle='<div class="buttons"><a href="/menu.pdf">
+		    <button type="button" class="btn btn-primary">
+		      PDF
+		    </button>
+		  </a></div>'
 	full={false}
 	middle={false}
 	image="/images/6-2.png"
