@@ -7,12 +7,12 @@
 <div class="kartenContainer">
 	<Tabs>
 		<TabList>
-			{#each menu as kategorie}
+			{#each menu.products as kategorie}
 				<Tab widthDividor={menu.length}>{kategorie.name}</Tab>
 			{/each}
 		</TabList>
 
-		{#each menu as kategorie}
+		{#each menu.products as kategorie}
 			<TabPanel>
 				<KartenKategorie {kategorie} />
 			</TabPanel>
