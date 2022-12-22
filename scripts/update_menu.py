@@ -52,8 +52,6 @@ def build_json_menu(tree, level=1):
         if "child_products" in pg:
             pg_data["products"] = []
             for p in pg["child_products"]:
-                if p['product_name'] == "Cuba Libre":
-                    pprint.pprint(p)
                 ingredients = []
                 amount = ""
                 footnote = []
