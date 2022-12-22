@@ -2,7 +2,10 @@ import preprocess from 'svelte-preprocess';
 import adapter from '@sveltejs/adapter-static';
 import { mdsvex } from 'mdsvex'
 
+
 /** @type {import('@sveltejs/kit').Config} */
+const md_layout = "./src/MarkdownLayout.svelte";
+
 const config = {
   kit: {
     adapter: adapter(),
@@ -20,10 +23,10 @@ const config = {
       }
     }),
     mdsvex({
+      layout: md_layout,
       extensions: ['.md']
     })
   ],
-
   vitePlugin: {
     experimental: {
       useVitePreprocess: true
