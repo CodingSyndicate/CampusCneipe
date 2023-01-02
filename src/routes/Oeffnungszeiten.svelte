@@ -4,31 +4,33 @@
   import Card from '$lib/Cards/Card.svelte';
   let bigImage = '/images/7.jpg';
 
-  let options = {
-//    weekday: 'long',
-    year: '2-digit',
-    month: 'numeric',
-    day: 'numeric',
-//    hour: 'numeric',
-//    minute: 'numeric',
-    timeZone: 'Europe/Berlin'
-  };
+  function convert_date(date_string) {
+    let options = {
+      year: '2-digit',
+      month: 'numeric',
+      day: 'numeric',
+      timeZone: 'Europe/Berlin'
+      };
+    return new Intl.DateTimeFormat('de-DE', options).format(date_string);
+  }
   
   for (let vacation in opening_times.vacations) {
     opening_times.vacations[vacation].begin_date = Date.parse(opening_times.vacations[vacation].from)
-    opening_times.vacations[vacation].begin_text = new Intl.DateTimeFormat('de-DE', options).format(opening_times.vacations[vacation].begin_date)
+    opening_times.vacations[vacation].begin_text = convert_date(opening_times.vacations[vacation].begin_date)
     opening_times.vacations[vacation].end_date = Date.parse(opening_times.vacations[vacation].to)
-    opening_times.vacations[vacation].end_text = new Intl.DateTimeFormat('de-DE', options).format(opening_times.vacations[vacation].end_date)
+    opening_times.vacations[vacation].end_text = convert_date(opening_times.vacations[vacation].end_date)
 
   }
+  let now = new Date().getTime();
   let day_milliseconds = 1000 * 60 * 60 * 24;
-  let cutoff = new Date().getTime() + 20 * day_milliseconds;
+  let cutoff = now + 20 * day_milliseconds;
 
   opening_times.vacations.sort((a, b) => {
     if (a.begin_date < b.begin_date) return -1;
     else return 1;
   });
-  let display_vacation = opening_times.vacations.filter(v => v.begin_date - cutoff < 0)[0];
+  let display_vacation = opening_times.vacations.filter(v =>
+    v.begin_date - cutoff < 0 && v.end_date > now)[0];
 </script>
 
 <Card
