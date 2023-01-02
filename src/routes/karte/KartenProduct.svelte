@@ -15,7 +15,7 @@
 <div class="elementContainer">
 	<div class="productLeft">
 	  <span class="productName text-left">{product.name}
-	{#each product.footnote as footnote}<sup>{footnote}</sup>{/each}
+	{#each product.footnote as footnote}<sup>{footnote}</sup>&nbsp;{/each}
 	  </span>
 		<span class="productIngredients text-left">{product.ingredients}</span>
 	</div>
