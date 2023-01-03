@@ -1,6 +1,19 @@
 <script>
 	import { page } from '$app/stores';
-	import { base } from '$app/paths';
+  import { base } from '$app/paths';
+
+
+  function convert_date(date) {
+    let options = {
+      year: '2-digit',
+      month: '2-digit',
+      day: '2-digit',
+      timeZone: 'Europe/Berlin'
+      };
+    return new Intl.DateTimeFormat('de-DE', options).format(date);
+  }
+
+  let compileTime = convert_date(new Date().getTime())
 </script>
 
 <footer class="col">
@@ -47,19 +60,19 @@
 		</div>
 	</div>
 	<hr />
-	<div class="lastLine">
-		<span class="text-left">© &nbsp; 2022 - Campus Cneipe</span>
-		<span class="text-center">
-			Contribute on <a href="https://github.com/CodingSyndicate/CampusCneipe"> Github </a>
-		</span>
-		<span class="text-right">
-			Made with ❤ by &nbsp;
-			<a href="https://github.com/GeneralMine">GeneralMine</a>
-		</span>
+	<!-- <div class="lastLine"> -->
+	<!-- <\!-- 	<span class="text-left">© &nbsp; 2022 - Campus Cneipe</span> -\-> -->
+	<!-- 	<span class="text-center"> -->
+	<!-- 	  Contribute on <a href="https://github.com/CodingSyndicate/CampusCneipe"> Github </a> -->
+	<!-- 	</span> -->
+	<!-- 	<\!-- <span class="text-right"> -\-> -->
+	<!-- 	<\!-- 	Made with ❤ by &nbsp; -\-> -->
+	<!-- 	<\!-- 	<a href="https://github.com/GeneralMine">GeneralMine</a> -\-> -->
+	<!-- 	<\!-- </span> -\-> -->
+	<!-- </div> -->
+	<div class="lastUpdated">
+	  <span style="font-size: 14px;">contribute on <a href="https://github.com/CodingSyndicate/CampusCneipe"> Github </a> | last updated: {compileTime}</span>
 	</div>
-	<!-- <div class="lastUpdated">
-		<span style="font-size: 14px;">Last Updated: 11.10.2022</span>
-	</div> -->
 </footer>
 
 <style>
