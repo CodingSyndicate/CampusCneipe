@@ -12,7 +12,7 @@
 	export let sideImageHalf;
 	export let sideImageThird;
 	export let small;
-	export let darkBackground;
+  export let darkBackground;
 </script>
 
 <Template
@@ -22,7 +22,7 @@
 	{sideImageHalf}
 	{sideImageThird}
 	{small}
-	{darkBackground}
+  {darkBackground}
 >
 	<div class="col">
 		<h2>{title}</h2>
@@ -39,8 +39,7 @@
 		height: 100%;
 	}
 	h2 {
-		font-size: 3.75em;
-		text-transform: uppercase;
+	  text-transform: uppercase;
 	}
 	h3 {
 		padding-top: 25px;
@@ -61,7 +60,7 @@
 	}
 	@media (max-width: 450px) {
 		h2 {
-			font-size: 2em;
+			font-size: 1.75em;
 		}
 	}
 </style>

@@ -1,6 +1,7 @@
 <script>
 	import TitelSeite from '$lib/Cards/TitelSeite.svelte';
-	import { base } from '$app/paths';
+  import { base } from '$app/paths';
+  import TopImg from "$lib/assets/images/job.png?height=600px&position=top"
 </script>
 
 <svelte:head>
@@ -18,7 +19,7 @@
 	subtitle="Im Service, hinterm Tresen oder gar im Lager!"
 	full={false}
 	middle={false}
-	image="/images/job.png"
+	image={TopImg}
 	imagePosition="top"
 />
 

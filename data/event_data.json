@@ -102,10 +102,17 @@
         "title": "Pubquiz"
     },
     {
+        "begin": "2023-01-13T19:00:00+01:00",
+        "description": "",
+        "end": "2023-01-13T23:30:00+01:00",
+        "png_image": "16N1CxrByhDiZp9pMD9xyk3a-4pDEGKpa_2023-01-02T21:31:32,871607960+01:00",
+        "title": "FSMBandabend"
+    },
+    {
         "begin": "2023-01-18T19:00:00+01:00",
         "description": "Jeden zweiten Mittwoch findet w\u00e4hrend der Vorlesungen Karaoke in der C2 statt. Singt zu den Titeln eurer Wahl Solo oder im Duett mit Textunterst\u00fctzung vom Beamer. Viel Spa\u00df!",
         "end": "2023-01-19T00:00:00+01:00",
-        "image": "/images/events/1spD5XYY5QQCktZcDSjdq81KZv4v5IXTA_karaoke.png",
+        "png_image": "1spD5XYY5QQCktZcDSjdq81KZv4v5IXTA_karaoke",
         "title": "Karaoke"
     },
     {

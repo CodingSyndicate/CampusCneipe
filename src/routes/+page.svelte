@@ -4,7 +4,12 @@
 	import TitelSeite from '$lib/Cards/TitelSeite.svelte';
 
 	import Oeffnungszeiten from './Oeffnungszeiten.svelte';
-	import Anfahrt from './anfahrt.svelte';
+  import Anfahrt from './anfahrt.svelte';
+
+  import TitelImg from "$lib/assets/images/2-2.png";
+  import CocktailImg1 from "$lib/assets/images/4.jpg";
+  import CocktailImg2 from "$lib/assets/images/5.jpg";
+  import MassImg from "$lib/assets/images/3-1.png";
 </script>
 
 <svelte:head>
@@ -24,18 +29,18 @@
 </svelte:head>
 
 <TitelSeite
-	title="Die Campus Cneipe"
+	title="Campus Cneipe"
 	subtitle="<p>am Forschungszentrum Garching<br>von Studenten/Studentinnen für Alle</p>"
 	full={true}
-	image="/images/2-2.png"
+	image={TitelImg}
   />
 <Oeffnungszeiten />
 <DetailedCard
 	title="Die Cneipe am Campus Garching"
 	subtitle="Mit studentischen Preisen"
-	smallImageLeft="/images/4.JPG"
-	smallImageRight="/images/5.JPG"
-	bigImage="/images/3-1.png"
+	smallImageLeft={CocktailImg1}
+	smallImageRight={CocktailImg2}
+	bigImage={MassImg}
 	text="Die Campus Cneipe sorgt seit der Gründung 2005 für Freizeitaktivitäten die den Campus Garching mit Studentenleben füllen. Geleitet, versorgt und am Laufen gehalten wird sie seit je her von TUM Studenten und Ehemaligen. 2020 in der neuen Mensa neugegründet erfindet sich die Campus Cneipe mit einem neuen Vorstand und vieler neuer Vereinsmitglieder neu. In Kooperation mit den Fachschaften, Studentenwerk und anderen Vereinen finden laufend erfolgreiche Veranstaltungen statt.
 	Das Angebot an unterschiedlichen Bieren, Speisen und Cocktails ist mitgewachsen und so gibt es einige Neuigkeiten auszuprobieren. Schaut gerne mal rein!"
 	buttonLink="/karte"

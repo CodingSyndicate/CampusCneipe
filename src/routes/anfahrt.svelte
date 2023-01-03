@@ -1,7 +1,7 @@
 <script>
 	import { goto } from '$app/navigation';
 	import Card from '$lib/Cards/Card.svelte';
-	let bigImage = '/images/navigation.png';
+	import bigImage from '$lib/assets/images/navigation.png';
 </script>
 
 <Card

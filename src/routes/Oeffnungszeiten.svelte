@@ -1,8 +1,9 @@
 <script>
   import opening_times from '$data/opening_times.json';
+  import notices from '$data/notices.json';
   import { goto } from '$app/navigation';
   import Card from '$lib/Cards/Card.svelte';
-  let bigImage = '/images/7.jpg';
+  import bigImage from '$lib/assets/images/7.jpg';
 
   function convert_date(date_string) {
     let options = {
@@ -14,39 +15,35 @@
     return new Intl.DateTimeFormat('de-DE', options).format(date_string);
   }
   
-  for (let vacation in opening_times.vacations) {
-    opening_times.vacations[vacation].begin_date = Date.parse(opening_times.vacations[vacation].from)
-    opening_times.vacations[vacation].begin_text = convert_date(opening_times.vacations[vacation].begin_date)
-    opening_times.vacations[vacation].end_date = Date.parse(opening_times.vacations[vacation].to)
-    opening_times.vacations[vacation].end_text = convert_date(opening_times.vacations[vacation].end_date)
-
+  for (let notice in notices) {
+    notices[notice].date_display_from = Date.parse(notices[notice].display_from)
+    notices[notice].date_display_until = Date.parse(notices[notice].display_until)
   }
   let now = new Date().getTime();
-  let day_milliseconds = 1000 * 60 * 60 * 24;
-  let cutoff = now + 20 * day_milliseconds;
-
-  opening_times.vacations.sort((a, b) => {
-    if (a.begin_date < b.begin_date) return -1;
+  notices.sort((a, b) => {
+    if (a.date_display_from < b.date_display_until) return -1;
     else return 1;
   });
-  let display_vacation = opening_times.vacations.filter(v =>
-    v.begin_date - cutoff < 0 && v.end_date > now)[0];
+  let display_notices = notices.filter(n =>
+    n.date_display_from < now && n.date_display_until > now);
 </script>
 
 <Card
 	title="Öffnungszeiten"
-	subtitle="Während der Vorlesungzeit"
-	{bigImage}
+	subtitle=""
+	bigImage={bigImage}
 	contentRight={true}
 	sideImageHalf={true}
 	small={true}
 	darkBackground={true}
   >
-  {#if display_vacation}
-      <div class="alert alert-danger">
-	Von {display_vacation.begin_text} bis {display_vacation.end_text} wegen {display_vacation.name} geschlossen!
+  {#each display_notices as notice}
+    <div class="alert alert-danger">
+      <h4 class="alert-heading">&#9888; {notice.title}</h4>
+      <hr />
+      <p class="text-black">{notice.text}</p>
       </div>
-    {/if}
+    {/each}
 
   <table class="table mt-3 table-borderless text-light">
       <tbody>
@@ -62,8 +59,7 @@
   </table>
 
 		<p>
-		Außerhalb der Vorlesungszeit haben wir für den regulären Betrieb geschlossen. Die Campus Cneipe
-		kann aber weiterhin für Veranstaltungen jeglicher Art gebucht werden.
+		  Die Campus Cneipe kann jederzeit für Veranstaltungen aller Art gebucht werden.
 	</p>
 	<div class="buttons">
 		<button type="button" class="btn btn-primary" on:click={() => goto('/kontakt')}>

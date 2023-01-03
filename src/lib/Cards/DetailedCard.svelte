@@ -1,7 +1,8 @@
 <script>
 	import { goto } from '$app/navigation';
 	import { base } from '$app/paths';
-	import Card from './Card.svelte';
+  import Card from './Card.svelte';
+  import Image from "$lib/Image.svelte";
 
 	// DetailedCard
 	export let smallImageLeft;
@@ -22,15 +23,15 @@
 
 <Card {title} {subtitle} {contentRight} sideImageThird={true} {bigImage} {darkBackground}>
 	{#if smallImageLeft || smallImageRight}
-		<div class="smallImageRow row">
+		<div class="row">
 			{#if smallImageLeft}
-				<div class="smallImage">
-					<img src={base + smallImageLeft} alt="smallImageLeft" />
+				<div class="col-md-6">
+					<Image src={smallImageLeft} alt="smallImageLeft" cssclass="img-fluid" />
 				</div>
 			{/if}
 			{#if smallImageRight}
-				<div class="smallImage">
-					<img src={base + smallImageRight} alt="smallImageRight" />
+				<div class="col-md-6">
+					<Image src={smallImageRight} alt="smallImageRight" cssclass="img-fluid" />
 				</div>
 			{/if}
 		</div>

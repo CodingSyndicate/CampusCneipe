@@ -1,7 +1,7 @@
 <script>
 	import TitelSeite from '$lib/Cards/TitelSeite.svelte';
 	import { base } from '$app/paths';
-
+  import KontaktImg from "$lib/assets/images/kontakt.jpg";
 	let name;
 	let email;
 	let request;
@@ -63,21 +63,21 @@
 	subtitle="Kontaktiere uns für Reservierungen oder Veranstaltungen!"
 	full={false}
 	middle={false}
-	image="/images/kontakt.JPG"
+	image={KontaktImg}
 	imagePosition="center"
 />
 
 <div class="kontakt">
 	<div class="contactInfos">
-		<div class="contactInfoRow">
+		<div class="contactInfoRow p-3">
 			<img src="{base}/svg/place_white_24dp.svg" alt="Adresse" />
 			<p>CampusCneipe C2<br />Boltzmannstraße 19,<br />85748 Garching bei München</p>
 		</div>
-		<div class="contactInfoRow">
+		<div class="contactInfoRow p-3">
 			<img src="{base}/svg/phone_white_24dp.svg" alt="Telefon" />
 			<p><a href="tel:+498930785757"> +49 89 - 30785757 </a></p>
 		</div>
-		<div class="contactInfoRow">
+		<div class="contactInfoRow p-3">
 			<img src="{base}/svg/email_white_24dp.svg" alt="Email" />
 			<p>
 				Event Anfragen: <a href="mailto:event@campus-cneipe.de">event@campus-cneipe.de</a>

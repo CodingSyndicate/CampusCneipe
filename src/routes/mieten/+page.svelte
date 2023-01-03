@@ -1,6 +1,12 @@
 <script>
 	import Card from '$lib/Cards/Card.svelte';
-	import TitelSeite from '$lib/Cards/TitelSeite.svelte';
+  import TitelSeite from '$lib/Cards/TitelSeite.svelte';
+  import TitelImg from '$lib/assets/images/mieten/IMG_5866.jpg?height=600px&position=cover';
+  import CneipenImg from '$lib/assets/images/mieten/Cneipe.jpg';
+  import Mieten3 from '$lib/assets/images/mieten/mieten3.jpg';
+  import Mieten1 from '$lib/assets/images/mieten/mieten1.jpg';
+  import Mieten2 from '$lib/assets/images/mieten/mieten2.jpg';
+  import ImgUnten from '$lib/assets/images/mieten/mieten4-dark.png';
 </script>
 
 <svelte:head>
@@ -12,24 +18,23 @@
 	<meta property="og:site_name" content="Campus Cneipe mieten" />
 	<meta property="og:description" content="Die C2 als Veranstaltungsort mieten" />
 </svelte:head>
-
 <TitelSeite
 	title="Die C2 als Veranstaltungsort mieten"
 	subtitle="Ihr sucht eine besondere Location, in der Eure Privatfeier ein voller Erfolg wird? Dann seid
 	Ihr bei uns genau richtig!"
 	full={false}
 	middle={false}
-	image="/images/mieten/IMG_5866.jpg"
+	image={TitelImg}
 	imagePosition="center"
-/>
+  />
 <Card
 	contentRight={false}
 	sideImageHalf={true}
 	small={true}
 	title="Ihre Veranstaltung"
 	subtitle="Alles ist möglich"
-	bigImage="/images/mieten/Cneipe.jpg"
->
+  bigImage={CneipenImg}
+  >
 	<p>
 		Das Team der CampusCneipe C2 betreut Euch zuverlässig und kompetent, um Euch eine sorglose und
 		unbeschwerte Feier zu ermöglichen. Ein zentraler Ansprechpartner betreut Euch und Euer Event von
@@ -46,7 +51,7 @@
 	small={true}
 	title="Unsere Leistungen"
 	subtitle="Voller Einsatz für Sie"
-	bigImage="/images/mieten/mieten3.jpg"
+	bigImage={Mieten3}
 >
 	<ul>
 		<li>
@@ -76,7 +81,7 @@
 	small={true}
 	title="Campuscneipe kocht"
 	subtitle="Unser Essensangebot bei Privatfeiern umfasst:"
-	bigImage="/images/mieten/mieten1.jpg"
+	bigImage={Mieten1}
 >
 	<ul>
 		<li>Grillen am Holzkohlegrill (Nackensteak, Würstchen, Grillkäse, Gemüse etc.)</li>
@@ -99,7 +104,7 @@
 	small={true}
 	title="Unsere Erfahrung"
 	subtitle="Auswahl bisheriger Events:"
-	bigImage="/images/mieten/mieten2.jpg"
+	bigImage={Mieten2}
 >
 	<ul>
 		<li>Doktorfeiern</li>
@@ -118,7 +123,7 @@
 	subtitle="Kontaktiere uns und wir planen gemeinsam dein Event!"
 	full={false}
 	middle={false}
-	image="/images/mieten/mieten4-dark.png"
+	image={ImgUnten}
 	imagePosition="center"
 	buttonText="Kontakt aufnehmen!"
 	buttonLink="/kontakt"

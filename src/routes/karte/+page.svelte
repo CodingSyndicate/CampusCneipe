@@ -1,6 +1,7 @@
 <script>
 	import TitelSeite from '$lib/Cards/TitelSeite.svelte';
-	import Karte from './Karte.svelte';
+  import Karte from './Karte.svelte';
+  import KartenImg from "$lib/assets/images/6-2.png";
 </script>
 
 <svelte:head>
@@ -22,7 +23,7 @@
 		  </a></div>'
 	full={false}
 	middle={false}
-	image="/images/6-2.png"
+	image={KartenImg}
 	imagePosition="bottom"
 />
 

@@ -1,16 +1,4 @@
 {
-  "vacations": [
-    {
-    "name": "Weihnachtsferien",
-    "from": "2022-12-19",
-    "to": "2023-01-08"
-  },
-    {
-    "name": "Semesterferien",
-    "from": "2023-01-28",
-    "to": "2023-04-17"
-  }
-  ],
   "days": [
     {
     "day": "Dienstag",

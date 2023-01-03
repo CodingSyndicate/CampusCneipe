@@ -1,58 +1,67 @@
 <script>
-	import { base } from '$app/paths';
+  import Image from '$lib/Image.svelte';
 	import { replaceUmlauts, cleanId } from '$lib/utils.js';
 	import { onMount } from 'svelte';
 	import KartenProduct from './KartenProduct.svelte';
-
+  
 	onMount(async () => {
 		await import('bootstrap'); // Neccessary for bootstrap to work
 	});
 
-	export let kategorie;
+  export let kategorie;
+  const kategorie_img_name = replaceUmlauts(kategorie.name)
+  let KategorieImg = import(`../../lib/assets/images/karte/${kategorie_img_name}.jpg`)
 </script>
 
-<div class="kategorieContainer">
-	<img
-		class="kategorieImage"
-		src={base + '/images/karte/' + replaceUmlauts(kategorie.name) + '.JPG'}
-		alt={kategorie.name}
-	/>
-	<div class="kategorieContent">
-		<div class="accordion accordion-flush" id="accordionExample">
-			{#each kategorie.childs.filter((el) => el.products.length > 0) as childCategory}
-				<div class="accordion-item">
-					<h2 class="accordion-header" id="heading-{cleanId(childCategory.name)}">
-						<button
-							class="accordion-button collapsed"
-							type="button"
-							data-bs-toggle="collapse"
-							data-bs-target="#collapse-{cleanId(childCategory.name)}"
-							aria-expanded="false"
-							aria-controls="collapse-{cleanId(childCategory.name)}"
-						>
-							<h4>
-								{childCategory.name}
-							</h4>
-						</button>
-					</h2>
-					<div
-						id="collapse-{cleanId(childCategory.name)}"
-						class="accordion-collapse collapse"
-						aria-labelledby="heading-{cleanId(childCategory.name)}"
-						data-bs-parent="#accordionExample"
-					>
-						<div class="accordion-body">
-							{#each childCategory.products as product}
-								<KartenProduct {product} />
-							{/each}
-						</div>
-					</div>
-				</div>
-			{/each}
-		</div>
-	</div>
+<div class="container-fluid">
+  <div class="row flex-row flex-row-reverse p-0 m-0">
+    <div class="col-lg-6 p-0 m-0">
+      <div class="accordion accordion-flush" id="accordionExample">
+	{#each kategorie.childs.filter((el) => el.products.length > 0) as childCategory}
+	  <div class="accordion-item">
+	    <h2 class="accordion-header" id="heading-{cleanId(childCategory.name)}">
+	      <button
+		class="accordion-button collapsed"
+		type="button"
+		data-bs-toggle="collapse"
+		data-bs-target="#collapse-{cleanId(childCategory.name)}"
+		aria-expanded="false"
+		aria-controls="collapse-{cleanId(childCategory.name)}"
+		>
+		<h4>
+		  {childCategory.name}
+		</h4>
+	      </button>
+	    </h2>
+	    <div
+	      id="collapse-{cleanId(childCategory.name)}"
+	      class="accordion-collapse collapse"
+	      aria-labelledby="heading-{cleanId(childCategory.name)}"
+	      data-bs-parent="#accordionExample"
+	      >
+	      <div class="accordion-body">
+		{#each childCategory.products as product}
+		  <KartenProduct {product} />
+		{/each}
+	      </div>
+	    </div>
+	  </div>
+	{/each}
+      </div>
+    </div>
+    <div class="col-lg-6 p-0 m-0">
+      {#await KategorieImg then img}
+	<Image
+	  cssclass="img-fluid"
+	  src={img}
+	  alt={kategorie.name}
+	  />
+	{:catch error}
+	  {error.message}
+	{/await}
+      </div>
+  </div>
 </div>
-
 <style>
 	.kategorieContainer {
 		display: flex;

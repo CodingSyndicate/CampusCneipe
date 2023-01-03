@@ -10,22 +10,16 @@
 	<meta property="og:type" content="website" />
 	<meta property="og:locale" content="de_DE" />
 </svelte:head>
-
-<div class="root container-fluid">
-	<div class="row">
+<div class="container-fluid">
+  <div class="row">
 		<Nav />
 		<main>
 			<slot />
 		</main>
 		<Footer />
-	</div>
+  </div>
 </div>
-
 <style>
-	.root {
-		width: 100vw;
-		height: 100vh;
-	}
 	main {
 		width: calc(100% - 320px);
 		z-index: 0;

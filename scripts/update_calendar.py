@@ -66,7 +66,7 @@ def main():
 
         repo = git.Repo('.', search_parent_directories=True)
         events_json_file_path = os.path.join(repo.working_tree_dir, 'data', 'event_data.json')
-        events_image_file_path = os.path.join(repo.working_tree_dir, 'static', 'images', 'events')
+        events_image_file_path = os.path.join(repo.working_tree_dir, 'src', 'lib', 'assets', 'images', 'events')
 
         # Call the Calendar API
         now = datetime.datetime.utcnow().isoformat() + 'Z'  # 'Z' indicates UTC time
@@ -90,7 +90,7 @@ def main():
             file_name = event['attachments'][0]['title']
             store_path = os.path.join(events_image_file_path, file_id + '_' + file_name)
             download_file(drive_service, file_id, store_path)
-            event_data['image'] = '/' + os.path.join('images', 'events', file_id + '_' + file_name)
+            event_data['png_image'] = file_id + '_' + file_name.rstrip('.png')
             # lstrip <html-blob> from description
           if 'description' in event:
             event_data['description'] = event['description'].lstrip('<html-blob>')

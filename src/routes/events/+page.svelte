@@ -1,6 +1,7 @@
 <script>
 	import TitelSeite from '$lib/Cards/TitelSeite.svelte';
-	import EventPreviewList from '$lib/Events/EventPreviewList.svelte';
+  import EventPreviewList from '$lib/Events/EventPreviewList.svelte';
+  import TitelImage from "$lib/assets/images/events/event.jpg";
 </script>
 
 <svelte:head>
@@ -23,7 +24,7 @@
 		  </a></div>'
 	full={false}
 	middle={false}
-	image="/images/events/event.JPG"
+	image={TitelImage}
 	imagePosition="center"
 />
 
