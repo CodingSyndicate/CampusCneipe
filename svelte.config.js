@@ -25,13 +25,9 @@ const config = {
     mdsvex({
       layout: md_layout,
       extensions: ['.md']
-    })
+    }),
+    vitePreprocess()
   ],
-  vitePlugin: {
-    experimental: {
-      useVitePreprocess: true
-    }
-  }
 };
 
 export default config;
