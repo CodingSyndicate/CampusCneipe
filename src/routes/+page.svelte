@@ -50,4 +50,21 @@
 
 <Anfahrt />
 
+<hr />
+
 <EventPreviewList count=3 />
+
+<style>
+  	hr {
+		width: 66%;
+		height: 2px;
+		background-color: var(--bs-primary);
+		opacity: 1;
+		padding: 0;
+		margin: auto;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		border: none;
+	}
+
+</style>

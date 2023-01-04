@@ -8,7 +8,7 @@
 	title="Anfahrt"
 	subtitle="Kommt nach der Vorlesung vorbei!"
 	{bigImage}
-	contentRight={false}
+	contentRight={true}
 	sideImageHalf={true}
 	small={true}
 >
