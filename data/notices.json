@@ -1,0 +1,15 @@
+[
+  {"title": "Weihnachtsferien",
+   "text": "Wegen Weihnachtsferien vom 19.12.2022 bis zum 08.01.2023 geschlossen!",
+   "display_from": "2022-12-12",
+   "display_until": "2023-01-08"},
+  {"title": "Letzte VL-Woche",
+   "text": "In der letzten VL-Woche haben wir nur zu Karaoke (01.02.) und Pubquiz (02.02) geöffnet.",
+   "display_from": "2023-01-15",
+   "display_until": "2023-02-05"},
+  {"title": "Semesterferien",
+   "text": "Vor und während der Klausurenzeit unserer Mitarbeiter hat die Campuscneipe von 03.02.2023 bis einschließlich 05.03.2023 Betriebsferien. Zwischen 06.03.2023 und 16.04.2023 kann die C2 für Veranstaltungen angemietet werden. Am 17.04.2023 leiten wir mit unserer Opening-Feier den regulären Betrieb des Sommersemesters ein.",
+   "display_from": "2023-01-21",
+   "display_until": "2023-04-17"}
+]
+
