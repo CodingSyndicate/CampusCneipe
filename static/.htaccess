@@ -14,3 +14,6 @@ SetEnv PERSONAL_MAIL "personal@campus-cneipe.de"
 <Files typo3temp_lrz_old/*>
     deny from all
 </Files>
+
+Header set Cache-Control "max-age=36000, public"
+
