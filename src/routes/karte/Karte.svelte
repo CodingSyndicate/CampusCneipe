@@ -21,9 +21,13 @@
 </div>
 
 <ul start="0" class="list-group fs-6">
-  {#each menu.footnote_data as footnote, i}
-    <li><sup>{i}</sup> {footnote}</li>
+  {#each menu.footnote_data.Allergene as allergen}
+      <li><sup>{allergen.key}</sup> {allergen.name}</li>
+    {/each}
+    {#each menu.footnote_data.Inhaltsstoffe as inhaltsstoff}
+      <li><sup>{inhaltsstoff.key}</sup> {inhaltsstoff.name}</li>
   {/each}
+
 </ul>
 
 <style>
