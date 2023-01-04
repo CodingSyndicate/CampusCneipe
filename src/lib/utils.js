@@ -6,7 +6,8 @@ export function replaceUmlauts(str) {
 		.replace(/\u00fc/g, 'ue')
 		.replace(/\u00c4/g, 'Ae')
 		.replace(/\u00d6/g, 'Oe')
-		.replace(/\u00dc/g, 'Ue');
+    .replace(/\u00dc/g, 'Ue')
+    .replace(' ', '');
 }
 
 export function cleanId(id) {
