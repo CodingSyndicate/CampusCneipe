@@ -41,13 +41,6 @@
                             "amount": "0.5",
                             "footnote_keys": [],
                             "ingredients": "",
-                            "name": "Mystery",
-                            "price": "3.50"
-                        },
-                        {
-                            "amount": "0.5",
-                            "footnote_keys": [],
-                            "ingredients": "",
                             "name": "Vitus",
                             "price": "3.60"
                         },
@@ -85,13 +78,6 @@
                             "ingredients": "Dunkelbier, Cola, Kirschlik\u00f6r",
                             "name": "Goa\u00dfma\u00df",
                             "price": "6.60"
-                        },
-                        {
-                            "amount": "1",
-                            "footnote_keys": [],
-                            "ingredients": "",
-                            "name": "Mystery, Ma\u00df",
-                            "price": "6.40"
                         },
                         {
                             "amount": "1",
@@ -148,13 +134,6 @@
                             "ingredients": "",
                             "name": "Pils",
                             "price": "2.90"
-                        },
-                        {
-                            "amount": "",
-                            "footnote_keys": [],
-                            "ingredients": "",
-                            "name": "Winterfestbier",
-                            "price": "3.50"
                         }
                     ]
                 },
@@ -166,14 +145,28 @@
                             "amount": "0.2",
                             "footnote_keys": [],
                             "ingredients": "",
-                            "name": "Wein wei\u00df/rot",
+                            "name": "Wein wei\u00df",
                             "price": "4.20"
                         },
                         {
                             "amount": "0.2",
                             "footnote_keys": [],
                             "ingredients": "",
-                            "name": "Weinschorle s\u00fc\u00df/sauer",
+                            "name": "Wein rot",
+                            "price": "4.20"
+                        },
+                        {
+                            "amount": "0.4",
+                            "footnote_keys": [],
+                            "ingredients": "",
+                            "name": "Weinschorle wei\u00df s\u00fc\u00df/sauer",
+                            "price": "4.70"
+                        },
+                        {
+                            "amount": "0.4",
+                            "footnote_keys": [],
+                            "ingredients": "",
+                            "name": "Weinschorle rot s\u00fc\u00df/sauer",
                             "price": "4.70"
                         }
                     ]
@@ -355,35 +348,35 @@
                     "name": "S\u00e4fte",
                     "products": [
                         {
-                            "amount": "0.4",
+                            "amount": "0.5",
                             "footnote_keys": [],
                             "ingredients": "",
                             "name": "Apfelsaft",
                             "price": "2.70"
                         },
                         {
-                            "amount": "0.4",
+                            "amount": "0.5",
                             "footnote_keys": [],
                             "ingredients": "",
                             "name": "Ananassaft",
                             "price": "2.70"
                         },
                         {
-                            "amount": "0.4",
+                            "amount": "0.5",
                             "footnote_keys": [],
                             "ingredients": "",
                             "name": "Orangensaft",
                             "price": "2.70"
                         },
                         {
-                            "amount": "0.4",
+                            "amount": "0.5",
                             "footnote_keys": [],
                             "ingredients": "",
                             "name": "Johannisbeernektar",
                             "price": "2.70"
                         },
                         {
-                            "amount": "0.4",
+                            "amount": "0.5",
                             "footnote_keys": [],
                             "ingredients": "",
                             "name": "Maracujanektar",
@@ -516,6 +509,16 @@
                             "ingredients": "",
                             "name": "Longdrinks",
                             "price": "6.30"
+                        },
+                        {
+                            "amount": "0.2",
+                            "footnote_keys": [
+                                "a",
+                                "b"
+                            ],
+                            "ingredients": "Vodka, Kahlua, Zuckersirup, Espresso",
+                            "name": "Espresso Martini",
+                            "price": "6.30"
                         }
                     ]
                 },
@@ -603,16 +606,6 @@
                             "ingredients": "Rum, Cointreau, Mandelsirup, Limettensaft, Zuckersirup",
                             "name": "Mai Tai",
                             "price": "7.30"
-                        },
-                        {
-                            "amount": "0.2",
-                            "footnote_keys": [
-                                "a",
-                                "b"
-                            ],
-                            "ingredients": "Vodka, Kahlua, Zuckersirup, Espresso",
-                            "name": "Espresso Martini",
-                            "price": "6.30"
                         },
                         {
                             "amount": "0.2",
@@ -914,27 +907,6 @@
                             "ingredients": "",
                             "name": "Nachos gro\u00df",
                             "price": "4.90"
-                        },
-                        {
-                            "amount": "",
-                            "footnote_keys": [],
-                            "ingredients": "",
-                            "name": "Zimtschnecken klein",
-                            "price": "2.50"
-                        },
-                        {
-                            "amount": "",
-                            "footnote_keys": [],
-                            "ingredients": "",
-                            "name": "Zimtschnecke gross",
-                            "price": "3.50"
-                        },
-                        {
-                            "amount": "",
-                            "footnote_keys": [],
-                            "ingredients": "",
-                            "name": "Weihnachtsteller",
-                            "price": "1.50"
                         }
                     ]
                 }
