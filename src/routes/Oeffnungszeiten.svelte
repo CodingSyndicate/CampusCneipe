@@ -1,31 +1,9 @@
 <script>
   import opening_times from '$data/opening_times.json';
-  import notices from '$data/notices.json';
   import { goto } from '$app/navigation';
   import Card from '$lib/Cards/Card.svelte';
   import bigImage from '$lib/assets/images/7.jpg';
-
-  function convert_date(date_string) {
-    let options = {
-      year: '2-digit',
-      month: 'numeric',
-      day: 'numeric',
-      timeZone: 'Europe/Berlin'
-      };
-    return new Intl.DateTimeFormat('de-DE', options).format(date_string);
-  }
-  
-  for (let notice in notices) {
-    notices[notice].date_display_from = Date.parse(notices[notice].display_from)
-    notices[notice].date_display_until = Date.parse(notices[notice].display_until)
-  }
-  let now = new Date().getTime();
-  notices.sort((a, b) => {
-    if (a.date_display_from < b.date_display_until) return -1;
-    else return 1;
-  });
-  let display_notices = notices.filter(n =>
-    n.date_display_from < now && n.date_display_until > now);
+  export let notices;
 </script>
 
 <Card
@@ -37,6 +15,7 @@
 	small={true}
 	darkBackground={true}
   >
+  {#await notices then display_notices}
   {#each display_notices as notice}
     <div class="alert alert-danger">
       <h4 class="alert-heading">&#9888; {notice.title}</h4>
@@ -44,6 +23,7 @@
       <p class="text-black">{notice.text}</p>
       </div>
     {/each}
+  {/await}
 
   <table class="table mt-3 table-borderless text-light">
       <tbody>

@@ -29,6 +29,7 @@
 </script>
 
 {#await EventImage then img}
+  {#key img}
 <Card
   contentRight={textRight}
   sideImageHalf={true}
@@ -40,6 +41,7 @@
 >
 	{@html event.description}
 </Card>
+{/key}
 {:catch error}
   {error.message}
 {/await}

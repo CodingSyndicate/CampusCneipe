@@ -1,24 +1,27 @@
 <script>
-	import '../app.scss';
-	export const prerender = true;
-	export const ssr = false;
-	import Footer from './Footer.svelte';
-	import Nav from './Nav.svelte';
+  import '../app.scss';
+  export const prerender = true;
+  export const ssr = false;
+  import Footer from './Footer.svelte';
+  import Nav from './Nav.svelte';
+  export let data;
 </script>
 
 <svelte:head>
 	<meta property="og:type" content="website" />
 	<meta property="og:locale" content="de_DE" />
 </svelte:head>
-<div class="container-fluid">
-  <div class="row">
-		<Nav />
-		<main>
-			<slot />
-		</main>
-		<Footer />
+{#await data then dat}
+  <div class="container-fluid">
+    <div class="row">
+      <Nav />
+      <main>
+	<slot />
+      </main>
+      <Footer compileTime={dat.compileTime} />
+    </div>
   </div>
-</div>
+{/await}
 <style>
 	main {
 		width: calc(100% - 320px);
