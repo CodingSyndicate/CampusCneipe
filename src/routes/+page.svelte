@@ -1,15 +1,16 @@
 <script>
-	import EventPreviewList from '$lib/Events/EventPreviewList.svelte';
-	import DetailedCard from '$lib/Cards/DetailedCard.svelte';
-	import TitelSeite from '$lib/Cards/TitelSeite.svelte';
-
-	import Oeffnungszeiten from './Oeffnungszeiten.svelte';
+  import EventPreviewList from '$lib/Events/EventPreviewList.svelte';
+  import DetailedCard from '$lib/Cards/DetailedCard.svelte';
+  import TitelSeite from '$lib/Cards/TitelSeite.svelte';
+  
+  import Oeffnungszeiten from './Oeffnungszeiten.svelte';
   import Anfahrt from './anfahrt.svelte';
 
   import TitelImg from "$lib/assets/images/2-2.png";
   import CocktailImg1 from "$lib/assets/images/4.jpg";
   import CocktailImg2 from "$lib/assets/images/5.jpg";
   import MassImg from "$lib/assets/images/3-1.png";
+  export let data;
 </script>
 
 <svelte:head>
@@ -34,7 +35,9 @@
 	full={true}
 	image={TitelImg}
   />
-<Oeffnungszeiten />
+{#await data.notices then notes}
+  <Oeffnungszeiten notices={notes} />
+{/await}
 <DetailedCard
 	title="Die Cneipe am Campus Garching"
 	subtitle="Mit studentischen Preisen"
@@ -51,9 +54,10 @@
 <Anfahrt />
 
 <hr />
-
-<EventPreviewList count=3 />
-
+{#await data.events then events}
+  <EventPreviewList display_events={events} />
+{/await}
+  
 <style>
   	hr {
 		width: 66%;

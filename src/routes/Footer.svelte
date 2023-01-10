@@ -1,19 +1,7 @@
 <script>
-	import { page } from '$app/stores';
+  import { page } from '$app/stores';
   import { base } from '$app/paths';
-
-
-  function convert_date(date) {
-    let options = {
-      year: '2-digit',
-      month: '2-digit',
-      day: '2-digit',
-      timeZone: 'Europe/Berlin'
-      };
-    return new Intl.DateTimeFormat('de-DE', options).format(date);
-  }
-
-  let compileTime = convert_date(new Date().getTime())
+  export let compileTime;
 </script>
 
 <footer class="col">

@@ -1,7 +1,8 @@
 <script>
-	import TitelSeite from '$lib/Cards/TitelSeite.svelte';
+  import TitelSeite from '$lib/Cards/TitelSeite.svelte';
   import EventPreviewList from '$lib/Events/EventPreviewList.svelte';
   import TitelImage from "$lib/assets/images/events/event.jpg";
+  export let data;
 </script>
 
 <svelte:head>
@@ -13,13 +14,13 @@
 	<meta property="og:site_name" content="Events der Campus Cneipe" />
 	<meta property="og:description" content="Alle Events der Campus Cneipe" />
 </svelte:head>
-
+{#await data then dat}
 <TitelSeite
-	title="Events"
+	title={dat.title}
 	subtitle='Veranstaltungen in der C2<br>	<div class="buttons">
-		  <a href="old/">
+		  <a href="{dat.button_href}">
 		    <button type="button" class="btn btn-primary">
-		      Vergangene Veranstaltungen
+		      {dat.button_text}
 		    </button>
 		  </a></div>'
 	full={false}
@@ -27,5 +28,7 @@
 	image={TitelImage}
 	imagePosition="center"
 />
-
-<EventPreviewList />
+{#key dat.events}
+<EventPreviewList display_events={dat.events} />
+{/key}
+{/await}
