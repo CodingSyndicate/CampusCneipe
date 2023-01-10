@@ -11,9 +11,6 @@ const config = {
   kit: {
     adapter: adapter(),
     trailingSlash: 'always',
-    paths: {
-      base: process.env.BASE
-    }
   },
 
   extensions: ['.svelte', '.md'],

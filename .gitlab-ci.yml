@@ -14,7 +14,7 @@ docker build:
       when: never
     - changes:
         - nix/*
-        - .gitlab-ci.yml
+#        - .gitlab-ci.yml
   script:
     # For pinning:
     # - export NIX_PATH="nixpkgs=https://github.com/NixOS/nixpkgs/archive/ab593d46dc38b9f0f23964120912138c77fa9af4.tar.gz"
@@ -79,8 +79,7 @@ deploy website:
   script:
     - scripts/pdfmenu.sh
     - if [ "$CI_COMMIT_REF_NAME" = "master" ]; then export DEPLOY_PREFIX=""; else export DEPLOY_PREFIX="/staging/${CI_COMMIT_REF_SLUG}"; fi
-    - export BASE="${DEPLOY_PREFIX}"
-    - npm run build
+    - npm run build -- --base="${DEPLOY_PREFIX}"
     - tar -czf c2-website.tar.gz build/
     - echo -e "\n${HTACCESS_SECRETS}\n" >> build/.htaccess
     - rsync -zrl --delete --exclude={staging/,typo3temp_lrz_old/} --mkpath -e "sshpass -p $DEPLOY_PW ssh -o StrictHostKeyChecking=no -l $DEPLOY_USER" build/ "${DEPLOY_HOST}:~/webserver/htdocs${DEPLOY_PREFIX}/"

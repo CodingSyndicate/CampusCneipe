@@ -1,18 +1,17 @@
 <script>
   import { page } from '$app/stores';
-  import { base } from '$app/paths';
   export let compileTime;
 </script>
 
 <footer class="col">
-	<a href="{base}/" class="logoCon navbar-brand" />
+	<a href="/" class="logoCon navbar-brand" />
 	<hr />
 	<div class="actions row">
 		<div class="col">
-			<img src="{base}/svg/glass-mug-variant.svg" alt="Karte" />
+			<img src="/svg/glass-mug-variant.svg" alt="Karte" />
 			<a
 				sveltekit:prefetch
-				href="{base}/karte"
+				href="/karte"
 				class="nav-link"
 				class:active={$page.url.pathname.startsWith('/karte')}
 				aria-current={$page.url.pathname.startsWith('/karte') ? 'page' : ''}
@@ -21,10 +20,10 @@
 			</a>
 		</div>
 		<div class="col">
-			<img src="{base}/svg/nightlife.svg" alt="Events" />
+			<img src="/svg/nightlife.svg" alt="Events" />
 			<a
 				sveltekit:prefetch
-				href="{base}/events"
+				href="/events"
 				class="nav-link"
 				class:active={$page.url.pathname.startsWith('/events')}
 				aria-current={$page.url.pathname.startsWith('/events') ? 'page' : ''}
@@ -34,10 +33,10 @@
 		</div>
 		<div class="col">
 			<div class="col">
-				<img src="{base}/svg/celebration.svg" alt="Mieten" />
+				<img src="/svg/celebration.svg" alt="Mieten" />
 				<a
 					sveltekit:prefetch
-					href="{base}/mieten"
+					href="/mieten"
 					class="nav-link"
 					class:active={$page.url.pathname.startsWith('/mieten')}
 					aria-current={$page.url.pathname.startsWith('/mieten') ? 'page' : ''}
@@ -48,16 +47,6 @@
 		</div>
 	</div>
 	<hr />
-	<!-- <div class="lastLine"> -->
-	<!-- <\!-- 	<span class="text-left">© &nbsp; 2022 - Campus Cneipe</span> -\-> -->
-	<!-- 	<span class="text-center"> -->
-	<!-- 	  Contribute on <a href="https://github.com/CodingSyndicate/CampusCneipe"> Github </a> -->
-	<!-- 	</span> -->
-	<!-- 	<\!-- <span class="text-right"> -\-> -->
-	<!-- 	<\!-- 	Made with ❤ by &nbsp; -\-> -->
-	<!-- 	<\!-- 	<a href="https://github.com/GeneralMine">GeneralMine</a> -\-> -->
-	<!-- 	<\!-- </span> -\-> -->
-	<!-- </div> -->
 	<div class="lastUpdated">
 	  <span style="font-size: 14px;">contribute on <a href="https://github.com/CodingSyndicate/CampusCneipe"> Github </a> | last updated: {compileTime}</span>
 	</div>

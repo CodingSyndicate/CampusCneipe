@@ -1,7 +1,6 @@
 <script>
   import { goto } from '$app/navigation';
   import Image from '$lib/Image.svelte';
-	import { base } from '$app/paths';
 	export let image;
 	export let title;
 	export let subtitle;
@@ -34,26 +33,6 @@
     </div>
   </div>
 </div>
-
-<!--  <div -->
-<!-- 	class="componentContainer" -->
-<!-- 	style="background-image: url({base + image}); background-position: {imagePosition}; height: {full -->
-<!-- 		? '100vh' -->
-<!-- 		: middle -->
-<!-- 		? '700px' -->
-<!-- 		: '600px'}" -->
-<!-- > -->
-<!-- 	<div class="col"> -->
-<!-- 		<h1>{title}</h1> -->
-<!-- 		<hr /> -->
-<!-- 		<h2>{@html subtitle}</h2> -->
-<!-- 		{#if buttonText || buttonLink} -->
-<!-- 			<button type="button" class="btn btn-primary" on:click={() => goto(buttonLink)}> -->
-<!-- 				{buttonText} -->
-<!-- 			</button> -->
-<!-- 		{/if} -->
-<!-- 	</div> -->
-<!-- </div> -->
 
 <style>
 	.col {

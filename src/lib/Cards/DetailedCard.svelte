@@ -1,6 +1,5 @@
 <script>
-	import { goto } from '$app/navigation';
-	import { base } from '$app/paths';
+  import { goto } from '$app/navigation';
   import Card from './Card.svelte';
   import Image from "$lib/Image.svelte";
 

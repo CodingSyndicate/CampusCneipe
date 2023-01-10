@@ -1,6 +1,5 @@
 <script>
 	import TitelSeite from '$lib/Cards/TitelSeite.svelte';
-	import { base } from '$app/paths';
   import KontaktImg from "$lib/assets/images/kontakt.jpg";
 	let name;
 	let email;
@@ -17,7 +16,7 @@
 		if (disabled) return;
 		if (!checked) return;
 		checked = false;
-		let res = await fetch(base + '/api/handle_form.php', {
+		let res = await fetch('/api/handle_form.php', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'multipart/form-data'
@@ -70,15 +69,15 @@
 <div class="kontakt">
 	<div class="contactInfos">
 		<div class="contactInfoRow p-3">
-			<img src="{base}/svg/place_white_24dp.svg" alt="Adresse" />
+			<img src="/svg/place_white_24dp.svg" alt="Adresse" />
 			<p>CampusCneipe C2<br />Boltzmannstraße 19,<br />85748 Garching bei München</p>
 		</div>
 		<div class="contactInfoRow p-3">
-			<img src="{base}/svg/phone_white_24dp.svg" alt="Telefon" />
+			<img src="/svg/phone_white_24dp.svg" alt="Telefon" />
 			<p><a href="tel:+498930785757"> +49 89 - 30785757 </a></p>
 		</div>
 		<div class="contactInfoRow p-3">
-			<img src="{base}/svg/email_white_24dp.svg" alt="Email" />
+			<img src="/svg/email_white_24dp.svg" alt="Email" />
 			<p>
 				Event Anfragen: <a href="mailto:event@campus-cneipe.de">event@campus-cneipe.de</a>
 				<br />
@@ -129,7 +128,7 @@
 		<div class="mb-3 form-check">
 			<input bind:value={checked} type="checkbox" class="form-check-input" id="exampleCheck1" />
 			<label class="form-check-label" for="exampleCheck1">
-				Ich stimme dem <a href="{base}/datenschutz">Datenschutzhinweis</a> zur Verarbeitung meiner Anfrage
+				Ich stimme dem <a href="/datenschutz">Datenschutzhinweis</a> zur Verarbeitung meiner Anfrage
 				zu.
 			</label>
 		</div>

@@ -1,6 +1,5 @@
 <script>
 	import TitelSeite from '$lib/Cards/TitelSeite.svelte';
-  import { base } from '$app/paths';
   import TopImg from "$lib/assets/images/job.png?height=600px&position=top"
 </script>
 
@@ -48,7 +47,7 @@ Mit dem Schichtplaner Tool kannst du dir deine Arbeitszeiten individuell einteil
 
 Mail an info@campus-cneipe.de
 oder über das Kontaktformular!</pre>
-		<a href="{base}/kontakt"
+		<a href="/kontakt"
 			><button type="button" class="btn btn-outline-primary">Teil der C2 werden!</button></a
 		>
 	</div>
