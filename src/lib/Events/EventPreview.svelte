@@ -32,7 +32,7 @@
     let img_filename = event.image.substr(0, event.image.length - 4)
     EventImage = import(`$lib/assets/images/events/${img_filename}.png`)
   } else if (event.image.endsWith('.jpg')) {
-    let img_filename = event.image.substr(event.image.length, event.image.length - 4)
+    let img_filename = event.image.substr(0, event.image.length - 4)
     EventImage = import(`$lib/assets/images/events/${img_filename}.jpg`)
   } else {
     let img_filename = 'default.png'
