@@ -1,5 +1,6 @@
 <script>
-	import TitelSeite from '$lib/Cards/TitelSeite.svelte';
+  import { base } from '$app/paths';
+  import TitelSeite from '$lib/Cards/TitelSeite.svelte';
   import Karte from './Karte.svelte';
   import KartenImg from "$lib/assets/images/6-2.png";
 </script>
@@ -16,7 +17,7 @@
 
 <TitelSeite
 	title="Getränke- und Speisekarte"
-	subtitle='<div class="buttons"><a href="/menu.pdf">
+	subtitle='<div class="buttons"><a href="{base}/menu.pdf">
 		    <button type="button" class="btn btn-primary">
 		      PDF
 		    </button>
