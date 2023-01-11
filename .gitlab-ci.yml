@@ -51,7 +51,7 @@ update data:
       git add data/menu_data.json
       git commit -m "Update products from ready2order API"
       fi
-      if [ -n "$(git status --porcelain data/event_data.json)" ]; then
+      if [ -n "$(git status --porcelain data/event_data.json src/lib/assets/images/events/)" ]; then
       git add data/event_data.json src/lib/assets/images/events/
       git commit -m "Update event data from google calendar"
       fi
