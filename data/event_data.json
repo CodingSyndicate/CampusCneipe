@@ -122,6 +122,18 @@
         "title": "Pubquiz"
     },
     {
+        "begin": "2023-01-20T19:00:00+01:00",
+        "description": "",
+        "end": "2023-01-20T23:00:00+01:00",
+        "title": "FSMB Schafkopfturnier"
+    },
+    {
+        "begin": "2023-01-24T19:00:00+01:00",
+        "description": "a href=\"https://trello.com/c/hBXTe9G2/385-130122-fsmb-pokerturnier\" id=\"ow3197\" __is_owner=\"true\">https://trello.com/c/hBXTe9G2/385-130122-fsmb-pokerturnier</a>",
+        "end": "2023-01-24T23:00:00+01:00",
+        "title": "FSMB Pokerturnier"
+    },
+    {
         "begin": "2023-01-25T19:00:00+01:00",
         "description": "Jeden zweiten Mittwoch findet w\u00e4hrend der Vorlesungen Karaoke in der C2 statt. Singt zu den Titeln eurer Wahl Solo oder im Duett mit Textunterst\u00fctzung vom Beamer. Viel Spa\u00df!",
         "end": "2023-01-26T00:00:00+01:00",
@@ -145,5 +157,11 @@
         "end": "2023-02-02T00:00:00+01:00",
         "png_image": "1spD5XYY5QQCktZcDSjdq81KZv4v5IXTA_karaoke",
         "title": "Karaoke"
+    },
+    {
+        "begin": "2023-02-02T19:00:00+01:00",
+        "description": "Wissens- und Knobelfragen aus allen Bereichen. Wer holt dieses Semester den Pubquiz-Meistertitel?\n\nErfahrungsgem\u00e4\u00df ist eine Reservierung erforderlich.",
+        "end": "2023-02-02T23:30:00+01:00",
+        "title": "Pubquiz"
     }
 ]
