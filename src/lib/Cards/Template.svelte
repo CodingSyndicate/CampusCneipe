@@ -12,7 +12,7 @@ import Image from '$lib/Image.svelte';
 
 <div class="container-fluid {darkBackground ? 'text-bg-dark' : ''}">
   <div class="row flex-row align-items-center {!contentRight ? '' : 'flex-row-reverse'}">
-    <div class="{sideImageThird ? 'col-lg-8' : 'col-lg-6'} flex-grow-1 p-0 m-0">
+    <div class="{sideImageThird ? 'col-lg-8' : 'col-lg-6'} align-self-start flex-grow-1 p-0 m-0">
       <slot />
     </div>
     <div class="{sideImageThird ? 'col-lg-4' : 'col-lg-6'} flex-shrink-0 p-0 m-0">
