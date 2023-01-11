@@ -12,8 +12,8 @@
 	} else {
 		link = base + event.link;
 	}
-  if (!event.png_image) {
-    event.png_image = 'default';
+  if (!event.image) {
+    event.image = 'default.png';
   }
 	let options = {
 		weekday: 'long',
@@ -25,7 +25,19 @@
 		timeZone: 'Europe/Berlin'
 	};
   event.begin_string = new Intl.DateTimeFormat('de-DE', options).format(event.begin);
-  let EventImage = import(`$lib/assets/images/events/${event.png_image}.png`)    
+
+  //needs to be this way
+  let EventImage
+  if (event.image.endsWith('.png')) {
+    let img_filename = event.image.substr(0, event.image.length - 4)
+    EventImage = import(`$lib/assets/images/events/${img_filename}.png`)
+  } else if (event.image.endsWith('.jpg')) {
+    let img_filename = event.image.substr(event.image.length, event.image.length - 4)
+    EventImage = import(`$lib/assets/images/events/${img_filename}.jpg`)
+  } else {
+    let img_filename = 'default.png'
+    EventImage = import('$lib/assets/images/events/default.png')
+  }
 </script>
 
 {#await EventImage then img}
@@ -38,8 +50,8 @@
   bigImage={img}
   small={true}
   noPreprocess={false}
->
-	{@html event.description}
+  >
+  {@html event.description}
 </Card>
 {/key}
 {:catch error}
