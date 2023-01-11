@@ -1,4 +1,5 @@
 export const prerender = true;
+export const trailingSlash = 'always';
 function convert_date(date) {
   let options = {
     year: '2-digit',
