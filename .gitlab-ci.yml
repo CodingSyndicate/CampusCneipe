@@ -47,18 +47,14 @@ update data:
     - ./scripts/update_calendar.py
     - |
       set -eux
-      if [ -n "$(git status --porcelain data/menu_data.json)" ]; then
-      git add data/menu_data.json
-      git commit -m "Update products from ready2order API"
-      fi
-      if [ -n "$(git status --porcelain data/event_data.json src/lib/assets/images/events/)" ]; then
-      git add data/event_data.json src/lib/assets/images/events/
-      git commit -m "Update event data from google calendar"
-      fi
+      if [ -n "$(git status --porcelain data/menu_data.json data/event_data.json src/lib/assets/images/events/)" ]; then
+      git add data/menu_data.json data/event_data.json src/lib/assets/images/events/
+      git commit -m "Update data from APIs"
       git push ssh_origin HEAD:master
       sleep 5
       echo "Cancelling this pipeline, new one will be triggered by push"
       curl --request POST --header "PRIVATE-TOKEN: ${CI_API_TOKEN}" "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/pipelines/${CI_PIPELINE_ID}/cancel"
+      fi
 
 deploy website:
   stage: build
