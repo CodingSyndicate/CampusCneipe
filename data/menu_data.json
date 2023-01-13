@@ -134,6 +134,13 @@
                             "ingredients": "",
                             "name": "Pils",
                             "price": "2.90"
+                        },
+                        {
+                            "amount": "",
+                            "footnote_keys": [],
+                            "ingredients": "",
+                            "name": "Winterfestbier",
+                            "price": "3.50"
                         }
                     ]
                 },
@@ -467,6 +474,13 @@
                             "footnote_keys": [],
                             "ingredients": "Blue Curacao",
                             "name": "Fresh Herrmann",
+                            "price": "6.30"
+                        },
+                        {
+                            "amount": "0.2",
+                            "footnote_keys": [],
+                            "ingredients": "Gin, Tonic Water",
+                            "name": "Blaue Rakete",
                             "price": "6.30"
                         },
                         {
