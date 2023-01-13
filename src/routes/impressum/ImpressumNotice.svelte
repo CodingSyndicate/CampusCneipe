@@ -5,7 +5,7 @@ Boltzmannstraße 19 <br />
 <br />
 Vereinsregister: VR 200335 <br />
 Registergericht: Amtsgericht München <br />
-Steuernummer: 143/222/40679 <br />
+USt-IdNr: DE250406590 <br />
 <br />
 
 <h2>Vertreten durch</h2>
