@@ -120,12 +120,10 @@ def set_footnotes(menu):
                     # replace id with footnote key
                     p['footnote_keys'].append(get_reference(Id))
                 del p['ingredient_ids']
+                p['footnote_keys'] = p['footnote_keys'].sort()
         if "childs" in pg:
             set_footnotes(pg['childs'])
     return menu
-                    
-
-            
             
 R2O_FOOTNOTE_DATA = get_footnotes()
 #pprint.pprint(R2O_FOOTNOTE_DATA)
