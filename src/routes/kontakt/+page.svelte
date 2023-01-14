@@ -75,7 +75,7 @@
 		</div>
 		<div class="contactInfoRow p-3">
 			<img src="{base}/svg/phone_white_24dp.svg" alt="Telefon" />
-			<p><a href="tel:+498930785757"> +49 89 - 30785757 </a></p>
+			<p><a href="tel:+498928914430"> +49 89 289 14430</a></p>
 		</div>
 		<div class="contactInfoRow p-3">
 			<img src="{base}/svg/email_white_24dp.svg" alt="Email" />

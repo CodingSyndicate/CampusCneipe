@@ -116,7 +116,7 @@
 <p>Lichtenbergstraße 2</p>
 <p>85748 Garching b. München</p>
 <p>Deutschland</p>
-<p>Tel.: +49 89 - 30785757</p>
+<p>Tel.: +49 89 289 14430</p>
 <p>E-Mail: info@campus-cneipe.de</p>
 <p>Website: http://www.c2.tum.de</p>
 

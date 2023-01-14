@@ -13,7 +13,7 @@ den Vorstand im Sinne des §26 BGB: Leopold Rothmayer<br />
 <br />
 
 <h2>Kontakt</h2>
-Telefon:&nbsp;<a href="tel:+498930785757"> +49 89 - 30785757 </a> <br />
+Telefon:&nbsp;<a href="tel:+498928914430"> +49 89 289 14430</a> <br />
 Mail:&nbsp;<a href="mailto:info@campus-cneipe.de">info@campus-cneipe.de</a> <br />
 <br />
 
