@@ -25,119 +25,119 @@
                     "products": [
                         {
                             "amount": "0.5",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "",
                             "name": "Helles",
                             "price": "3.30"
                         },
                         {
                             "amount": "0.5",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "",
                             "name": "Wei\u00dfbier",
                             "price": "3.30"
                         },
                         {
                             "amount": "0.5",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "",
                             "name": "Vitus",
                             "price": "3.60"
                         },
                         {
                             "amount": "0.5",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "Helles, Limonade",
                             "name": "Radler",
                             "price": "3.30"
                         },
                         {
                             "amount": "0.5",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "Wei\u00dfbier, Limonade",
                             "name": "Ru\u00df\u00b4n",
                             "price": "3.30"
                         },
                         {
                             "amount": "0.5",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "Wei\u00dfbier, Cola",
                             "name": "Cola-Weissbier",
                             "price": "3.30"
                         },
                         {
                             "amount": "1",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "",
                             "name": "Helles, Ma\u00df",
                             "price": "6.10"
                         },
                         {
                             "amount": "1",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "Dunkelbier, Cola, Kirschlik\u00f6r",
                             "name": "Goa\u00dfma\u00df",
                             "price": "6.60"
                         },
                         {
                             "amount": "1",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "",
                             "name": "Wei\u00dfbier, Ma\u00df",
                             "price": "6.10"
                         },
                         {
                             "amount": "1",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "Helles, Limonade",
                             "name": "Radler, Ma\u00df",
                             "price": "6.10"
                         },
                         {
                             "amount": "0.5",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "",
                             "name": "alkf. Weissbier",
                             "price": "3.30"
                         },
                         {
                             "amount": "0.5",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "",
                             "name": "alkf. Helles",
                             "price": "3.30"
                         },
                         {
                             "amount": "0.5",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "",
                             "name": "dunkles Weissbier",
                             "price": "3.30"
                         },
                         {
                             "amount": "0.5",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "",
                             "name": "Dunkles",
                             "price": "3.30"
                         },
                         {
                             "amount": "0.5",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "Wei\u00dfbier, Fanta, Blue Curacao",
                             "name": "Isarwasser",
                             "price": "4.20"
                         },
                         {
                             "amount": "0.33",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "",
                             "name": "Pils",
                             "price": "2.90"
                         },
                         {
                             "amount": "",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "",
                             "name": "Winterfestbier",
                             "price": "3.50"
@@ -150,28 +150,28 @@
                     "products": [
                         {
                             "amount": "0.2",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "",
                             "name": "Wein wei\u00df",
                             "price": "4.20"
                         },
                         {
                             "amount": "0.2",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "",
                             "name": "Wein rot",
                             "price": "4.20"
                         },
                         {
                             "amount": "0.4",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "",
                             "name": "Weinschorle wei\u00df s\u00fc\u00df/sauer",
                             "price": "4.70"
                         },
                         {
                             "amount": "0.4",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "",
                             "name": "Weinschorle rot s\u00fc\u00df/sauer",
                             "price": "4.70"
@@ -184,56 +184,56 @@
                     "products": [
                         {
                             "amount": "0.02",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "Variieren",
                             "name": "Shot",
                             "price": "2.00"
                         },
                         {
                             "amount": "0.02",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "Variieren",
                             "name": "Wochenschnaps",
                             "price": "1.00"
                         },
                         {
                             "amount": "0.04",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "Tequila, Tomatensaft, Tabasco, Worcester Sauce, Orangensaft, Pfeffer, Salz",
                             "name": "Mexicana",
                             "price": "2.90"
                         },
                         {
                             "amount": "0.04",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "Malibu, Apfelsaft, Zimt",
                             "name": "Apfelstrudel",
                             "price": "3.90"
                         },
                         {
                             "amount": "0.04",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "Vodka, Kahlua/Espresso",
                             "name": "Liquid Cocaine",
                             "price": "3.90"
                         },
                         {
                             "amount": "0.04",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "Vodka, Blue Curacao, Limettensaft",
                             "name": "TUM Kamikaze",
                             "price": "3.90"
                         },
                         {
                             "amount": "0.04",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "Kahlua, Baileys, Rum",
                             "name": "B52",
                             "price": "3.90"
                         },
                         {
                             "amount": "0.04",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "Peach Brandy, Baileys, Cranberry Sirup, Blue Curacao",
                             "name": "Alien Brain",
                             "price": "3.90"
@@ -246,63 +246,63 @@
                     "products": [
                         {
                             "amount": "0.5",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "",
                             "name": "Tafelwasser",
                             "price": "2.20"
                         },
                         {
                             "amount": "0.5",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "",
                             "name": "Zitronenlimo",
                             "price": "2.70"
                         },
                         {
                             "amount": "0.5",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "",
                             "name": "Spezi",
                             "price": "2.70"
                         },
                         {
                             "amount": "0.5",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "",
                             "name": "Cola",
                             "price": "2.70"
                         },
                         {
                             "amount": "0.5",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "",
                             "name": "Fanta",
                             "price": "2.70"
                         },
                         {
                             "amount": "0.5",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "",
                             "name": "Club Mate",
                             "price": "2.70"
                         },
                         {
                             "amount": "0.5",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "",
                             "name": "Schweppes",
                             "price": "2.70"
                         },
                         {
                             "amount": "0.33",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "",
                             "name": "Red Bull",
                             "price": "2.80"
                         },
                         {
                             "amount": "0.5",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "",
                             "name": "Cola Zero",
                             "price": "2.70"
@@ -315,35 +315,35 @@
                     "products": [
                         {
                             "amount": "0.5",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "",
                             "name": "Apfelschorle",
                             "price": "2.70"
                         },
                         {
                             "amount": "0.5",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "",
                             "name": "Ananassaftschorle",
                             "price": "2.70"
                         },
                         {
                             "amount": "0.5",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "",
                             "name": "Orangensaftschorle",
                             "price": "2.70"
                         },
                         {
                             "amount": "0.5",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "",
                             "name": "Johannisbeersaftschorle",
                             "price": "2.70"
                         },
                         {
                             "amount": "0.5",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "",
                             "name": "Maracujasaftschorle",
                             "price": "2.70"
@@ -356,35 +356,35 @@
                     "products": [
                         {
                             "amount": "0.5",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "",
                             "name": "Apfelsaft",
                             "price": "2.70"
                         },
                         {
                             "amount": "0.5",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "",
                             "name": "Ananassaft",
                             "price": "2.70"
                         },
                         {
                             "amount": "0.5",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "",
                             "name": "Orangensaft",
                             "price": "2.70"
                         },
                         {
                             "amount": "0.5",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "",
                             "name": "Johannisbeernektar",
                             "price": "2.70"
                         },
                         {
                             "amount": "0.5",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "",
                             "name": "Maracujanektar",
                             "price": "2.70"
@@ -403,7 +403,7 @@
                     "products": [
                         {
                             "amount": "0.2",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "",
                             "name": "Kentucky Sunrise",
                             "price": "4.00"
@@ -416,28 +416,28 @@
                     "products": [
                         {
                             "amount": "0.15",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "Bourbon, Zucker, Angostura Bitters, Wasser",
                             "name": "Old Fashioned",
                             "price": "6.30"
                         },
                         {
                             "amount": "0.2",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "Rum, Zuckersirup, Limettensaft",
                             "name": "Daiquiri",
                             "price": "6.30"
                         },
                         {
                             "amount": "0.15",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "Gin, Vermouth, Campari",
                             "name": "Negroni",
                             "price": "6.30"
                         },
                         {
                             "amount": "0.15",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "Bourbon, Campari, Vermouth",
                             "name": "Boulevardier",
                             "price": "6.30"
@@ -450,86 +450,77 @@
                     "products": [
                         {
                             "amount": "0.2",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "Havana, Limettensaft, Zucker, Wasser, Minze",
                             "name": "Mojito",
                             "price": "6.30"
                         },
                         {
                             "amount": "0.2",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "Cachaca, Limetten, Zucker",
                             "name": "Caipirinha",
                             "price": "6.30"
                         },
                         {
                             "amount": "0.2",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "Rum, Cream de Coconut, Ananassaft",
                             "name": "Pina Colada",
                             "price": "6.30"
                         },
                         {
                             "amount": "0.2",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "Blue Curacao",
                             "name": "Fresh Herrmann",
                             "price": "6.30"
                         },
                         {
                             "amount": "0.2",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "Gin, Tonic Water",
                             "name": "Blaue Rakete",
                             "price": "6.30"
                         },
                         {
                             "amount": "0.2",
-                            "footnote_keys": [
-                                "b"
-                            ],
+                            "footnote_keys": null,
                             "ingredients": "Tequila, Orangensaft, Zitronensaft, Grenadinen Sirup",
                             "name": "Tequila Sunrise",
                             "price": "6.30"
                         },
                         {
                             "amount": "0.15",
-                            "footnote_keys": [
-                                "b"
-                            ],
+                            "footnote_keys": null,
                             "ingredients": "Bourbon, Ginger Ale, Angostura Bitters",
                             "name": "Horses Neck",
                             "price": "6.30"
                         },
                         {
                             "amount": "0.2",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "Vodka, Peach Brandy, Orangensaft, Cranberry Saft",
                             "name": "Sex on the Beach:",
                             "price": "6.30"
                         },
                         {
                             "amount": "0.2",
-                            "footnote_keys": [
-                                "b"
-                            ],
+                            "footnote_keys": null,
                             "ingredients": "Whiskey, Cointreau, Limettensaft, Zitronensaft, Limonade",
                             "name": "Lynchburg Lemonade",
                             "price": "6.30"
                         },
                         {
                             "amount": "0.2",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "",
                             "name": "Longdrinks",
                             "price": "6.30"
                         },
                         {
                             "amount": "0.2",
-                            "footnote_keys": [
-                                "a",
-                                "b"
-                            ],
+                            "footnote_keys": null,
                             "ingredients": "Vodka, Kahlua, Zuckersirup, Espresso",
                             "name": "Espresso Martini",
                             "price": "6.30"
@@ -542,46 +533,42 @@
                     "products": [
                         {
                             "amount": "0.2",
-                            "footnote_keys": [
-                                "a",
-                                "b",
-                                "c"
-                            ],
+                            "footnote_keys": null,
                             "ingredients": "Rum, Coca Cola, Limettensaft",
                             "name": "Cuba Libre",
                             "price": "6.30"
                         },
                         {
                             "amount": "",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "Vodka, Cranberry Saft, Zuckersirup, Ginger Ale",
                             "name": "Merry Moskow Mule",
                             "price": "4.50"
                         },
                         {
                             "amount": "0.2",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "Gin, Tonic Water",
                             "name": "Gin & Tonic",
                             "price": "6.30"
                         },
                         {
                             "amount": "0.2",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "Vodka, Limettensaft, Ginger Beer",
                             "name": "Moscow Mule",
                             "price": "6.30"
                         },
                         {
                             "amount": "0.2",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "Gin, Limettensaft, Ginger Beer",
                             "name": "Munich Mule",
                             "price": "6.30"
                         },
                         {
                             "amount": "0.2",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "Vodka, Red Bull",
                             "name": "Vodka Bull",
                             "price": "6.30"
@@ -594,36 +581,28 @@
                     "products": [
                         {
                             "amount": "0.2",
-                            "footnote_keys": [
-                                "b",
-                                "a",
-                                "c"
-                            ],
+                            "footnote_keys": null,
                             "ingredients": "Rum, Vodka, Gin, Cointreau, Tequila, Zuckersirup, Coca Cola, Limettensaft",
                             "name": "Long Island Ice Tea",
                             "price": "7.30"
                         },
                         {
                             "amount": "0.2",
-                            "footnote_keys": [
-                                "b"
-                            ],
+                            "footnote_keys": null,
                             "ingredients": "Rum, Limettensaft, Ananassaft, Zimtsirup, Grenadinen Sirup, Angostura Bitters, Ouzo",
                             "name": "Zombie",
                             "price": "7.30"
                         },
                         {
                             "amount": "0.2",
-                            "footnote_keys": [
-                                "b"
-                            ],
+                            "footnote_keys": null,
                             "ingredients": "Rum, Cointreau, Mandelsirup, Limettensaft, Zuckersirup",
                             "name": "Mai Tai",
                             "price": "7.30"
                         },
                         {
                             "amount": "0.2",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "Rum, Gin, Apricot Brandy, Limettensaft, Zuckersirup",
                             "name": "Gin and Apricot Martini",
                             "price": "7.30"
@@ -636,28 +615,28 @@
                     "products": [
                         {
                             "amount": "0.15",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "Gin, Zuckersirup, Limettensaft, Basilikum",
                             "name": "Gin Basil Smash",
                             "price": "6.30"
                         },
                         {
                             "amount": "0.15",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "Zitronensaft, Zuckersirup",
                             "name": "Fizz",
                             "price": "6.30"
                         },
                         {
                             "amount": "0.15",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "Zitronensaft, Zuckersirup",
                             "name": "Sour",
                             "price": "6.30"
                         },
                         {
                             "amount": "0.15",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "Bourbon, Zuckersirup, Zitronensaft",
                             "name": "New York Sour",
                             "price": "6.30"
@@ -670,23 +649,21 @@
                     "products": [
                         {
                             "amount": "0.3",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "",
                             "name": "Hugo",
                             "price": "4.60"
                         },
                         {
                             "amount": "0.3",
-                            "footnote_keys": [
-                                "b"
-                            ],
+                            "footnote_keys": null,
                             "ingredients": "Aperol, Wasser, Prosecco",
                             "name": "Aperol Spritz",
                             "price": "4.60"
                         },
                         {
                             "amount": "0.3",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "Limoncello, Wasser, Prosecco",
                             "name": "Limoncello Sprizz",
                             "price": "4.60"
@@ -699,28 +676,28 @@
                     "products": [
                         {
                             "amount": "0.15",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "Ananassaft, Zitronensaft, Minze, Ginger Beer",
                             "name": "Pineapple Mule",
                             "price": "5.30"
                         },
                         {
                             "amount": "0.2",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "Zuckersirup, Zitronensaft, Minze, Tonic Water",
                             "name": "Mint Tonic",
                             "price": "5.30"
                         },
                         {
                             "amount": "0.2",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "Limetten, Zucker, Ginger Ale",
                             "name": "Caipinino",
                             "price": "5.30"
                         },
                         {
                             "amount": "0.2",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "Cream de Coconut, Maracuja Saft, Ananas Saft",
                             "name": "PiNADA Colada",
                             "price": "5.30"
@@ -739,56 +716,56 @@
                     "products": [
                         {
                             "amount": "0.2",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "Gl\u00fchweinmix, Orangen, Nelken, Anis, Zimtstangen",
                             "name": "Gl\u00fchwein",
                             "price": "2.50"
                         },
                         {
                             "amount": "0.2",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "Gl\u00fchweinmix, Orangen, Nelken, Anis, Zimtstangen und Amaretto",
                             "name": "Turbogl\u00fchwein (mit Schuss)",
                             "price": "3.50"
                         },
                         {
                             "amount": "0.2",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "Whiskey, Kaffe, Zucker, Sahne",
                             "name": "Irish Coffee",
                             "price": "4.50"
                         },
                         {
                             "amount": "0.2",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "Baileys, Milch, Sahne, Kakao",
                             "name": "Baileys Hot Chocolate",
                             "price": "4.50"
                         },
                         {
                             "amount": "0.2",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "Baileys, Kaffee, Sahne",
                             "name": "Baileys Coffee",
                             "price": "4.50"
                         },
                         {
                             "amount": "0.2",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "Baileys, Chai Tee, Milch",
                             "name": "Baileys Chai Latte",
                             "price": "4.50"
                         },
                         {
                             "amount": "0.02",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "",
                             "name": "Extra Schuss",
                             "price": "1.00"
                         },
                         {
                             "amount": "",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "",
                             "name": "Feuerzangenbowle",
                             "price": "4.50"
@@ -801,63 +778,63 @@
                     "products": [
                         {
                             "amount": "0.2",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "Chai Tee, Milch",
                             "name": "Chai Latte",
                             "price": "3.50"
                         },
                         {
                             "amount": "0.2",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "Milch, Kakao, Sahne",
                             "name": "Hot Chocolate",
                             "price": "3.50"
                         },
                         {
                             "amount": "",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "",
                             "name": "KinderPunsch",
                             "price": "2.50"
                         },
                         {
                             "amount": "0.07",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "",
                             "name": "Espresso",
                             "price": "1.50"
                         },
                         {
                             "amount": "0.2",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "",
                             "name": "Tasse Kaffee",
                             "price": "2.00"
                         },
                         {
                             "amount": "0.2",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "",
                             "name": "Tasse Tee",
                             "price": "1.50"
                         },
                         {
                             "amount": "0.2",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "",
                             "name": "Hei\u00dfe Zitrone",
                             "price": "1.50"
                         },
                         {
                             "amount": "0.2",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "Kaffee, Milch",
                             "name": "Cappuccino",
                             "price": "2.70"
                         },
                         {
                             "amount": "0.2",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "",
                             "name": "Latte Macchiato",
                             "price": "2.60"
@@ -876,28 +853,28 @@
                     "products": [
                         {
                             "amount": "",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "",
                             "name": "SW Rucola Pesto",
                             "price": "5.40"
                         },
                         {
                             "amount": "",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "",
                             "name": "SW Putenbrust",
                             "price": "5.40"
                         },
                         {
                             "amount": "",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "",
                             "name": "SW Salami Calabra",
                             "price": "5.40"
                         },
                         {
                             "amount": "",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "",
                             "name": "SW vegan gegrillte Paprika",
                             "price": "5.40"
@@ -910,14 +887,14 @@
                     "products": [
                         {
                             "amount": "",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "",
                             "name": "Nachos klein",
                             "price": "3.20"
                         },
                         {
                             "amount": "",
-                            "footnote_keys": [],
+                            "footnote_keys": null,
                             "ingredients": "",
                             "name": "Nachos gro\u00df",
                             "price": "4.90"
