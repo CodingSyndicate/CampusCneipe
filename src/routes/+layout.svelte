@@ -19,7 +19,7 @@
       <main>
 	<slot />
       </main>
-      <Footer compileTime={dat.compileTime} />
+      <Footer compileTime={dat.compileTime} modificationTime={dat.modificationTime} />
     </div>
   </div>
 {/await}

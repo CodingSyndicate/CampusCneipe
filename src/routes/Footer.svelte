@@ -2,6 +2,7 @@
   import { page } from '$app/stores';
   import { base } from '$app/paths';
   export let compileTime;
+  export let modificationTime;
 </script>
 
 <footer class="col">
@@ -59,7 +60,10 @@
 	<!-- 	<\!-- </span> -\-> -->
 	<!-- </div> -->
 	<div class="lastUpdated">
-	  <span style="font-size: 14px;">contribute on <a href="https://github.com/CodingSyndicate/CampusCneipe"> Github </a> | last updated: {compileTime}</span>
+	  <span style="font-size: 14px;">contribute on <a href="https://github.com/CodingSyndicate/CampusCneipe"> Github </a> |
+	    last deploy: {compileTime} |
+	    last modification: {modificationTime}
+	  </span>
 	</div>
 </footer>
 
