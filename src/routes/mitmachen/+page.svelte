@@ -1,7 +1,7 @@
 <script>
 	import TitelSeite from '$lib/Cards/TitelSeite.svelte';
-  import { base } from '$app/paths';
-  import TopImg from "$lib/assets/images/job.png?height=600px&position=top"
+	import { base } from '$app/paths';
+	import TopImg from '$lib/assets/images/job.png?height=600px&position=top';
 </script>
 
 <svelte:head>
@@ -43,14 +43,14 @@ in die Planung der Gerichte und Rezepte einbringen?</pre>
 			</section>
 		</div>
 		<pre class="bottomPre"><h4>Dann bewirb dich jetzt und werde Teil des Teams!</h4>
-Mit dem Schichtplaner Tool kannst du dir deine Arbeitszeiten individuell einteilen und dir so mit 
-<b>12-14€ Stundenlohn</b> etwas dazuverdienen.
+Mit dem Schichtplaner Tool kannst du dir deine Arbeitszeiten individuell einteilen und dir so mit
+<b>12-16€ Stundenlohn</b> etwas dazuverdienen.
 
 Mail an info@campus-cneipe.de
 oder über das Kontaktformular!</pre>
-		<a href="{base}/kontakt"
-			><button type="button" class="btn btn-outline-primary">Teil der C2 werden!</button></a
-		>
+		<a href="{base}/kontakt">
+			<button type="button" class="btn btn-outline-primary">Teil der C2 werden!</button>
+		</a>
 	</div>
 </div>
 
