@@ -88,9 +88,10 @@ def main():
           if 'attachments' in event:
             file_id = event['attachments'][0]['fileId']
             file_name = event['attachments'][0]['title']
-            store_path = os.path.join(events_image_file_path, file_id + '_' + file_name)
+            clean_filename = re.sub('[^-a-zA-Z0-9_.()+, ]+', '-', file_id + '_' + file_name)
+            store_path = os.path.join(events_image_file_path, clean_filename)
             download_file(drive_service, file_id, store_path)
-            event_data['image'] = file_id + '_' + file_name
+            event_data['image'] = clean_filename
             # lstrip <html-blob> from description
           if 'description' in event:
             event_data['description'] = event['description'].lstrip('<html-blob>')
