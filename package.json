@@ -14,27 +14,27 @@
 		"format": "prettier --plugin-search-dir . --write ."
 	},
 	"devDependencies": {
-		"@playwright/test": "^1.29.2",
-		"@popperjs/core": "^2.11.6",
-		"@sveltejs/adapter-static": "^1.0.1",
-		"@sveltejs/kit": "^1.0.11",
-		"bootstrap": "^5.2.3",
-		"eslint": "^8.31.0",
-		"eslint-config-prettier": "^8.6.0",
-		"eslint-plugin-svelte3": "^4.0.0",
-		"imagetools-core": "^3.3.0",
-		"mdsvex": "^0.10.6",
-		"prettier": "^2.8.2",
-		"prettier-plugin-svelte": "^2.9.0",
-		"sass": "^1.57.1",
-		"svelte": "^3.55.1",
-		"svelte-preprocess": "^4.10.7",
-		"vite": "^4.0.4",
-		"vite-imagetools": "^4.0.14"
+		"@playwright/test": "1.29.2",
+		"@popperjs/core": "2.11.6",
+		"@sveltejs/adapter-static": "1.0.5",
+		"@sveltejs/kit": "1.2.6",
+		"bootstrap": "5.2.3",
+		"eslint": "8.32.0",
+		"eslint-config-prettier": "8.6.0",
+		"eslint-plugin-svelte3": "4.0.0",
+		"imagetools-core": "3.3.0",
+		"mdsvex": "0.10.6",
+		"prettier": "2.8.3",
+		"prettier-plugin-svelte": "2.9.0",
+		"sass": "1.57.1",
+		"svelte": "3.55.1",
+		"svelte-preprocess": "4.10.7",
+		"vite": "4.0.4",
+		"vite-imagetools": "4.0.14"
 	},
 	"type": "module",
 	"dependencies": {
-		"@fontsource/unica-one": "^4.5.9",
-		"@fontsource/vollkorn": "^4.5.12"
+		"@fontsource/unica-one": "4.5.9",
+		"@fontsource/vollkorn": "4.5.14"
 	}
 }
