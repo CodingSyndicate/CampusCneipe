@@ -6,8 +6,8 @@ export function get_events({upcoming=true, count=7} = {}) {
       events[event].begin = Date.parse(events[event].begin);
     }
   }
-  let day_milliseconds = 1000 * 60 * 60 * 24;
-  let cutoff = new Date().getTime() - day_milliseconds;
+  let six_h_milliseconds = 1000 * 60 * 60 * 6;
+  let cutoff = new Date().getTime() - six_h_milliseconds;
   let display_events;
   //export let display_events = [];
   if (upcoming) {
