@@ -926,7 +926,15 @@
                 }
             ],
             "name": "Speisen",
-            "products": []
+            "products": [
+                {
+                    "amount": "",
+                    "footnote_keys": [],
+                    "ingredients": "",
+                    "name": "PokeBowl",
+                    "price": "5.40"
+                }
+            ]
         }
     ]
 }
