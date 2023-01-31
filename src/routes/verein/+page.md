@@ -28,6 +28,3 @@ Während für das operative Geschäft während unserer Öffnungszeiten unsere st
 
 Um die Campuscneipe stetig weiterzuentwickeln, findet während des Semesters jeden Dienstag um 19:00 unsere Vorstandssitzung statt, bei der die Vorstände und ihre ehrenamtlichen Helfer über aktuelle Themen diskutieren. Natürlich bleibt dabei auch immer ausreichend Zeit für das ein oder andere Bier und für zahlreiche Teamevents in- und außerhalb der C2-Räumlichkeiten
 
-## Unser aktuelles Team
-Hier findet ihr eine Übersicht unseres aktuellen ehrenamtlichen Teams. Aus allen Fakultäten am Campus Garching finden sich engagierte und gastronomieerfahrene Studenten in unserem Team. Darüber hinaus haben wir ein Stammteam von über 20, teils langjährigen Mitarbeiter:innen die uns als bezahlte Barkeeper & Köche unterstützen.
-DU willst ein Teil von uns werden und uns ehrenamtlich engagieren? Kontaktier uns über das Kontaktformular oder bewirb dich als Mitarbeiter und schnupper in unseren Tagesbetrieb!
