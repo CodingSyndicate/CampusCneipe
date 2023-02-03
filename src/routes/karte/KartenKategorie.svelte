@@ -17,6 +17,13 @@
   <div class="row flex-row flex-row-reverse p-0 m-0">
     <div class="col-lg-6 p-0 m-0">
       <div class="accordion accordion-flush" id="accordionExample">
+	{#if kategorie.products.length > 0 }
+	  <div class="accordion-body">
+	    {#each kategorie.products as product}
+	      <KartenProduct {product} />
+	    {/each}
+	  </div>
+	{/if}
 	{#each kategorie.childs.filter((el) => el.products.length > 0) as childCategory}
 	  <div class="accordion-item">
 	    <h2 class="accordion-header" id="heading-{cleanId(childCategory.name)}">
