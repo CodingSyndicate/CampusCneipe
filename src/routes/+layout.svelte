@@ -1,8 +1,5 @@
 <script>
   import '../app.scss';
-  export const prerender = true;
-  export const ssr = false;
-  export const trailingSlash = 'always';
   import Footer from './Footer.svelte';
   import Nav from './Nav.svelte';
   export let data;
