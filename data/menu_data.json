@@ -933,6 +933,13 @@
                     "ingredients": "10 St\u00fcck Mini Krapfen",
                     "name": "Krapfen",
                     "price": "3.00"
+                },
+                {
+                    "amount": "",
+                    "footnote_keys": [],
+                    "ingredients": "",
+                    "name": "PokeBowl",
+                    "price": "5.40"
                 }
             ]
         }
