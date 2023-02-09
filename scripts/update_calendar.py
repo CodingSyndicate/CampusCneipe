@@ -98,19 +98,17 @@ def main():
             event_data['description'] = event['description'].lstrip('<html-blob>')
           else:
             event_data['description'] = ''
-
-          pprint.pprint(event)
           event_data['title'] = event['summary']
           if 'dateTime' in event['start']:
             event_data['begin'] = event['start']['dateTime'].rstrip('Z')
           elif 'date' in event['start']:
-            event_data['begin'] = event['start']['date'] + "T00:00:00"
+            event_data['begin'] = event['start']['date']
           else:
             raise Exception("wrong format")
           if 'dateTime' in event['end']:
             event_data['end'] = event['end']['dateTime'].rstrip('Z')
           elif 'date' in event['end']:
-            event_data['end'] = event['end']['date'] + "T00:00:00"
+            event_data['end'] = event['end']['date']
           else:
             raise Exception("wrong format")
           events_data.append(event_data)
@@ -120,8 +118,13 @@ def main():
           # load existing events
           jsonevents = json.load(f)
           # remove all future events
-        #pprint.pprint(jsonevents)
-        jsonevents = [ e for e in jsonevents if datetime.datetime.fromisoformat(e['begin']) < datetime.datetime.now(ZoneInfo('Europe/Berlin')) ]
+
+        def is_future_event(e):
+          if e['begin'][-6:-5] == "+":
+            return datetime.datetime.fromisoformat(e['begin']) < datetime.datetime.now(ZoneInfo('Europe/Berlin'))
+          else:
+            return datetime.date.fromisoformat(e['begin']) < datetime.date.today()
+        jsonevents = list(filter(is_future_event, jsonevents))
         # replace with new events from API
         jsonevents = jsonevents + events_data
         # serialize json to file
@@ -130,8 +133,6 @@ def main():
 
     except HttpError as error:
         print('An error occurred: %s' % error)
-    file_id = '1RrnChjsKwT-GWl5E0MlkOXoXgUDyoB9g'
-    drive_service = build('drive', 'v3', credentials=creds)
 
 if __name__ == '__main__':
     main()
