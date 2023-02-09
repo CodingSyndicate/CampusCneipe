@@ -166,5 +166,11 @@
         "description": "Wissens- und Knobelfragen aus allen Bereichen. Wer holt dieses Semester den Pubquiz-Meistertitel?\n\nErfahrungsgem\u00e4\u00df ist eine Reservierung erforderlich.",
         "end": "2023-02-02T23:30:00+01:00",
         "title": "Pubquiz"
+    },
+    {
+        "begin": "2023-04-21T00:00:00",
+        "description": "Wegen unserer einmal im Semester stattfindenden Vereinsversammlung der \"Initiative Campusleben Garching e.V.\" bleibt die C2 an diesem Tag geschlossen.",
+        "end": "2023-04-22T00:00:00",
+        "title": "Geschlossen wegen Vereinsversammlung"
     }
 ]
