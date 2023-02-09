@@ -32,10 +32,6 @@ update data:
   stage: updatedata
   image: "$CI_REGISTRY_IMAGE/c2-website-builder:latest"
   resource_group: repo
-  only:
-    - web
-    - schedules
-    # c.f. https://stackoverflow.com/a/69036965
   before_script:
     - git config user.email "ci@campus-cneipe.de"
     - git config user.name "C2 CI"
