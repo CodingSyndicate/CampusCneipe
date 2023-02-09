@@ -99,9 +99,20 @@ def main():
           else:
             event_data['description'] = ''
 
+          pprint.pprint(event)
           event_data['title'] = event['summary']
-          event_data['begin'] = event['start']['dateTime'].rstrip('Z')
-          event_data['end'] = event['end']['dateTime'].rstrip('Z')
+          if 'dateTime' in event['start']:
+            event_data['begin'] = event['start']['dateTime'].rstrip('Z')
+          elif 'date' in event['start']:
+            event_data['begin'] = event['start']['date'] + "T00:00:00"
+          else:
+            raise Exception("wrong format")
+          if 'dateTime' in event['end']:
+            event_data['end'] = event['end']['dateTime'].rstrip('Z')
+          elif 'date' in event['end']:
+            event_data['end'] = event['end']['date'] + "T00:00:00"
+          else:
+            raise Exception("wrong format")
           events_data.append(event_data)
           
         jsonevents = []
