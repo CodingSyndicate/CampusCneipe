@@ -13,6 +13,10 @@
             {
                 "key": "c",
                 "name": "mit Phosphat"
+            },
+            {
+                "key": "d",
+                "name": "geschwefelt"
             }
         ]
     },
@@ -60,9 +64,13 @@
                         },
                         {
                             "amount": "0.5",
-                            "footnote_keys": [],
+                            "footnote_keys": [
+                                "a",
+                                "b",
+                                "c"
+                            ],
                             "ingredients": "Wei\u00dfbier, Cola",
-                            "name": "Cola-Weissbier",
+                            "name": "Cola-Weizen",
                             "price": "3.30"
                         },
                         {
@@ -150,28 +158,36 @@
                     "products": [
                         {
                             "amount": "0.2",
-                            "footnote_keys": [],
+                            "footnote_keys": [
+                                "d"
+                            ],
                             "ingredients": "",
                             "name": "Wein wei\u00df",
                             "price": "4.20"
                         },
                         {
                             "amount": "0.2",
-                            "footnote_keys": [],
+                            "footnote_keys": [
+                                "d"
+                            ],
                             "ingredients": "",
                             "name": "Wein rot",
                             "price": "4.20"
                         },
                         {
                             "amount": "0.4",
-                            "footnote_keys": [],
+                            "footnote_keys": [
+                                "d"
+                            ],
                             "ingredients": "",
                             "name": "Weinschorle wei\u00df s\u00fc\u00df/sauer",
                             "price": "4.70"
                         },
                         {
                             "amount": "0.4",
-                            "footnote_keys": [],
+                            "footnote_keys": [
+                                "d"
+                            ],
                             "ingredients": "",
                             "name": "Weinschorle rot s\u00fc\u00df/sauer",
                             "price": "4.70"
@@ -212,7 +228,9 @@
                         },
                         {
                             "amount": "0.04",
-                            "footnote_keys": [],
+                            "footnote_keys": [
+                                "a"
+                            ],
                             "ingredients": "Vodka, Kahlua/Espresso",
                             "name": "Liquid Cocaine",
                             "price": "3.90"
@@ -260,14 +278,22 @@
                         },
                         {
                             "amount": "0.5",
-                            "footnote_keys": [],
+                            "footnote_keys": [
+                                "a",
+                                "b",
+                                "c"
+                            ],
                             "ingredients": "",
-                            "name": "Spezi",
+                            "name": "Cola-Mix",
                             "price": "2.70"
                         },
                         {
                             "amount": "0.5",
-                            "footnote_keys": [],
+                            "footnote_keys": [
+                                "a",
+                                "b",
+                                "c"
+                            ],
                             "ingredients": "",
                             "name": "Cola",
                             "price": "2.70"
@@ -281,7 +307,10 @@
                         },
                         {
                             "amount": "0.5",
-                            "footnote_keys": [],
+                            "footnote_keys": [
+                                "a",
+                                "b"
+                            ],
                             "ingredients": "",
                             "name": "Club Mate",
                             "price": "2.70"
@@ -937,7 +966,7 @@
                 {
                     "amount": "",
                     "footnote_keys": [],
-                    "ingredients": "",
+                    "ingredients": "Reis mit gebratenem R\u00e4uchertofu, Gurke, Karotten, Sojabohnen, Teriyaki Sauce",
                     "name": "PokeBowl",
                     "price": "5.40"
                 }
