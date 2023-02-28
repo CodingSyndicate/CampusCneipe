@@ -4,11 +4,6 @@
 	import { base } from '$app/paths';
 	let collapsed = true;
 	$: show = !collapsed;
-
-	function navigate(dest) {
-		collapsed = !collapsed;
-		goto(base + dest);
-	}
 </script>
 
 <nav class="navbar navbar-expand-lg navbar-dark">
@@ -38,7 +33,7 @@
 						class="nav-link"
 						class:active={$page.url.pathname === base + '/'}
 						aria-current={$page.url.pathname === base + '/' ? 'page' : ''}
-						on:click={() => navigate('/')}
+						on:click={() => (collapsed = true)}
 					>
 						Home
 					</a>
@@ -50,7 +45,7 @@
 						class="nav-link"
 						class:active={$page.url.pathname.startsWith(base + '/karte')}
 						aria-current={$page.url.pathname.startsWith(base + '/karte') ? 'page' : ''}
-						on:click={() => navigate('/karte')}
+						on:click={() => (collapsed = true)}
 					>
 						Karte
 					</a>
@@ -62,7 +57,7 @@
 						class="nav-link"
 						class:active={$page.url.pathname.startsWith(base + '/events')}
 						aria-current={$page.url.pathname.startsWith(base + '/events') ? 'page' : ''}
-						on:click={() => navigate('/events')}
+						on:click={() => (collapsed = true)}
 					>
 						Events
 					</a>
@@ -74,7 +69,7 @@
 						class="nav-link"
 						class:active={$page.url.pathname.startsWith(base + '/mieten')}
 						aria-current={$page.url.pathname.startsWith(base + '/mieten') ? 'page' : ''}
-						on:click={() => navigate('/mieten')}
+						on:click={() => (collapsed = true)}
 					>
 						Mieten
 					</a>
@@ -86,7 +81,7 @@
 						class="nav-link"
 						class:active={$page.url.pathname.startsWith(base + '/mitmachen')}
 						aria-current={$page.url.pathname.startsWith(base + '/mitmachen') ? 'page' : ''}
-						on:click={() => navigate('/mitmachen')}
+						on:click={() => (collapsed = true)}
 					>
 						Mitmachen
 					</a>
@@ -98,7 +93,7 @@
 						class="nav-link"
 						class:active={$page.url.pathname.startsWith(base + '/verein')}
 						aria-current={$page.url.pathname.startsWith(base + '/verein') ? 'page' : ''}
-						on:click={() => navigate('/verein')}
+						on:click={() => (collapsed = true)}
 					>
 						Verein
 					</a>
@@ -111,7 +106,7 @@
 						class="nav-link"
 						class:active={$page.url.pathname.startsWith(base + '/kontakt')}
 						aria-current={$page.url.pathname.startsWith(base + '/kontakt') ? 'page' : ''}
-						on:click={() => navigate('/kontakt')}
+						on:click={() => (collapsed = true)}
 					>
 						Kontakt
 					</a>
