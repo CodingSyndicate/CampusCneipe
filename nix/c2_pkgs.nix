@@ -17,7 +17,6 @@ let
     inherit (pkgs.texlive) scheme-medium
       qrcode
       makecell
-      ieeetran
       adjustbox
       collectbox;
   });
