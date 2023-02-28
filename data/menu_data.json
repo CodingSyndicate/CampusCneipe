@@ -150,7 +150,8 @@
                             "name": "Winterfestbier",
                             "price": "3.50"
                         }
-                    ]
+                    ],
+                    "products_count": 17
                 },
                 {
                     "childs": [],
@@ -192,7 +193,8 @@
                             "name": "Weinschorle rot s\u00fc\u00df/sauer",
                             "price": "4.70"
                         }
-                    ]
+                    ],
+                    "products_count": 4
                 },
                 {
                     "childs": [],
@@ -256,7 +258,8 @@
                             "name": "Alien Brain",
                             "price": "3.90"
                         }
-                    ]
+                    ],
+                    "products_count": 8
                 },
                 {
                     "childs": [],
@@ -336,7 +339,8 @@
                             "name": "Cola Zero",
                             "price": "2.70"
                         }
-                    ]
+                    ],
+                    "products_count": 9
                 },
                 {
                     "childs": [],
@@ -377,7 +381,8 @@
                             "name": "Maracujasaftschorle",
                             "price": "2.70"
                         }
-                    ]
+                    ],
+                    "products_count": 5
                 },
                 {
                     "childs": [],
@@ -418,11 +423,13 @@
                             "name": "Maracujanektar",
                             "price": "2.70"
                         }
-                    ]
+                    ],
+                    "products_count": 5
                 }
             ],
             "name": "Getr\u00e4nke",
-            "products": []
+            "products": [],
+            "products_count": 0
         },
         {
             "childs": [
@@ -437,7 +444,8 @@
                             "name": "Kentucky Sunrise",
                             "price": "4.00"
                         }
-                    ]
+                    ],
+                    "products_count": 1
                 },
                 {
                     "childs": [],
@@ -471,7 +479,8 @@
                             "name": "Boulevardier",
                             "price": "6.30"
                         }
-                    ]
+                    ],
+                    "products_count": 4
                 },
                 {
                     "childs": [],
@@ -563,7 +572,8 @@
                             "name": "Espresso Martini",
                             "price": "6.30"
                         }
-                    ]
+                    ],
+                    "products_count": 11
                 },
                 {
                     "childs": [],
@@ -615,7 +625,8 @@
                             "name": "Vodka Bull",
                             "price": "6.30"
                         }
-                    ]
+                    ],
+                    "products_count": 6
                 },
                 {
                     "childs": [],
@@ -657,7 +668,8 @@
                             "name": "Gin and Apricot Martini",
                             "price": "7.30"
                         }
-                    ]
+                    ],
+                    "products_count": 4
                 },
                 {
                     "childs": [],
@@ -691,7 +703,8 @@
                             "name": "New York Sour",
                             "price": "6.30"
                         }
-                    ]
+                    ],
+                    "products_count": 4
                 },
                 {
                     "childs": [],
@@ -720,7 +733,8 @@
                             "name": "Limoncello Sprizz",
                             "price": "4.60"
                         }
-                    ]
+                    ],
+                    "products_count": 3
                 },
                 {
                     "childs": [],
@@ -754,11 +768,13 @@
                             "name": "PiNADA Colada",
                             "price": "5.30"
                         }
-                    ]
+                    ],
+                    "products_count": 4
                 }
             ],
             "name": "Cocktails",
-            "products": []
+            "products": [],
+            "products_count": 0
         },
         {
             "childs": [
@@ -822,7 +838,8 @@
                             "name": "Feuerzangenbowle",
                             "price": "4.50"
                         }
-                    ]
+                    ],
+                    "products_count": 8
                 },
                 {
                     "childs": [],
@@ -891,11 +908,13 @@
                             "name": "Latte Macchiato",
                             "price": "2.60"
                         }
-                    ]
+                    ],
+                    "products_count": 9
                 }
             ],
             "name": "Hei\u00dfe Getr\u00e4nke",
-            "products": []
+            "products": [],
+            "products_count": 0
         },
         {
             "childs": [
@@ -931,7 +950,8 @@
                             "name": "SW vegan gegrillte Paprika",
                             "price": "5.40"
                         }
-                    ]
+                    ],
+                    "products_count": 4
                 },
                 {
                     "childs": [],
@@ -951,7 +971,8 @@
                             "name": "Nachos gro\u00df",
                             "price": "4.90"
                         }
-                    ]
+                    ],
+                    "products_count": 2
                 }
             ],
             "name": "Speisen",
@@ -970,7 +991,8 @@
                     "name": "PokeBowl",
                     "price": "5.40"
                 }
-            ]
+            ],
+            "products_count": 2
         }
     ]
 }
