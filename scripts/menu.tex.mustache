@@ -1,8 +1,11 @@
-\documentclass[conference]{IEEEtran}
-\IEEEoverridecommandlockouts
+\documentclass{scrartcl}
+%\IEEEoverridecommandlockouts
 % The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
-\usepackage{cite}
-\usepackage{amsmath,amssymb,amsfonts}
+%\usepackage{cite}
+%\usepackage{amsmath,amssymb,amsfonts}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[gen]{eurosym}
 \usepackage{algorithmic}
 \usepackage{graphicx}
 \usepackage{textcomp}
@@ -12,68 +15,86 @@
 \usepackage{tikz}
 \usepackage{url}
 \usepackage{qrcode}
-\usepackage{eso-pic}
+%\usepackage{eso-pic}
 \usepackage{makecell}
+\usepackage{paralist}
 \usepackage{adjustbox}
+\usepackage[margin=0.5cm, includeheadfoot, headheight=1.5cm, bottom=1.5cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\setlength{\parindent}{0cm}
+{\setlength{\tabcolsep}{0em}
+\addtokomafont{section}{\centering}
+\addtokomafont{subsection}{\centering}
+\fancyhead{}
+%\fancyhead[]{\raisebox{\dimexpr 1.5cm-\baselineskip}{\footnotesize Studentische Initiative Campusleben Garching e.V., TUM Campus Garching, info@campus-cneipe.de, +49 89 289 14430}}
+\fancyhead[R]{\scriptsize Studentische Initiative Campusleben Garching e.V.\\TUM Campus Garching\\info@campus-cneipe.de\\+49 89 289 14430}
+\fancyhead[L]{\includegraphics[height=1.5cm]{../static/images/logo}}
+\fancyfoot{}
+\fancyfoot[L]{\qrcode[height=1.5cm]{https://c2.tum.de/karte/}}
+\fancyfoot[C]{
+  \footnotesize{{#footnote_data}}{{#Allergene}} {{key}}: {{name}}  {{/Allergene}}{{#Inhaltsstoffe}} {{key}}: {{name}} {{/Inhaltsstoffe}} {{/footnote_data}}
+}
+% Header also on first page
+\makeatletter
+\let\ps@plain\ps@fancy
+\makeatother
 
+
+\newcommand{\listingredients}[1]{
+\vspace{-.3cm}
+\begin{tabular}{p{.01\linewidth}p{.75\linewidth}@{}}
+& \scriptsize\textit{#1}\\
+\end{tabular}
+\vspace{.3cm}
+
+}
+
+\newcommand{\listproduct}[4]{
+\begin{tabular}{p{.7\linewidth}@{}p{.18\linewidth}p{.12\linewidth}}
+ #1 $^{#2}$\dotfill & #3\dotfill & #4
+\end{tabular}
+}
 
 \begin{document}
 
 \title{Getränke und Speisen}
-\author{\IEEEauthorblockN{Campus Cneipe - $C_2$}
-\IEEEauthorblockA{\textit{Studentische Initiative Campusleben Garching e.V.} \\
-TUM Campus Garching\\
-info@campus-cneipe.de}}
-
+\subtitle{\url{https://www.c2.tum.de/karte/}}
+\date{}
 \maketitle
 
-\AddToShipoutPictureBG{\AtPageLowerLeft{
-    \hspace{.04\textwidth}\raisebox{3.5em}{\qrcode[height=.1\textwidth]{https://c2.tum.de/karte/}}}}
-
-\AddToShipoutPictureBG{\AtPageLowerLeft{
-    \hspace{.2\textwidth}\raisebox{3em}{
-      \footnotesize
-      {{#footnote_data}}
-      {{#Allergene}}
-         \textsuperscript{ {{key}} } { {{name}} }
-      {{/Allergene}}
-      {{#Inhaltsstoffe}}
-         \textsuperscript{ {{key}} } { {{name}} }
-      {{/Inhaltsstoffe}}
-
-      {{/footnote_data}}
-}}}
-\AddToShipoutPictureBG{\AtTextUpperLeft{
-	\hspace{.9\textwidth}\raisebox{-3em}{\includegraphics[width=.1\textwidth]{../static/images/logo}}}}
-
-
-%\begin{abstract}
-%In this short paper we present the current menu of Campus Cneipe Garching.
-%A continuously updated web version of this is available at \url{https://www.c2.tum.de/karte/}
-%\end{abstract}
-
-{{#products}}
-
-\vspace{2em}
-\section{ {{name}} }
-
-{{#childs}}
-\vspace{2em}
-\subsection{ {{name}} }
-\vspace{1em}
-\begin{centering}
-\begin{tabular}{p{.5\linewidth}p{.12\linewidth}p{.12\linewidth}}
 {{#products}}
 \begin{minipage}{\linewidth}
-  {{name}} {{#footnote_keys}} \textsuperscript[{{.}}] {{/footnote_keys}}
-  {{#ingredients}}\\ \footnotesize{\textit{ {{ingredients}} } } \\ {{/ingredients}}
-\end{minipage} &
-  \makecell*[r]{ {{#amount}} \SI{ {{amount}} }{\liter} {{/amount}} } &
-  \makecell*[r]{ {{price}}€}\\
+\section*{ {{name}} }
+\vfill
+\begin{multicols}{2}
+{{#products}}
+\begin{minipage}{\linewidth}
+\listproduct{ {{name}} }{ {{#footnote_keys}}{{.}}{{/footnote_keys}} }{ {{#amount}}{{amount}}l{{/amount}} }{ {{price}} }
+{{#ingredients}}\listingredients{ {{ingredients}} }{{/ingredients}}
+\end{minipage}
 {{/products}}
-\end{tabular}
-\end{centering}
-{{/childs}}
+\end{multicols}
+\end{minipage}
+{{#products_count}}
+\vfill
+{{/products_count}}
 
+{{#childs}}
+\begin{minipage}{\linewidth}
+\subsection*{\textbf{ {{name}} }}
+\begin{multicols}{2}
+{{#products}}
+\begin{minipage}{\linewidth}
+\listproduct{ {{name}} }{ {{#footnote_keys}}{{.}}{{/footnote_keys}} }{ {{#amount}}{{amount}}l{{/amount}} }{ {{price}} }
+{{#ingredients}}\listingredients{ {{ingredients}} }{{/ingredients}}
+\end{minipage}
+{{/products}}
+\end{multicols}
+\end{minipage}
+\vfill
+{{/childs}}
 {{/products}}
 \end{document}
