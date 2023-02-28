@@ -114,6 +114,7 @@ def get_reference(Id):
 def set_footnotes(menu):
     for pg in menu:
         if 'products' in pg:
+            pg['products_count'] = len(pg['products'])
             for p in pg['products']:
                 p['footnote_keys'] = []
                 for Id in p['ingredient_ids']:
