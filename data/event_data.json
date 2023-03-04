@@ -172,5 +172,11 @@
         "description": "Wegen unserer einmal im Semester stattfindenden Vereinsversammlung der \"Initiative Campusleben Garching e.V.\" bleibt die C2 an diesem Tag geschlossen.",
         "end": "2023-04-22",
         "title": "Geschlossen wegen Vereinsversammlung"
+    },
+    {
+        "begin": "2023-04-28T08:00:00+02:00",
+        "description": "",
+        "end": "2023-04-28T09:00:00+02:00",
+        "title": "Semesterparty"
     }
 ]
