@@ -4,19 +4,19 @@
         "Inhaltsstoffe": [
             {
                 "key": "a",
-                "name": "koffeinhaltig"
-            },
-            {
-                "key": "b",
-                "name": "mit Farbstoff"
-            },
-            {
-                "key": "c",
                 "name": "mit Phosphat"
             },
             {
-                "key": "d",
+                "key": "b",
                 "name": "geschwefelt"
+            },
+            {
+                "key": "c",
+                "name": "koffeinhaltig"
+            },
+            {
+                "key": "d",
+                "name": "mit Farbstoff"
             }
         ]
     },
@@ -66,8 +66,8 @@
                             "amount": "0.5",
                             "footnote_keys": [
                                 "a",
-                                "b",
-                                "c"
+                                "c",
+                                "d"
                             ],
                             "ingredients": "Wei\u00dfbier, Cola",
                             "name": "Cola-Weizen",
@@ -160,7 +160,7 @@
                         {
                             "amount": "0.2",
                             "footnote_keys": [
-                                "d"
+                                "b"
                             ],
                             "ingredients": "",
                             "name": "Wein wei\u00df",
@@ -169,7 +169,7 @@
                         {
                             "amount": "0.2",
                             "footnote_keys": [
-                                "d"
+                                "b"
                             ],
                             "ingredients": "",
                             "name": "Wein rot",
@@ -178,19 +178,19 @@
                         {
                             "amount": "0.4",
                             "footnote_keys": [
-                                "d"
+                                "b"
                             ],
                             "ingredients": "",
-                            "name": "Weinschorle wei\u00df s\u00fc\u00df/sauer",
+                            "name": "Weinschorle rot s\u00fc\u00df/sauer",
                             "price": "4.70"
                         },
                         {
                             "amount": "0.4",
                             "footnote_keys": [
-                                "d"
+                                "b"
                             ],
                             "ingredients": "",
-                            "name": "Weinschorle rot s\u00fc\u00df/sauer",
+                            "name": "Weinschorle wei\u00df s\u00fc\u00df/sauer",
                             "price": "4.70"
                         }
                     ],
@@ -231,7 +231,7 @@
                         {
                             "amount": "0.04",
                             "footnote_keys": [
-                                "a"
+                                "c"
                             ],
                             "ingredients": "Vodka, Kahlua/Espresso",
                             "name": "Liquid Cocaine",
@@ -283,8 +283,8 @@
                             "amount": "0.5",
                             "footnote_keys": [
                                 "a",
-                                "b",
-                                "c"
+                                "c",
+                                "d"
                             ],
                             "ingredients": "",
                             "name": "Cola-Mix",
@@ -294,8 +294,8 @@
                             "amount": "0.5",
                             "footnote_keys": [
                                 "a",
-                                "b",
-                                "c"
+                                "c",
+                                "d"
                             ],
                             "ingredients": "",
                             "name": "Cola",
@@ -311,8 +311,8 @@
                         {
                             "amount": "0.5",
                             "footnote_keys": [
-                                "a",
-                                "b"
+                                "c",
+                                "d"
                             ],
                             "ingredients": "",
                             "name": "Club Mate",
@@ -448,28 +448,43 @@
                     "products_count": 1
                 },
                 {
-                    "childs": [],
-                    "name": "The Unforgettables",
-                    "products": [
+                    "childs": [
                         {
-                            "amount": "0.15",
-                            "footnote_keys": [],
-                            "ingredients": "Bourbon, Zucker, Angostura Bitters, Wasser",
-                            "name": "Old Fashioned",
-                            "price": "6.30"
-                        },
+                            "childs": [],
+                            "name": "Ehrenamtspreise",
+                            "products": [
+                                {
+                                    "amount": "",
+                                    "footnote_keys": [],
+                                    "ingredients": "",
+                                    "name": "Ehrenamt Cocktails",
+                                    "price": "5.00"
+                                },
+                                {
+                                    "amount": "",
+                                    "footnote_keys": [],
+                                    "ingredients": "",
+                                    "name": "Ehrenamt Strong Cocktails",
+                                    "price": "6.00"
+                                },
+                                {
+                                    "amount": "",
+                                    "footnote_keys": [],
+                                    "ingredients": "",
+                                    "name": "Ehrenamt Mocktails, Aperol, Weinschorle",
+                                    "price": "4.00"
+                                }
+                            ],
+                            "products_count": 3
+                        }
+                    ],
+                    "name": "Cocktails",
+                    "products": [
                         {
                             "amount": "0.2",
                             "footnote_keys": [],
-                            "ingredients": "Rum, Zuckersirup, Limettensaft",
-                            "name": "Daiquiri",
-                            "price": "6.30"
-                        },
-                        {
-                            "amount": "0.15",
-                            "footnote_keys": [],
-                            "ingredients": "Gin, Vermouth, Campari",
-                            "name": "Negroni",
+                            "ingredients": "Gin, Tonic Water",
+                            "name": "Blaue Rakete",
                             "price": "6.30"
                         },
                         {
@@ -477,20 +492,6 @@
                             "footnote_keys": [],
                             "ingredients": "Bourbon, Campari, Vermouth",
                             "name": "Boulevardier",
-                            "price": "6.30"
-                        }
-                    ],
-                    "products_count": 4
-                },
-                {
-                    "childs": [],
-                    "name": "Classics",
-                    "products": [
-                        {
-                            "amount": "0.2",
-                            "footnote_keys": [],
-                            "ingredients": "Havana, Limettensaft, Zucker, Wasser, Minze",
-                            "name": "Mojito",
                             "price": "6.30"
                         },
                         {
@@ -502,9 +503,13 @@
                         },
                         {
                             "amount": "0.2",
-                            "footnote_keys": [],
-                            "ingredients": "Rum, Cream de Coconut, Ananassaft",
-                            "name": "Pina Colada",
+                            "footnote_keys": [
+                                "a",
+                                "c",
+                                "d"
+                            ],
+                            "ingredients": "Rum, Coca Cola, Limettensaft",
+                            "name": "Cuba Libre",
                             "price": "6.30"
                         },
                         {
@@ -518,90 +523,39 @@
                             "amount": "0.2",
                             "footnote_keys": [],
                             "ingredients": "Gin, Tonic Water",
-                            "name": "Blaue Rakete",
-                            "price": "6.30"
-                        },
-                        {
-                            "amount": "0.2",
-                            "footnote_keys": [
-                                "b"
-                            ],
-                            "ingredients": "Tequila, Orangensaft, Zitronensaft, Grenadinen Sirup",
-                            "name": "Tequila Sunrise",
+                            "name": "Gin & Tonic",
                             "price": "6.30"
                         },
                         {
                             "amount": "0.15",
                             "footnote_keys": [
-                                "b"
+                                "d"
                             ],
                             "ingredients": "Bourbon, Ginger Ale, Angostura Bitters",
                             "name": "Horses Neck",
                             "price": "6.30"
                         },
                         {
+                            "amount": "0.15",
+                            "footnote_keys": [],
+                            "ingredients": "Gin, Zuckersirup, Limettensaft, Basilikum",
+                            "name": "Gin Basil Smash",
+                            "price": "6.30"
+                        },
+                        {
                             "amount": "0.2",
                             "footnote_keys": [],
-                            "ingredients": "Vodka, Peach Brandy, Orangensaft, Cranberry Saft",
-                            "name": "Sex on the Beach:",
+                            "ingredients": "Havana, Limettensaft, Zucker, Wasser, Minze",
+                            "name": "Mojito",
                             "price": "6.30"
                         },
                         {
                             "amount": "0.2",
                             "footnote_keys": [
-                                "b"
+                                "d"
                             ],
                             "ingredients": "Whiskey, Cointreau, Limettensaft, Zitronensaft, Limonade",
                             "name": "Lynchburg Lemonade",
-                            "price": "6.30"
-                        },
-                        {
-                            "amount": "0.2",
-                            "footnote_keys": [],
-                            "ingredients": "",
-                            "name": "Longdrinks",
-                            "price": "6.30"
-                        },
-                        {
-                            "amount": "0.2",
-                            "footnote_keys": [
-                                "a",
-                                "b"
-                            ],
-                            "ingredients": "Vodka, Kahlua, Zuckersirup, Espresso",
-                            "name": "Espresso Martini",
-                            "price": "6.30"
-                        }
-                    ],
-                    "products_count": 11
-                },
-                {
-                    "childs": [],
-                    "name": "Light",
-                    "products": [
-                        {
-                            "amount": "0.2",
-                            "footnote_keys": [
-                                "a",
-                                "b",
-                                "c"
-                            ],
-                            "ingredients": "Rum, Coca Cola, Limettensaft",
-                            "name": "Cuba Libre",
-                            "price": "6.30"
-                        },
-                        {
-                            "amount": "",
-                            "footnote_keys": [],
-                            "ingredients": "Vodka, Cranberry Saft, Zuckersirup, Ginger Ale",
-                            "name": "Merry Moskow Mule",
-                            "price": "4.50"
-                        },
-                        {
-                            "amount": "0.2",
-                            "footnote_keys": [],
-                            "ingredients": "Gin, Tonic Water",
-                            "name": "Gin & Tonic",
                             "price": "6.30"
                         },
                         {
@@ -619,25 +573,100 @@
                             "price": "6.30"
                         },
                         {
+                            "amount": "",
+                            "footnote_keys": [],
+                            "ingredients": "Vodka, Cranberry Saft, Zuckersirup, Ginger Ale",
+                            "name": "Merry Moskow Mule",
+                            "price": "4.50"
+                        },
+                        {
+                            "amount": "0.15",
+                            "footnote_keys": [],
+                            "ingredients": "Gin, Vermouth, Campari",
+                            "name": "Negroni",
+                            "price": "6.30"
+                        },
+                        {
+                            "amount": "0.15",
+                            "footnote_keys": [],
+                            "ingredients": "Bourbon, Zucker, Angostura Bitters, Wasser",
+                            "name": "Old Fashioned",
+                            "price": "6.30"
+                        },
+                        {
                             "amount": "0.2",
                             "footnote_keys": [],
                             "ingredients": "Vodka, Red Bull",
                             "name": "Vodka Bull",
                             "price": "6.30"
+                        },
+                        {
+                            "amount": "0.2",
+                            "footnote_keys": [],
+                            "ingredients": "Rum, Cream de Coconut, Ananassaft",
+                            "name": "Pina Colada",
+                            "price": "6.30"
+                        },
+                        {
+                            "amount": "0.2",
+                            "footnote_keys": [
+                                "d"
+                            ],
+                            "ingredients": "Tequila, Orangensaft, Zitronensaft, Grenadinen Sirup",
+                            "name": "Tequila Sunrise",
+                            "price": "6.30"
+                        },
+                        {
+                            "amount": "0.2",
+                            "footnote_keys": [],
+                            "ingredients": "Vodka, Peach Brandy, Orangensaft, Cranberry Saft",
+                            "name": "Sex on the Beach",
+                            "price": "6.30"
+                        },
+                        {
+                            "amount": "0.2",
+                            "footnote_keys": [],
+                            "ingredients": "",
+                            "name": "Longdrinks",
+                            "price": "6.30"
                         }
                     ],
-                    "products_count": 6
+                    "products_count": 20
                 },
                 {
                     "childs": [],
-                    "name": "Strong",
+                    "name": "Strongs",
                     "products": [
+                        {
+                            "amount": "0.2",
+                            "footnote_keys": [],
+                            "ingredients": "Rum, Zuckersirup, Limettensaft",
+                            "name": "Daiquiri",
+                            "price": "6.30"
+                        },
+                        {
+                            "amount": "0.2",
+                            "footnote_keys": [
+                                "c",
+                                "d"
+                            ],
+                            "ingredients": "Vodka, Kahlua, Zuckersirup, Espresso",
+                            "name": "Espresso Martini",
+                            "price": "6.30"
+                        },
+                        {
+                            "amount": "0.2",
+                            "footnote_keys": [],
+                            "ingredients": "Rum, Gin, Apricot Brandy, Limettensaft, Zuckersirup",
+                            "name": "Gin and Apricot Martini",
+                            "price": "7.30"
+                        },
                         {
                             "amount": "0.2",
                             "footnote_keys": [
                                 "a",
-                                "b",
-                                "c"
+                                "c",
+                                "d"
                             ],
                             "ingredients": "Rum, Vodka, Gin, Cointreau, Tequila, Zuckersirup, Coca Cola, Limettensaft",
                             "name": "Long Island Ice Tea",
@@ -646,16 +675,7 @@
                         {
                             "amount": "0.2",
                             "footnote_keys": [
-                                "b"
-                            ],
-                            "ingredients": "Rum, Limettensaft, Ananassaft, Zimtsirup, Grenadinen Sirup, Angostura Bitters, Ouzo",
-                            "name": "Zombie",
-                            "price": "7.30"
-                        },
-                        {
-                            "amount": "0.2",
-                            "footnote_keys": [
-                                "b"
+                                "d"
                             ],
                             "ingredients": "Rum, Cointreau, Mandelsirup, Limettensaft, Zuckersirup",
                             "name": "Mai Tai",
@@ -663,24 +683,28 @@
                         },
                         {
                             "amount": "0.2",
-                            "footnote_keys": [],
-                            "ingredients": "Rum, Gin, Apricot Brandy, Limettensaft, Zuckersirup",
-                            "name": "Gin and Apricot Martini",
+                            "footnote_keys": [
+                                "d"
+                            ],
+                            "ingredients": "Rum, Limettensaft, Ananassaft, Zimtsirup, Grenadinen Sirup, Angostura Bitters, Ouzo",
+                            "name": "Zombie",
                             "price": "7.30"
                         }
                     ],
-                    "products_count": 4
+                    "products_count": 6
                 },
                 {
                     "childs": [],
-                    "name": "Fizzes & Sours",
+                    "name": "Fizzes & Sours & Sprizz",
                     "products": [
                         {
-                            "amount": "0.15",
-                            "footnote_keys": [],
-                            "ingredients": "Gin, Zuckersirup, Limettensaft, Basilikum",
-                            "name": "Gin Basil Smash",
-                            "price": "6.30"
+                            "amount": "0.3",
+                            "footnote_keys": [
+                                "d"
+                            ],
+                            "ingredients": "Aperol, Wasser, Prosecco",
+                            "name": "Aperol Spritz",
+                            "price": "4.60"
                         },
                         {
                             "amount": "0.15",
@@ -690,27 +714,6 @@
                             "price": "6.30"
                         },
                         {
-                            "amount": "0.15",
-                            "footnote_keys": [],
-                            "ingredients": "Zitronensaft, Zuckersirup",
-                            "name": "Sour",
-                            "price": "6.30"
-                        },
-                        {
-                            "amount": "0.15",
-                            "footnote_keys": [],
-                            "ingredients": "Bourbon, Zuckersirup, Zitronensaft",
-                            "name": "New York Sour",
-                            "price": "6.30"
-                        }
-                    ],
-                    "products_count": 4
-                },
-                {
-                    "childs": [],
-                    "name": "Sprizzes",
-                    "products": [
-                        {
                             "amount": "0.3",
                             "footnote_keys": [],
                             "ingredients": "",
@@ -719,22 +722,27 @@
                         },
                         {
                             "amount": "0.3",
-                            "footnote_keys": [
-                                "b"
-                            ],
-                            "ingredients": "Aperol, Wasser, Prosecco",
-                            "name": "Aperol Spritz",
-                            "price": "4.60"
-                        },
-                        {
-                            "amount": "0.3",
                             "footnote_keys": [],
                             "ingredients": "Limoncello, Wasser, Prosecco",
                             "name": "Limoncello Sprizz",
                             "price": "4.60"
+                        },
+                        {
+                            "amount": "0.15",
+                            "footnote_keys": [],
+                            "ingredients": "Bourbon, Zuckersirup, Zitronensaft",
+                            "name": "New York Sour",
+                            "price": "6.30"
+                        },
+                        {
+                            "amount": "0.15",
+                            "footnote_keys": [],
+                            "ingredients": "Zitronensaft, Zuckersirup",
+                            "name": "Sour",
+                            "price": "6.30"
                         }
                     ],
-                    "products_count": 3
+                    "products_count": 6
                 },
                 {
                     "childs": [],
@@ -775,6 +783,84 @@
             "name": "Cocktails",
             "products": [],
             "products_count": 0
+        },
+        {
+            "childs": [
+                {
+                    "childs": [],
+                    "name": "Sandwiches/Paninis",
+                    "products": [
+                        {
+                            "amount": "",
+                            "footnote_keys": [],
+                            "ingredients": "",
+                            "name": "SW Rucola Pesto",
+                            "price": "5.40"
+                        },
+                        {
+                            "amount": "",
+                            "footnote_keys": [],
+                            "ingredients": "",
+                            "name": "SW Putenbrust",
+                            "price": "5.40"
+                        },
+                        {
+                            "amount": "",
+                            "footnote_keys": [],
+                            "ingredients": "",
+                            "name": "SW Salami Calabra",
+                            "price": "5.40"
+                        },
+                        {
+                            "amount": "",
+                            "footnote_keys": [],
+                            "ingredients": "",
+                            "name": "SW vegan gegrillte Paprika",
+                            "price": "5.40"
+                        }
+                    ],
+                    "products_count": 4
+                },
+                {
+                    "childs": [],
+                    "name": "Snacks",
+                    "products": [
+                        {
+                            "amount": "",
+                            "footnote_keys": [],
+                            "ingredients": "",
+                            "name": "Nachos klein",
+                            "price": "3.20"
+                        },
+                        {
+                            "amount": "",
+                            "footnote_keys": [],
+                            "ingredients": "",
+                            "name": "Nachos gro\u00df",
+                            "price": "4.90"
+                        }
+                    ],
+                    "products_count": 2
+                }
+            ],
+            "name": "Speisen",
+            "products": [
+                {
+                    "amount": "",
+                    "footnote_keys": [],
+                    "ingredients": "10 St\u00fcck Mini Krapfen",
+                    "name": "Krapfen",
+                    "price": "3.00"
+                },
+                {
+                    "amount": "",
+                    "footnote_keys": [],
+                    "ingredients": "Reis mit gebratenem R\u00e4uchertofu, Gurke, Karotten, Sojabohnen, Teriyaki Sauce",
+                    "name": "PokeBowl",
+                    "price": "5.40"
+                }
+            ],
+            "products_count": 2
         },
         {
             "childs": [
@@ -915,84 +1001,6 @@
             "name": "Hei\u00dfe Getr\u00e4nke",
             "products": [],
             "products_count": 0
-        },
-        {
-            "childs": [
-                {
-                    "childs": [],
-                    "name": "Sandwiches/Paninis",
-                    "products": [
-                        {
-                            "amount": "",
-                            "footnote_keys": [],
-                            "ingredients": "",
-                            "name": "SW Rucola Pesto",
-                            "price": "5.40"
-                        },
-                        {
-                            "amount": "",
-                            "footnote_keys": [],
-                            "ingredients": "",
-                            "name": "SW Putenbrust",
-                            "price": "5.40"
-                        },
-                        {
-                            "amount": "",
-                            "footnote_keys": [],
-                            "ingredients": "",
-                            "name": "SW Salami Calabra",
-                            "price": "5.40"
-                        },
-                        {
-                            "amount": "",
-                            "footnote_keys": [],
-                            "ingredients": "",
-                            "name": "SW vegan gegrillte Paprika",
-                            "price": "5.40"
-                        }
-                    ],
-                    "products_count": 4
-                },
-                {
-                    "childs": [],
-                    "name": "Snacks",
-                    "products": [
-                        {
-                            "amount": "",
-                            "footnote_keys": [],
-                            "ingredients": "",
-                            "name": "Nachos klein",
-                            "price": "3.20"
-                        },
-                        {
-                            "amount": "",
-                            "footnote_keys": [],
-                            "ingredients": "",
-                            "name": "Nachos gro\u00df",
-                            "price": "4.90"
-                        }
-                    ],
-                    "products_count": 2
-                }
-            ],
-            "name": "Speisen",
-            "products": [
-                {
-                    "amount": "",
-                    "footnote_keys": [],
-                    "ingredients": "10 St\u00fcck Mini Krapfen",
-                    "name": "Krapfen",
-                    "price": "3.00"
-                },
-                {
-                    "amount": "",
-                    "footnote_keys": [],
-                    "ingredients": "Reis mit gebratenem R\u00e4uchertofu, Gurke, Karotten, Sojabohnen, Teriyaki Sauce",
-                    "name": "PokeBowl",
-                    "price": "5.40"
-                }
-            ],
-            "products_count": 2
         }
     ]
 }
