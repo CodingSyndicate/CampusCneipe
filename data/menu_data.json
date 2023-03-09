@@ -488,6 +488,13 @@
                             "price": "6.30"
                         },
                         {
+                            "amount": "0.2",
+                            "footnote_keys": [],
+                            "ingredients": "Blue Curacao",
+                            "name": "Fresh Herrmann",
+                            "price": "6.30"
+                        },
+                        {
                             "amount": "0.15",
                             "footnote_keys": [],
                             "ingredients": "Bourbon, Campari, Vermouth",
@@ -510,13 +517,6 @@
                             ],
                             "ingredients": "Rum, Coca Cola, Limettensaft",
                             "name": "Cuba Libre",
-                            "price": "6.30"
-                        },
-                        {
-                            "amount": "0.2",
-                            "footnote_keys": [],
-                            "ingredients": "Blue Curacao",
-                            "name": "Fresh Herrmann",
                             "price": "6.30"
                         },
                         {
