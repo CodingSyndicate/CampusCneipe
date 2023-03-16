@@ -178,5 +178,11 @@
         "description": "",
         "end": "2023-04-25T23:59:00+02:00",
         "title": "1. PubQuiz"
+    },
+    {
+        "begin": "2023-04-27T17:00:00+02:00",
+        "description": "Unsere Semesterparty steht bevor. Wie immer wird es nat\u00fcrlich ordentlich Freibier geben. Dazu planen wir ein paar Runden Flunkyball und Bierpong. Mehr Infos folgen hier und auf Instagram.",
+        "end": "2023-04-27T23:59:00+02:00",
+        "title": "Semesterparty"
     }
 ]
