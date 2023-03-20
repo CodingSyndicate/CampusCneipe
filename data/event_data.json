@@ -190,5 +190,11 @@
         "description": "Unsere Semesterparty steht bevor. Wie immer wird es nat\u00fcrlich ordentlich Freibier geben. Dazu planen wir ein paar Runden Flunkyball und Bierpong. Mehr Infos folgen hier und auf Instagram.",
         "end": "2023-04-27T23:59:00+02:00",
         "title": "Semesterparty"
+    },
+    {
+        "begin": "2023-05-02T18:00:00+02:00",
+        "description": "",
+        "end": "2023-05-02T23:59:00+02:00",
+        "title": "PubQuiz"
     }
 ]
