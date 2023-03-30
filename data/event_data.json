@@ -196,5 +196,11 @@
         "description": "",
         "end": "2023-05-02T23:59:00+02:00",
         "title": "PubQuiz"
+    },
+    {
+        "begin": "2023-05-03T19:00:00+02:00",
+        "description": "Kommt vorbei und singt bei uns Karaoke! Jede Woche treffen sich Freunde und neue Leute, um gemeinsam ein paar Songs zu singen und eine tolle Zeit zu haben. Unsere Karaoke-N\u00e4chte bieten neben dem Spa\u00df am Singen auch noch k\u00f6stliche Drinks und Snacks. Also, lasst euch das nicht entgehen und begebt euch auf eine musikalische Reise!",
+        "end": "2023-05-03T23:59:00+02:00",
+        "title": "Erstes Karaoke"
     }
 ]
