@@ -9,7 +9,7 @@ USt-IdNr: DE250406590 <br />
 <br />
 
 <h2>Vertreten durch</h2>
-den Vorstand im Sinne des §26 BGB: Leopold Rothmayer<br />
+den Vorstand im Sinne des §26 BGB: Benedikt Schaefer<br />
 <br />
 
 <h2>Kontakt</h2>
